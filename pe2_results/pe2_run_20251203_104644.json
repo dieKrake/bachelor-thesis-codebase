@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-12-03T10:46:44.546774",
+  "dataset": {
+    "path": "navigate_200/dataset_random/navigate_80_test.json",
+    "num_examples": 80
+  },
+  "config": {
+    "initial_prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text. \"True\" = you return to the starting point. \"False\" = you do not return to the starting point.\n\nNow answer the following question with \"True\" or \"False\":",
+    "meta_prompt_template_snippet": "We are refining a prompt for a classification task.\n\n    # Current Prompt\n    {prompt}\n\n    # Failed Examples\n    The following examples are cases where the model failed (wrong judgement):\n\n    {examp",
+    "task_model": "gpt-4o-mini",
+    "proposal_model": "gpt-4o-mini",
+    "iterations": 3,
+    "beam_width": 3,
+    "proposals_per_prompt": 2,
+    "failure_batch_size": 7
+  },
+  "result": {
+    "best_prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means the final position is the same as the starting point. 'False' means the final position is different from the starting point. Now answer the following question with 'True' or 'False':",
+    "best_accuracy": 0.5875,
+    "history": [
+      {
+        "iteration": 0,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text. \"True\" = you return to the starting point. \"False\" = you do not return to the starting point.\n\nNow answer the following question with \"True\" or \"False\":",
+        "accuracy": 0.575
+      },
+      {
+        "iteration": 1,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means you end up at the starting point after following the steps. 'False' means you do not end up at the starting point.",
+        "accuracy": 0.575
+      },
+      {
+        "iteration": 1,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means the final position is the same as the starting point. 'False' means the final position is different from the starting point. Now answer the following question with 'True' or 'False':",
+        "accuracy": 0.5875
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means you end up at the same location as where you started after following the instructions. 'False' means you end up at a different location. Now answer the following question with 'True' or 'False':",
+        "accuracy": 0.5625
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means you end up at the starting point after following the instructions. 'False' means you end up somewhere else. Carefully visualize the movements and turns as you process the instructions. Now answer the following question with 'True' or 'False':",
+        "accuracy": 0.5375
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means you return to the starting point after following the instructions. 'False' means you do not return to the starting point. Carefully track all movements and turns to determine your final position.",
+        "accuracy": 0.5875
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means that after following all the given movements and turns, you return to the exact starting point. 'False' means you do not return to the starting point.",
+        "accuracy": 0.575
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means that after following all the steps, the net movement results in returning to the starting point. 'False' means that the net movement does not return to the starting point.",
+        "accuracy": 0.575
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means you end up at the same position as you started after following the instructions. 'False' means you end up at a different position. Carefully consider all movements and turns. Now answer the following question with 'True' or 'False':",
+        "accuracy": 0.575
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means that after following the instructions, the final position is exactly the same as the starting point, considering all movements and turns. 'False' means the final position is different from the starting point. Now answer the following question with 'True' or 'False':",
+        "accuracy": 0.5625
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not include explanations, punctuation, or extra text. 'True' means you end up at the starting point after following the instructions. 'False' means you do not. Carefully follow each movement and turn to determine your final position relative to the starting point.",
+        "accuracy": 0.575
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' means you end up at the same position as the starting point after following the instructions. 'False' means you do not end up at the same position.",
+        "accuracy": 0.5625
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, punctuation, or additional text. 'True' = the final position is the same as the starting point after all movements. 'False' = the final position is different from the starting point after all movements.",
+        "accuracy": 0.5625
+      }
+    ]
+  }
+}

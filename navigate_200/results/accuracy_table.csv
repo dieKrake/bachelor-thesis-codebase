@@ -1,0 +1,5 @@
+,Zero-Shot,Few-Shot,RAG,PE2
+bigbench/navigate\\n = 40,0.55,0.5,0.5,
+bigbench/navigate\\n = 80,0.61,0.57,0.55,
+bigbench/navigate\\n = 120,0.72,0.72,0.75,
+bigbench/navigate\\n = 160,0.69,0.66,0.65,
