@@ -319,11 +319,11 @@ def save_run_to_json(
 # =========================================================
 
 if __name__ == "__main__":
-    dataset_name = "navigate_200"
+    dataset_name = "elementary_math_qa"
     dataset_size = "40"
     dataset_name_split = dataset_name.split("_")[0]
     # Pfad zum Dataset – analog zu den anderen Skripten
-    dataset_path = f"{dataset_name}/dataset_random/{dataset_name_split}_{dataset_size}_test.json"  # <- bei Bedarf anpassen
+    dataset_path = f"{dataset_name}/dataset_random/{dataset_name}_{dataset_size}_test.json"  # <- bei Bedarf anpassen
 
     log_header("Loading dataset")
     dataset = load_dataset(dataset_path)
@@ -335,6 +335,8 @@ if __name__ == "__main__":
     #   weil die Normalisierung True/False <-> Yes/No abgleicht.
     # - Falls ein Datensatz explizit "Yes/No" verlangt, kannst du den Prompt
     #   natürlich auch entsprechend anpassen.
+
+    # True/False oder Yes/No Prompt
     zero_shot_prompt = (
         'You MUST answer with exactly one string: either "True" or "False". '
         'Do not output explanations, punctuation, or additional text. '
@@ -343,10 +345,18 @@ if __name__ == "__main__":
         'Now answer the following question with "True" or "False":'
     )
 
+    # Multiple-Choice-Prompt
+    zero_shot_prompt = (
+    "You are solving multiple-choice math questions.\n"
+    "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    "Read the question and the choices carefully.\n"
+    "Answer with exactly the text of the correct choice, "
+    "without the 'choice:' prefix and without any explanation or extra text."
+    )
+
+
     # Optional: separates system_message
     system_message_task = None
-
-    # Konfiguration wie bei PE2, nur schlanker
     model_name = "gpt-4o-mini"
 
     config = {
