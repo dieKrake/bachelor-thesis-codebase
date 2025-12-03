@@ -1,0 +1,98 @@
+{
+  "timestamp": "2025-12-03T13:53:55.295534",
+  "dataset": {
+    "path": "navigate_200/dataset_random/navigate_40_test.json",
+    "num_examples": 40
+  },
+  "config": {
+    "initial_prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text. \"True\" = you return to the starting point. \"False\" = you do not return to the starting point.\n\nNow answer the following question with \"True\" or \"False\":",
+    "meta_prompt_template_snippet": "We are refining a prompt for a classification task.\n\n    # Current Prompt\n    {prompt}\n\n    # Failed Examples\n    The following examples are cases where the model failed (wrong judgement):\n\n    {examp",
+    "task_model": "gpt-4o-mini",
+    "proposal_model": "gpt-5",
+    "iterations": 3,
+    "beam_width": 3,
+    "proposals_per_prompt": 2,
+    "failure_batch_size": 5
+  },
+  "result": {
+    "best_prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text. \"True\" = you return to the starting point. \"False\" = you do not return to the starting point.\n\nNow answer the following question with \"True\" or \"False\":",
+    "best_accuracy": 0.65,
+    "history": [
+      {
+        "iteration": 0,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text. \"True\" = you return to the starting point. \"False\" = you do not return to the starting point.\n\nNow answer the following question with \"True\" or \"False\":",
+        "accuracy": 0.65
+      },
+      {
+        "iteration": 1,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text.\n\nInterpret the instructions as a path on a 2D grid:\n- Start at (0,0) facing north (forward).\n- \"Take N step(s)\" with no direction = move N forward.\n- \"forward/backward/left/right\" are relative to the current facing.\n- \"Turn left/right\" rotate 90°; \"Turn around\" rotates 180°. Turns do not move you.\n- If \"Always face forward\" appears, keep the initial forward facing for the whole sequence (ignore turns); directions are relative to that initial facing.\n- Only the final position matters; orientation at the end does not.\n\nOutput \"True\" if you return to (0,0); otherwise output \"False\".",
+        "accuracy": 0.525
+      },
+      {
+        "iteration": 1,
+        "prompt": "You MUST answer with exactly one string: True or False. Decide if following the commands after 'Q:' returns to the starting point (0,0). Rules: start at (0,0) facing North. If the text contains 'Always face forward' (case-insensitive), ignore all turn commands and keep facing North; otherwise update facing only on 'Turn left/right' (±90°) and 'Turn around' (180°). Movement: 'Take N step(s)' or 'Take N step(s) forward' = move N forward relative to current facing; 'backward' = N backward; 'left'/'right' = N left/right relative to current facing; lateral moves do not change facing. If no direction word is given, assume forward. Parse integers, ignore punctuation/case and any text not part of the commands. Sum x/y displacements; output True iff final (x,y) = (0,0). Output only True or False, nothing else.",
+        "accuracy": 0.525
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text. Return \"True\" iff you end at the starting position (position only; final facing is irrelevant).\n\nInterpretation rules:\n- Start at (0,0), initially facing forward. If the text says \"Always face forward\", it sets this initial facing; turns still apply.\n- Turn left/right = rotate facing 90°. Turn around = 180°. Turns do not move you.\n- \"Take N step(s)\" with no direction = move N along the current facing.\n- \"Take N step(s) forward/backward/left/right\" = move relative to the current facing (backward is opposite; left/right are 90° left/right). These moves do not change facing.\n- Sum all moves. Answer \"True\" if net displacement is zero; otherwise \"False\".",
+        "accuracy": 0.55
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text.\n\nDecide if following the given instructions returns you to the starting point.\n- Start at (0,0), initially facing forward.\n- \"Always face forward.\" only sets this initial facing; later turns still apply.\n- \"Turn left/right\" rotates your facing 90°; \"Turn around\" rotates 180°.\n- \"Take N steps\" means move N units forward relative to your current facing.\n- \"Take N steps forward/backward/left/right\" means move N units in that relative direction without changing your facing.\n- Process commands in order; ignore non-command text.\n- Output \"True\" if you end at (0,0); otherwise output \"False\".",
+        "accuracy": 0.5
+      },
+      {
+        "iteration": 2,
+        "prompt": "Answer exactly True or False (no quotes, no extra text).\n\nInterpret the instructions on a 2D grid:\n- Start at (0,0) with initial forward (north) = (0,1).\n- If the phrase Always face forward appears anywhere: ignore all turns; treat all directions relative to the initial forward for the whole sequence.\n- Otherwise, turns only change facing (no movement): left = rotate 90° CCW, right = 90° CW, around = 180°.\n- Movement:\n  - \"Take N steps\" or \"Take N steps forward\": move +N in the active forward (initial if Always).\n  - \"Take N steps backward\": move −N in the active forward.\n  - \"Take N steps left/right\": move +N in the left/right vector of the active forward.\n- Only the final position matters (ignore final facing). Output True if the final position is (0,0); else False.",
+        "accuracy": 0.55
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text.\n\nInterpret the instructions as a path on a 2D grid:\n- Start at (0,0), facing North.\n- If the text contains \"Always face forward\", set a global flag: use the initial North as the permanent reference; ignore all turn commands; interpret forward/backward/left/right relative to the initial North.\n- Otherwise, maintain a current heading; turns change heading only (left = -90°, right = +90°, around = 180°); turns never change position.\n- \"Take N step(s)\" with no direction means forward relative to the active heading (initial if the flag is set, else current).\n- Represent headings as vectors: North=(0,1), East=(1,0), South=(0,-1), West=(-1,0). Move N units in the indicated relative direction: forward = heading; right = heading rotated +90°; left = -90°; backward = 180°.\n- After all instructions, output \"True\" if the final position is (0,0); otherwise output \"False\". Final orientation is irrelevant.",
+        "accuracy": 0.55
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: True or False.\n\nTask: For the text after 'Q:', decide whether executing the commands returns to (0,0).\n\nRules:\n- Consider only text after 'Q:'. Ignore case, punctuation, and any non-command words.\n- Start at (x,y)=(0,0) facing North.\n- If the text contains 'Always face forward' (case-insensitive): ignore all turn commands and keep facing North for the entire sequence. Movement words (forward/backward/left/right) still specify the move direction relative to North.\n- Otherwise, only these change facing: 'Turn left' (-90°), 'Turn right' (+90°), 'Turn around' (180°). Movement commands never change facing.\n- Movement commands: 'Take N step(s) [direction?]'. If no direction word is given, treat as forward. Direction words are forward, backward, left, right; they indicate move direction relative to the current facing (they are NOT turns).\n- Implement relative motion concisely: represent facing f in {0:N,1:E,2:S,3:W}. If 'Always face forward' is present, f=0 and ignore turns; else update f on turns: left f=(f+3)%4, right f=(f+1)%4, around f=(f+2)%4. For a move with direction m in {forward=0,right=1,backward=2,left=3}, displacement = base[(f+m)%4] where base=[(0,1),(1,0),(0,-1),(-1,0)]; add N times that vector to (x,y).\n- Output True iff final (x,y)=(0,0). Output only True or False.",
+        "accuracy": 0.5
+      },
+      {
+        "iteration": 2,
+        "prompt": "Answer with exactly one word: True or False.\nTask: Determine if executing the commands after 'Q:' returns to (0,0).\nRules:\n- Read only text after 'Q:'. Ignore all other text, case, and punctuation.\n- Start at (x,y)=(0,0), facing North. Facing persists until changed by a turn.\n- If the phrase 'Always face forward' appears (case-insensitive): set facing=North and ignore all turn updates for the rest of the sequence. Movement directions (forward/backward/left/right) still apply relative to the current facing (which remains North).\n- Turns (no movement): 'Turn left' = rotate facing 90° CCW; 'Turn right' = 90° CW; 'Turn around' = 180°.\n- Moves: 'Take N step(s) [dir?]'. Parse integer N. If [dir] omitted, use 'forward'. Directions are relative to current facing: forward = current facing, backward = opposite, left/right = 90° CCW/CW of current facing. Movement does not change facing.\n- Track displacement with unit vectors: North=(0,1), East=(1,0), South=(0,-1), West=(-1,0).\n- After processing all commands, output True iff (x,y)=(0,0); otherwise False. Output only True or False.",
+        "accuracy": 0.5
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text.\nStart at (0,0) facing forward. Parse the instructions as moves on a 2D grid:\n- \"Take N step(s) [dir]\" moves N units relative to the current facing; dir ∈ {forward, backward, left, right}. If dir is omitted (e.g., \"Take 3 steps.\"), move forward.\n- \"Turn left/right\" rotates the facing by 90°; \"Turn around\" rotates by 180°. Turns do not move you.\n- \"Always face forward.\" only sets the initial facing to forward.\nIgnore capitalization and punctuation in the instructions. Output \"True\" iff the final position is the starting point; otherwise output \"False\".",
+        "accuracy": 0.525
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text. Interpret the instructions as a 2D walk starting at (0,0), initially facing forward. Only final position matters (ignore final facing). Rules: (1) If the text contains \"Always face forward\", keep the initial facing for all steps and ignore any turns. (2) Otherwise, apply turns: left/right = ±90°, around = 180°. (3) \"Take N steps\" with no direction means N steps forward relative to the current facing. (4) If a direction is given, move N steps in that relative direction (forward/backward/right/left) w.r.t. the active facing. After executing all steps, answer \"True\" if you are back at (0,0); otherwise \"False\".",
+        "accuracy": 0.55
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or additional text. Return \"True\" iff executing the instructions leaves you at the starting position (position only; final facing is irrelevant).\n\nRules:\n- Start at (0,0) facing Forward (North).\n- If the text contains \"Always face forward.\", treat it as a no-op reminder; it does not cancel or override later turns.\n- Process only the instructions after \"Q:\".\n- Turns change facing only (no movement): left/right = rotate 90°, around = 180°.\n- \"Take N step(s)\" (no direction): move N along the current facing.\n- \"Take N step(s) forward/backward/left/right\": move N relative to the current facing (backward = opposite; left/right = ±90°); these moves do not change facing.\n- Sum all moves; answer \"True\" iff net displacement is (0,0); otherwise \"False\".",
+        "accuracy": 0.525
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either \"True\" or \"False\". Do not output explanations, punctuation, or extra text. Return \"True\" iff the net displacement is zero (final facing is irrelevant).\n\nInterpretation:\n- Start at pos=(0,0), facing=0 where dir[0]=(0,1) forward, dir[1]=(1,0) right, dir[2]=(0,-1) backward, dir[3]=(-1,0) left.\n- If the text says \"Always face forward\", set facing=0 at the start (it does not lock the facing); subsequent turns still apply.\n- Turns: left -> facing=(facing+3)%4; right -> (facing+1)%4; around -> (facing+2)%4. Turns do not move you.\n- Moves do not change facing:\n  • \"Take N step(s)\" or \"... forward\" -> pos += N * dir[facing]\n  • \"... backward\" -> pos += (-N) * dir[facing]\n  • \"... right\" -> pos += N * dir[(facing+1)%4]\n  • \"... left\" -> pos += N * dir[(facing+3)%4]\n- Ignore all other words. Sum all moves exactly. Output \"True\" if pos==(0,0), else \"False\".",
+        "accuracy": 0.525
+      },
+      {
+        "iteration": 3,
+        "prompt": "Answer exactly True or False (no quotes, no extra text).\n\nCompute on a 2D grid.\n- Initialize pos=(0,0), head=(0,1); base=(0,1).\n- always = text contains \"Always face forward\" (case-insensitive).\n- Process instructions in order.\n  - Turns: \"Turn left/right/around\" change facing only; if always, ignore turns. left=90° CCW, right=90° CW, around=180°.\n  - Moves: \"Take N step(s)\" optionally with \"forward/backward/left/right\".\n    - N = the integer in the instruction.\n    - Use f = base if always else head.\n    - Direction d:\n      - forward or omitted: d = f\n      - backward: d = -f\n      - left: d = (-f.y, f.x)\n      - right: d = (f.y, -f.x)\n    - pos += N * d\n- Output True iff pos == (0,0). Ignore final facing. Ignore unrelated text and punctuation.",
+        "accuracy": 0.5
+      },
+      {
+        "iteration": 3,
+        "prompt": "Answer exactly True or False (no quotes, no extra text).\n\nSimulate the instructions on a 2D grid:\n- Start at (0,0). Initial forward (north) = (0,1). Process commands in order.\n- If the phrase \"Always face forward\" appears anywhere: lock the forward vector to the initial one and ignore all turn commands; all movement directions (forward/backward/left/right) are relative to the initial forward.\n- Otherwise, turns only change facing (no movement): left = rotate 90° CCW, right = 90° CW, around = 180°.\n- Movement commands (accept both singular/plural):\n  - \"Take N step(s)\" or \"Take N step(s) forward\": move +N in the active forward.\n  - \"Take N step(s) backward\": move −N in the active forward.\n  - \"Take N step(s) left/right\": move +N in the left/right vector relative to the active forward.\n- Only the final position matters. Output True if the final position is exactly (0,0); otherwise False.",
+        "accuracy": 0.6
+      }
+    ]
+  }
+}

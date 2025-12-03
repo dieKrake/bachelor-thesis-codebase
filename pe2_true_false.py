@@ -96,7 +96,7 @@ def run_mtask_on_dataset(
         resp = client.chat.completions.create(
             model=model,
             messages=messages,
-            temperature=0.0,
+            #temperature=0.0,
         )
 
         answer = resp.choices[0].message.content.strip()
@@ -207,7 +207,7 @@ def run_mproposal(
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": meta_prompt},
         ],
-        temperature=0.0,
+        #temperature=0.0,
     )
 
     raw = resp.choices[0].message.content.strip()
@@ -444,7 +444,7 @@ def save_run_to_json(
 
 if __name__ == "__main__":
     # Pfad zum Dataset
-    dataset_path = "navigate_200/dataset_random/navigate_40_test.json"  # <- hier pfad zum dataset eingeben
+    dataset_path = "navigate_200/dataset_random/navigate_40_test.json"
 
     log_header("Loading dataset")
     dataset = load_dataset(dataset_path)
@@ -492,7 +492,7 @@ if __name__ == "__main__":
     proposals_per_prompt = 2
     failure_batch_size = 5
     task_model = "gpt-4o-mini"
-    proposal_model = "gpt-5-mini"
+    proposal_model = "gpt-5"
 
     config = {
         "initial_prompt": initial_prompt,
