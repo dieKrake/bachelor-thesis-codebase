@@ -4,11 +4,12 @@ import json
 from pathlib import Path
 
 # Pfad zur Parquet-Datei
-input_file = Path(
-    r"C:\Users\kkrazius\Desktop\Bachelor-Arbeit\Datasets\eval\train-00000-of-00001 (6).parquet"
-)
+DATASET_NAME = "bigbench_elementary_math_qa"
 
-FILE_PREFIX = "navigate"
+DATASET_PATH = Path(r"C:\Users\kkrazius\Desktop\Bachelor-Arbeit\Datasets\eval")
+INPUT_FILE = DATASET_PATH / f"{DATASET_NAME}.parquet"
+
+FILE_PREFIX = DATASET_NAME
 
 TRAIN_SIZES = [10, 20, 30, 40]
 TEST_SIZES  = [50, 100, 150, 200]
@@ -92,4 +93,4 @@ def main(parquet_path: Path):
 
 
 if __name__ == "__main__":
-    main(input_file)
+    main(INPUT_FILE)

@@ -5,11 +5,12 @@ from pathlib import Path
 
 # === PARAMETER ===========================================================
 # Pfad zur Parquet-Datei
-INPUT_FILE = Path(
-    r"C:\Users\kkrazius\Desktop\Bachelor-Arbeit\Datasets\eval\train-00000-of-00001 (6).parquet"
-)
+DATASET_NAME = "bigbench_elementary_math_qa"
 
-OUTPUT_FILENAME = "navigate_full.json"   # Name der Ausgabe-JSON
+DATASET_PATH = Path(r"C:\Users\kkrazius\Desktop\Bachelor-Arbeit\Datasets\eval")
+INPUT_FILE = DATASET_PATH / f"{DATASET_NAME}.parquet"
+
+OUTPUT_FILENAME = f"{DATASET_NAME}_full.json"
 # ========================================================================
 
 

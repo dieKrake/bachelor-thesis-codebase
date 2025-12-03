@@ -1,0 +1,395 @@
+"""
+Zero-Shot Evaluation – angelehnt an den PE2-Algorithmus mit Logging.
+
+- Lädt ein gelabeltes Dataset (Input + Label [+ optional choices]).
+- Nutzt einen festen Prompt (Zero-Shot) zur Evaluation auf dem ganzen Datensatz.
+- Verwendet dieselbe Mtask-Logik wie im PE2-Skript.
+- Ist robust gegenüber:
+    * True/False
+    * Yes/No
+    * Multiple-Choice (multiple_choice_targets + targets)
+- Speichert Accuracy + Einzelergebnisse als JSON mit Timestamp & Dataset-Info.
+"""
+
+from __future__ import annotations
+
+import os
+import json
+from pathlib import Path
+from dataclasses import dataclass, field
+from typing import List, Dict, Any, Optional
+from datetime import datetime
+
+from dotenv import load_dotenv
+from openai import OpenAI
+
+load_dotenv()
+
+# =========================================================
+# Logging Helpers (wie im PE2-Skript)
+# =========================================================
+
+def log_header(title: str):
+    print("\n" + "=" * 80)
+    print(f"🔵 {title}")
+    print("=" * 80)
+
+
+def log_sub(title: str):
+    print(f"\n--- {title} ---")
+
+
+def log_line(msg: str):
+    print(f"  • {msg}")
+
+
+# =========================================================
+# Datentypen (erweitert um choices, kompatibel zu PE2)
+# =========================================================
+
+@dataclass
+class Example:
+    input: str
+    label: str
+    choices: Optional[List[str]] = None  # z.B. multiple_choice_targets
+
+
+@dataclass
+class PromptCandidate:
+    prompt: str
+    accuracy: float = 0.0
+    eval_results: List[Dict[str, Any]] = field(default_factory=list)
+
+
+# =========================================================
+# OpenAI-Client
+# =========================================================
+
+def get_client() -> OpenAI:
+    """
+    Erwartet einen OpenAI-Key in der Umgebungsvariable OPENAI_API_KEY,
+    oder du trägst ihn hier direkt ein.
+    """
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError(
+            "Bitte setze OPENAI_API_KEY in der Umgebung "
+            "oder trage den Key direkt in get_client() ein."
+        )
+    return OpenAI(api_key=api_key)
+
+
+# =========================================================
+# Hilfsfunktion: Antworten/Labels normalisieren
+# =========================================================
+
+def normalize_answer(text: str) -> str:
+    """
+    Normalisiert Modellantworten und Labels, um verschiedene Schreibweisen
+    robuster vergleichen zu können.
+
+    - trimmt Whitespace
+    - entfernt einfache Satzzeichen am Ende
+    - macht lower()
+    - mappt True/False und Yes/No auf gemeinsame Repräsentation
+    """
+    if text is None:
+        return ""
+
+    t = str(text).strip()
+
+    # ganz einfache Endzeichen weg (z.B. "True." -> "True")
+    if t.endswith((".", "!", "?")):
+        t = t[:-1]
+
+    t = t.strip().lower()
+
+    # Booleans vereinheitlichen
+    bool_map = {
+        "true": "bool_true",
+        "yes": "bool_true",
+        "y": "bool_true",
+        "false": "bool_false",
+        "no": "bool_false",
+        "n": "bool_false",
+    }
+    if t in bool_map:
+        return bool_map[t]
+
+    return t
+
+
+# =========================================================
+# Mtask: Prompt auf Datensatz evaluieren
+# =========================================================
+
+def run_mtask_on_dataset(
+    candidate_prompt: str,
+    dataset: List[Example],
+    model: str = "gpt-4o-mini",
+    system_message: Optional[str] = None,
+) -> PromptCandidate:
+    """
+    Evaluiert einen Prompt auf einem Datensatz.
+    Gibt einen PromptCandidate mit Accuracy und detaillierten Ergebnissen zurück.
+    """
+    log_sub("Evaluating prompt with Mtask (Zero-Shot)")
+    log_line(f"Prompt (first 100 chars): {candidate_prompt[:100]}...")
+
+    client = get_client()
+    eval_results: List[Dict[str, Any]] = []
+    correct = 0
+
+    for idx, ex in enumerate(dataset):
+        # User-Query: Prompt + Input
+        user_content = f"{candidate_prompt}\n\n{ex.input}"
+
+        messages = []
+        if system_message:
+            messages.append({"role": "system", "content": system_message})
+        messages.append({"role": "user", "content": user_content})
+
+        resp = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            temperature=0.0,
+        )
+
+        answer_raw = (resp.choices[0].message.content or "").strip()
+        gold_raw = ex.label.strip()
+
+        # Normalisierung für robusteren Vergleich (True/False vs Yes/No etc.)
+        answer_norm = normalize_answer(answer_raw)
+        gold_norm = normalize_answer(gold_raw)
+
+        judgement = (answer_norm == gold_norm)
+        if judgement:
+            correct += 1
+
+        record: Dict[str, Any] = {
+            "Index": idx,
+            "Input": ex.input,
+            "correctAnswer": gold_raw,
+            "MbaseAnswer": answer_raw,
+            "judgement": judgement,
+        }
+
+        # Falls Multiple-Choice-Optionen vorhanden sind, mit ins Ergebnis schreiben
+        if ex.choices is not None:
+            record["choices"] = ex.choices
+
+        eval_results.append(record)
+
+        log_line(
+            f"Example {idx}: model={answer_raw} (norm={answer_norm}), "
+            f"gold={gold_raw} (norm={gold_norm}), ok={judgement}"
+        )
+
+    accuracy = correct / len(dataset) if dataset else 0.0
+    log_line(f"Accuracy = {accuracy:.4f}")
+
+    return PromptCandidate(
+        prompt=candidate_prompt,
+        accuracy=accuracy,
+        eval_results=eval_results,
+    )
+
+
+# =========================================================
+# Dataset laden (robuster für verschiedene Formate)
+# =========================================================
+
+def load_dataset(path: str) -> list[Example]:
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+    dataset: List[Example] = []
+
+    for item in raw:
+        # Input-Feld finden
+        inp = (
+            item.get("input")
+            or item.get("inputs")
+            or item.get("Input")
+            or item.get("instruction")
+            or item.get("question")
+            or None
+        )
+
+        # Label-Feld finden:
+        # - label
+        # - targets[0] (z.B. BigBench: korrektes multiple choice Target)
+        # - correctAnswer
+        # - answer
+        # - output
+        label = (
+            item.get("label")
+            or (
+                item.get("targets")[0]
+                if isinstance(item.get("targets"), list) and item.get("targets")
+                else None
+            )
+            or item.get("correctAnswer")
+            or item.get("answer")
+            or item.get("output")
+            or None
+        )
+
+        # Multiple-Choice-Optionen (falls vorhanden)
+        choices = None
+        mct = item.get("multiple_choice_targets") or item.get("choices")
+        if isinstance(mct, list) and mct:
+            choices = [str(c) for c in mct]
+
+        if inp is None or label is None:
+            print("⚠️ Warnung: Item konnte nicht geladen werden:", item)
+            continue
+
+        dataset.append(
+            Example(
+                input=str(inp),
+                label=str(label),
+                choices=choices,
+            )
+        )
+
+    return dataset
+
+
+# =========================================================
+# Zero-Shot Evaluation Wrapper
+# =========================================================
+
+def zero_shot_evaluate(
+    dataset: List[Example],
+    prompt: str,
+    model_name: str = "gpt-4o-mini",
+    system_message: Optional[str] = None,
+) -> Dict[str, Any]:
+    """
+    Führt eine einfache Zero-Shot-Evaluation durch:
+    Ein Prompt, einmal über den ganzen Datensatz, kein Prompt-Update.
+    Nutzt intern run_mtask_on_dataset (wie PE2 Mtask).
+    """
+    candidate = run_mtask_on_dataset(
+        candidate_prompt=prompt,
+        dataset=dataset,
+        model=model_name,
+        system_message=system_message,
+    )
+
+    return {
+        "prompt": candidate.prompt,
+        "accuracy": candidate.accuracy,
+        "results": candidate.eval_results,
+    }
+
+
+# =========================================================
+# Ergebnis in JSON speichern (an PE2 angelehnt)
+# =========================================================
+
+def save_run_to_json(
+    output_path: Path,
+    *,
+    dataset_path: str,
+    dataset_size: int,
+    config: Dict[str, Any],
+    result: Dict[str, Any],
+):
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        "timestamp": datetime.now().isoformat(),
+        "dataset": {
+            "path": dataset_path,
+            "num_examples": dataset_size,
+        },
+        "config": config,
+        "result": result,
+    }
+
+    output_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    log_header(f"Saved Zero-Shot run to JSON: {output_path}")
+
+
+# =========================================================
+# Nutzung / Main
+# =========================================================
+
+if __name__ == "__main__":
+    dataset_name = "navigate_200"
+    dataset_size = "40"
+    dataset_name_split = dataset_name.split("_")[0]
+    # Pfad zum Dataset – analog zu den anderen Skripten
+    dataset_path = f"{dataset_name}/dataset_random/{dataset_name_split}_{dataset_size}_test.json"  # <- bei Bedarf anpassen
+
+    log_header("Loading dataset")
+    dataset = load_dataset(dataset_path)
+    log_line(f"Loaded {len(dataset)} examples")
+
+    # Zero-Shot Prompt
+    # Hinweis:
+    # - Für True/False- oder Yes/No-Datensätze kannst du denselben Prompt nutzen,
+    #   weil die Normalisierung True/False <-> Yes/No abgleicht.
+    # - Falls ein Datensatz explizit "Yes/No" verlangt, kannst du den Prompt
+    #   natürlich auch entsprechend anpassen.
+    zero_shot_prompt = (
+        'You MUST answer with exactly one string: either "True" or "False". '
+        'Do not output explanations, punctuation, or additional text. '
+        '"True" = you return to the starting point. '
+        '"False" = you do not return to the starting point.\n\n'
+        'Now answer the following question with "True" or "False":'
+    )
+
+    # Optional: separates system_message
+    system_message_task = None
+
+    # Konfiguration wie bei PE2, nur schlanker
+    model_name = "gpt-4o-mini"
+
+    config = {
+        "prompt": zero_shot_prompt,
+        "model_name": model_name,
+        "system_message_snippet": (system_message_task or "")[:200],
+        "mode": "zero-shot",
+    }
+
+    # Zero-Shot Evaluation ausführen
+    log_header("Running Zero-Shot Evaluation")
+    result = zero_shot_evaluate(
+        dataset=dataset,
+        prompt=zero_shot_prompt,
+        model_name=model_name,
+        system_message=system_message_task,
+    )
+
+    # Konsole: Zusammenfassung
+    print("\n\n========= ZERO-SHOT RESULT =========")
+    print("Prompt:\n")
+    print(result["prompt"])
+    print("\nAccuracy:", result["accuracy"])
+
+    print("\nExamples (first 5):")
+    for rec in result["results"][:5]:
+        choices_info = ""
+        if "choices" in rec and rec["choices"] is not None:
+            choices_info = f" | choices={rec['choices']}"
+        print(
+            f"[{rec['Index']}] acc={rec['judgement']} | "
+            f"gold={rec['correctAnswer']} | model={rec['MbaseAnswer']}{choices_info}"
+        )
+
+    # JSON speichern (analog zu pe2_results/…)
+    results_dir = Path(f"{dataset_name}/zero_shot_results")
+    timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_file = results_dir / f"zeroshot_eval_{timestamp_str}.json"
+
+    save_run_to_json(
+        output_path=output_file,
+        dataset_path=dataset_path,
+        dataset_size=len(dataset),
+        config=config,
+        result=result,
+    )

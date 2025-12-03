@@ -1,0 +1,210 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract(23, 1)\n choice:21\n choice:25\n choice:22\n choice:17\n choice:24\nA:",
+    "targets": [
+      "22"
+    ],
+    "multiple_choice_targets": [
+      "17",
+      "22",
+      "21",
+      "24",
+      "25"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2157
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:excluding the stoppages , the speed of a bus is 64 km / hr and including the stoppages the speed o the bus is 48 km / hr . for how many minutes does the bus stop per hour ?\ndivide 48 by 64, multiply result by 60, subtract result from 60.\n choice:22\n choice:91\n choice:28\n choice:15\n choice:77\nA:",
+    "targets": [
+      "15"
+    ],
+    "multiple_choice_targets": [
+      "22",
+      "15",
+      "77",
+      "28",
+      "91"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5035
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 1000 to 180, divide result by 3600, multiply result by 8,\n choice:288\n choice:88\n choice:400\n choice:150\n choice:480\nA:",
+    "targets": [
+      "400"
+    ],
+    "multiple_choice_targets": [
+      "150",
+      "88",
+      "480",
+      "288",
+      "400"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2346
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:m and n are the x and y coordinates , respectively , of a point in the coordinate plane . if the points ( m , n ) and ( m + p , n + 21 ) both lie on the line defined by the equation x = ( y / 7 ) - ( 2 / 5 ) , what is the value of p ?\ndivide 21 by 7,\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+    "targets": [
+      "3"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 37
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 5 by 3, divide 3 by 2, and then subtract both. divide 20 by the result.\n choice:$ 120\n choice:$ 180\n choice:$ 140\n choice:$ 100\n choice:$ 160\nA:",
+    "targets": [
+      "$ 120"
+    ],
+    "multiple_choice_targets": [
+      "$ 100",
+      "$ 120",
+      "$ 140",
+      "$ 160",
+      "$ 180"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1457
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 48 from 64,  divide result by 64, multiply result by 100,\n choice:25 %\n choice:52 %\n choice:32 %\n choice:16 %\n choice:40 %\nA:",
+    "targets": [
+      "25 %"
+    ],
+    "multiple_choice_targets": [
+      "16 %",
+      "25 %",
+      "32 %",
+      "40 %",
+      "52 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 217
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(add(250, 200), 2)\n choice:150\n choice:50\n choice:200\n choice:115\n choice:225\nA:",
+    "targets": [
+      "225"
+    ],
+    "multiple_choice_targets": [
+      "200",
+      "225",
+      "50",
+      "115",
+      "150"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 228
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:what is the dividend . divisor 14 , the quotient is 9 and the remainder is 5 ?\nmultiply 9 to 14, add result to 5,\n choice:131\n choice:160\n choice:148\n choice:130\n choice:158\nA:",
+    "targets": [
+      "131"
+    ],
+    "multiple_choice_targets": [
+      "130",
+      "131",
+      "148",
+      "158",
+      "160"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 620
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:in an election between two candidates , the first candidate got 80 % of the votes and the second candidate got 240 votes . what was the total number of votes ?\nmultiply 100 to 240, subtract 80 from 100,  and then divide both.\n choice:1500\n choice:900\n choice:1800\n choice:1200\n choice:600\nA:",
+    "targets": [
+      "1200"
+    ],
+    "multiple_choice_targets": [
+      "600",
+      "900",
+      "1200",
+      "1500",
+      "1800"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 2900
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:pipe a can fill a tank in 16 minutes and pipe b cam empty it in 24 minutes . if both the pipes are opened together after how many minutes should pipe b be closed , so that the tank is filled in 30 minutes ?\nmultiply(subtract(divide(30, 16), 1), 24)\n choice:21\n choice:98\n choice:18\n choice:27\nA:",
+    "targets": [
+      "21"
+    ],
+    "multiple_choice_targets": [
+      "18",
+      "27",
+      "98",
+      "21"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2847
+  }
+]
