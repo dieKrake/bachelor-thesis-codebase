@@ -1,0 +1,424 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(divide(subtract(42, 6), 4), 3)\n choice:27\n choice:36\n choice:30\n choice:24\n choice:33\nA:",
+    "targets": [
+      "27"
+    ],
+    "multiple_choice_targets": [
+      "24",
+      "27",
+      "30",
+      "33",
+      "36"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1640
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:if a trader sold two cars each at rs . 325475 and gains 13 % on the first and loses 13 % on the second , then his profit or loss percent on the whole is ?\n choice:1.47 %\n choice:1.84 %\n choice:1.69 %\n choice:1.24 %\n choice:1.74 %\nA:",
+    "targets": [
+      "1.69 %"
+    ],
+    "multiple_choice_targets": [
+      "1.69 %",
+      "1.74 %",
+      "1.84 %",
+      "1.47 %",
+      "1.24 %"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2407
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:75 boys can complete a work in 26 days . how many men need to complete twice the work in 20 days\nmultiply 2 to 26, multiply 75 by the result. divide result by 20,\n choice:180\n choice:200\n choice:190\n choice:160\n choice:195\nA:",
+    "targets": [
+      "195"
+    ],
+    "multiple_choice_targets": [
+      "160",
+      "195",
+      "180",
+      "190",
+      "200"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5616
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:elvin ' s monthly telephone bill is the sum of the charge for the calls he made during the month and a fixed monthly charge for internet service . elvin ' s total telephone bill for january was $ 52 and elvin ' s total telephone bill for february was 76 $ . if elvin ' s charge for the calls he made in february was twice the charge for the calls he made in january , what is elvin ' s fixed monthly charge for internet service ?\nmultiply 2 to 52, subtract 76 from result,\n choice:$ 14\n choice:$ 5\n choice:$ 28\n choice:$ 10\n choice:$ 29\nA:",
+    "targets": [
+      "$ 28"
+    ],
+    "multiple_choice_targets": [
+      "$ 5",
+      "$ 10",
+      "$ 14",
+      "$ 28",
+      "$ 29"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 5073
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:x is 3 times as fast as y and working together , they can complete a work in 20 days . in how many days can y alone complete the work ?\n choice:13 days\n choice:80 days\n choice:15 days\n choice:11 days\n choice:19 days\nA:",
+    "targets": [
+      "80 days"
+    ],
+    "multiple_choice_targets": [
+      "11 days",
+      "80 days",
+      "13 days",
+      "15 days",
+      "19 days"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2138
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:jane started baby - sitting when she was 18 years old . whenever she baby - sat for a child , that child was no more than half her age at the time . jane is currently 34 years old , and she stopped baby - sitting 12 years ago . what is the current age of the oldest person for whom jane could have baby - sat ?\n choice:21\n choice:25\n choice:22\n choice:20\n choice:23\nA:",
+    "targets": [
+      "25"
+    ],
+    "multiple_choice_targets": [
+      "20",
+      "21",
+      "22",
+      "23",
+      "25"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2783
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:. star question : if f ( 1 ) = 4 and f ( x + y ) = f ( x ) + f ( y ) + 7 xy + 4 , then f ( 2 ) + f ( 5 ) = ?\nmultiply(5, multiply(5, 5))\n choice:111\n choice:977\n choice:125\n choice:1077\n choice:289\nA:",
+    "targets": [
+      "125"
+    ],
+    "multiple_choice_targets": [
+      "125",
+      "977",
+      "289",
+      "1077",
+      "111"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 375
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:18 chess players take part in a tournament . every player plays twice with each of his opponents . how many games are to be played ?\nmultiply(18, subtract(18, 1))\n choice:274\n choice:424\n choice:306\n choice:230\n choice:354\nA:",
+    "targets": [
+      "306"
+    ],
+    "multiple_choice_targets": [
+      "230",
+      "274",
+      "306",
+      "354",
+      "424"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 3834
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a car traveled 80 % of the way from town x to town y at an average speed of 80 mph . the car traveled at an average speed of v mph for the remaining part of the trip . the average speed for the entire trip was 50 mph . what is v in mph ?\ndivide(subtract(100, 80), divide(80, 80))\n choice:25\n choice:55\n choice:35\n choice:20\n choice:45\nA:",
+    "targets": [
+      "20"
+    ],
+    "multiple_choice_targets": [
+      "25",
+      "35",
+      "45",
+      "55",
+      "20"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 3292
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 627 by 1000, add 3.75 to 4.5, and then divide both. multiply result by 60,\n choice:5.08 min\n choice:9.28 min\n choice:5.28 min\n choice:4.56 min\n choice:5.988 min\nA:",
+    "targets": [
+      "4.56 min"
+    ],
+    "multiple_choice_targets": [
+      "4.56 min",
+      "5.28 min",
+      "5.08 min",
+      "9.28 min",
+      "5.988 min"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 5048
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:there is a right angle triangle inside a circle of diameter 18 cm . inside this triangle , there is another circle of diameter 6 cm . find the perimeter of the triangle .\n choice:' 36 cm'\n choice:[' 24 cm'\n choice:' 42 cm']\n choice:' 36 * 2 ^ 1 / 2 cm'\n choice:' 54 cm'\nA:",
+    "targets": [
+      "' 42 cm']"
+    ],
+    "multiple_choice_targets": [
+      "[' 24 cm'",
+      "' 36 * 2 ^ 1 / 2 cm'",
+      "' 36 cm'",
+      "' 54 cm'",
+      "' 42 cm']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 469
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:when a train travels at a speed of 100 kmph , it reaches the destination on time . when the same train travels at a speed of 50 kmph , it reaches its destination 15 min late . what is the length of journey ?\n choice:50 km\n choice:95 km\n choice:60 km\n choice:15 km\n choice:85 km\nA:",
+    "targets": [
+      "15 km"
+    ],
+    "multiple_choice_targets": [
+      "15 km",
+      "50 km",
+      "60 km",
+      "85 km",
+      "95 km"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 363
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if p and q are positive integers each greater than 1 , and 17 ( p + 1 ) = 25 ( q + 1 ) , what is the least possible value of p + q ?\nadd 17 to 25, subtract 2 from result,\n choice:40\n choice:none\n choice:42\n choice:36\n choice:46\nA:",
+    "targets": [
+      "40"
+    ],
+    "multiple_choice_targets": [
+      "36",
+      "42",
+      "40",
+      "46",
+      "none"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5649
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a sports retailer ordered white and yellow tennis balls in equal number but the dispatch clerk of the tennis ball company erred and dispatched 90 extra yellow balls and making ratio of white balls to yellow balls 8 / 13 . how many tennis balls did the retailer order originally .\n choice:140\n choice:288\n choice:160\n choice:130\n choice:180\nA:",
+    "targets": [
+      "288"
+    ],
+    "multiple_choice_targets": [
+      "180",
+      "130",
+      "140",
+      "160",
+      "288"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2770
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:if the selling price of 100 articles is equal to the cost price of 40 articles , then the loss or gain percent is :\n choice:40 %\n choice:65 %\n choice:50 %\n choice:25 %\n choice:60 %\nA:",
+    "targets": [
+      "60 %"
+    ],
+    "multiple_choice_targets": [
+      "25 %",
+      "40 %",
+      "60 %",
+      "65 %",
+      "50 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 2899
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 60 to 3, multiply result by 60,\n choice:12788\n choice:3488\n choice:1800\n choice:10800\n choice:2881\nA:",
+    "targets": [
+      "10800"
+    ],
+    "multiple_choice_targets": [
+      "3488",
+      "10800",
+      "12788",
+      "1800",
+      "2881"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 3228
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 22 to 3.5, subtract result from 134. add result to 3.5,\n choice:40\n choice:60.5\n choice:52\n choice:36\n choice:55\nA:",
+    "targets": [
+      "60.5"
+    ],
+    "multiple_choice_targets": [
+      "40",
+      "60.5",
+      "52",
+      "55",
+      "36"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2677
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:there are two tanks a & b with same capacity of 20 litres . if the water inflow rate ( speed ) in tank a is 2 litres per hour & in tank b is 4 litres per hour . how much longer tank a takes to fill than tank b ?\nsubtract(divide(20, 2), divide(20, 4))\n choice:2 hours\n choice:5 hours\n choice:3 hours\n choice:1 hour\n choice:4 hours\nA:",
+    "targets": [
+      "5 hours"
+    ],
+    "multiple_choice_targets": [
+      "4 hours",
+      "5 hours",
+      "3 hours",
+      "2 hours",
+      "1 hour"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 6106
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:income and expenditure of a person are in the ratio 10 : 4 . if the income of the person is rs . 19000 , then find his savings ?\n choice:59875\n choice:87689\n choice:79754\n choice:11400\n choice:87648\nA:",
+    "targets": [
+      "11400"
+    ],
+    "multiple_choice_targets": [
+      "79754",
+      "87689",
+      "59875",
+      "11400",
+      "87648"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4435
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 800 from 1800,  divide result by 2,\n choice:$ 1\n choice:$ 200\n choice:200\n choice:$ 500\n choice:$ 800\n choice:$ 600\nA:",
+    "targets": [
+      "$ 500"
+    ],
+    "multiple_choice_targets": [
+      "$ 200",
+      "$ 500",
+      "$ 600",
+      "$ 800",
+      "$ 1",
+      "200"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 4316
+  }
+]

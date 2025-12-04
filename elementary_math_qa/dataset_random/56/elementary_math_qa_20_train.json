@@ -1,0 +1,420 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(multiply(1000, 210), multiply(35, 30))\n choice:' 200'\n choice:[' 600'\n choice:' 400'\n choice:' 100']\n choice:' 500'\nA:",
+    "targets": [
+      "' 200'"
+    ],
+    "multiple_choice_targets": [
+      "[' 600'",
+      "' 400'",
+      "' 200'",
+      "' 500'",
+      "' 100']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1059
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the average height of 20 students in a class was calculated as 175 cm . it has later found that the height of one of the students in the class was incorrectly written as 151 cm whereas the actual height was 111 cm . what was the actual average height of the students in the class ?\n choice:171 cm\n choice:174 cm\n choice:172 cm\n choice:170 cm\n choice:173 cm\nA:",
+    "targets": [
+      "173 cm"
+    ],
+    "multiple_choice_targets": [
+      "174 cm",
+      "173 cm",
+      "172 cm",
+      "171 cm",
+      "170 cm"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4665
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:amar takes as much time in running 18 meters as a car takes in covering 48 meters . what will be the distance covered by amar during the time the car covers 1.6 km ?\n choice:400 m\n choice:700 m\n choice:500 m\n choice:300 m\n choice:600 m\nA:",
+    "targets": [
+      "600 m"
+    ],
+    "multiple_choice_targets": [
+      "600 m",
+      "300 m",
+      "400 m",
+      "700 m",
+      "500 m"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2991
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(4, 4)\n choice:' 6 : 1'\n choice:[' 4 : 1'\n choice:' 64 : 1']\n choice:' 16 : 1'\n choice:' 8 : 1'\nA:",
+    "targets": [
+      "' 16 : 1'"
+    ],
+    "multiple_choice_targets": [
+      "[' 4 : 1'",
+      "' 6 : 1'",
+      "' 8 : 1'",
+      "' 16 : 1'",
+      "' 64 : 1']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 58
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if the number is decreased by 5 and divided by 7 the result is 7 . what would be the result if 4 is subtracted and divided by 10 ?\ndivide(subtract(add(multiply(7, 7), 5), 4), 10)\n choice:4\n choice:8\n choice:5\n choice:3\n choice:7\nA:",
+    "targets": [
+      "5"
+    ],
+    "multiple_choice_targets": [
+      "4",
+      "7",
+      "8",
+      "5",
+      "3"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 6129
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:linda spent 5 / 6 of her savings on furniture and the rest on a tv . if the tv cost her $ 500 , what were her original savings ?\n choice:$ 6000\n choice:$ 9000\n choice:$ 7000\n choice:$ 3000\n choice:$ 8000\nA:",
+    "targets": [
+      "$ 3000"
+    ],
+    "multiple_choice_targets": [
+      "$ 9000",
+      "$ 3000",
+      "$ 6000",
+      "$ 7000",
+      "$ 8000"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1095
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:albert buys 4 horses and 9 cows for rs . 13,400 . if he sells the horses at 10 % profit and the cows at 20 % profit , then he earns a total profit of rs . 1880 . the cost of a horse is ?\nmultiply(20, 100)\n choice:2000\n choice:2981\n choice:2788\n choice:1299\n choice:2881\nA:",
+    "targets": [
+      "2000"
+    ],
+    "multiple_choice_targets": [
+      "1299",
+      "2788",
+      "2000",
+      "2981",
+      "2881"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4324
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the average salary of a person for the months of january , february , march and april is rs . 8000 and that for the months february , march , april and may is rs . 8300 . if his salary for the month of may is rs . 6500 , find his salary for the month of january ?\n choice:2876\n choice:6711\n choice:4500\n choice:2177\n choice:5300\nA:",
+    "targets": [
+      "5300"
+    ],
+    "multiple_choice_targets": [
+      "2177",
+      "2876",
+      "4500",
+      "5300",
+      "6711"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1263
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a student took 5 papers in an examination , where the full marks were the same for each paper . his marks in these papers were in the proportion of 5 : 6 : 7 : 8 : 9 . in all papers together , the candidate obtained 60 % of the total marks . then the number of papers in which he got more than 50 % marks is\nadd 4 to 1,\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+    "targets": [
+      "5"
+    ],
+    "multiple_choice_targets": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "1"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 5414
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the perimeter of an equilateral triangle is 60 . if one of the sides of the equilateral triangle is the side of an isosceles triangle of perimeter 70 , then how long is the base of isosceles triangle ?\n choice:20\n choice:35\n choice:25\n choice:15\n choice:30\nA:",
+    "targets": [
+      "30"
+    ],
+    "multiple_choice_targets": [
+      "15",
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1214
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 12 to 3, divide 375 by the result. multiply result by 3,\n choice:154\n choice:75\n choice:42\n choice:112\n choice:66\nA:",
+    "targets": [
+      "75"
+    ],
+    "multiple_choice_targets": [
+      "42",
+      "66",
+      "75",
+      "112",
+      "154"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4692
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(210, subtract(1, divide(3, 4)))\n choice:$ 1500\n choice:$ 840\n choice:$ 700\n choice:$ 1000\n choice:$ 800\nA:",
+    "targets": [
+      "$ 840"
+    ],
+    "multiple_choice_targets": [
+      "$ 840",
+      "$ 800",
+      "$ 1000",
+      "$ 700",
+      "$ 1500"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 3365
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:i have 150 pieces of cake . there are 50 friends in my house . i would like to give each friend the same amount of cake , how much should i give to each friend ?\ndivide 150 by 50,\n choice:15\n choice:9\n choice:3\n choice:12\n choice:7\nA:",
+    "targets": [
+      "3"
+    ],
+    "multiple_choice_targets": [
+      "12",
+      "7",
+      "9",
+      "15",
+      "3"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 4386
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract(multiply(7, 3), 2)\n choice:21\n choice:27\n choice:23\n choice:19\n choice:25\nA:",
+    "targets": [
+      "19"
+    ],
+    "multiple_choice_targets": [
+      "19",
+      "21",
+      "23",
+      "25",
+      "27"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 4803
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:the difference between the two numbers is 1 / 3 of the larger number . if the smaller one is 48 the larger one is\ndivide(48, subtract(1, divide(1, 3)))\n choice:60\n choice:96\n choice:65\n choice:32\n choice:72\nA:",
+    "targets": [
+      "72"
+    ],
+    "multiple_choice_targets": [
+      "72",
+      "60",
+      "32",
+      "96",
+      "65"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 587
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(12, divide(20, subtract(16, 12)))\n choice:60\n choice:70\n choice:61\n choice:50\n choice:65\nA:",
+    "targets": [
+      "60"
+    ],
+    "multiple_choice_targets": [
+      "50",
+      "65",
+      "70",
+      "61",
+      "60"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2657
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 5 to 2, divide 35 by the result. multiply 5 by the result.\n choice:30\n choice:9\n choice:45\n choice:25\n choice:5\nA:",
+    "targets": [
+      "25"
+    ],
+    "multiple_choice_targets": [
+      "5",
+      "9",
+      "25",
+      "30",
+      "45"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 2119
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 60 from 150,  divide result by 5, subtract result from 60.\n choice:46\n choice:50\n choice:47\n choice:42\n choice:49\nA:",
+    "targets": [
+      "42"
+    ],
+    "multiple_choice_targets": [
+      "46",
+      "47",
+      "42",
+      "49",
+      "50"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1673
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if a boat is rowed downstream for 500 km in 5 hours and upstream for 240 km in 6 hours , what is the speed of the boat and the river ?\ndivide 240 by 6, divide 500 by 5, and then add both. divide result by 2,\n choice:50\n choice:80\n choice:30\n choice:70\nA:",
+    "targets": [
+      "70"
+    ],
+    "multiple_choice_targets": [
+      "70",
+      "30",
+      "80",
+      "50"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5542
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(divide(140, 14), 3)\n choice:30\n choice:37\n choice:33\n choice:27\n choice:35\nA:",
+    "targets": [
+      "30"
+    ],
+    "multiple_choice_targets": [
+      "30",
+      "27",
+      "35",
+      "33",
+      "37"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 3009
+  }
+]

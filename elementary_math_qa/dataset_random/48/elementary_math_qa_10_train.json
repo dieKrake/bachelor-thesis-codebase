@@ -1,0 +1,214 @@
+[
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if p ( a ) = 2 / 15 , p ( b ) = 4 / 15 , and p ( a â ˆ ª b ) = 6 / 15 find p ( b | a )\ndivide(divide(6, 15), divide(2, 15))\n choice:2 / 3\n choice:4 / 7\n choice:3\n choice:1 / 2\n choice:4 / 5\nA:",
+    "targets": [
+      "3"
+    ],
+    "multiple_choice_targets": [
+      "1 / 2",
+      "2 / 3",
+      "3",
+      "4 / 5",
+      "4 / 7"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 2608
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 1.5 to 2, subtract result from 15.\n choice:11\n choice:12.5\n choice:11.5\n choice:10.5\n choice:12\nA:",
+    "targets": [
+      "12"
+    ],
+    "multiple_choice_targets": [
+      "10.5",
+      "11",
+      "11.5",
+      "12",
+      "12.5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4938
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a train 100 m long can cross an electric pole in 20 sec and then find the speed of the train ?\ndivide(divide(100, 1000), divide(20, 3600))\n choice:18 kmph\n choice:91 kmph\n choice:19 kmph\n choice:17 kmph\n choice:72 kmph\nA:",
+    "targets": [
+      "18 kmph"
+    ],
+    "multiple_choice_targets": [
+      "19 kmph",
+      "18 kmph",
+      "72 kmph",
+      "17 kmph",
+      "91 kmph"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4204
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:if a person walks at 12 km / hr instead of 10 km / hr , he would have walked 20 km more . the actual distance traveled by him is :\n choice:50 km\n choice:80 km\n choice:60 km\n choice:100 km\n choice:70 km\nA:",
+    "targets": [
+      "100 km"
+    ],
+    "multiple_choice_targets": [
+      "50 km",
+      "100 km",
+      "60 km",
+      "70 km",
+      "80 km"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5631
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add(15, 1)\n choice:11\n choice:16\n choice:12\n choice:10\n choice:14\nA:",
+    "targets": [
+      "16"
+    ],
+    "multiple_choice_targets": [
+      "10",
+      "11",
+      "12",
+      "16",
+      "14"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2836
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the h . c . f . of two numbers is 16 and the other two factors of their l . c . m . are 13 and 14 . the larger of the two numbers is :\n choice:276\n choice:365\n choice:299\n choice:224\n choice:345\nA:",
+    "targets": [
+      "224"
+    ],
+    "multiple_choice_targets": [
+      "276",
+      "299",
+      "224",
+      "345",
+      "365"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4720
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 10 to 100, subtract 50 from result, add result to 10, divide result by 10,\n choice:82\n choice:96\n choice:85\n choice:78\n choice:91\nA:",
+    "targets": [
+      "96"
+    ],
+    "multiple_choice_targets": [
+      "78",
+      "82",
+      "96",
+      "91",
+      "85"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5068
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a certain number of men can do a work in 40 days . if there were 5 men less it could be finished in 10 days more . how many men are there ?\ndivide(multiply(add(40, 10), 5), 10)\n choice:14 men\n choice:25 men\n choice:15 men\n choice:12 men\n choice:18 men\nA:",
+    "targets": [
+      "25 men"
+    ],
+    "multiple_choice_targets": [
+      "15 men",
+      "25 men",
+      "18 men",
+      "12 men",
+      "14 men"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 776
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a bag making machine can make 20 bags per hour . if the company adjusts the machine to produce twice the amount per hour to satisfy expected rise in demand . how many bags can the machine make in the next 5 days if it works 10 hours a day ?\n choice:000\n choice:1\n choice:500\n choice:2\n choice:50\n choice:400\nA:",
+    "targets": [
+      "2"
+    ],
+    "multiple_choice_targets": [
+      "2",
+      "000",
+      "1",
+      "400",
+      "50",
+      "500"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 253
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:( x + 5 ) is a factor in x ^ 2 - mx - 40 . what is the value of m ?\ndivide 40 by 5, subtract 5 from result,\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+    "targets": [
+      "3"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "2",
+      "4",
+      "3",
+      "5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 3219
+  }
+]

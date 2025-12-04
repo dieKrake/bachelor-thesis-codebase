@@ -1,0 +1,842 @@
+[
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a man can row upstream at 7 kmph and downstream at 33 kmph , and then find the speed of the man in still water ?\nadd 33 to 7, divide result by 2,\n choice:20\n choice:77\n choice:30\n choice:11\n choice:34\nA:",
+    "targets": [
+      "20"
+    ],
+    "multiple_choice_targets": [
+      "11",
+      "77",
+      "30",
+      "20",
+      "34"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 3004
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:two cyclist start from the same places in opposite directions . one is going towards north at 10 kmph and the other is going towards south 15 kmph . what time will they take to be 50 km apart ?\n choice:2 hrs\n choice:6 hrs\n choice:3 hrs\n choice:1 hr\n choice:5 hrs\nA:",
+    "targets": [
+      "2 hrs"
+    ],
+    "multiple_choice_targets": [
+      "1 hr",
+      "2 hrs",
+      "3 hrs",
+      "5 hrs",
+      "6 hrs"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5628
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 3 to 2, add result to 4, divide 3 by the result. multiply result by 5400,\n choice:$ 1600\n choice:$ 2500\n choice:$ 1800\n choice:$ 1500\n choice:$ 2000\nA:",
+    "targets": [
+      "$ 1800"
+    ],
+    "multiple_choice_targets": [
+      "$ 2000",
+      "$ 1800",
+      "$ 2500",
+      "$ 1500",
+      "$ 1600"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4205
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the distance from the x - axis to point p is half the distance from the y - axis to point p . if the coordinates of p are ( x , - 6 ) , how many units is p from the y - axis ?\n choice:12\n choice:9\n choice:3\n choice:10.5\n choice:6\nA:",
+    "targets": [
+      "12"
+    ],
+    "multiple_choice_targets": [
+      "3",
+      "6",
+      "9",
+      "10.5",
+      "12"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2791
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 900 by 100, add result to 1, divide 900 by the result.\n choice:50\n choice:90\n choice:60\n choice:40\n choice:70\nA:",
+    "targets": [
+      "90"
+    ],
+    "multiple_choice_targets": [
+      "50",
+      "40",
+      "60",
+      "90",
+      "70"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1440
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:in the manufacture of a certain product , 4 percent of the units produced are defective and 4 percent of the defective units are shipped for sale . what percent of the units produced are defective units that are shipped for sale ?\nmultiply(4, divide(4, 100))\n choice:0.16 %\n choice:2.0 %\n choice:0.2 %\n choice:0.125 %\n choice:1.25 %\nA:",
+    "targets": [
+      "0.16 %"
+    ],
+    "multiple_choice_targets": [
+      "0.125 %",
+      "0.2 %",
+      "0.16 %",
+      "1.25 %",
+      "2.0 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 3994
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:if the average ( arithmetic mean ) of a and b is 110 , and the average of b and c is 150 , what is the value of a − c ?\n choice:it can not be determined from the information given\n choice:− 80\n choice:− 100\n choice:100\n choice:− 220\nA:",
+    "targets": [
+      "− 80"
+    ],
+    "multiple_choice_targets": [
+      "− 220",
+      "− 100",
+      "100",
+      "− 80",
+      "it can not be determined from the information given"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2209
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a van takes 6 hours to cover a distance of 180 km . how much should the speed in kmph be maintained to cover the same direction in 3 / 2 th of the previous time ?\ndivide 3 by 2, multiply result by 6, divide 180 by the result.\n choice:50 kmph\n choice:80 kmph\n choice:60 kmph\n choice:20 kmph\n choice:70 kmph\nA:",
+    "targets": [
+      "20 kmph"
+    ],
+    "multiple_choice_targets": [
+      "50 kmph",
+      "60 kmph",
+      "70 kmph",
+      "80 kmph",
+      "20 kmph"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1356
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a pump can fill a tank with a water in 2 hours . because of a leak , it took 3 hours to fill the tank . the leak can drain all the water of the full tank in how many hours ?\n choice:3\n choice:6\n choice:4\n choice:2\n choice:5\nA:",
+    "targets": [
+      "6"
+    ],
+    "multiple_choice_targets": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2781
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if p ( a ) = 0.18 , p ( b ) = 0.5 and p ( b | a ) = 0.2 , find p ( a n b ) ?\nmultiply(multiply(0.18, 0.2), 10)\n choice:0.36\n choice:0.7\n choice:0.45\n choice:0.28\n choice:0.56\nA:",
+    "targets": [
+      "0.36"
+    ],
+    "multiple_choice_targets": [
+      "0.28",
+      "0.36",
+      "0.45",
+      "0.56",
+      "0.7"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5203
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 2 to 3, multiply result by 10, add 450 to the result.\n choice:500\n choice:600\n choice:525\n choice:475\n choice:550\nA:",
+    "targets": [
+      "500"
+    ],
+    "multiple_choice_targets": [
+      "475",
+      "600",
+      "550",
+      "500",
+      "525"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2623
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:uba capital recently bought brand new vehicles for office use . uba capital only went for toyota and honda and bought more of toyota than honda at the ratio of 6 : 4 . if 60 % of the toyota bought and 40 % of the honda bought were suv ã ¢ â ‚ ¬ â „ ¢ s . how many suv ã ¢ â ‚ ¬ â „ ¢ s did uba capital buy in the aforementioned purchase ?\nmultiply 4 to 6, multiply 6 to 4, and then add both. subtract result from 100.\n choice:64 %\n choice:72 %\n choice:66 %\n choice:52 %\n choice:68 %\nA:",
+    "targets": [
+      "52 %"
+    ],
+    "multiple_choice_targets": [
+      "66 %",
+      "64 %",
+      "68 %",
+      "52 %",
+      "72 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 5804
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a grocery store bought some apples at a rate of 5 for a dollar . they were separated into two stacks , one of which was sold at a rate of 3 for a dollar and the other at a rate of 6 for a dollar . what was the ratio of the number of apples in the two stacks if the store broke even after having sold all of its apples ?\ndivide 1 by 4,\n choice:1 : 4\n choice:2 : 5\n choice:1 : 5\n choice:1 : 2\n choice:1 : 7\nA:",
+    "targets": [
+      "1 : 4"
+    ],
+    "multiple_choice_targets": [
+      "1 : 7",
+      "1 : 5",
+      "1 : 4",
+      "1 : 2",
+      "2 : 5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5067
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a pair of articles was bought for $ 50 at a discount of 60 % . what must be the marked price of each of the article ?\n choice:$ 25\n choice:$ 45.62\n choice:$ 29.65\n choice:$ 10\n choice:$ 35.95\nA:",
+    "targets": [
+      "$ 10"
+    ],
+    "multiple_choice_targets": [
+      "$ 25",
+      "$ 10",
+      "$ 29.65",
+      "$ 35.95",
+      "$ 45.62"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2083
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the l . c . m of two numbers is 2310 and their h . c . f is 30 . if one number is 770 the other is\n choice:270\n choice:90\n choice:330\n choice:250\n choice:350\nA:",
+    "targets": [
+      "90"
+    ],
+    "multiple_choice_targets": [
+      "330",
+      "90",
+      "270",
+      "250",
+      "350"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1797
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the overall age of x and y is 18 year greater than the overall age of y and z . z is how many decades younger that x ?\n choice:12\n choice:18\n choice:15\n choice:11\n choice:17\nA:",
+    "targets": [
+      "18"
+    ],
+    "multiple_choice_targets": [
+      "11",
+      "15",
+      "12",
+      "17",
+      "18"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5798
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 14 by 14, add result to 3,\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+    "targets": [
+      "4"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 750
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(multiply(4, 3), 2)\n choice:15\n choice:6\n choice:20\n choice:10\n choice:4\nA:",
+    "targets": [
+      "6"
+    ],
+    "multiple_choice_targets": [
+      "4",
+      "6",
+      "10",
+      "15",
+      "20"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1663
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:find the area of a parallelogram with base 32 cm and height 22 cm ?\nmultiply 22 to 32,\n choice:284\n choice:920\n choice:640\n choice:281\n choice:704\nA:",
+    "targets": [
+      "704"
+    ],
+    "multiple_choice_targets": [
+      "281",
+      "284",
+      "704",
+      "640",
+      "920"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5525
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 6 to 0.75, divide result by 5,\n choice:1.12\n choice:none of these\n choice:1.16\n choice:0.9\n choice:1.2\nA:",
+    "targets": [
+      "0.9"
+    ],
+    "multiple_choice_targets": [
+      "1.12",
+      "1.16",
+      "1.2",
+      "0.9",
+      "none of these"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1269
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a student gets 60 % in one subject , 70 % in the other . to get an overall of 70 % how much should get in third subject .\nmultiply 3 to 70, add 70 to 60, and then subtract both.\n choice:55 %\n choice:80 %\n choice:65 %\n choice:45 %\n choice:75 %\nA:",
+    "targets": [
+      "80 %"
+    ],
+    "multiple_choice_targets": [
+      "75 %",
+      "80 %",
+      "45 %",
+      "55 %",
+      "65 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1099
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a , b and c started a business with capitals of rs . 8000 , rs . 10000 and rs . 12000 respectively . at the end of the year , the profit share of b is rs . 4000 . the difference between the profit shares of a and c is ?\n choice:211\n choice:621\n choice:236\n choice:1600\n choice:276\nA:",
+    "targets": [
+      "1600"
+    ],
+    "multiple_choice_targets": [
+      "621",
+      "276",
+      "236",
+      "1600",
+      "211"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2244
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(divide(subtract(100, 10), 100), multiply(0.15, 75))\n choice:$ 16.32\n choice:$ 28.80\n choice:$ 18.00\n choice:$ 10.125\n choice:$ 24.48\nA:",
+    "targets": [
+      "$ 10.125"
+    ],
+    "multiple_choice_targets": [
+      "$ 16.32",
+      "$ 18.00",
+      "$ 10.125",
+      "$ 24.48",
+      "$ 28.80"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5109
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:two cars start at the same time from opposite ends of a highway that is 105 miles long . one car is riding at 15 mph and the second car is riding at 20 mph . how long after they begin will they meet ?\ndivide(105, add(15, 20))\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+    "targets": [
+      "3"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1347
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:lisa and robert have taken the same number of photos on their school trip . lisa has taken 3 times as many photos as claire and robert has taken 24 more photos than claire . how many photos has claire taken ?\n choice:12\n choice:8\n choice:14\n choice:10\n choice:6\nA:",
+    "targets": [
+      "12"
+    ],
+    "multiple_choice_targets": [
+      "6",
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4265
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:john bought 9.25 m of cloth for $ 425.50 . find the cost price per metre .\ndivide 425.5 by 9.25,\n choice:47\n choice:58\n choice:54\n choice:46\n choice:56\nA:",
+    "targets": [
+      "46"
+    ],
+    "multiple_choice_targets": [
+      "46",
+      "47",
+      "58",
+      "56",
+      "54"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 1927
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(36, subtract(divide(3, 4), divide(30, 100)))\n choice:40 liters\n choice:80 liters\n choice:45 liters\n choice:36 liters\n choice:54 liters\nA:",
+    "targets": [
+      "80 liters"
+    ],
+    "multiple_choice_targets": [
+      "36 liters",
+      "40 liters",
+      "45 liters",
+      "54 liters",
+      "80 liters"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1770
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:george ' s car calls for 8 ounces of oil for each cylinder used . his car ' s engine has 6 cylinders . if 16 ounces of oil has already been put into the engine used , then how many additional ounces of oil are needed ?\n choice:' 48'\n choice:[' 16'\n choice:' 64'\n choice:' 32'\n choice:' 8']\nA:",
+    "targets": [
+      "' 32'"
+    ],
+    "multiple_choice_targets": [
+      "[' 16'",
+      "' 48'",
+      "' 64'",
+      "' 32'",
+      "' 8']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 294
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 12 by 2,\n choice:' 3'\n choice:[' – 2 / pi'\n choice:' 4'\n choice:' 2'\n choice:' 6']\nA:",
+    "targets": [
+      "' 6']"
+    ],
+    "multiple_choice_targets": [
+      "[' – 2 / pi'",
+      "' 2'",
+      "' 3'",
+      "' 4'",
+      "' 6']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2216
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a and b are two multiples of 14 , and q is the set of consecutive integers between a and b , inclusive . if q contains 10 multiples of 14 , how many multiples of 7 are there in q ?\nmultiply 2 to 10, subtract 1 from result,\n choice:17\n choice:20\n choice:18\n choice:16\n choice:19\nA:",
+    "targets": [
+      "19"
+    ],
+    "multiple_choice_targets": [
+      "20",
+      "19",
+      "18",
+      "17",
+      "16"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 3452
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(divide(5, 2), 1600)\n choice:$ 2000\n choice:$ 4000\n choice:$ 2500\n choice:$ 1500\n choice:$ 3200\nA:",
+    "targets": [
+      "$ 4000"
+    ],
+    "multiple_choice_targets": [
+      "$ 1500",
+      "$ 4000",
+      "$ 2000",
+      "$ 2500",
+      "$ 3200"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 843
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a man has some hens and cows . if the number of heads be 50 and the number of feet equals 140 , then the number of hens will be :\ndivide(subtract(multiply(50, 4), 140), 2)\n choice:23\n choice:30\n choice:24\n choice:22\n choice:28\nA:",
+    "targets": [
+      "30"
+    ],
+    "multiple_choice_targets": [
+      "22",
+      "23",
+      "24",
+      "30",
+      "28"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 5344
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 2 to 4,\n choice:12\n choice:8\n choice:2\n choice:10\n choice:4\nA:",
+    "targets": [
+      "8"
+    ],
+    "multiple_choice_targets": [
+      "2",
+      "4",
+      "8",
+      "10",
+      "12"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 3032
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 10 by 60, multiply result by 120,\n choice:26 kmph\n choice:40 kmph\n choice:28 kmph\n choice:20 kmph\n choice:30 kmph\nA:",
+    "targets": [
+      "20 kmph"
+    ],
+    "multiple_choice_targets": [
+      "26 kmph",
+      "20 kmph",
+      "28 kmph",
+      "30 kmph",
+      "40 kmph"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4194
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a person can swim in still water at 4 km / h . if the speed of water 2 km / h , how many hours will the man take to swim back against the current for 14 km ?\nsubtract 2 from 4,  divide 14 by the result.\n choice:6\n choice:9\n choice:7\n choice:3\n choice:8\nA:",
+    "targets": [
+      "7"
+    ],
+    "multiple_choice_targets": [
+      "3",
+      "6",
+      "8",
+      "9",
+      "7"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 6097
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract(divide(19, subtract(3, 2)), 2)\n choice:16 hrs\n choice:19 hrs\n choice:17 hrs\n choice:15 hrs\n choice:18 hrs\nA:",
+    "targets": [
+      "17 hrs"
+    ],
+    "multiple_choice_targets": [
+      "15 hrs",
+      "18 hrs",
+      "19 hrs",
+      "17 hrs",
+      "16 hrs"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 5222
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:what is the ratio between perimeters of two squares one having 3 times the diagonal then the other ?\ndivide(3, divide(3, 3))\n choice:' 3 : 0'\n choice:[' 3 : 2'\n choice:' 3 : 1'\n choice:' 2 : 2']\n choice:' 4 : 1'\nA:",
+    "targets": [
+      "' 3 : 1'"
+    ],
+    "multiple_choice_targets": [
+      "[' 3 : 2'",
+      "' 3 : 0'",
+      "' 4 : 1'",
+      "' 3 : 1'",
+      "' 2 : 2']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 5164
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a batsman in his 12 th innings makes a score of 65 and thereby increases his average by 2 runs . what is his average after the 12 th innings if he had never been ‘ not out ’ ?\nmultiply 2 to 12, subtract result from 65. add result to 2,\n choice:43\n choice:46\n choice:44\n choice:42\n choice:45\nA:",
+    "targets": [
+      "43"
+    ],
+    "multiple_choice_targets": [
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2020
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:town m town n town o town p town q town r ; town a town b town c town d town e town f in the table above , what is the least number of table entries that are needed to show the mileage between each town and each of the other 5 towns ?\n choice:12\n choice:15\n choice:13\n choice:11\n choice:14\nA:",
+    "targets": [
+      "15"
+    ],
+    "multiple_choice_targets": [
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 3896
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(460, add(multiply(10, 3), multiply(8, 2)))\n choice:11\n choice:9.5\n choice:8\n choice:10\n choice:9\nA:",
+    "targets": [
+      "10"
+    ],
+    "multiple_choice_targets": [
+      "8",
+      "9",
+      "9.5",
+      "10",
+      "11"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1294
+  }
+]

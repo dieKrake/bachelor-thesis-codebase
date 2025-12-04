@@ -1,0 +1,212 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 60 from 120,  divide result by 60, multiply result by 100,\n choice:16 %\n choice:17.61 %\n choice:17 %\n choice:100 %\n choice:17.56 %\nA:",
+    "targets": [
+      "100 %"
+    ],
+    "multiple_choice_targets": [
+      "16 %",
+      "100 %",
+      "17 %",
+      "17.61 %",
+      "17.56 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 222
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a box contains 7 purple , 5 blue and 11 yellow balls . what is the minimum number of tries required to get one blue and one yellow ball ?\nadd 11 to 7, add result to 1,\n choice:17\n choice:20\n choice:18\n choice:16\n choice:19\nA:",
+    "targets": [
+      "19"
+    ],
+    "multiple_choice_targets": [
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 442
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a certain high school has 500 students . of these students , 40 are taking music , 20 are taking art , and 10 are taking both music and art . how many students are taking neither music nor art ?\nsubtract(500, subtract(add(40, 20), 10))\n choice:440\n choice:470\n choice:450\n choice:430\n choice:460\nA:",
+    "targets": [
+      "450"
+    ],
+    "multiple_choice_targets": [
+      "430",
+      "440",
+      "450",
+      "460",
+      "470"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 703
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract(subtract(multiply(15, 2), 1), multiply(5, 5))\n choice:1\n choice:4\n choice:2\n choice:0\n choice:3\nA:",
+    "targets": [
+      "4"
+    ],
+    "multiple_choice_targets": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 3071
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if 40 % of the 880 students at a certain college are enrolled in biology classes , how many students at the college are not enrolled in a biology class ?\ndivide 880 by 100, subtract 40 from 100,  and then multiply both.\n choice:520\n choice:540\n choice:528\n choice:510\n choice:530\nA:",
+    "targets": [
+      "528"
+    ],
+    "multiple_choice_targets": [
+      "540",
+      "528",
+      "530",
+      "520",
+      "510"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1168
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if the operation € is defined for all x and y by the equation x € y = 2 * x * y , then 6 € ( 4 € 5 ) =\nmultiply(multiply(2, 6), multiply(multiply(2, 4), 5))\n choice:160\n choice:480\n choice:240\n choice:120\n choice:360\nA:",
+    "targets": [
+      "480"
+    ],
+    "multiple_choice_targets": [
+      "480",
+      "120",
+      "160",
+      "240",
+      "360"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 4958
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:39 persons can repair a road in 24 days , working 5 hours a day . in how many days will 30 persons , working 6 hours a day , complete the work ?\nmultiply 24 to 39, multiply result by 5, multiply 6 to 30, and then divide both.\n choice:13\n choice:26\n choice:14\n choice:10\n choice:15\nA:",
+    "targets": [
+      "26"
+    ],
+    "multiple_choice_targets": [
+      "10",
+      "13",
+      "14",
+      "15",
+      "26"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 4863
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 3600 by 10, divide 162 by the result. multiply result by 100,\n choice:25 %\n choice:72 %\n choice:30 %\n choice:20 %\n choice:45 %\nA:",
+    "targets": [
+      "45 %"
+    ],
+    "multiple_choice_targets": [
+      "20 %",
+      "25 %",
+      "30 %",
+      "45 %",
+      "72 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 247
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:in a shower , 5 cm of rain falls . the volume of water that falls on 1.5 hectares of ground is :\nmultiply(divide(5, 100), multiply(multiply(1.5, 1000), 10))\n choice:' 7500 cu . m'\n choice:[' 75 cu . m'\n choice:' 75000 cu . m'\n choice:' 750 cu . m'\n choice:' none of these']\nA:",
+    "targets": [
+      "' 750 cu . m'"
+    ],
+    "multiple_choice_targets": [
+      "[' 75 cu . m'",
+      "' 750 cu . m'",
+      "' 7500 cu . m'",
+      "' 75000 cu . m'",
+      "' none of these']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 136
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:what is the rate percent when the simple interest on rs . 800 amount to rs . 400 in 2 years ?\ndivide(multiply(100, 400), multiply(800, 2))\n choice:2 %\n choice:6 %\n choice:25 %\n choice:1 %\n choice:5 %\nA:",
+    "targets": [
+      "25 %"
+    ],
+    "multiple_choice_targets": [
+      "5 %",
+      "6 %",
+      "2 %",
+      "25 %",
+      "1 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4216
+  }
+]

@@ -1,0 +1,216 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:",
+    "targets": [
+      "37"
+    ],
+    "multiple_choice_targets": [
+      "47",
+      "37",
+      "39",
+      "43",
+      "42"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1546
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 18750 by 750,\n choice:25\n choice:none of these\n choice:30\n choice:125\n choice:50\nA:",
+    "targets": [
+      "25"
+    ],
+    "multiple_choice_targets": [
+      "50",
+      "30",
+      "125",
+      "25",
+      "none of these"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4755
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:",
+    "targets": [
+      "200000"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "180000",
+      "200000",
+      "200300",
+      "228500",
+      "330",
+      "000"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 1143
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(multiply(divide(6, 5), 100), 10)\n choice:3 %\n choice:9 %\n choice:4 %\n choice:12 %\n choice:7 %\nA:",
+    "targets": [
+      "12 %"
+    ],
+    "multiple_choice_targets": [
+      "4 %",
+      "7 %",
+      "9 %",
+      "3 %",
+      "12 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 4000
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:",
+    "targets": [
+      "21 %"
+    ],
+    "multiple_choice_targets": [
+      "19 %",
+      "21 %",
+      "20 %",
+      "22 %",
+      "25 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4844
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:",
+    "targets": [
+      "4"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "4",
+      "5",
+      "7",
+      "9"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5270
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:",
+    "targets": [
+      "8"
+    ],
+    "multiple_choice_targets": [
+      "8",
+      "9",
+      "10",
+      "13",
+      "15"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2236
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:",
+    "targets": [
+      "100"
+    ],
+    "multiple_choice_targets": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 4859
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:",
+    "targets": [
+      "4"
+    ],
+    "multiple_choice_targets": [
+      "24",
+      "12",
+      "8",
+      "2",
+      "4"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5085
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:",
+    "targets": [
+      "1 / 2"
+    ],
+    "multiple_choice_targets": [
+      "1 / 4",
+      "1 / 8",
+      "1 / 7",
+      "1 / 2",
+      "3"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 3459
+  }
+]

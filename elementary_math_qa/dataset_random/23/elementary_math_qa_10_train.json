@@ -1,0 +1,212 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(550, add(divide(100, 60), divide(150, 60)))\n choice:132\n choice:72\n choice:180\n choice:120\n choice:36\nA:",
+    "targets": [
+      "132"
+    ],
+    "multiple_choice_targets": [
+      "36",
+      "72",
+      "120",
+      "132",
+      "180"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1851
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a candidate appearing for an examination has to secure 40 % marks to pass paper i . but he secured only 40 marks and failed by 20 marks . what is the maximum mark for paper i ?\n choice:120\n choice:150\n choice:130\n choice:110\n choice:140\nA:",
+    "targets": [
+      "150"
+    ],
+    "multiple_choice_targets": [
+      "110",
+      "120",
+      "130",
+      "140",
+      "150"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1115
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 20 to 30, divide result by 2,\n choice:30\n choice:50\n choice:35\n choice:25\n choice:40\nA:",
+    "targets": [
+      "25"
+    ],
+    "multiple_choice_targets": [
+      "40",
+      "25",
+      "30",
+      "50",
+      "35"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5369
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 1000 to 60, divide result by 3600, multiply result by 42,\n choice:324 metres\n choice:828 metres\n choice:600 metres\n choice:120 metres\n choice:700 metres\nA:",
+    "targets": [
+      "700 metres"
+    ],
+    "multiple_choice_targets": [
+      "120 metres",
+      "700 metres",
+      "324 metres",
+      "828 metres",
+      "600 metres"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1608
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a fellow borrowed a certain sum of money at 4 % per annum at simple interest and in 4 years the interest amounted to rs . 1260 less than the sum lent . what was the sum lent ?\ndivide(1260, subtract(1, divide(multiply(4, 4), 100)))\n choice:1060\n choice:1500\n choice:1110\n choice:1050\n choice:1220\nA:",
+    "targets": [
+      "1500"
+    ],
+    "multiple_choice_targets": [
+      "1050",
+      "1220",
+      "1500",
+      "1060",
+      "1110"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 6108
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a , b and c have rs . 1000 between them , a and c together have rs . 700 and b and c rs . 600 . how much does c have ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:",
+    "targets": [
+      "300"
+    ],
+    "multiple_choice_targets": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4611
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a batsman in his 12 th innings makes a score of 80 and thereby increases his average by 3 runs . what is his average after the 12 th innings if he had never been ‘ not out ’ ?\nmultiply 3 to 12, subtract result from 80. add result to 3,\n choice:43\n choice:47\n choice:44\n choice:42\n choice:45\nA:",
+    "targets": [
+      "47"
+    ],
+    "multiple_choice_targets": [
+      "42",
+      "43",
+      "44",
+      "45",
+      "47"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 399
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:yearly subscription to professional magazines cost a company $ 940.00 . to make a 50 % cut in the magazine budget , how much less must be spent ?\n choice:654\n choice:657\n choice:655\n choice:470\n choice:656\nA:",
+    "targets": [
+      "470"
+    ],
+    "multiple_choice_targets": [
+      "654",
+      "655",
+      "656",
+      "657",
+      "470"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2606
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(add(12, 8), 4)\n choice:14\n choice:7\n choice:5\n choice:12\n choice:6\nA:",
+    "targets": [
+      "5"
+    ],
+    "multiple_choice_targets": [
+      "5",
+      "6",
+      "7",
+      "12",
+      "14"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 4980
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 4 from 10,  subtract result from 16. subtract 6 from result,\n choice:2\n choice:8\n choice:4\n choice:10\n choice:6\nA:",
+    "targets": [
+      "4"
+    ],
+    "multiple_choice_targets": [
+      "2",
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2660
+  }
+]

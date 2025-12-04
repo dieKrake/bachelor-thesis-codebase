@@ -1,0 +1,632 @@
+[
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:raja and ram can together complete a piece of work in 4 days . if raja alone can complete the same work in 12 days , in how many days can ram alone complete that work ?\ndivide(1, subtract(divide(1, 4), divide(1, 12)))\n choice:5 days\n choice:8 days\n choice:6 days\n choice:10 days\n choice:7 days\nA:",
+    "targets": [
+      "6 days"
+    ],
+    "multiple_choice_targets": [
+      "6 days",
+      "5 days",
+      "7 days",
+      "8 days",
+      "10 days"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 3687
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a number is doubled and 9 is added . if the resultant is trebled , it becomes 69 . what is that number ?\n choice:4\n choice:8\n choice:6\n choice:3.5\n choice:7\nA:",
+    "targets": [
+      "7"
+    ],
+    "multiple_choice_targets": [
+      "3.5",
+      "6",
+      "8",
+      "7",
+      "4"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 629
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:carina has 85 ounces of coffee divided into 5 - and 10 - ounce packages . if she has 2 more 5 - ounce packages than 10 - ounce packages , how many 10 - ounce packages does she have ?\nmultiply 2 to 5, subtract result from 85. add 5 to 10, and then divide both.\n choice:6\n choice:9\n choice:7\n choice:5\n choice:8\nA:",
+    "targets": [
+      "5"
+    ],
+    "multiple_choice_targets": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 3025
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:in an examination 35 % of the students passed and 260 failed . how many students appeared for the examination ?\n choice:540\n choice:840\n choice:650\n choice:400\n choice:700\nA:",
+    "targets": [
+      "400"
+    ],
+    "multiple_choice_targets": [
+      "540",
+      "400",
+      "700",
+      "650",
+      "840"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2506
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(divide(multiply(8, 20), subtract(13, 8)), 2)\n choice:130\n choice:64\n choice:140\n choice:120\n choice:160\nA:",
+    "targets": [
+      "64"
+    ],
+    "multiple_choice_targets": [
+      "64",
+      "130",
+      "140",
+      "160",
+      "120"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2880
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(multiply(multiply(3, 8), 2), 6)\n choice:11\n choice:8\n choice:12\n choice:10\n choice:13\nA:",
+    "targets": [
+      "8"
+    ],
+    "multiple_choice_targets": [
+      "8",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 1715
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:the average weight of 19 students is 15 kg . by the admission of a new student the average weight is reduced to 14.6 kg . the weight of the new student is ?\nadd 1 to 19, multiply result by 14.6, multiply 15 to 19, and then subtract both.\n choice:10.8 kg\n choice:none\n choice:14.9 kg\n choice:10.6 kg\n choice:7 kg\nA:",
+    "targets": [
+      "7 kg"
+    ],
+    "multiple_choice_targets": [
+      "10.6 kg",
+      "10.8 kg",
+      "7 kg",
+      "14.9 kg",
+      "none"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4843
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a box has exactly 100 balls , and each ball is either red , blue , or white . if the box has 12 more blue balls than white balls , and twice as many red balls as blue balls , how many white balls does the box has ?\ndivide(subtract(100, multiply(12, 3)), 4)\n choice:12\n choice:8\n choice:14\n choice:10\n choice:16\nA:",
+    "targets": [
+      "16"
+    ],
+    "multiple_choice_targets": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5773
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a person crosses a 1800 m long street in 12 minutes . what is his speed in km per hour ?\ndivide 1800 by 1000, multiply 60 to 12, divide result by 3600, and then divide both.\n choice:4.5\n choice:9\n choice:4.8\n choice:4.1\n choice:5.4\nA:",
+    "targets": [
+      "9"
+    ],
+    "multiple_choice_targets": [
+      "4.1",
+      "4.5",
+      "4.8",
+      "5.4",
+      "9"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 4723
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract(100, subtract(add(20, 70), 10))\n choice:20 %\n choice:50 %\n choice:30 %\n choice:10 %\n choice:40 %\nA:",
+    "targets": [
+      "20 %"
+    ],
+    "multiple_choice_targets": [
+      "10 %",
+      "20 %",
+      "30 %",
+      "40 %",
+      "50 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 850
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 3 to 5, subtract 3 from 5,  and then divide both.\n choice:15 / 2\n choice:9\n choice:7\n choice:13 / 2\n choice:8\nA:",
+    "targets": [
+      "15 / 2"
+    ],
+    "multiple_choice_targets": [
+      "13 / 2",
+      "7",
+      "15 / 2",
+      "8",
+      "9"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4698
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a dog is tied to a tree by a long nylon cord . if the dog runs from the due north side of the tree to the due south side of the tree with the cord extended to its full length at all items , and the dog ran approximately 30 feet , what was the approximate length of the nylon cord q , in feet ?\ndivide(30, 3)\n choice:15\n choice:5\n choice:25\n choice:10\n choice:30\nA:",
+    "targets": [
+      "10"
+    ],
+    "multiple_choice_targets": [
+      "30",
+      "25",
+      "15",
+      "10",
+      "5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 3366
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 1.5 to 1, divide 1.5 by the result. multiply 40 by the result.\n choice:24 inches\n choice:9 inches\n choice:5 inches\n choice:10 inches\n choice:6 inches\nA:",
+    "targets": [
+      "24 inches"
+    ],
+    "multiple_choice_targets": [
+      "5 inches",
+      "6 inches",
+      "9 inches",
+      "10 inches",
+      "24 inches"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1398
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the speed of a boat in still water in 20 km / hr and the rate of current is 5 km / hr . the distance travelled downstream in 24 minutes is :\n choice:10.2\n choice:10.8\n choice:10.4\n choice:10.0\n choice:10.6\nA:",
+    "targets": [
+      "10.0"
+    ],
+    "multiple_choice_targets": [
+      "10.6",
+      "10.2",
+      "10.8",
+      "10.4",
+      "10.0"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5168
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a shop owner sells 15 mtr of cloth and gains sp of 10 mtrs . find the gain % ?\nmultiply(divide(10, subtract(15, 10)), 100)\n choice:200 %\n choice:50 %\n choice:30 %\n choice:100 %\n choice:40 %\nA:",
+    "targets": [
+      "200 %"
+    ],
+    "multiple_choice_targets": [
+      "30 %",
+      "40 %",
+      "50 %",
+      "100 %",
+      "200 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1645
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:if a : b is 2 : 3 and b : c is 3 : 4 then a : c is equal to\n choice:2 : 3\n choice:6 : 7\n choice:3 : 4\n choice:1 : 2\n choice:5 : 6\nA:",
+    "targets": [
+      "1 : 2"
+    ],
+    "multiple_choice_targets": [
+      "2 : 3",
+      "6 : 7",
+      "5 : 6",
+      "1 : 2",
+      "3 : 4"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 5072
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:an article is sold at a certain price . by selling it at 2 / 3 of that price one loses 10 % . find the gain percent at original price .\nsubtract(divide(subtract(100, 10), divide(2, 3)), 100)\n choice:25 %\n choice:50 %\n choice:30 %\n choice:15 %\n choice:35 %\nA:",
+    "targets": [
+      "35 %"
+    ],
+    "multiple_choice_targets": [
+      "15 %",
+      "35 %",
+      "25 %",
+      "50 %",
+      "30 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5805
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:the average weight of 19 students is 15 kg . by the admission of a new student the average weight is reduced to 14.8 kg . the weight of the new student is ?\nadd 1 to 19, multiply result by 14.8, multiply 15 to 19, and then subtract both.\n choice:10.8 kg\n choice:none\n choice:11 kg\n choice:10.6 kg\n choice:14.9 kg\nA:",
+    "targets": [
+      "11 kg"
+    ],
+    "multiple_choice_targets": [
+      "10.6 kg",
+      "10.8 kg",
+      "11 kg",
+      "14.9 kg",
+      "none"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5729
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(divide(subtract(1500, 1290), 1500), 100)\n choice:16 %\n choice:78 %\n choice:17 %\n choice:14 %\n choice:28 %\nA:",
+    "targets": [
+      "14 %"
+    ],
+    "multiple_choice_targets": [
+      "14 %",
+      "16 %",
+      "17 %",
+      "78 %",
+      "28 %"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2751
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 40 by 100, multiply result by 100,\n choice:40 %\n choice:70 %\n choice:50 %\n choice:30 %\n choice:60 %\nA:",
+    "targets": [
+      "40 %"
+    ],
+    "multiple_choice_targets": [
+      "40 %",
+      "50 %",
+      "60 %",
+      "70 %",
+      "30 %"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 3634
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a batsman in his 12 th innings makes a score of 75 and thereby increases his average by 1 runs . what is his average after the 12 th innings if he had never been ‘ not out ’ ?\nmultiply 1 to 12, subtract result from 75. add result to 1,\n choice:43\n choice:64\n choice:44\n choice:42\n choice:46\nA:",
+    "targets": [
+      "64"
+    ],
+    "multiple_choice_targets": [
+      "42",
+      "43",
+      "44",
+      "64",
+      "46"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 3131
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:75 boys can complete a work in 26 days . how many men need to complete twice the work in 20 days\ndivide(multiply(75, multiply(26, 2)), 20)\n choice:180\n choice:200\n choice:190\n choice:160\n choice:195\nA:",
+    "targets": [
+      "195"
+    ],
+    "multiple_choice_targets": [
+      "160",
+      "195",
+      "180",
+      "190",
+      "200"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5616
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(1, 2)\n choice:1 / 2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+    "targets": [
+      "1 / 2"
+    ],
+    "multiple_choice_targets": [
+      "1 / 2",
+      "1",
+      "3",
+      "4",
+      "5"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2131
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 4 to 5, subtract 4 from 5,  and then divide both.\n choice:17\n choice:9\n choice:20\n choice:15\n choice:8\nA:",
+    "targets": [
+      "20"
+    ],
+    "multiple_choice_targets": [
+      "15",
+      "17",
+      "20",
+      "8",
+      "9"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1647
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a rectangular field is to be fenced on three sides leaving a side of 80 feet uncovered . if the area of the field is 680 sq . ft , how many feet of fencing will be required ?\ndivide 680 by 80, multiply result by 2, add result to 80,\n choice:22 ft\n choice:97 ft\n choice:44 ft\n choice:11 ft\n choice:66 ft\nA:",
+    "targets": [
+      "97 ft"
+    ],
+    "multiple_choice_targets": [
+      "44 ft",
+      "97 ft",
+      "22 ft",
+      "11 ft",
+      "66 ft"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5756
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a man goes into a barbershop and gets a $ 15 haircut . he pays the barber with a $ 20 bill , but the barber does n ' t have change because it is an especially slow day . the barber goes to the flower shop next to his own and trades the $ 20 bill for a $ 10 dollar bill and two $ 5 bills . then he gives the man his $ 5 in change . later the lady from the flower shop confronts the barber and tells him that the $ 20 bill he gave her was counterfeit . the barber agrees and he gives the lady a different $ 20 bill . later that day he tries to figure out how much money he lost . what did he lose ?\nsubtract(20, 15)\n choice:$ 12\n choice:$ 5\n choice:$ 15\n choice:$ 10\n choice:$ 20\nA:",
+    "targets": [
+      "$ 5"
+    ],
+    "multiple_choice_targets": [
+      "$ 5",
+      "$ 10",
+      "$ 12",
+      "$ 15",
+      "$ 20"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 4289
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 3 to 42, divide 44 by 60, and then multiply both.\n choice:33 km\n choice:86.6 km\n choice:35.6 km\n choice:26.6 km\n choice:46.6 km\nA:",
+    "targets": [
+      "33 km"
+    ],
+    "multiple_choice_targets": [
+      "86.6 km",
+      "46.6 km",
+      "33 km",
+      "35.6 km",
+      "26.6 km"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1251
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 5 to 50, multiply result by 5,\n choice:1250\n choice:950\n choice:600\n choice:1000\n choice:800\nA:",
+    "targets": [
+      "1250"
+    ],
+    "multiple_choice_targets": [
+      "800",
+      "600",
+      "1250",
+      "950",
+      "1000"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4345
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:each of the 9 squares shown is to contain one number chosen from 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , and 9 . no number is to be repeated . suppose the sum of the 5 squares aligned vertically on the right is 32 and that the sum of the 5 squares aligned horizontally on the bottom is 20 . what number goes in the shared corner square ?\nadd 2 to 1, add 4 to the result.\n choice:4\n choice:7\n choice:5\n choice:3\n choice:6\nA:",
+    "targets": [
+      "7"
+    ],
+    "multiple_choice_targets": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 799
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 5 to 2, multiply result by 5,\n choice:32 min\n choice:35 min\n choice:33 min\n choice:25 min\n choice:34 min\nA:",
+    "targets": [
+      "35 min"
+    ],
+    "multiple_choice_targets": [
+      "25 min",
+      "32 min",
+      "33 min",
+      "34 min",
+      "35 min"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 465
+  }
+]

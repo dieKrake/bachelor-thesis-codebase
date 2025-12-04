@@ -1,0 +1,210 @@
+[
+  {
+    "inputs": "What is the answer to the following math word problem?:tourist purchased a total of 30 travelers checks in $ 50 and $ 100 denominations . the total worth of the travelers checks is $ 1800 . how many checks of $ 50 denominations can he spend so that average amount ( arithmetic mean ) of the remaining travelers checks is $ 62.5 ?\n choice:15\n choice:6\n choice:20\n choice:12\n choice:24\nA:",
+    "targets": [
+      "6"
+    ],
+    "multiple_choice_targets": [
+      "6",
+      "12",
+      "15",
+      "20",
+      "24"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 411
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:the ratio of buses to cars on river road is 1 to 17 . if there are 80 fewer buses than cars on river road , how many cars are on river road ?\nmultiply(divide(80, subtract(17, 1)), 17)\n choice:30\n choice:85\n choice:40\n choice:20\n choice:60\nA:",
+    "targets": [
+      "85"
+    ],
+    "multiple_choice_targets": [
+      "40",
+      "85",
+      "60",
+      "30",
+      "20"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5899
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 3.75 to 5.5, multiply 700 by the result.\n choice:$ 13537.50\n choice:$ 18537.50\n choice:$ 14437.50\n choice:$ 12537.50\n choice:$ 16437.50\nA:",
+    "targets": [
+      "$ 14437.50"
+    ],
+    "multiple_choice_targets": [
+      "$ 12537.50",
+      "$ 13537.50",
+      "$ 14437.50",
+      "$ 16437.50",
+      "$ 18537.50"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5576
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a company produces 72000 bottles of water everyday . if a case can hold 9 bottles of water . how many cases are required by the company to hold its one day production\ndivide(72000, 9)\n choice:4500\n choice:9000\n choice:5000\n choice:2000\n choice:8000\nA:",
+    "targets": [
+      "8000"
+    ],
+    "multiple_choice_targets": [
+      "2000",
+      "4500",
+      "5000",
+      "8000",
+      "9000"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2058
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a person buys an article at rs . 340 . at what price should he sell the article so as to make a profit of 10 % ?\ndivide 10 by 100, multiply 340 by the result. add 340 to the result.\n choice:374\n choice:882\n choice:521\n choice:356\n choice:600\nA:",
+    "targets": [
+      "374"
+    ],
+    "multiple_choice_targets": [
+      "600",
+      "882",
+      "374",
+      "356",
+      "521"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1552
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 12 to 40,\n choice:52\n choice:78\n choice:64\n choice:45\n choice:65\nA:",
+    "targets": [
+      "52"
+    ],
+    "multiple_choice_targets": [
+      "52",
+      "45",
+      "65",
+      "78",
+      "64"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 5345
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a scale 6 ft . 8 inches long is divided into 4 equal parts . find the length of each part .\ndivide(add(multiply(6, 12), 8), 4)\n choice:66 inches\n choice:97 inches\n choice:20 inches\n choice:77 inches\nA:",
+    "targets": [
+      "20 inches"
+    ],
+    "multiple_choice_targets": [
+      "20 inches",
+      "77 inches",
+      "66 inches",
+      "97 inches"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 3942
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a train 330 meters long is running with a speed of 60 kmph . in what time will it pass a man who is running at 6 kmph in the direction opposite to that in which the train is going ?\ndivide 330 by 1000, add 6 to 60, and then divide both. multiply 3600 by the result.\n choice:15 sec\n choice:4 sec\n choice:16 sec\n choice:12 sec\n choice:18 sec\nA:",
+    "targets": [
+      "18 sec"
+    ],
+    "multiple_choice_targets": [
+      "18 sec",
+      "15 sec",
+      "4 sec",
+      "16 sec",
+      "12 sec"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 880
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:on a map , 1 inch represents 28 miles . how many x xxinches would be necessary to represent a distance of 383.6 miles ?\n choice:21.2\n choice:7.4\n choice:28.7\n choice:13.7\n choice:5.2\nA:",
+    "targets": [
+      "13.7"
+    ],
+    "multiple_choice_targets": [
+      "5.2",
+      "7.4",
+      "13.7",
+      "21.2",
+      "28.7"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1619
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:victor gets 92 % marks in examinations . if these are 184 marks , find the maximum marks .\n choice:271\n choice:500\n choice:288\n choice:200\n choice:334\nA:",
+    "targets": [
+      "200"
+    ],
+    "multiple_choice_targets": [
+      "334",
+      "500",
+      "200",
+      "288",
+      "271"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 3502
+  }
+]

@@ -319,24 +319,17 @@ def save_run_to_json(
 # =========================================================
 
 if __name__ == "__main__":
-    dataset_name = "elementary_math_qa"
-    dataset_size = "40"
+
+    dataset_name = "navigate_200"
     dataset_name_split = dataset_name.split("_")[0]
-    # Pfad zum Dataset – analog zu den anderen Skripten
-    dataset_path = f"{dataset_name}/dataset_random/{dataset_name}_{dataset_size}_test.json"  # <- bei Bedarf anpassen
 
-    log_header("Loading dataset")
-    dataset = load_dataset(dataset_path)
-    log_line(f"Loaded {len(dataset)} examples")
+    test_numbers = ["23","31","48","50","56","62"]
+    dataset_sizes = ["40", "80", "120", "160"]
 
-    # Zero-Shot Prompt
-    # Hinweis:
-    # - Für True/False- oder Yes/No-Datensätze kannst du denselben Prompt nutzen,
-    #   weil die Normalisierung True/False <-> Yes/No abgleicht.
-    # - Falls ein Datensatz explizit "Yes/No" verlangt, kannst du den Prompt
-    #   natürlich auch entsprechend anpassen.
+    # Prompt, Model, etc. bleiben wie bisher
+    system_message_task = None
+    model_name = "gpt-4o-mini"
 
-    # True/False oder Yes/No Prompt
     zero_shot_prompt = (
         'You MUST answer with exactly one string: either "True" or "False". '
         'Do not output explanations, punctuation, or additional text. '
@@ -346,60 +339,60 @@ if __name__ == "__main__":
     )
 
     # Multiple-Choice-Prompt
-    zero_shot_prompt = (
-    "You are solving multiple-choice math questions.\n"
-    "Each question lists several answer options, each prefixed with 'choice:'.\n"
-    "Read the question and the choices carefully.\n"
-    "Answer with exactly the text of the correct choice, "
-    "without the 'choice:' prefix and without any explanation or extra text."
-    )
-
-
-    # Optional: separates system_message
-    system_message_task = None
-    model_name = "gpt-4o-mini"
+    # zero_shot_prompt = ("You are solving multiple-choice math questions.\n"
+    #                     "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    #                     "Read the question and the choices carefully.\n"
+    #                     "Answer with exactly the text of the correct choice, "
+    #                     "without the 'choice:' prefix and without any explanation or extra text.")
 
     config = {
         "prompt": zero_shot_prompt,
         "model_name": model_name,
-        "system_message_snippet": (system_message_task or "")[:200],
+        "system_message_snippet": "",
         "mode": "zero-shot",
     }
 
-    # Zero-Shot Evaluation ausführen
-    log_header("Running Zero-Shot Evaluation")
-    result = zero_shot_evaluate(
-        dataset=dataset,
-        prompt=zero_shot_prompt,
-        model_name=model_name,
-        system_message=system_message_task,
-    )
+    # ---------------------------------------------------------
+    # LOOP ÜBER ALLE TESTORDNER UND ALLE DATASET-GRÖSSEN
+    # ---------------------------------------------------------
+    for test_number in test_numbers:
+        for dataset_size in dataset_sizes:
 
-    # Konsole: Zusammenfassung
-    print("\n\n========= ZERO-SHOT RESULT =========")
-    print("Prompt:\n")
-    print(result["prompt"])
-    print("\nAccuracy:", result["accuracy"])
+            print("\n" + "="*40)
+            print(f"  Test Set {test_number} – Size {dataset_size}")
+            print("="*40)
 
-    print("\nExamples (first 5):")
-    for rec in result["results"][:5]:
-        choices_info = ""
-        if "choices" in rec and rec["choices"] is not None:
-            choices_info = f" | choices={rec['choices']}"
-        print(
-            f"[{rec['Index']}] acc={rec['judgement']} | "
-            f"gold={rec['correctAnswer']} | model={rec['MbaseAnswer']}{choices_info}"
-        )
+            dataset_path = (
+                f"{dataset_name}/dataset_random/{test_number}/"
+                f"{dataset_name_split}_{dataset_size}_test.json"
+            )
 
-    # JSON speichern (analog zu pe2_results/…)
-    results_dir = Path(f"{dataset_name}/zero_shot_results")
-    timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = results_dir / f"zeroshot_eval_{timestamp_str}.json"
+            log_header("Loading dataset")
+            dataset = load_dataset(dataset_path)
+            log_line(f"Loaded {len(dataset)} examples")
 
-    save_run_to_json(
-        output_path=output_file,
-        dataset_path=dataset_path,
-        dataset_size=len(dataset),
-        config=config,
-        result=result,
-    )
+            # Zero-Shot Evaluation ausführen
+            log_header("Running Zero-Shot Evaluation")
+            result = zero_shot_evaluate(
+                dataset=dataset,
+                prompt=zero_shot_prompt,
+                model_name=model_name,
+                system_message=system_message_task,
+            )
+
+            # Ergebnis speichern
+            results_dir = Path(f"{dataset_name}/zero_shot_results/{test_number}")
+            results_dir.mkdir(parents=True, exist_ok=True)
+
+            timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
+            output_file = results_dir / f"zeroshot_eval_{dataset_size}_{timestamp_str}.json"
+
+            save_run_to_json(
+                output_path=output_file,
+                dataset_path=dataset_path,
+                dataset_size=len(dataset),
+                config=config,
+                result=result,
+            )
+
+            print(f"✔ Saved result for folder={test_number}, size={dataset_size}")

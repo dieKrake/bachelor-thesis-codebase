@@ -1,0 +1,422 @@
+[
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:recipe requires 15 mins to cook . you have 7 mins hourglass and a 11 mins hourglass with you . how will you measure 15 mins using them ?\nsubtract 7 from 11,  add 11 to the result.\n choice:13 mins\n choice:20 mins\n choice:15 mins\n choice:12 mins\n choice:17 mins\nA:",
+    "targets": [
+      "15 mins"
+    ],
+    "multiple_choice_targets": [
+      "15 mins",
+      "12 mins",
+      "13 mins",
+      "17 mins",
+      "20 mins"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 3956
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:during the first week of performances of a certain play , 5400 tickets were sold , all at reduced price . during the remaining weeks of performances , 5 times as many tickets were sold at full price as were sold at reduced price . if the total number of tickets r sold was 25200 , how many of them were sold at full price ?\n choice:16500\n choice:8700\n choice:19800\n choice:15800\n choice:21000\nA:",
+    "targets": [
+      "16500"
+    ],
+    "multiple_choice_targets": [
+      "21000",
+      "19800",
+      "16500",
+      "15800",
+      "8700"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 195
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:an amount at compound interest sums to rs . 17640 / - in 2 years and to rs . 22932 / - in 3 years at the same rate of interest . find the rate percentage ?\n choice:30 %\n choice:9 %\n choice:5 %\n choice:11 %\n choice:7 %\nA:",
+    "targets": [
+      "30 %"
+    ],
+    "multiple_choice_targets": [
+      "5 %",
+      "7 %",
+      "9 %",
+      "11 %",
+      "30 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2364
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(subtract(divide(3600, 10), multiply(10, 2)), 4)\n choice:80\n choice:95\n choice:85\n choice:75\n choice:90\nA:",
+    "targets": [
+      "85"
+    ],
+    "multiple_choice_targets": [
+      "75",
+      "80",
+      "85",
+      "90",
+      "95"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 3719
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 4 from 100,  multiply result by 36, add 44 to 100, and then divide both.\n choice:24\n choice:9\n choice:3\n choice:1\n choice:8\nA:",
+    "targets": [
+      "24"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "8",
+      "9",
+      "24",
+      "3"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 3405
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:when x is multiplied by 3 , the result is 26 more than the result of subtracting x from 26 . what is the value of x ?\n choice:- 4\n choice:22\n choice:11\n choice:- 2\n choice:13\nA:",
+    "targets": [
+      "13"
+    ],
+    "multiple_choice_targets": [
+      "- 4",
+      "- 2",
+      "11",
+      "13",
+      "22"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4966
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the ratio of investments of two partners p and q is 7 : 5 and the ratio of their profits is 7 : 10 . if p invested the money for 7 months , find for how much time did q invest the money ?\n choice:11\n choice:18\n choice:14\n choice:10\n choice:16\nA:",
+    "targets": [
+      "14"
+    ],
+    "multiple_choice_targets": [
+      "11",
+      "10",
+      "18",
+      "16",
+      "14"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5644
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(multiply(2, 6), multiply(multiply(2, 4), 5))\n choice:160\n choice:480\n choice:240\n choice:120\n choice:360\nA:",
+    "targets": [
+      "480"
+    ],
+    "multiple_choice_targets": [
+      "480",
+      "120",
+      "160",
+      "240",
+      "360"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 4961
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:two integers are in the ratio of 1 to 3 . if 10 is added to the smaller number , the ratio becomes 1 to 1 . find the larger integer .\n choice:12\n choice:9\n choice:15\n choice:10\n choice:6\nA:",
+    "targets": [
+      "15"
+    ],
+    "multiple_choice_targets": [
+      "6",
+      "9",
+      "10",
+      "12",
+      "15"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 3656
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:what is the units digit of the expression 7 ^ 75 + 6 ?\nadd 3 to 4, add result to 2,\n choice:3\n choice:9\n choice:5\n choice:1\n choice:7\nA:",
+    "targets": [
+      "9"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1910
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 50 to 80, subtract 10 from result, multiply result by 10, multiply result by 3,\n choice:3820\n choice:9309\n choice:8302\n choice:3600\n choice:930\nA:",
+    "targets": [
+      "3600"
+    ],
+    "multiple_choice_targets": [
+      "3820",
+      "930",
+      "9309",
+      "3600",
+      "8302"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4070
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 5 to 3, subtract result from 105. multiply 2 to 3, and then divide both.\n choice:15\n choice:99\n choice:27\n choice:12\n choice:29\nA:",
+    "targets": [
+      "15"
+    ],
+    "multiple_choice_targets": [
+      "12",
+      "29",
+      "27",
+      "15",
+      "99"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1753
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 33 by 4, multiply result by 16, divide result by 4,\n choice:30\n choice:39\n choice:33\n choice:27\n choice:36\nA:",
+    "targets": [
+      "33"
+    ],
+    "multiple_choice_targets": [
+      "27",
+      "30",
+      "33",
+      "36",
+      "39"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 951
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(5, 4)\n choice:13\n choice:9\n choice:20\n choice:1\n choice:4\nA:",
+    "targets": [
+      "20"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "4",
+      "9",
+      "13",
+      "20"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2171
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:solve the equation for x : 14 ( - x + z ) + 18 = - 14 ( x - z ) - 10\n choice:- 2\n choice:2\n choice:0\n choice:- 1\n choice:1\nA:",
+    "targets": [
+      "1"
+    ],
+    "multiple_choice_targets": [
+      "- 2",
+      "- 1",
+      "0",
+      "1",
+      "2"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4684
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the circumference of a circle is equal to 72 pi . find the radius of this circle .\n choice:' 37'\n choice:[' 35'\n choice:' 38'\n choice:' 36'\n choice:' 39']\nA:",
+    "targets": [
+      "' 36'"
+    ],
+    "multiple_choice_targets": [
+      "[' 35'",
+      "' 36'",
+      "' 37'",
+      "' 38'",
+      "' 39']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4371
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 12 to 9, multiply result by 3, divide result by 3,\n choice:108\n choice:111\n choice:109\n choice:107\n choice:110\nA:",
+    "targets": [
+      "108"
+    ],
+    "multiple_choice_targets": [
+      "107",
+      "108",
+      "109",
+      "110",
+      "111"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 3013
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:mrs . evans gave a test to her freshmen economics class , which has 25 students enrolled and 22 of them answered question 1 correctly . if 20 answered question 2 correctly and 3 did not take the test then how many answered both questions correctly ?\nsubtract(add(add(22, 20), 3), 25)\n choice:19\n choice:30\n choice:20\n choice:17\n choice:23\nA:",
+    "targets": [
+      "20"
+    ],
+    "multiple_choice_targets": [
+      "30",
+      "20",
+      "23",
+      "17",
+      "19"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4657
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:the weight of a hollow sphere is directly dependent on its surface area . the surface area of a sphere is 4 π · r ^ 2 , where r is the radius of the sphere . if a hollow sphere of radius 0.15 cm made of a certain metal weighs 8 grams , a hollow sphere of radius 0.3 cm made of the same metal would weigh how many grams e ?\nmultiply(8, 4)\n choice:512\n choice:e = 64\n choice:e = 16\n choice:128\n choice:e = 32\nA:",
+    "targets": [
+      "e = 32"
+    ],
+    "multiple_choice_targets": [
+      "e = 16",
+      "e = 32",
+      "e = 64",
+      "128",
+      "512"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2569
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a sum fetched a total simple interest of 4034.25 at the rate of 9 % . p . a . in 5 years . what is the sum ?\n choice:6474\n choice:8965\n choice:8723\n choice:5768\n choice:8925\nA:",
+    "targets": [
+      "8965"
+    ],
+    "multiple_choice_targets": [
+      "5768",
+      "8925",
+      "8965",
+      "6474",
+      "8723"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1270
+  }
+]

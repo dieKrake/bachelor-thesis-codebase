@@ -1,0 +1,426 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(4.036, 0.02)\n choice:10.06\n choice:201.8\n choice:10.09\n choice:1.06\n choice:100.9\nA:",
+    "targets": [
+      "201.8"
+    ],
+    "multiple_choice_targets": [
+      "10.09",
+      "1.06",
+      "10.06",
+      "201.8",
+      "100.9"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2535
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(divide(multiply(8, 20), subtract(13, 8)), 2)\n choice:130\n choice:64\n choice:140\n choice:120\n choice:160\nA:",
+    "targets": [
+      "64"
+    ],
+    "multiple_choice_targets": [
+      "64",
+      "130",
+      "140",
+      "160",
+      "120"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2880
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:find the average of all the numbers between 6 and 34 which are divisible by 5\nadd 4 to 6, subtract 4 from 34,  and then add both. divide result by 2,\n choice:20\n choice:40\n choice:24\n choice:18\n choice:30\nA:",
+    "targets": [
+      "20"
+    ],
+    "multiple_choice_targets": [
+      "18",
+      "20",
+      "24",
+      "30",
+      "40"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 522
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a train 200 meters long completely crosses a 300 meters long bridge in 45 seconds . what is the speed of the train is ?\ndivide(divide(add(200, 300), 1000), divide(45, 3600))\n choice:20\n choice:50\n choice:30\n choice:10\n choice:40\nA:",
+    "targets": [
+      "40"
+    ],
+    "multiple_choice_targets": [
+      "10",
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2738
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:xavier starts from p towards q at a speed of 60 kmph and after every 12 mins increases his speed by 10 kmph . if the distance between p and q is 60 km , then how much time does he take to cover the distance ?\n choice:50\n choice:60\n choice:56\n choice:48\n choice:59\nA:",
+    "targets": [
+      "48"
+    ],
+    "multiple_choice_targets": [
+      "48",
+      "59",
+      "60",
+      "56",
+      "50"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 586
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if there are 4 peanuts in a box and mary puts 12 more peanuts inside , how many peanuts are in the box ?\nadd(4, 12)\n choice:11\n choice:8\n choice:12\n choice:10\n choice:16\nA:",
+    "targets": [
+      "16"
+    ],
+    "multiple_choice_targets": [
+      "8",
+      "16",
+      "10",
+      "11",
+      "12"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1267
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a car travels at a speed of 60 miles per hour . how far will it travel in 5 hours ?\nmultiply(60, 5)\n choice:300 miles\n choice:625 miles\n choice:225 miles\n choice:425 miles\nA:",
+    "targets": [
+      "300 miles"
+    ],
+    "multiple_choice_targets": [
+      "425 miles",
+      "625 miles",
+      "300 miles",
+      "225 miles"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 36
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 62 by 2, subtract 5 from result,\n choice:14\n choice:26\n choice:17\n choice:11\n choice:19\nA:",
+    "targets": [
+      "26"
+    ],
+    "multiple_choice_targets": [
+      "14",
+      "17",
+      "11",
+      "19",
+      "26"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5756
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:carl bought 16 gumballs , lewis bought 12 gumballs , and carey bought x gumballs . the average ( arithmetic mean ) number of gumballs the 3 bought is between 19 and 25 , inclusive . what is the difference between the greatest number and the smallest number of gumballs carey could have bought ?\nsubtract(multiply(25, 3), multiply(19, 3))\n choice:18\n choice:24\n choice:20\n choice:16\n choice:22\nA:",
+    "targets": [
+      "18"
+    ],
+    "multiple_choice_targets": [
+      "20",
+      "16",
+      "22",
+      "18",
+      "24"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1790
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(subtract(multiply(30, 7), multiply(4, 7)), 7)\n choice:24\n choice:27\n choice:25\n choice:23\n choice:26\nA:",
+    "targets": [
+      "26"
+    ],
+    "multiple_choice_targets": [
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 5181
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(1, divide(1, 50))\n choice:20\n choice:50\n choice:3.5\n choice:1\n choice:49\nA:",
+    "targets": [
+      "50"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "3.5",
+      "20",
+      "49",
+      "50"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2202
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if 63 percent of a class answered the first question on a certain test correctly , 49 percent answered the second question on the test correctly , and 20 percent answered neither of the questions correctly , what percent answered both correctly ?\nadd 49 to 63, add result to 20, subtract 100 from result,\n choice:24 %\n choice:32 %\n choice:26 %\n choice:22 %\n choice:28 %\nA:",
+    "targets": [
+      "32 %"
+    ],
+    "multiple_choice_targets": [
+      "22 %",
+      "24 %",
+      "26 %",
+      "28 %",
+      "32 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5147
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a group of people participate in some curriculum , 35 of them practice yoga , 20 study cooking , 15 study weaving , 7 of them study cooking only , 5 of them study both the cooking and yoga , 3 of them participate all curriculums . how many people study both cooking and weaving ?\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+    "targets": [
+      "5"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2705
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(200, divide(4, divide(10, 2)))\n choice:150\n choice:50\n choice:200\n choice:100\n choice:250\nA:",
+    "targets": [
+      "250"
+    ],
+    "multiple_choice_targets": [
+      "50",
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1146
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:find the side of the largest possible square slabs which can be paved on the floor of a room 2 m 50 cm long and 1 m 50 cm broad . also find the number of such slabs to pave the floor .\nadd 3 to 2, multiply 3 to 2, and then multiply both.\n choice:20\n choice:50\n choice:15\n choice:none of these\n choice:25\n choice:35\n choice:30\n choice:75\nA:",
+    "targets": [
+      "30"
+    ],
+    "multiple_choice_targets": [
+      "25",
+      "20",
+      "30",
+      "15",
+      "50",
+      "none of these",
+      "75",
+      "35"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2931
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 8 to 4,\n choice:16\n choice:32\n choice:18\n choice:12\n choice:22\nA:",
+    "targets": [
+      "32"
+    ],
+    "multiple_choice_targets": [
+      "16",
+      "12",
+      "18",
+      "22",
+      "32"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5827
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a man walking at a rate of 10 km / hr crosses a bridge in 18 minutes . the length of the bridge is ?\nmultiply(divide(multiply(10, 1000), 60), 18)\n choice:1254\n choice:3000\n choice:1521\n choice:1112\n choice:1667\nA:",
+    "targets": [
+      "3000"
+    ],
+    "multiple_choice_targets": [
+      "1521",
+      "3000",
+      "1667",
+      "1254",
+      "1112"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 3019
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:the amounts of time that three secretaries worked on a special project are in the ratio of 1 to 2 to 5 . if they worked a combined total of 120 hours , how many hours did the secretary who worked the longest spend on the project ?\nadd 2 to 1, add result to 5, divide 120 by the result. multiply result by 5,\n choice:16\n choice:80\n choice:70\n choice:14\n choice:75\nA:",
+    "targets": [
+      "75"
+    ],
+    "multiple_choice_targets": [
+      "80",
+      "70",
+      "75",
+      "16",
+      "14"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 367
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 50 to 50, divide result by 100, divide result by 50, multiply result by 12,\n choice:10\n choice:7\n choice:3\n choice:1\n choice:6\nA:",
+    "targets": [
+      "6"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "3",
+      "6",
+      "7",
+      "10"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1288
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the speed of a train is 90 kmph . what is the distance covered by it in 30 minutes ?\n choice:45\n choice:77\n choice:52\n choice:15\n choice:66\nA:",
+    "targets": [
+      "45"
+    ],
+    "multiple_choice_targets": [
+      "15",
+      "66",
+      "77",
+      "52",
+      "45"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 4849
+  }
+]

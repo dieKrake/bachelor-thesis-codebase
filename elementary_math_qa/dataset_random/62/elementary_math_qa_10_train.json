@@ -1,0 +1,216 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(2, 1)\n choice:020\n choice:1\n choice:500\n choice:100\n choice:200\n choice:2\n choice:980\nA:",
+    "targets": [
+      "2"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "980",
+      "2",
+      "020",
+      "100",
+      "200",
+      "500"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2673
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the average salary of a person for the months of january , february , march and april is rs . 8000 and that for the months february , march , april and may is rs . 8500 . if his salary for the month of may is rs . 6500 , find his salary for the month of january ?\n choice:2711\n choice:4500\n choice:2876\n choice:2177\n choice:2981\nA:",
+    "targets": [
+      "4500"
+    ],
+    "multiple_choice_targets": [
+      "2177",
+      "2876",
+      "4500",
+      "2981",
+      "2711"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5509
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 30 by 100, divide 25 by 100, and then divide both. multiply result by 100,\n choice:15 %\n choice:35 %\n choice:2.5 %\n choice:120 %\n choice:250 %\nA:",
+    "targets": [
+      "120 %"
+    ],
+    "multiple_choice_targets": [
+      "2.5 %",
+      "15 %",
+      "120 %",
+      "35 %",
+      "250 %"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 3924
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 260 from 350,  divide result by 3, multiply result by 2, subtract result from 260.\n choice:$ 220\n choice:$ 250\n choice:$ 230\n choice:$ 200\n choice:$ 240\nA:",
+    "targets": [
+      "$ 200"
+    ],
+    "multiple_choice_targets": [
+      "$ 220",
+      "$ 230",
+      "$ 240",
+      "$ 200",
+      "$ 250"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4372
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:the price of a t . v . set worth rs . 8000 is to be paid in 20 installments of rs . 750 each . if the rate of interest be 6 % per annum , and the first installment be paid at the time of purchase , then the value of the last installment covering the interest as well will be ?\nsubtract(8000, 750)\n choice:6000\n choice:7820\n choice:7200\n choice:2799\n choice:7250\nA:",
+    "targets": [
+      "7250"
+    ],
+    "multiple_choice_targets": [
+      "7250",
+      "7200",
+      "7820",
+      "6000",
+      "2799"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 5144
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(divide(multiply(4020.75, 100), 9), 5)\n choice:5768\n choice:8935\n choice:6474\n choice:2345\n choice:8925\nA:",
+    "targets": [
+      "8935"
+    ],
+    "multiple_choice_targets": [
+      "5768",
+      "8925",
+      "2345",
+      "6474",
+      "8935"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1650
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:three rugs have a combined area of 204 square meters . by overlapping the rugs to cover floor area of 140 square meters , the area that is covered by exactly two layers of rug is 24 square meters . what is the area that is covered with three layers of rug ?\n choice:20 square meters\n choice:30 square meters\n choice:24 square meters\n choice:18 square meters\n choice:28 square meters\nA:",
+    "targets": [
+      "20 square meters"
+    ],
+    "multiple_choice_targets": [
+      "18 square meters",
+      "20 square meters",
+      "24 square meters",
+      "28 square meters",
+      "30 square meters"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4395
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 1 by 2, divide 1 by 3, and then subtract both. divide 1 by the result.\n choice:3\n choice:6\n choice:4\n choice:2\n choice:5\nA:",
+    "targets": [
+      "6"
+    ],
+    "multiple_choice_targets": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2678
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a man can row upstream at 27 kmph and downstream at 35 kmph , and then find the speed of the man in still water ?\ndivide(add(27, 35), 2)\n choice:30\n choice:92\n choice:31\n choice:23\n choice:32\nA:",
+    "targets": [
+      "31"
+    ],
+    "multiple_choice_targets": [
+      "31",
+      "92",
+      "30",
+      "32",
+      "23"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 1409
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a particular library has 75 books in a special collection , all of which were in the library at the beginning of the month . these book are occasionally loaned out through an inter - library program . if , by the end of the month , 65 percent of books that were loaned out are returned and there are 61 books in the special collection at that time , how many books of the special collection were loaned out during that month ?\ndivide(subtract(75, 61), subtract(1, divide(65, 100)))\n choice:30\n choice:55\n choice:35\n choice:20\n choice:40\nA:",
+    "targets": [
+      "40"
+    ],
+    "multiple_choice_targets": [
+      "20",
+      "30",
+      "35",
+      "40",
+      "55"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2067
+  }
+]

@@ -1,0 +1,420 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 180 by 15, subtract result from 15.\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+    "targets": [
+      "3"
+    ],
+    "multiple_choice_targets": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 3676
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:an inspector rejects 10 % of the meters as defective . how many will he examine to reject 10 ?\ndivide(multiply(10, 100), 10)\n choice:120\n choice:250\n choice:160\n choice:100\n choice:200\nA:",
+    "targets": [
+      "100"
+    ],
+    "multiple_choice_targets": [
+      "100",
+      "120",
+      "250",
+      "200",
+      "160"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2670
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add(900, divide(multiply(900, 100), multiply(12, 6)))\n choice:1190\n choice:none of these\n choice:1240\n choice:1120\n choice:2150\nA:",
+    "targets": [
+      "2150"
+    ],
+    "multiple_choice_targets": [
+      "1240",
+      "1120",
+      "1190",
+      "2150",
+      "none of these"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2308
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 390 by 1000, add 2 to 25, and then divide both. multiply 3600 by the result.\n choice:32 sec\n choice:52 sec\n choice:36 sec\n choice:30 sec\n choice:38 sec\nA:",
+    "targets": [
+      "52 sec"
+    ],
+    "multiple_choice_targets": [
+      "30 sec",
+      "32 sec",
+      "36 sec",
+      "38 sec",
+      "52 sec"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 283
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(subtract(multiply(10, 38.9), multiply(6, 42)), 4)\n choice:34.25\n choice:none of these\n choice:33.5\n choice:35\nA:",
+    "targets": [
+      "34.25"
+    ],
+    "multiple_choice_targets": [
+      "33.5",
+      "34.25",
+      "35",
+      "none of these"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 1903
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:share rs . 4200 among john , jose & binoy in the ration 2 : 4 : 6 . find the amount received by john ?\nsubtract(divide(4200, 2), divide(4200, 6))\n choice:1240\n choice:980\n choice:1400\n choice:1200\n choice:900\nA:",
+    "targets": [
+      "1400"
+    ],
+    "multiple_choice_targets": [
+      "900",
+      "980",
+      "1200",
+      "1240",
+      "1400"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1912
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the speed of a boat in still water is 24 kmph . what is the speed of the stream if the boat can cover 64 km downstream or 32 km upstream in the same time ?\n choice:5 kmph\n choice:8 kmph\n choice:6 kmph\n choice:4 kmph\n choice:7 kmph\nA:",
+    "targets": [
+      "8 kmph"
+    ],
+    "multiple_choice_targets": [
+      "8 kmph",
+      "6 kmph",
+      "7 kmph",
+      "5 kmph",
+      "4 kmph"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 5911
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 20000 from 60000,  divide 20 by 100, multiply 20000 by the result. and then divide both.\n choice:2 years\n choice:8 years\n choice:5 years\n choice:10 years\n choice:7 years\nA:",
+    "targets": [
+      "10 years"
+    ],
+    "multiple_choice_targets": [
+      "2 years",
+      "5 years",
+      "7 years",
+      "8 years",
+      "10 years"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 2960
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 600 to 70, divide result by 40,\n choice:1050\n choice:660\n choice:168\n choice:105\n choice:342\nA:",
+    "targets": [
+      "1050"
+    ],
+    "multiple_choice_targets": [
+      "105",
+      "168",
+      "342",
+      "660",
+      "1050"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 1842
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:in a 500 m race , the ratio of the speeds of two contestants a and b is 3 : 4 . a has a start of 140 m . then , a wins by\nsubtract 140 from 500,  multiply result by 4, divide result by 3, subtract result from 500.\n choice:20 m\n choice:60 m\n choice:40 m\n choice:10 m\n choice:50 m\nA:",
+    "targets": [
+      "20 m"
+    ],
+    "multiple_choice_targets": [
+      "60 m",
+      "40 m",
+      "20 m",
+      "10 m",
+      "50 m"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 813
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:mike needs 30 % to pass . if he scored 212 marks and falls short by 16 marks , what was the maximum marks he could have got ?\nadd 16 to 212, divide 30 by 100, and then divide both.\n choice:677\n choice:832\n choice:760\n choice:643\n choice:767\nA:",
+    "targets": [
+      "760"
+    ],
+    "multiple_choice_targets": [
+      "643",
+      "677",
+      "760",
+      "767",
+      "832"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 245
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:the number of sailors on a ship is 80 % more than the number of officers . the ratio of sailors to officers would be\n choice:33 : 25\n choice:97 : 50\n choice:47 : 25\n choice:22 : 25\n choice:9 : 5\nA:",
+    "targets": [
+      "9 : 5"
+    ],
+    "multiple_choice_targets": [
+      "33 : 25",
+      "9 : 5",
+      "47 : 25",
+      "22 : 25",
+      "97 : 50"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1865
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 2 to 6, divide 48 by the result. multiply result by 2, divide 36 by the result.\n choice:2.1 days\n choice:5 days\n choice:3 days\n choice:1 day\n choice:4.5 days\nA:",
+    "targets": [
+      "4.5 days"
+    ],
+    "multiple_choice_targets": [
+      "1 day",
+      "2.1 days",
+      "3 days",
+      "4.5 days",
+      "5 days"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 684
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:ratio between rahul and deepak is 4 : 3 , after 22 years rahul age will be 26 years . what is deepak present age\nsubtract 22 from 26,  multiply result by 3, divide result by 4,\n choice:3\n choice:8\n choice:5\n choice:10\n choice:7\nA:",
+    "targets": [
+      "3"
+    ],
+    "multiple_choice_targets": [
+      "10",
+      "3",
+      "5",
+      "7",
+      "8"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 5198
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(add(5, 30), divide(subtract(100, 30), 100))\n choice:140\n choice:80\n choice:50\n choice:120\n choice:60\nA:",
+    "targets": [
+      "50"
+    ],
+    "multiple_choice_targets": [
+      "60",
+      "80",
+      "50",
+      "120",
+      "140"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5954
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 6 to 120, add 1 to 4, and then divide both. divide result by 12,\n choice:12\n choice:18\n choice:14\n choice:10\n choice:16\nA:",
+    "targets": [
+      "12"
+    ],
+    "multiple_choice_targets": [
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4566
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 24 by 2,\n choice:13\n choice:16\n choice:14\n choice:12\n choice:15\nA:",
+    "targets": [
+      "12"
+    ],
+    "multiple_choice_targets": [
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 3029
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 100 by 96, multiply result by 23040,\n choice:24000\n choice:29973\n choice:26682\n choice:12312\n choice:26799\nA:",
+    "targets": [
+      "24000"
+    ],
+    "multiple_choice_targets": [
+      "26799",
+      "24000",
+      "26682",
+      "29973",
+      "12312"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 4396
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:in an examination 35 % of the students passed and 351 failed . how many students appeared for the examination ?\n choice:540\n choice:840\n choice:650\n choice:400\n choice:700\nA:",
+    "targets": [
+      "540"
+    ],
+    "multiple_choice_targets": [
+      "540",
+      "400",
+      "700",
+      "650",
+      "840"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 4616
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a can finish a work in 6 days and b can do same work in half the time taken by a . then working together , what part of same work they can finish in a day ?\nadd(divide(1, 6), multiply(divide(1, 6), 2))\n choice:1 / 6\n choice:none of these\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:",
+    "targets": [
+      "1 / 2"
+    ],
+    "multiple_choice_targets": [
+      "1 / 2",
+      "1 / 6",
+      "1 / 7",
+      "1 / 8",
+      "none of these"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 6112
+  }
+]

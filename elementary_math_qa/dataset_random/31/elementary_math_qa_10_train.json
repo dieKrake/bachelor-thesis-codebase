@@ -1,0 +1,212 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 3 from 11, \n choice:11\n choice:9\n choice:12\n choice:10\n choice:8\nA:",
+    "targets": [
+      "8"
+    ],
+    "multiple_choice_targets": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 5373
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 3 to 9, divide 3 by 2, and then divide both.\n choice:15\n choice:8\n choice:18\n choice:11\n choice:37\nA:",
+    "targets": [
+      "18"
+    ],
+    "multiple_choice_targets": [
+      "11",
+      "8",
+      "37",
+      "15",
+      "18"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 976
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a club wants to mix 15 pounds of candy worth $ 8.00 per pound with candy worth $ 5.00 per pound to reduce the cost of the mixture to $ 6.00 per pound . how many pounds of the $ 5.00 per pound candy should be used ?\nsubtract(multiply(15, 8.00), multiply(6.00, 15))\n choice:30\n choice:60\n choice:40\n choice:20\n choice:50\nA:",
+    "targets": [
+      "30"
+    ],
+    "multiple_choice_targets": [
+      "20",
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 263
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:n and m are each 3 - digit integers . each of the numbers 1 , 2 , 3 , 4,5 and 6 is a digit of either n or m . what is the smallest possible positive difference between n and m ?\nsubtract(subtract(100, multiply(subtract(6, 1), 10)), 1)\n choice:131\n choice:59\n choice:49\n choice:113\n choice:58\nA:",
+    "targets": [
+      "49"
+    ],
+    "multiple_choice_targets": [
+      "59",
+      "49",
+      "58",
+      "113",
+      "131"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 286
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 60 by 100, divide 3 by 5, and then multiply both. divide 36 by the result.\n choice:75\n choice:none of these\n choice:80\n choice:100\n choice:90\nA:",
+    "targets": [
+      "100"
+    ],
+    "multiple_choice_targets": [
+      "80",
+      "100",
+      "75",
+      "90",
+      "none of these"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 89
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(multiply(multiply(5, 4), 3), 3)\n choice:16\n choice:22\n choice:18\n choice:14\n choice:20\nA:",
+    "targets": [
+      "20"
+    ],
+    "multiple_choice_targets": [
+      "14",
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 4296
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if the sides of a cube are in the ratio 5 : 4 . what is the ratio of their diagonals ?\ndivide 5 by 4,\n choice:4 : 3\n choice:5 : 4\n choice:4 : 5\n choice:3 : 4\n choice:4 : 7\nA:",
+    "targets": [
+      "5 : 4"
+    ],
+    "multiple_choice_targets": [
+      "4 : 3",
+      "5 : 4",
+      "4 : 7",
+      "3 : 4",
+      "4 : 5"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1514
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 12000 by 10000, divide 8000 by 10000, and then subtract both. multiply result by 1800,\n choice:266\n choice:720\n choice:441\n choice:155\n choice:600\nA:",
+    "targets": [
+      "720"
+    ],
+    "multiple_choice_targets": [
+      "720",
+      "266",
+      "155",
+      "600",
+      "441"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 2321
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 20 by 100, multiply result by 80, add 80 to the result.\n choice:108\n choice:96\n choice:68\n choice:105.6\n choice:70.4\nA:",
+    "targets": [
+      "96"
+    ],
+    "multiple_choice_targets": [
+      "68",
+      "70.4",
+      "96",
+      "105.6",
+      "108"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 2212
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(36, 24)\n choice:288\n choice:864\n choice:760\n choice:284\n choice:820\nA:",
+    "targets": [
+      "864"
+    ],
+    "multiple_choice_targets": [
+      "760",
+      "284",
+      "288",
+      "864",
+      "820"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 106
+  }
+]

@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 # Pfad zur Parquet-Datei
-DATASET_NAME = "bigbench_elementary_math_qa"
+DATASET_NAME = "navigate"
 
 DATASET_PATH = Path(r"C:\Users\kkrazius\Desktop\Bachelor-Arbeit\Datasets\eval")
 INPUT_FILE = DATASET_PATH / f"{DATASET_NAME}.parquet"
@@ -14,7 +14,7 @@ FILE_PREFIX = DATASET_NAME
 TEST_SIZES  = [160, 120, 80, 40]
 TRAIN_SIZES = [10, 20, 30, 40]
 
-RANDOM_STATE = 42  # für Reproduzierbarkeit
+RANDOM_STATE =  50 # für Reproduzierbarkeit
 
 
 def make_serializable(obj):

@@ -1,0 +1,72 @@
+[
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Always face forward. Take 10 steps left. Take 6 steps right. Take 4 steps right.\nA:",
+    "targets": ["True"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [1, 0],
+    "idx": 783
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Turn left. Take 7 steps. Turn right. Turn right.\nA:",
+    "targets": ["False"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [0, 1],
+    "idx": 755
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Turn right. Turn around. Take 2 steps. Take 6 steps. Take 4 steps.\nA:",
+    "targets": ["False"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [0, 1],
+    "idx": 146
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Take 8 steps. Take 5 steps. Take 5 steps. Take 10 steps. Take 5 steps.\nA:",
+    "targets": ["False"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [0, 1],
+    "idx": 10
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Take 9 steps. Turn around. Take 9 steps. Turn around. Turn left. Turn right. Turn left.\nA:",
+    "targets": ["True"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [1, 0],
+    "idx": 525
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Turn left. Take 6 steps. Turn around. Take 4 steps. Take 2 steps. Turn left.\nA:",
+    "targets": ["True"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [1, 0],
+    "idx": 273
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Always face forward. Take 10 steps right. Take 3 steps left.\nA:",
+    "targets": ["False"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [0, 1],
+    "idx": 576
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Take 7 steps. Take 5 steps. Take 5 steps. Take 9 steps. Turn left. Take 7 steps. Turn right. Take 2 steps.\nA:",
+    "targets": ["False"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [0, 1],
+    "idx": 464
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Take 2 steps. Take 6 steps. Take 2 steps. Turn around. Take 10 steps. Turn right.\nA:",
+    "targets": ["True"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [1, 0],
+    "idx": 325
+  },
+  {
+    "inputs": "If you follow these instructions, do you return to the starting point?\nQ: Take 2 steps. Turn right. Take 8 steps. Take 2 steps.\nA:",
+    "targets": ["False"],
+    "multiple_choice_targets": ["True", "False"],
+    "multiple_choice_scores": [0, 1],
+    "idx": 789
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add(add(40, add(30, 30)), 2)\n choice:120\n choice:30\n choice:122\n choice:102\n choice:150\nA:",
+    "targets": [
+      "102"
+    ],
+    "multiple_choice_targets": [
+      "150",
+      "122",
+      "30",
+      "120",
+      "102"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5623
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:the length of a train and that of a platform are equal . if with a speed of 54 k / hr , the train crosses the platform in one minute , then the length of the train ( in meters ) is ?\nmultiply 1000 to 54, divide 60 by 1, and then divide both. divide result by 2,\n choice:227\n choice:750\n choice:299\n choice:211\n choice:450\nA:",
+    "targets": [
+      "450"
+    ],
+    "multiple_choice_targets": [
+      "227",
+      "299",
+      "450",
+      "750",
+      "211"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4605
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(8, 2)\n choice:1 : 8\n choice:4 : 1\n choice:16 : 1\n choice:1 : 4\n choice:2 : 1\nA:",
+    "targets": [
+      "16 : 1"
+    ],
+    "multiple_choice_targets": [
+      "1 : 8",
+      "1 : 4",
+      "2 : 1",
+      "4 : 1",
+      "16 : 1"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 6022
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:there are 780 male and female participants in a meeting . half the female participants and one - quarter of the male participants are democrats . one - third of all the participants are democrats . how many of the democrats are female ?\ndivide(subtract(multiply(divide(780, 3), 4), 780), 2)\n choice:125\n choice:75\n choice:130\n choice:100\n choice:225\nA:",
+    "targets": [
+      "130"
+    ],
+    "multiple_choice_targets": [
+      "75",
+      "100",
+      "125",
+      "130",
+      "225"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1049
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:each child has 3 crayons and 12 apples . if there are 6 children , how many crayons are there in total ?\nmultiply(6, 3)\n choice:18\n choice:65\n choice:22\n choice:10\n choice:36\nA:",
+    "targets": [
+      "18"
+    ],
+    "multiple_choice_targets": [
+      "22",
+      "65",
+      "18",
+      "36",
+      "10"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 893
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:if 8 spiders make 8 webs in 8 days , then 1 spider will make 1 web in how many days ?\nmultiply 8 to 1,\n choice:5\n choice:8\n choice:6\n choice:3\n choice:7\nA:",
+    "targets": [
+      "8"
+    ],
+    "multiple_choice_targets": [
+      "7",
+      "6",
+      "5",
+      "8",
+      "3"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1271
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:subtract 100 from 1000,  subtract 150 from 400,  subtract result from 400. and then divide both.\n choice:4\n choice:7\n choice:5\n choice:3\n choice:6\nA:",
+    "targets": [
+      "6"
+    ],
+    "multiple_choice_targets": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 1335
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:at what rate percent on simple interest will rs . 750 amount to rs . 975 in 5 years ?\n choice:3\n choice:6\n choice:4\n choice:2\n choice:5\nA:",
+    "targets": [
+      "6"
+    ],
+    "multiple_choice_targets": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 5012
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide(9, 20)\n choice:2 / 15\n choice:9 / 20\n choice:2 / 5\n choice:0\n choice:5 / 6\nA:",
+    "targets": [
+      "9 / 20"
+    ],
+    "multiple_choice_targets": [
+      "0",
+      "2 / 15",
+      "2 / 5",
+      "9 / 20",
+      "5 / 6"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2178
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 5 to 11, divide result by 2,\n choice:3\n choice:9\n choice:5\n choice:10\n choice:8\nA:",
+    "targets": [
+      "8"
+    ],
+    "multiple_choice_targets": [
+      "3",
+      "5",
+      "8",
+      "9",
+      "10"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 5146
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:on a race track a maximum of 5 horses can race together at a time . there are a total of 25 horses . there is no way of timing the races . what is the minimum number t of races we need to conduct to get the top 3 fastest horses ?\n choice:11\n choice:8\n choice:5\n choice:10\n choice:7\nA:",
+    "targets": [
+      "7"
+    ],
+    "multiple_choice_targets": [
+      "5",
+      "7",
+      "8",
+      "10",
+      "11"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 3871
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply(65, divide(15, 100))\n choice:' 8.75'\n choice:[' 7.50'\n choice:' 9.50'\n choice:' 7.75'\n choice:' 9.75']\nA:",
+    "targets": [
+      "' 9.75']"
+    ],
+    "multiple_choice_targets": [
+      "[' 7.50'",
+      "' 8.75'",
+      "' 7.75'",
+      "' 9.50'",
+      "' 9.75']"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 816
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:there are 450 birds at a small zoo . the number of birds is 5 times the number of all the other animals combined . how many more birds are there than non bird animals at the zoo ?\nsubtract(450, divide(450, 5))\n choice:270\n choice:90\n choice:360\n choice:180\n choice:400\nA:",
+    "targets": [
+      "360"
+    ],
+    "multiple_choice_targets": [
+      "400",
+      "360",
+      "270",
+      "180",
+      "90"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 2769
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:is two years older than b who is twice as old as c . if the total of the ages of a , b and c be 47 , then how old is b ?\n choice:18\n choice:9\n choice:7\n choice:11\n choice:8\nA:",
+    "targets": [
+      "18"
+    ],
+    "multiple_choice_targets": [
+      "7",
+      "8",
+      "9",
+      "18",
+      "11"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "idx": 2762
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:divide 3 by 4, subtract result from 1. divide 250 by the result.\n choice:$ 500\n choice:$ 800\n choice:$ 600\n choice:$ 1000\n choice:$ 700\nA:",
+    "targets": [
+      "$ 1000"
+    ],
+    "multiple_choice_targets": [
+      "$ 500",
+      "$ 600",
+      "$ 700",
+      "$ 800",
+      "$ 1000"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 3415
+  },
+  {
+    "inputs": "What is the answer to the following math word problem, with the given hint?:a car takes 6 hours to cover a distance of 180 km . how much should the speed in kmph be maintained to cover the same direction in 3 / 2 th of the previous time ?\ndivide(180, divide(multiply(6, 3), 2))\n choice:15 kmph\n choice:30 kmph\n choice:20 kmph\n choice:10 kmph\n choice:25 kmph\nA:",
+    "targets": [
+      "20 kmph"
+    ],
+    "multiple_choice_targets": [
+      "10 kmph",
+      "20 kmph",
+      "15 kmph",
+      "30 kmph",
+      "25 kmph"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "idx": 1826
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:add 4 to 13, divide 68 by the result.\n choice:3 hours\n choice:none\n choice:4 hours\n choice:2 hours\n choice:5 hours\nA:",
+    "targets": [
+      "4 hours"
+    ],
+    "multiple_choice_targets": [
+      "2 hours",
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "none"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 2579
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 10 to 260, divide result by 100, add 260 to the result.\n choice:120\n choice:286\n choice:200\n choice:100\n choice:226\nA:",
+    "targets": [
+      "286"
+    ],
+    "multiple_choice_targets": [
+      "100",
+      "120",
+      "200",
+      "226",
+      "286"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "idx": 3734
+  },
+  {
+    "inputs": "What is the answer to the following math word problem?:a polling company surveyed a certain country , and it found that 35 % of that country ’ s registered voters had an unfavorable impression of both of that state ’ s major political parties and that 20 % had a favorable impression only of party e . if one registered voter has a favorable impression of both parties for every two registered voters who have a favorable impression only of party b , then what percentage of the country ’ s registered voters have a favorable impression of both parties ( assuming that respondents to the poll were given a choice between favorable and unfavorable impressions only ) ?\n choice:20\n choice:45\n choice:30\n choice:15\n choice:35\nA:",
+    "targets": [
+      "15"
+    ],
+    "multiple_choice_targets": [
+      "15",
+      "20",
+      "30",
+      "35",
+      "45"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "idx": 3013
+  },
+  {
+    "inputs": "What is the result of the following arithmetic operations?:multiply 70 to 80, subtract 70 from 80,  and then divide both.\n choice:280\n choice:none\n choice:450\n choice:210\n choice:560\nA:",
+    "targets": [
+      "560"
+    ],
+    "multiple_choice_targets": [
+      "210",
+      "280",
+      "560",
+      "450",
+      "none"
+    ],
+    "multiple_choice_scores": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "idx": 4789
+  }
+]
