@@ -91,6 +91,7 @@ def normalize_answer(text: str) -> str:
     - trimmt Whitespace
     - entfernt einfache Satzzeichen am Ende
     - macht lower()
+    - schneidet führendes "choice:" ab (z.B. "choice:50" -> "50")
     - mappt True/False und Yes/No auf gemeinsame Repräsentation
     """
     if text is None:
@@ -104,6 +105,10 @@ def normalize_answer(text: str) -> str:
 
     t = t.strip().lower()
 
+    # Falls das Modell sowas wie "choice:50" oder "choice: 50" ausgibt:
+    if t.startswith("choice:"):
+        t = t[len("choice:"):].strip()
+
     # Booleans vereinheitlichen
     bool_map = {
         "true": "bool_true",
@@ -116,6 +121,61 @@ def normalize_answer(text: str) -> str:
     if t in bool_map:
         return bool_map[t]
 
+    return t
+
+
+def align_model_answer(
+    answer_raw: str,
+    gold_raw: str,
+    choices: Optional[List[str]] = None,
+) -> str:
+    """
+    Versucht, aus der rohen Modellantwort (answer_raw) die eigentliche
+    Antwort zu extrahieren, ohne falsche Substring-Matches zu erzeugen.
+
+    Strategie:
+    - 'choice:'-Prefix entfernen (choice:50 -> 50)
+    - Wenn die bereinigte Antwort EXAKT dem Goldlabel entspricht -> nimm das
+    - Wenn Choices existieren:
+        - prüfe EXAKTE Gleichheit mit einer Choice
+        - OPTIONAL: versuche Tokens aus längeren Antworten mit Choices zu matchen
+    - ansonsten: gib die bereinigte Antwort zurück
+    """
+    if answer_raw is None:
+        return ""
+
+    t = answer_raw.strip()
+
+    # 1) "choice:50" -> "50"
+    lower = t.lower()
+    if lower.startswith("choice:"):
+        t = t.split(":", 1)[1].strip()
+        lower = t.lower()
+
+    # 2) exakte Übereinstimmung mit Gold-Label
+    if gold_raw is not None:
+        gold_str = str(gold_raw).strip()
+        if t == gold_str:
+            return gold_str
+
+    # 3) exakte Übereinstimmung mit einer der Choices
+    if choices:
+        norm_choices = [str(c).strip() for c in choices]
+
+        # 3a) exakte Gleichheit
+        for c in norm_choices:
+            if t == c:
+                return c
+
+        # 3b) OPTIONAL: Token-basiert (für Antworten wie "I think the answer is 50.")
+        # -> hier KEIN simples "if c in t", um Fälle wie "2" in "21" zu vermeiden
+        tokens = t.replace(",", " ").replace(".", " ").split()
+        for tok in tokens:
+            for c in norm_choices:
+                if tok == c:
+                    return c
+
+    # 4) Fallback: bereinigte Rohantwort zurückgeben
     return t
 
 
@@ -158,8 +218,15 @@ def run_mtask_on_dataset(
         answer_raw = (resp.choices[0].message.content or "").strip()
         gold_raw = ex.label.strip()
 
+        # Antwort zuerst an die möglichen Optionen "ausrichten"
+        answer_aligned = align_model_answer(
+            answer_raw=answer_raw,
+            gold_raw=gold_raw,
+            choices=ex.choices,
+        )
+
         # Normalisierung für robusteren Vergleich (True/False vs Yes/No etc.)
-        answer_norm = normalize_answer(answer_raw)
+        answer_norm = normalize_answer(answer_aligned)
         gold_norm = normalize_answer(gold_raw)
 
         judgement = (answer_norm == gold_norm)
@@ -170,7 +237,8 @@ def run_mtask_on_dataset(
             "Index": idx,
             "Input": ex.input,
             "correctAnswer": gold_raw,
-            "MbaseAnswer": answer_raw,
+            "MbaseAnswer": answer_aligned,
+            "MbaseAnswerRaw": answer_raw,
             "judgement": judgement,
         }
 
@@ -320,17 +388,19 @@ def save_run_to_json(
 
 if __name__ == "__main__":
 
-    dataset_name = "navigate_200"
-    dataset_name_split = dataset_name.split("_")[0]
+    dataset_name = "elementary_math_qa"
+    #dataset_name_split = dataset_name.split("_")[0]
 
-    test_numbers = ["23","31","48","50","56","62"]
-    dataset_sizes = ["40", "80", "120", "160"]
+    #test_numbers = ["5","15","19","23","31","42","48","50","56","62"]
+    test_numbers = ["56"]
+    #dataset_sizes = ["40", "80", "120", "160"]
+    dataset_sizes = ["120","160"]
 
     # Prompt, Model, etc. bleiben wie bisher
     system_message_task = None
     model_name = "gpt-4o-mini"
 
-    zero_shot_prompt = (
+    zero_shot_prompt_disabled = (
         'You MUST answer with exactly one string: either "True" or "False". '
         'Do not output explanations, punctuation, or additional text. '
         '"True" = you return to the starting point. '
@@ -339,11 +409,12 @@ if __name__ == "__main__":
     )
 
     # Multiple-Choice-Prompt
-    # zero_shot_prompt = ("You are solving multiple-choice math questions.\n"
-    #                     "Each question lists several answer options, each prefixed with 'choice:'.\n"
-    #                     "Read the question and the choices carefully.\n"
-    #                     "Answer with exactly the text of the correct choice, "
-    #                     "without the 'choice:' prefix and without any explanation or extra text.")
+    zero_shot_prompt = (
+        "You are solving multiple-choice math questions.\n"
+        "Each question lists several answer options, each prefixed with 'choice:'.\n"
+        "Read the question and the choices carefully.\n"
+        "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+      )
 
     config = {
         "prompt": zero_shot_prompt,
@@ -364,7 +435,7 @@ if __name__ == "__main__":
 
             dataset_path = (
                 f"{dataset_name}/dataset_random/{test_number}/"
-                f"{dataset_name_split}_{dataset_size}_test.json"
+                f"{dataset_name}_{dataset_size}_test.json"
             )
 
             log_header("Loading dataset")

@@ -1,0 +1,1818 @@
+{
+  "timestamp": "2025-12-04T14:59:30.468687",
+  "dataset": {
+    "path": "elementary_math_qa/dataset_random/48/elementary_math_qa_120_test.json",
+    "num_examples": 120
+  },
+  "config": {
+    "prompt": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+    "model_name": "gpt-4o-mini",
+    "system_message_snippet": "",
+    "mode": "zero-shot"
+  },
+  "result": {
+    "prompt": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+    "accuracy": 0.475,
+    "results": [
+      {
+        "Index": 0,
+        "Input": "What is the result of the following arithmetic operations?:multiply(divide(40, 20), 60)\n choice:130\n choice:175\n choice:150\n choice:120\n choice:160\nA:",
+        "correctAnswer": "120",
+        "MbaseAnswer": "120",
+        "MbaseAnswerRaw": "120",
+        "judgement": true,
+        "choices": [
+          "120",
+          "150",
+          "175",
+          "160",
+          "130"
+        ]
+      },
+      {
+        "Index": 1,
+        "Input": "What is the answer to the following math word problem?:a dog takes 5 leaps for every 8 leaps of a hare . if one leap of the dog is equal to 5 leaps of the hare , the ratio of the speed of the dog to that of the hare is :\n choice:25 : 10\n choice:8 : 25\n choice:25 : 8\n choice:24 : 8\n choice:25 : 9\nA:",
+        "correctAnswer": "25 : 8",
+        "MbaseAnswer": "25 : 8",
+        "MbaseAnswerRaw": "25 : 8",
+        "judgement": true,
+        "choices": [
+          "25 : 10",
+          "25 : 8",
+          "25 : 9",
+          "8 : 25",
+          "24 : 8"
+        ]
+      },
+      {
+        "Index": 2,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the area of a circle is increased by 300 % . by what percent has the radius of the circle increased ?\nmultiply(100, divide(2, 2))\n choice:200 %\n choice:800 %\n choice:400 %\n choice:100 %\n choice:600 %\nA:",
+        "correctAnswer": "100 %",
+        "MbaseAnswer": "600 %",
+        "MbaseAnswerRaw": "choice:600 %",
+        "judgement": false,
+        "choices": [
+          "400 %",
+          "200 %",
+          "100 %",
+          "600 %",
+          "800 %"
+        ]
+      },
+      {
+        "Index": 3,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a , b and c are partners . a receives 2 / 3 of profits , b and c dividing the remainder equally . a ' s income is increased by rs . 300 when the rate to profit rises from 5 to 7 percent . find the capital of a ?\ndivide(multiply(300, 100), 2)\n choice:15000\n choice:5000\n choice:1991\n choice:10000\n choice:2778\nA:",
+        "correctAnswer": "15000",
+        "MbaseAnswer": "15000",
+        "MbaseAnswerRaw": "15000",
+        "judgement": true,
+        "choices": [
+          "5000",
+          "10000",
+          "15000",
+          "2778",
+          "1991"
+        ]
+      },
+      {
+        "Index": 4,
+        "Input": "What is the result of the following arithmetic operations?:add(divide(subtract(60, 6), divide(3, 2)), 1)\n choice:36 min\n choice:39 min\n choice:37 min\n choice:32 min\n choice:38 min\nA:",
+        "correctAnswer": "37 min",
+        "MbaseAnswer": "38 min",
+        "MbaseAnswerRaw": "38 min",
+        "judgement": false,
+        "choices": [
+          "36 min",
+          "37 min",
+          "38 min",
+          "39 min",
+          "32 min"
+        ]
+      },
+      {
+        "Index": 5,
+        "Input": "What is the answer to the following math word problem, with the given hint?:john found that the average of 15 numbers is 40 . if 10 is added to each number then the mean of number is ?\nadd(40, 10)\n choice:60\n choice:85\n choice:75\n choice:50\n choice:80\nA:",
+        "correctAnswer": "50",
+        "MbaseAnswer": "60",
+        "MbaseAnswerRaw": "60",
+        "judgement": false,
+        "choices": [
+          "50",
+          "60",
+          "75",
+          "80",
+          "85"
+        ]
+      },
+      {
+        "Index": 6,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the ratio of investments of two partners p and q is 7 : 5 and the ratio of their profits is 7 : 10 . if p invested the money for 10 months , find for how much time did q invest the money ?\ndivide 7 by 5, divide 10 by 7, and then multiply both. multiply result by 10,\n choice:11\n choice:20\n choice:12\n choice:10\n choice:16\nA:",
+        "correctAnswer": "20",
+        "MbaseAnswer": "12",
+        "MbaseAnswerRaw": "choice:12",
+        "judgement": false,
+        "choices": [
+          "11",
+          "10",
+          "20",
+          "16",
+          "12"
+        ]
+      },
+      {
+        "Index": 7,
+        "Input": "What is the result of the following arithmetic operations?:multiply 10 to 2, add result to 10, add result to 9, add 9 to the result.\n choice:22\n choice:897\n choice:268\n choice:20\n choice:48\nA:",
+        "correctAnswer": "48",
+        "MbaseAnswer": "22",
+        "MbaseAnswerRaw": "22",
+        "judgement": false,
+        "choices": [
+          "22",
+          "897",
+          "268",
+          "20",
+          "48"
+        ]
+      },
+      {
+        "Index": 8,
+        "Input": "What is the answer to the following math word problem, with the given hint?:18 men shake hands with each other . maximum no of handshakes without cyclic handshakes .\nsubtract 1 from 18,  divide 18 by 2, and then multiply both.\n choice:190\n choice:230\n choice:210\n choice:153\n choice:220\nA:",
+        "correctAnswer": "153",
+        "MbaseAnswer": "153",
+        "MbaseAnswerRaw": "choice:153",
+        "judgement": true,
+        "choices": [
+          "190",
+          "153",
+          "210",
+          "220",
+          "230"
+        ]
+      },
+      {
+        "Index": 9,
+        "Input": "What is the answer to the following math word problem, with the given hint?:each week , harry is paid x dollars per hour for the first 24 hours and 1.5 x dollars for each additional hour worked that week . each week , james is paid x dollars per per hour for the first 40 hours and 2 x dollars for each additional hour worked that week . last week james worked a total of 41 hours if harry and james were paid the same amount last week , how many hours did harry work last week ?\nadd(divide(subtract(add(40, 2), 24), 1.5), 24)\n choice:36\n choice:39\n choice:37\n choice:35\n choice:38\nA:",
+        "correctAnswer": "36",
+        "MbaseAnswer": "39",
+        "MbaseAnswerRaw": "39",
+        "judgement": false,
+        "choices": [
+          "35",
+          "36",
+          "37",
+          "38",
+          "39"
+        ]
+      },
+      {
+        "Index": 10,
+        "Input": "What is the result of the following arithmetic operations?:multiply(divide(6300, add(add(6300, 4200), 10500)), 12300)\n choice:2887\n choice:9977\n choice:3630\n choice:2212\n choice:3690\nA:",
+        "correctAnswer": "3690",
+        "MbaseAnswer": "3690",
+        "MbaseAnswerRaw": "3690",
+        "judgement": true,
+        "choices": [
+          "3630",
+          "3690",
+          "2887",
+          "9977",
+          "2212"
+        ]
+      },
+      {
+        "Index": 11,
+        "Input": "What is the answer to the following math word problem, with the given hint?:in a dairy farm , 40 cows eat 40 bags of husk in 40 days . in how many days one cow will eat one bag of husk ?\ndivide 40 by 40, multiply result by 40,\n choice:1 / 40\n choice:80\n choice:1 / 80\n choice:1\n choice:40\nA:",
+        "correctAnswer": "40",
+        "MbaseAnswer": "1 / 40",
+        "MbaseAnswerRaw": "1 / 40",
+        "judgement": false,
+        "choices": [
+          "1",
+          "1 / 40",
+          "40",
+          "80",
+          "1 / 80"
+        ]
+      },
+      {
+        "Index": 12,
+        "Input": "What is the answer to the following math word problem, with the given hint?:cereal a is 10 % sugar by weight , whereas healthier but less delicious cereal b is 4 % sugar by weight . to make a delicious and healthy mixture that is 5 % sugar , what should be the ratio of cereal a to cereal b , by weight ?\ndivide(subtract(5, 4), subtract(10, 5))\n choice:1 : 5\n choice:2 : 9\n choice:1 : 6\n choice:1 : 4\n choice:2 : 7\nA:",
+        "correctAnswer": "1 : 5",
+        "MbaseAnswer": "1 : 5",
+        "MbaseAnswerRaw": "1 : 5",
+        "judgement": true,
+        "choices": [
+          "2 : 9",
+          "2 : 7",
+          "1 : 6",
+          "1 : 4",
+          "1 : 5"
+        ]
+      },
+      {
+        "Index": 13,
+        "Input": "What is the result of the following arithmetic operations?:multiply(120, multiply(divide(20, 10), divide(20, 6)))\n choice:1200\n choice:800\n choice:1400\n choice:1000\n choice:1600\nA:",
+        "correctAnswer": "800",
+        "MbaseAnswer": "1000",
+        "MbaseAnswerRaw": "1000",
+        "judgement": false,
+        "choices": [
+          "800",
+          "1000",
+          "1200",
+          "1400",
+          "1600"
+        ]
+      },
+      {
+        "Index": 14,
+        "Input": "What is the result of the following arithmetic operations?:subtract 2 from 4,  divide 10 by the result.\n choice:12\n choice:7\n choice:14\n choice:10\n choice:5\nA:",
+        "correctAnswer": "5",
+        "MbaseAnswer": "5",
+        "MbaseAnswerRaw": "choice:5",
+        "judgement": true,
+        "choices": [
+          "5",
+          "7",
+          "10",
+          "12",
+          "14"
+        ]
+      },
+      {
+        "Index": 15,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a student chose a number , multiplied it by 8 , then subtracted 138 from the result and got 102 . what was the number he chose ?\nadd 138 to 102, divide result by 8,\n choice:130\n choice:30\n choice:140\n choice:120\n choice:150\nA:",
+        "correctAnswer": "30",
+        "MbaseAnswer": "30",
+        "MbaseAnswerRaw": "30",
+        "judgement": true,
+        "choices": [
+          "30",
+          "120",
+          "130",
+          "140",
+          "150"
+        ]
+      },
+      {
+        "Index": 16,
+        "Input": "What is the answer to the following math word problem?:a train 300 meters long completely crosses a 300 meters long bridge in 45 seconds . what is the speed of the train is ?\n choice:27\n choice:48\n choice:29\n choice:21\n choice:32\nA:",
+        "correctAnswer": "48",
+        "MbaseAnswer": "32",
+        "MbaseAnswerRaw": "choice:32",
+        "judgement": false,
+        "choices": [
+          "32",
+          "48",
+          "29",
+          "27",
+          "21"
+        ]
+      },
+      {
+        "Index": 17,
+        "Input": "What is the answer to the following math word problem?:if the simple interest on $ 2000 increase by $ 40 , when the time increase by 4 years . find the rate percent per annum .\n choice:0.5 %\n choice:1.2 %\n choice:0.7 %\n choice:0.3 %\n choice:0.9 %\nA:",
+        "correctAnswer": "0.5 %",
+        "MbaseAnswer": "0.5 %",
+        "MbaseAnswerRaw": "0.5 %",
+        "judgement": true,
+        "choices": [
+          "1.2 %",
+          "0.5 %",
+          "0.7 %",
+          "0.9 %",
+          "0.3 %"
+        ]
+      },
+      {
+        "Index": 18,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a man has rs . 400 in the denominations of one - rupee notes , 5 - rupee notes and 10 rupee notes . the number of notes of each denomination is equal . what is the total number of notes that he has ?\nmultiply(divide(400, add(add(1, 5), 10)), 3)\n choice:60\n choice:95\n choice:75\n choice:45\n choice:90\nA:",
+        "correctAnswer": "75",
+        "MbaseAnswer": "60",
+        "MbaseAnswerRaw": "60",
+        "judgement": false,
+        "choices": [
+          "45",
+          "60",
+          "75",
+          "90",
+          "95"
+        ]
+      },
+      {
+        "Index": 19,
+        "Input": "What is the answer to the following math word problem?:a portion of the 80 % solution of chemicals was replaced with an equal amount of 20 % solution of chemicals . as a result , 50 % solution of chemicals resulted . what part of the original solution was replaced ?\n choice:1 / 3\n choice:1 / 6\n choice:1 / 4\n choice:1 / 2\n choice:1 / 5\nA:",
+        "correctAnswer": "1 / 2",
+        "MbaseAnswer": "1 / 4",
+        "MbaseAnswerRaw": "1 / 4",
+        "judgement": false,
+        "choices": [
+          "1 / 3",
+          "1 / 2",
+          "1 / 4",
+          "1 / 5",
+          "1 / 6"
+        ]
+      },
+      {
+        "Index": 20,
+        "Input": "What is the answer to the following math word problem?:in an examination , a student scores 4 marks for every correct answer and loses 1 mark for every wrong answer . if he attempts all 60 questions and secures 120 marks , the no of questions he attempts correctly is :\n choice:36\n choice:44\n choice:40\n choice:35\n choice:42\nA:",
+        "correctAnswer": "36",
+        "MbaseAnswer": "40",
+        "MbaseAnswerRaw": "40",
+        "judgement": false,
+        "choices": [
+          "35",
+          "36",
+          "40",
+          "42",
+          "44"
+        ]
+      },
+      {
+        "Index": 21,
+        "Input": "What is the result of the following arithmetic operations?:multiply 1000 to 30, divide result by 3600, multiply result by 9,\n choice:324 m\n choice:none of these\n choice:75 m\n choice:180 m\n choice:can not be determined\nA:",
+        "correctAnswer": "75 m",
+        "MbaseAnswer": "75 m",
+        "MbaseAnswerRaw": "75 m",
+        "judgement": true,
+        "choices": [
+          "75 m",
+          "180 m",
+          "324 m",
+          "can not be determined",
+          "none of these"
+        ]
+      },
+      {
+        "Index": 22,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the e train leaves station a moving at a constant speed , and passes by stations b and c , in this order . it takes the e train 7 hours to reach station b , and 5 additional hours to reach station c . the distance between stations a and b is m kilometers longer than the distance between stations b and c . what is the distance between stations a and c in terms of m ?\ndivide(add(7, 5), subtract(7, 5))\n choice:12 m\n choice:9 m\n choice:6 m\n choice:1.8 m\n choice:7 m\nA:",
+        "correctAnswer": "6 m",
+        "MbaseAnswer": "12 m",
+        "MbaseAnswerRaw": "12 m",
+        "judgement": false,
+        "choices": [
+          "1.8 m",
+          "6 m",
+          "7 m",
+          "9 m",
+          "12 m"
+        ]
+      },
+      {
+        "Index": 23,
+        "Input": "What is the result of the following arithmetic operations?:add(65, multiply(8, 4))\n choice:55 kg\n choice:97 kg\n choice:65 kg\n choice:25 kg\n choice:75 kg\nA:",
+        "correctAnswer": "97 kg",
+        "MbaseAnswer": "97 kg",
+        "MbaseAnswerRaw": "97 kg",
+        "judgement": true,
+        "choices": [
+          "75 kg",
+          "65 kg",
+          "55 kg",
+          "97 kg",
+          "25 kg"
+        ]
+      },
+      {
+        "Index": 24,
+        "Input": "What is the answer to the following math word problem?:maxwell leaves his home and walks toward brad ' s house . one hour later , brad leaves his home and runs toward maxwell ' s house . if the distance between their homes is 24 kilometers , maxwell ' s walking speed is 4 km / h , and brad ' s running speed is 6 km / h . what is the total time it takes maxwell before he meets up with brad ?\n choice:4\n choice:8\n choice:5\n choice:3\n choice:6\nA:",
+        "correctAnswer": "3",
+        "MbaseAnswer": "4",
+        "MbaseAnswerRaw": "4",
+        "judgement": false,
+        "choices": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "Index": 25,
+        "Input": "What is the result of the following arithmetic operations?:subtract 2 from 5,  multiply result by 18, add result to 6,\n choice:60\n choice:96\n choice:69\n choice:48\n choice:84\nA:",
+        "correctAnswer": "60",
+        "MbaseAnswer": "96",
+        "MbaseAnswerRaw": "96",
+        "judgement": false,
+        "choices": [
+          "48",
+          "60",
+          "84",
+          "96",
+          "69"
+        ]
+      },
+      {
+        "Index": 26,
+        "Input": "What is the result of the following arithmetic operations?:multiply(divide(30, subtract(6, 1)), subtract(12, 1))\n choice:28\n choice:76\n choice:47\n choice:11\n choice:66\nA:",
+        "correctAnswer": "66",
+        "MbaseAnswer": "66",
+        "MbaseAnswerRaw": "66",
+        "judgement": true,
+        "choices": [
+          "47",
+          "76",
+          "28",
+          "66",
+          "11"
+        ]
+      },
+      {
+        "Index": 27,
+        "Input": "What is the answer to the following math word problem?:a is the average ( arithmetic mean ) of the first 7 positive multiples of 4 and b is the median of the first 3 positive multiples of positive integer n . if the value of a ^ 2 – b ^ 2 is zero , what is the value of n ?\n choice:2\n choice:8\n choice:4\n choice:10\n choice:6\nA:",
+        "correctAnswer": "8",
+        "MbaseAnswer": "4",
+        "MbaseAnswerRaw": "4",
+        "judgement": false,
+        "choices": [
+          "2",
+          "4",
+          "6",
+          "8",
+          "10"
+        ]
+      },
+      {
+        "Index": 28,
+        "Input": "What is the result of the following arithmetic operations?:divide 268 by 100, divide 74 by 100, and then multiply both.\n choice:1.0266\n choice:none\n choice:1.5693\n choice:1.0025\n choice:1.9832\nA:",
+        "correctAnswer": "1.9832",
+        "MbaseAnswer": "1.0025",
+        "MbaseAnswerRaw": "1.0025",
+        "judgement": false,
+        "choices": [
+          "1.9832",
+          "1.0025",
+          "1.5693",
+          "1.0266",
+          "none"
+        ]
+      },
+      {
+        "Index": 29,
+        "Input": "What is the result of the following arithmetic operations?:divide(add(add(6, 4), subtract(34, 4)), 2)\n choice:18\n choice:32\n choice:20\n choice:11\n choice:28\nA:",
+        "correctAnswer": "20",
+        "MbaseAnswer": "20",
+        "MbaseAnswerRaw": "20",
+        "judgement": true,
+        "choices": [
+          "32",
+          "20",
+          "28",
+          "11",
+          "18"
+        ]
+      },
+      {
+        "Index": 30,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a basketball team composed of 12 players scored 100 points in a particular contest . if none of the individual players scored fewer than 7 points , what is the greatest number of points t that an individual player might have scored ?\nadd(subtract(100, multiply(12, 7)), 7)\n choice:16\n choice:7\n choice:21\n choice:13\n choice:23\nA:",
+        "correctAnswer": "23",
+        "MbaseAnswer": "16",
+        "MbaseAnswerRaw": "16",
+        "judgement": false,
+        "choices": [
+          "7",
+          "13",
+          "16",
+          "21",
+          "23"
+        ]
+      },
+      {
+        "Index": 31,
+        "Input": "What is the result of the following arithmetic operations?:subtract(subtract(9, 4), subtract(14, 12))\n choice:1\n choice:4\n choice:2\n choice:0\n choice:3\nA:",
+        "correctAnswer": "3",
+        "MbaseAnswer": "3",
+        "MbaseAnswerRaw": "choice:3",
+        "judgement": true,
+        "choices": [
+          "3",
+          "2",
+          "1",
+          "0",
+          "4"
+        ]
+      },
+      {
+        "Index": 32,
+        "Input": "What is the result of the following arithmetic operations?:divide(multiply(3, add(3, 4)), 2)\n choice:15 cm\n choice:none of these\n choice:2.625 cm\n choice:10.5 cm\n choice:3 cm\nA:",
+        "correctAnswer": "10.5 cm",
+        "MbaseAnswer": "none of these",
+        "MbaseAnswerRaw": "none of these",
+        "judgement": false,
+        "choices": [
+          "2.625 cm",
+          "3 cm",
+          "10.5 cm",
+          "15 cm",
+          "none of these"
+        ]
+      },
+      {
+        "Index": 33,
+        "Input": "What is the answer to the following math word problem?:the total age of a and b is 12 years more than the total age of b and c . c is how many years younger than a . ?\n choice:12\n choice:20\n choice:15\n choice:10\n choice:16\nA:",
+        "correctAnswer": "12",
+        "MbaseAnswer": "10",
+        "MbaseAnswerRaw": "10",
+        "judgement": false,
+        "choices": [
+          "16",
+          "12",
+          "15",
+          "20",
+          "10"
+        ]
+      },
+      {
+        "Index": 34,
+        "Input": "What is the result of the following arithmetic operations?:divide 15 by 12, multiply result by 6,\n choice:5\n choice:7.5\n choice:5.6\n choice:4.5\n choice:6.5\nA:",
+        "correctAnswer": "7.5",
+        "MbaseAnswer": "7.5",
+        "MbaseAnswerRaw": "choice:7.5",
+        "judgement": true,
+        "choices": [
+          "4.5",
+          "5",
+          "5.6",
+          "7.5",
+          "6.5"
+        ]
+      },
+      {
+        "Index": 35,
+        "Input": "What is the answer to the following math word problem, with the given hint?:george ' s car calls for 8 ounces of oil for each cylinder used . his car ' s engine has 6 cylinders . if 16 ounces of oil has already been put into the engine used , then how many additional ounces of oil are needed ?\nmultiply 6 to 8, subtract 16 from result,\n choice:' 48'\n choice:[' 16'\n choice:' 64'\n choice:' 32'\n choice:' 8']\nA:",
+        "correctAnswer": "' 32'",
+        "MbaseAnswer": "32",
+        "MbaseAnswerRaw": "32",
+        "judgement": false,
+        "choices": [
+          "[' 16'",
+          "' 48'",
+          "' 64'",
+          "' 32'",
+          "' 8']"
+        ]
+      },
+      {
+        "Index": 36,
+        "Input": "What is the result of the following arithmetic operations?:multiply(15, divide(165, 15))\n choice:180\n choice:none of these\n choice:253\n choice:165\n choice:98\nA:",
+        "correctAnswer": "165",
+        "MbaseAnswer": "180",
+        "MbaseAnswerRaw": "180",
+        "judgement": false,
+        "choices": [
+          "98",
+          "165",
+          "180",
+          "253",
+          "none of these"
+        ]
+      },
+      {
+        "Index": 37,
+        "Input": "What is the answer to the following math word problem?:the c . p of 20 pens is equal to the s . p of 12 pens . find his gain % or loss % ?\n choice:20 %\n choice:50 %\n choice:30 %\n choice:10 %\n choice:40 %\nA:",
+        "correctAnswer": "40 %",
+        "MbaseAnswer": "gain % or loss % ? 30 %",
+        "MbaseAnswerRaw": "gain % or loss % ? 30 %",
+        "judgement": false,
+        "choices": [
+          "10 %",
+          "20 %",
+          "30 %",
+          "40 %",
+          "50 %"
+        ]
+      },
+      {
+        "Index": 38,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a man goes downstream at 14 kmph , and upstream 8 kmph . the speed of the stream is\nsubtract 8 from 14,  divide result by 2,\n choice:16 kmph\n choice:4 kmph\n choice:2.5 kmph\n choice:0 kmph\n choice:3 kmph\nA:",
+        "correctAnswer": "3 kmph",
+        "MbaseAnswer": "3 kmph",
+        "MbaseAnswerRaw": "3 kmph",
+        "judgement": true,
+        "choices": [
+          "0 kmph",
+          "4 kmph",
+          "16 kmph",
+          "2.5 kmph",
+          "3 kmph"
+        ]
+      },
+      {
+        "Index": 39,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the cost price of a radio is rs . 1500 and it was sold for rs . 1275 , find the loss % ?\nmultiply(divide(subtract(1500, 1275), 1500), 100)\n choice:16 %\n choice:78 %\n choice:17 %\n choice:15 %\n choice:28 %\nA:",
+        "correctAnswer": "15 %",
+        "MbaseAnswer": "15 %",
+        "MbaseAnswerRaw": "15 %",
+        "judgement": true,
+        "choices": [
+          "15 %",
+          "16 %",
+          "17 %",
+          "78 %",
+          "28 %"
+        ]
+      },
+      {
+        "Index": 40,
+        "Input": "What is the answer to the following math word problem?:the ratio of spinsters to cats is 2 to 9 . if there are 63 more cats than spinsters , how many spinsters are there ?\n choice:12\n choice:18\n choice:14\n choice:10\n choice:16\nA:",
+        "correctAnswer": "18",
+        "MbaseAnswer": "18",
+        "MbaseAnswerRaw": "18",
+        "judgement": true,
+        "choices": [
+          "10",
+          "12",
+          "14",
+          "16",
+          "18"
+        ]
+      },
+      {
+        "Index": 41,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a football team lost 5 yards and then gained 9 . what is the team ' s progress ?\nsubtract(9, 5)\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+        "correctAnswer": "4",
+        "MbaseAnswer": "4",
+        "MbaseAnswerRaw": "choice:4",
+        "judgement": true,
+        "choices": [
+          "1",
+          "3",
+          "2",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "Index": 42,
+        "Input": "What is the result of the following arithmetic operations?:multiply(divide(69, 3), 100)\n choice:2100\n choice:2400\n choice:2200\n choice:2000\n choice:2300\nA:",
+        "correctAnswer": "2300",
+        "MbaseAnswer": "2300",
+        "MbaseAnswerRaw": "2300",
+        "judgement": true,
+        "choices": [
+          "2000",
+          "2100",
+          "2200",
+          "2300",
+          "2400"
+        ]
+      },
+      {
+        "Index": 43,
+        "Input": "What is the result of the following arithmetic operations?:subtract(86, multiply(8, 5))\n choice:48 kg\n choice:none of these\n choice:70 kg\n choice:46 kg\n choice:72 kg\nA:",
+        "correctAnswer": "46 kg",
+        "MbaseAnswer": "46 kg",
+        "MbaseAnswerRaw": "46 kg",
+        "judgement": true,
+        "choices": [
+          "46 kg",
+          "48 kg",
+          "70 kg",
+          "72 kg",
+          "none of these"
+        ]
+      },
+      {
+        "Index": 44,
+        "Input": "What is the answer to the following math word problem?:a train speeds past a pole in 50 seconds and a platform 500 m long in 100 seconds . its length is :\n choice:400 m .\n choice:600 m .\n choice:500 m .\n choice:300 m .\n choice:550 m .\nA:",
+        "correctAnswer": "500 m .",
+        "MbaseAnswer": "400 m .",
+        "MbaseAnswerRaw": "400 m .",
+        "judgement": false,
+        "choices": [
+          "550 m .",
+          "300 m .",
+          "600 m .",
+          "400 m .",
+          "500 m ."
+        ]
+      },
+      {
+        "Index": 45,
+        "Input": "What is the answer to the following math word problem?:a certain psychologist charges $ 25 more for the first hour of therapy than for each additional hour . if the total charge to a patient who receives 5 hours of therapy is $ 250 , what is the total charge to a patient who receives only 2 hours of therapy ?\n choice:$ 135\n choice:$ 192\n choice:$ 150\n choice:$ 115\n choice:$ 165\nA:",
+        "correctAnswer": "$ 115",
+        "MbaseAnswer": "$ 150",
+        "MbaseAnswerRaw": "$ 150",
+        "judgement": false,
+        "choices": [
+          "$ 115",
+          "$ 135",
+          "$ 150",
+          "$ 165",
+          "$ 192"
+        ]
+      },
+      {
+        "Index": 46,
+        "Input": "What is the result of the following arithmetic operations?:subtract 10 from 30,  subtract 10 from 12,  and then divide both.\n choice:20 %\n choice:50 %\n choice:30 %\n choice:10 %\n choice:40 %\nA:",
+        "correctAnswer": "10 %",
+        "MbaseAnswer": "20 %",
+        "MbaseAnswerRaw": "20 %",
+        "judgement": false,
+        "choices": [
+          "50 %",
+          "40 %",
+          "30 %",
+          "20 %",
+          "10 %"
+        ]
+      },
+      {
+        "Index": 47,
+        "Input": "What is the result of the following arithmetic operations?:add 10 to 16,\n choice:17\n choice:7\n choice:26\n choice:12\n choice:33\nA:",
+        "correctAnswer": "26",
+        "MbaseAnswer": "26",
+        "MbaseAnswerRaw": "26",
+        "judgement": true,
+        "choices": [
+          "7",
+          "33",
+          "12",
+          "17",
+          "26"
+        ]
+      },
+      {
+        "Index": 48,
+        "Input": "What is the result of the following arithmetic operations?:divide(subtract(9.65, 6.85), 2)\n choice:$ 2.50\n choice:$ 8.20\n choice:$ 4.10\n choice:$ 1.40\n choice:$ 4.70\nA:",
+        "correctAnswer": "$ 1.40",
+        "MbaseAnswer": "$ 1.40",
+        "MbaseAnswerRaw": "$ 1.40",
+        "judgement": true,
+        "choices": [
+          "$ 1.40",
+          "$ 2.50",
+          "$ 4.10",
+          "$ 4.70",
+          "$ 8.20"
+        ]
+      },
+      {
+        "Index": 49,
+        "Input": "What is the result of the following arithmetic operations?:divide(multiply(add(6, 4), 10), add(15, 10))\n choice:4 days\n choice:8 days\n choice:5 days\n choice:2 days\n choice:6 days\nA:",
+        "correctAnswer": "4 days",
+        "MbaseAnswer": "4 days",
+        "MbaseAnswerRaw": "4 days",
+        "judgement": true,
+        "choices": [
+          "4 days",
+          "5 days",
+          "6 days",
+          "8 days",
+          "2 days"
+        ]
+      },
+      {
+        "Index": 50,
+        "Input": "What is the result of the following arithmetic operations?:multiply(divide(360, add(5, 7)), 12)\n choice:300\n choice:390\n choice:330\n choice:270\n choice:360\nA:",
+        "correctAnswer": "360",
+        "MbaseAnswer": "330",
+        "MbaseAnswerRaw": "330",
+        "judgement": false,
+        "choices": [
+          "270",
+          "300",
+          "330",
+          "360",
+          "390"
+        ]
+      },
+      {
+        "Index": 51,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the sum of the numbers is 264 . if the first number be twice the second and third number be one - third of the first , then the second number is :\nmultiply 3 to 264, add 1 to 10, and then divide both.\n choice:48\n choice:84\n choice:54\n choice:27\n choice:72\nA:",
+        "correctAnswer": "72",
+        "MbaseAnswer": "72",
+        "MbaseAnswerRaw": "72",
+        "judgement": true,
+        "choices": [
+          "48",
+          "54",
+          "72",
+          "84",
+          "27"
+        ]
+      },
+      {
+        "Index": 52,
+        "Input": "What is the result of the following arithmetic operations?:divide(multiply(54, 32), 4)\n choice:354\n choice:670\n choice:432\n choice:236\n choice:512\nA:",
+        "correctAnswer": "432",
+        "MbaseAnswer": "432",
+        "MbaseAnswerRaw": "432",
+        "judgement": true,
+        "choices": [
+          "236",
+          "354",
+          "432",
+          "512",
+          "670"
+        ]
+      },
+      {
+        "Index": 53,
+        "Input": "What is the result of the following arithmetic operations?:divide(add(4, 3), multiply(8, 2))\n choice:3 / 8\n choice:7 / 8\n choice:5 / 8\n choice:1 / 2\n choice:7 / 16\nA:",
+        "correctAnswer": "7 / 16",
+        "MbaseAnswer": "7 / 16",
+        "MbaseAnswerRaw": "7 / 16",
+        "judgement": true,
+        "choices": [
+          "3 / 8",
+          "7 / 16",
+          "1 / 2",
+          "5 / 8",
+          "7 / 8"
+        ]
+      },
+      {
+        "Index": 54,
+        "Input": "What is the result of the following arithmetic operations?:divide 10 by 100, multiply 200 by the result. add 200 to the result.\n choice:240\n choice:360\n choice:260\n choice:220\n choice:300\nA:",
+        "correctAnswer": "220",
+        "MbaseAnswer": "260",
+        "MbaseAnswerRaw": "260",
+        "judgement": false,
+        "choices": [
+          "240",
+          "260",
+          "220",
+          "300",
+          "360"
+        ]
+      },
+      {
+        "Index": 55,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a train running at the speed of 90 km / hr crosses a pole in 9 seconds . find the length of the train .\nmultiply(divide(multiply(90, 1000), 3600), 9)\n choice:210 meter\n choice:250 meter\n choice:225 meter\n choice:200 meter\n choice:230 meter\nA:",
+        "correctAnswer": "225 meter",
+        "MbaseAnswer": "250 meter",
+        "MbaseAnswerRaw": "250 meter",
+        "judgement": false,
+        "choices": [
+          "225 meter",
+          "200 meter",
+          "250 meter",
+          "210 meter",
+          "230 meter"
+        ]
+      },
+      {
+        "Index": 56,
+        "Input": "What is the result of the following arithmetic operations?:divide 7 by 100, divide 109.9 by the result. add 1000 to the result.\n choice:$ 2150\n choice:$ 2780\n choice:$ 2360\n choice:$ 1940\n choice:$ 2570\nA:",
+        "correctAnswer": "$ 2570",
+        "MbaseAnswer": "$ 2780",
+        "MbaseAnswerRaw": "$ 2780",
+        "judgement": false,
+        "choices": [
+          "$ 1940",
+          "$ 2150",
+          "$ 2360",
+          "$ 2570",
+          "$ 2780"
+        ]
+      },
+      {
+        "Index": 57,
+        "Input": "What is the answer to the following math word problem, with the given hint?:mr and mrs a are opposite to each other . the distance between mr a and mrs a are 120 km . the speed of mr a and mrs a are 30 kmph , 10 kmph respectively . one bee is running between mr a nose to mrs a nose and returning back to mr a nose . the speed of bee is 60 kmph . then how far bee traveled ?\nmultiply(divide(120, add(30, 10)), 60)\n choice:160 km\n choice:190 km\n choice:170 km\n choice:130 km\n choice:180 km\nA:",
+        "correctAnswer": "180 km",
+        "MbaseAnswer": "160 km",
+        "MbaseAnswerRaw": "160 km",
+        "judgement": false,
+        "choices": [
+          "160 km",
+          "170 km",
+          "180 km",
+          "190 km",
+          "130 km"
+        ]
+      },
+      {
+        "Index": 58,
+        "Input": "What is the answer to the following math word problem?:set x consists of 10 integers and has median of 30 and a range of 20 . what is the value of the greatest possible integer that can be present in the set ?\n choice:37\n choice:c . 40\n choice:43\n choice:32\n choice:50\nA:",
+        "correctAnswer": "50",
+        "MbaseAnswer": "43",
+        "MbaseAnswerRaw": "43",
+        "judgement": false,
+        "choices": [
+          "32",
+          "37",
+          "c . 40",
+          "43",
+          "50"
+        ]
+      },
+      {
+        "Index": 59,
+        "Input": "What is the answer to the following math word problem?:andy solves problems 80 to 125 inclusive in a math exercise . how many problems does he solve ?\n choice:49\n choice:53\n choice:51\n choice:46\n choice:52\nA:",
+        "correctAnswer": "46",
+        "MbaseAnswer": "46",
+        "MbaseAnswerRaw": "46",
+        "judgement": true,
+        "choices": [
+          "53",
+          "52",
+          "51",
+          "46",
+          "49"
+        ]
+      },
+      {
+        "Index": 60,
+        "Input": "What is the answer to the following math word problem?:the average weight of 10 oarsmen in a boat is increased by 1.8 kg when one of the crew , who weighs 53 kg is replaced by a new man . find the weight of the new man .\n choice:71\n choice:none of them\n choice:72\n choice:69\n choice:75\nA:",
+        "correctAnswer": "71",
+        "MbaseAnswer": "72",
+        "MbaseAnswerRaw": "72",
+        "judgement": false,
+        "choices": [
+          "69",
+          "72",
+          "75",
+          "71",
+          "none of them"
+        ]
+      },
+      {
+        "Index": 61,
+        "Input": "What is the result of the following arithmetic operations?:subtract(subtract(10, 5), divide(multiply(10, 5), 100))\n choice:2.6 %\n choice:4.5 %\n choice:3 %\n choice:2.4 %\n choice:3.5 %\nA:",
+        "correctAnswer": "4.5 %",
+        "MbaseAnswer": "2.4 %",
+        "MbaseAnswerRaw": "2.4 %",
+        "judgement": false,
+        "choices": [
+          "3.5 %",
+          "2.4 %",
+          "3 %",
+          "4.5 %",
+          "2.6 %"
+        ]
+      },
+      {
+        "Index": 62,
+        "Input": "What is the answer to the following math word problem, with the given hint?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 45000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\ndivide(multiply(multiply(1000, 100), 0.036), divide(45000, 1000))\n choice:20\n choice:80\n choice:30\n choice:10\n choice:60\nA:",
+        "correctAnswer": "80",
+        "MbaseAnswer": "80",
+        "MbaseAnswerRaw": "80",
+        "judgement": true,
+        "choices": [
+          "10",
+          "20",
+          "30",
+          "60",
+          "80"
+        ]
+      },
+      {
+        "Index": 63,
+        "Input": "What is the result of the following arithmetic operations?:multiply(32, 14)\n choice:365\n choice:460\n choice:421\n choice:299\n choice:448\nA:",
+        "correctAnswer": "448",
+        "MbaseAnswer": "448",
+        "MbaseAnswerRaw": "448",
+        "judgement": true,
+        "choices": [
+          "448",
+          "299",
+          "421",
+          "460",
+          "365"
+        ]
+      },
+      {
+        "Index": 64,
+        "Input": "What is the result of the following arithmetic operations?:multiply 14 to 25, divide result by 20,\n choice:16.5 days\n choice:27.5 days\n choice:17.5 days\n choice:15.5 days\n choice:18.5 days\nA:",
+        "correctAnswer": "17.5 days",
+        "MbaseAnswer": "17.5 days",
+        "MbaseAnswerRaw": "17.5 days",
+        "judgement": true,
+        "choices": [
+          "27.5 days",
+          "15.5 days",
+          "17.5 days",
+          "16.5 days",
+          "18.5 days"
+        ]
+      },
+      {
+        "Index": 65,
+        "Input": "What is the answer to the following math word problem, with the given hint?:walking 6 / 5 of his usual rate , a boy reaches his school 4 min early . find his usual time to reach the school ?\nmultiply(4, 6)\n choice:22\n choice:99\n choice:24\n choice:20\n choice:27\nA:",
+        "correctAnswer": "24",
+        "MbaseAnswer": "24",
+        "MbaseAnswerRaw": "24",
+        "judgement": true,
+        "choices": [
+          "22",
+          "99",
+          "27",
+          "24",
+          "20"
+        ]
+      },
+      {
+        "Index": 66,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a trader sells 80 meters of cloth for rs . 10000 at the profit of rs . 7 per metre of cloth . what is the cost price of one metre of cloth ?\ndivide 10000 by 80, subtract 7 from result,\n choice:22\n choice:90\n choice:42\n choice:118\n choice:88\nA:",
+        "correctAnswer": "118",
+        "MbaseAnswer": "93",
+        "MbaseAnswerRaw": "93",
+        "judgement": false,
+        "choices": [
+          "118",
+          "88",
+          "90",
+          "42",
+          "22"
+        ]
+      },
+      {
+        "Index": 67,
+        "Input": "What is the result of the following arithmetic operations?:multiply 100 to 2500, divide result by 25,\n choice:20000\n choice:none of these\n choice:22235\n choice:10000\n choice:25000\nA:",
+        "correctAnswer": "10000",
+        "MbaseAnswer": "10000",
+        "MbaseAnswerRaw": "10000",
+        "judgement": true,
+        "choices": [
+          "10000",
+          "20000",
+          "25000",
+          "22235",
+          "none of these"
+        ]
+      },
+      {
+        "Index": 68,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a case contains c cartons . each carton contains b boxes , and each box contains 400 paper clips . how many paper clips are contained in 2 cases ?\nmultiply(2, 400)\n choice:400 bc\n choice:800 bc\n choice:800 / bc\n choice:400 b / c\n choice:800 b / c\nA:",
+        "correctAnswer": "800 bc",
+        "MbaseAnswer": "800 b / c",
+        "MbaseAnswerRaw": "800 b / c",
+        "judgement": false,
+        "choices": [
+          "400 bc",
+          "400 b / c",
+          "800 bc",
+          "800 b / c",
+          "800 / bc"
+        ]
+      },
+      {
+        "Index": 69,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the weight of a hollow sphere is directly dependent on its surface area . the surface area of a sphere is 4 π · r ^ 2 , where r is the radius of the sphere . if a hollow sphere of radius 0.15 cm made of a certain metal weighs 8 grams , a hollow sphere of radius 0.3 cm made of the same metal would weigh how many grams r ?\nmultiply 4 to 8,\n choice:16\n choice:r = 64\n choice:512\n choice:128\n choice:r = 32\nA:",
+        "correctAnswer": "r = 32",
+        "MbaseAnswer": "16",
+        "MbaseAnswerRaw": "16",
+        "judgement": false,
+        "choices": [
+          "16",
+          "r = 32",
+          "r = 64",
+          "128",
+          "512"
+        ]
+      },
+      {
+        "Index": 70,
+        "Input": "What is the answer to the following math word problem, with the given hint?:suppose 5 monkeys take 5 minutes to eat 5 bananas . how many monkeys would it take to eat 15 bananas in 15 minutes ?\ndivide 15 by 5, divide 15 by the result.\n choice:11\n choice:9\n choice:13\n choice:10\n choice:5\nA:",
+        "correctAnswer": "5",
+        "MbaseAnswer": "10",
+        "MbaseAnswerRaw": "10",
+        "judgement": false,
+        "choices": [
+          "9",
+          "10",
+          "11",
+          "5",
+          "13"
+        ]
+      },
+      {
+        "Index": 71,
+        "Input": "What is the result of the following arithmetic operations?:divide 60 by 3, subtract result from 50. divide 60 by 3, and then subtract both.\n choice:15\n choice:5\n choice:20\n choice:10\n choice:25\nA:",
+        "correctAnswer": "10",
+        "MbaseAnswer": "5",
+        "MbaseAnswerRaw": "choice:5",
+        "judgement": false,
+        "choices": [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      },
+      {
+        "Index": 72,
+        "Input": "What is the result of the following arithmetic operations?:divide 25 by 5, subtract result from 10.\n choice:2\n choice:7\n choice:5\n choice:1\n choice:6\nA:",
+        "correctAnswer": "5",
+        "MbaseAnswer": "5",
+        "MbaseAnswerRaw": "5",
+        "judgement": true,
+        "choices": [
+          "2",
+          "5",
+          "1",
+          "6",
+          "7"
+        ]
+      },
+      {
+        "Index": 73,
+        "Input": "What is the answer to the following math word problem?:at a certain committee meeting only associate professors and assistant professors are present . each associate professor has brought 2 pencils and 1 chart to the meeting , while each assistant professor has brought 1 pencil and 2 charts . if a total of 7 pencils and 11 charts have been brought to the meeting , how many people are present ?\n choice:6\n choice:9\n choice:7\n choice:10\n choice:8\nA:",
+        "correctAnswer": "6",
+        "MbaseAnswer": "9",
+        "MbaseAnswerRaw": "9",
+        "judgement": false,
+        "choices": [
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      },
+      {
+        "Index": 74,
+        "Input": "What is the result of the following arithmetic operations?:multiply 2 to 2, multiply 2 by the result.\n choice:3\n choice:8\n choice:4\n choice:12\n choice:6\nA:",
+        "correctAnswer": "8",
+        "MbaseAnswer": "8",
+        "MbaseAnswerRaw": "choice:8",
+        "judgement": true,
+        "choices": [
+          "3",
+          "4",
+          "6",
+          "8",
+          "12"
+        ]
+      },
+      {
+        "Index": 75,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a cycle is bought for rs . 1000 and sold for rs . 1080 , find the gain percent ?\nmultiply(divide(subtract(1080, 1000), 1000), 100)\n choice:12\n choice:8\n choice:20\n choice:11\n choice:40\nA:",
+        "correctAnswer": "8",
+        "MbaseAnswer": "8",
+        "MbaseAnswerRaw": "8",
+        "judgement": true,
+        "choices": [
+          "11",
+          "20",
+          "12",
+          "40",
+          "8"
+        ]
+      },
+      {
+        "Index": 76,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if 20 % of a is the same as 25 % of b , then a : b is :\ndivide 25 by 100, divide 20 by 100, and then divide both.\n choice:4 : 3\n choice:6 : 7\n choice:5 : 4\n choice:3 : 4\n choice:5 : 7\nA:",
+        "correctAnswer": "5 : 4",
+        "MbaseAnswer": "4 : 3",
+        "MbaseAnswerRaw": "4 : 3",
+        "judgement": false,
+        "choices": [
+          "3 : 4",
+          "4 : 3",
+          "5 : 4",
+          "6 : 7",
+          "5 : 7"
+        ]
+      },
+      {
+        "Index": 77,
+        "Input": "What is the result of the following arithmetic operations?:divide(multiply(multiply(divide(747.50, 100), 20), 100), 65)\n choice:150\n choice:230\n choice:180\n choice:100\n choice:199\nA:",
+        "correctAnswer": "230",
+        "MbaseAnswer": "150",
+        "MbaseAnswerRaw": "150",
+        "judgement": false,
+        "choices": [
+          "100",
+          "230",
+          "150",
+          "180",
+          "199"
+        ]
+      },
+      {
+        "Index": 78,
+        "Input": "What is the result of the following arithmetic operations?:multiply 9 to 3, multiply result by 2,\n choice:44\n choice:99\n choice:54\n choice:33\n choice:66\nA:",
+        "correctAnswer": "54",
+        "MbaseAnswer": "54",
+        "MbaseAnswerRaw": "choice:54",
+        "judgement": true,
+        "choices": [
+          "54",
+          "33",
+          "44",
+          "66",
+          "99"
+        ]
+      },
+      {
+        "Index": 79,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if 40 % of the 880 students at a certain college are enrolled in biology classes , how many students at the college are not enrolled in a biology class ?\ndivide 880 by 100, subtract 40 from 100,  and then multiply both.\n choice:520\n choice:540\n choice:528\n choice:510\n choice:530\nA:",
+        "correctAnswer": "528",
+        "MbaseAnswer": "528",
+        "MbaseAnswerRaw": "528",
+        "judgement": true,
+        "choices": [
+          "540",
+          "528",
+          "530",
+          "520",
+          "510"
+        ]
+      },
+      {
+        "Index": 80,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a basketball team composed of 12 players scored 100 points in a particular contest . if none of the individual players scored fewer than 7 points , what is the greatest number of points t that an individual player might have scored ?\nmultiply 7 to 12, subtract result from 100. add result to 7,\n choice:16\n choice:7\n choice:21\n choice:13\n choice:23\nA:",
+        "correctAnswer": "23",
+        "MbaseAnswer": "16",
+        "MbaseAnswerRaw": "16",
+        "judgement": false,
+        "choices": [
+          "7",
+          "13",
+          "16",
+          "21",
+          "23"
+        ]
+      },
+      {
+        "Index": 81,
+        "Input": "What is the result of the following arithmetic operations?:subtract 20 from 25,  subtract 16 from 20,  and then divide both.\n choice:13 : 11\n choice:9 : 8\n choice:14 : 8\n choice:10 : 7\n choice:5 : 4\nA:",
+        "correctAnswer": "5 : 4",
+        "MbaseAnswer": "9 : 8",
+        "MbaseAnswerRaw": "choice:9 : 8",
+        "judgement": false,
+        "choices": [
+          "10 : 7",
+          "9 : 8",
+          "5 : 4",
+          "13 : 11",
+          "14 : 8"
+        ]
+      },
+      {
+        "Index": 82,
+        "Input": "What is the answer to the following math word problem, with the given hint?:stacy has a 66 page history paper due in 6 days . how many pages per day would she have to write to finish on time ?\ndivide(66, 6)\n choice:6\n choice:9\n choice:8\n choice:11\n choice:8.5\nA:",
+        "correctAnswer": "11",
+        "MbaseAnswer": "11",
+        "MbaseAnswerRaw": "11",
+        "judgement": true,
+        "choices": [
+          "9",
+          "8",
+          "11",
+          "8.5",
+          "6"
+        ]
+      },
+      {
+        "Index": 83,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a man ' s regular pay is $ 3 per hour up to 40 hours . overtime is twice the payment for regular time . if he was paid $ 192 , how many hours overtime did he work ?\ndivide(subtract(192, multiply(3, 40)), multiply(3, 2))\n choice:5\n choice:9\n choice:6\n choice:12\n choice:8\nA:",
+        "correctAnswer": "12",
+        "MbaseAnswer": "6",
+        "MbaseAnswerRaw": "choice:6",
+        "judgement": false,
+        "choices": [
+          "8",
+          "5",
+          "9",
+          "6",
+          "12"
+        ]
+      },
+      {
+        "Index": 84,
+        "Input": "What is the result of the following arithmetic operations?:subtract(100, divide(subtract(100, 79), 3))\n choice:60\n choice:93\n choice:82\n choice:55\n choice:91\nA:",
+        "correctAnswer": "93",
+        "MbaseAnswer": "82",
+        "MbaseAnswerRaw": "82",
+        "judgement": false,
+        "choices": [
+          "55",
+          "60",
+          "93",
+          "82",
+          "91"
+        ]
+      },
+      {
+        "Index": 85,
+        "Input": "What is the result of the following arithmetic operations?:add 8 to 40, subtract 50 from 58,  and then divide both.\n choice:5.5\n choice:7\n choice:6\n choice:5\n choice:6.5\nA:",
+        "correctAnswer": "6",
+        "MbaseAnswer": "6",
+        "MbaseAnswerRaw": "6",
+        "judgement": true,
+        "choices": [
+          "5",
+          "6",
+          "7",
+          "5.5",
+          "6.5"
+        ]
+      },
+      {
+        "Index": 86,
+        "Input": "What is the result of the following arithmetic operations?:add 38 to 40,\n choice:18\n choice:78\n choice:27\n choice:11\n choice:50\nA:",
+        "correctAnswer": "78",
+        "MbaseAnswer": "78",
+        "MbaseAnswerRaw": "78",
+        "judgement": true,
+        "choices": [
+          "11",
+          "50",
+          "78",
+          "27",
+          "18"
+        ]
+      },
+      {
+        "Index": 87,
+        "Input": "What is the answer to the following math word problem, with the given hint?:income and expenditure of a person are in the ratio 3 : 2 . if the income of the person is rs . 21000 , then find his savings ?\ndivide 2 by 3, multiply result by 21000, subtract result from 21000.\n choice:6000\n choice:9000\n choice:7000\n choice:10000\n choice:8000\nA:",
+        "correctAnswer": "7000",
+        "MbaseAnswer": "9000",
+        "MbaseAnswerRaw": "9000",
+        "judgement": false,
+        "choices": [
+          "6000",
+          "7000",
+          "8000",
+          "9000",
+          "10000"
+        ]
+      },
+      {
+        "Index": 88,
+        "Input": "What is the answer to the following math word problem?:find the number of terms in an arithmetic progression with the first term 2 and the last term being 62 , given that common difference is 2 .\n choice:25\n choice:40\n choice:27\n choice:22\n choice:31\nA:",
+        "correctAnswer": "31",
+        "MbaseAnswer": "31",
+        "MbaseAnswerRaw": "31",
+        "judgement": true,
+        "choices": [
+          "31",
+          "40",
+          "22",
+          "27",
+          "25"
+        ]
+      },
+      {
+        "Index": 89,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if ( 3 / 2 ) x - 3 = 15 what is the value of x ?\ndivide(multiply(add(15, 3), 2), 3)\n choice:- 12\n choice:3\n choice:1 / 12\n choice:- 1 / 12\n choice:12\nA:",
+        "correctAnswer": "12",
+        "MbaseAnswer": "12",
+        "MbaseAnswerRaw": "12",
+        "judgement": true,
+        "choices": [
+          "- 12",
+          "12",
+          "- 1 / 12",
+          "1 / 12",
+          "3"
+        ]
+      },
+      {
+        "Index": 90,
+        "Input": "What is the answer to the following math word problem?:the sum of 3 consecutive multiples of 3 is 117 . what is the largest number ?\n choice:45\n choice:54\n choice:48\n choice:42\n choice:51\nA:",
+        "correctAnswer": "42",
+        "MbaseAnswer": "54",
+        "MbaseAnswerRaw": "54",
+        "judgement": false,
+        "choices": [
+          "45",
+          "48",
+          "51",
+          "42",
+          "54"
+        ]
+      },
+      {
+        "Index": 91,
+        "Input": "What is the answer to the following math word problem, with the given hint?:suppose 8 monkeys take 8 minutes to eat 8 bananas . how many monkeys would it take to eat 48 bananas in 48 minutes\ndivide(48, divide(48, 8))\n choice:6 monkeys\n choice:9 monkeys\n choice:7 monkeys\n choice:5 monkeys\n choice:8 monkeys\nA:",
+        "correctAnswer": "8 monkeys",
+        "MbaseAnswer": "6 monkeys",
+        "MbaseAnswerRaw": "6 monkeys",
+        "judgement": false,
+        "choices": [
+          "5 monkeys",
+          "6 monkeys",
+          "7 monkeys",
+          "8 monkeys",
+          "9 monkeys"
+        ]
+      },
+      {
+        "Index": 92,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if 625 ^ ( - x ) + 25 ^ ( - 2 x ) + 5 ^ ( - 4 x ) = 11 , what is the value of x ?\ndivide 1 by 4,\n choice:- 4\n choice:4\n choice:0\n choice:- 1 / 4\n choice:1 / 4\nA:",
+        "correctAnswer": "1 / 4",
+        "MbaseAnswer": "1 / 4",
+        "MbaseAnswerRaw": "1 / 4",
+        "judgement": true,
+        "choices": [
+          "- 4",
+          "- 1 / 4",
+          "0",
+          "1 / 4",
+          "4"
+        ]
+      },
+      {
+        "Index": 93,
+        "Input": "What is the answer to the following math word problem?:the sum of the numbers is 264 . if the first number be twice the second and third number be one - third of the first , then the second number is :\n choice:48\n choice:84\n choice:54\n choice:27\n choice:72\nA:",
+        "correctAnswer": "72",
+        "MbaseAnswer": "72",
+        "MbaseAnswerRaw": "72",
+        "judgement": true,
+        "choices": [
+          "48",
+          "54",
+          "72",
+          "84",
+          "27"
+        ]
+      },
+      {
+        "Index": 94,
+        "Input": "What is the answer to the following math word problem?:if a certain number x is divided by 62 , the reminder is 7 . what is the reminder when x + 11 is divided by 31 ?\n choice:3\n choice:8\n choice:5\n choice:18\n choice:6\nA:",
+        "correctAnswer": "18",
+        "MbaseAnswer": "5",
+        "MbaseAnswerRaw": "choice:5",
+        "judgement": false,
+        "choices": [
+          "3",
+          "5",
+          "18",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "Index": 95,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if ( 10 ^ 4 * 3.456789 ) ^ 9 is written as a single term , how many digits would be to the right of the decimal place ?\nmultiply(9, 2)\n choice:18\n choice:6\n choice:32\n choice:12\n choice:48\nA:",
+        "correctAnswer": "18",
+        "MbaseAnswer": "18",
+        "MbaseAnswerRaw": "18",
+        "judgement": true,
+        "choices": [
+          "6",
+          "12",
+          "18",
+          "32",
+          "48"
+        ]
+      },
+      {
+        "Index": 96,
+        "Input": "What is the result of the following arithmetic operations?:divide 15 by 15, multiply result by 15,\n choice:100 minutes\n choice:15 minute\n choice:1000 minutes\n choice:1 minutes\n choice:10000 minutes\nA:",
+        "correctAnswer": "15 minute",
+        "MbaseAnswer": "1 minutes",
+        "MbaseAnswerRaw": "1 minutes",
+        "judgement": false,
+        "choices": [
+          "1 minutes",
+          "15 minute",
+          "100 minutes",
+          "10000 minutes",
+          "1000 minutes"
+        ]
+      },
+      {
+        "Index": 97,
+        "Input": "What is the result of the following arithmetic operations?:multiply(multiply(560, divide(18, 8)), 6)\n choice:3360\n choice:7560\n choice:50400\n choice:1344\n choice:67200\nA:",
+        "correctAnswer": "7560",
+        "MbaseAnswer": "3360",
+        "MbaseAnswerRaw": "3360",
+        "judgement": false,
+        "choices": [
+          "1344",
+          "3360",
+          "7560",
+          "50400",
+          "67200"
+        ]
+      },
+      {
+        "Index": 98,
+        "Input": "What is the result of the following arithmetic operations?:divide(subtract(add(multiply(7, 7), 5), 14), 10)\n choice:4\n choice:8\n choice:5\n choice:3\n choice:7\nA:",
+        "correctAnswer": "4",
+        "MbaseAnswer": "5",
+        "MbaseAnswerRaw": "choice:5",
+        "judgement": false,
+        "choices": [
+          "4",
+          "7",
+          "8",
+          "5",
+          "3"
+        ]
+      },
+      {
+        "Index": 99,
+        "Input": "What is the result of the following arithmetic operations?:multiply 15 to 2, add 3 to 15, and then subtract both. add result to 4,\n choice:12\n choice:8\n choice:14\n choice:10\n choice:16\nA:",
+        "correctAnswer": "16",
+        "MbaseAnswer": "10",
+        "MbaseAnswerRaw": "choice:10",
+        "judgement": false,
+        "choices": [
+          "8",
+          "10",
+          "12",
+          "14",
+          "16"
+        ]
+      },
+      {
+        "Index": 100,
+        "Input": "What is the answer to the following math word problem, with the given hint?:in a class of 94 students 41 are taking french , 22 are taking german . of the students taking french or german , 9 are taking both courses . how many students are not enrolled in either course ?\nadd 22 to 41, subtract 9 from result, subtract result from 94.\n choice:24\n choice:6\n choice:33\n choice:15\n choice:40\nA:",
+        "correctAnswer": "40",
+        "MbaseAnswer": "24",
+        "MbaseAnswerRaw": "choice:24",
+        "judgement": false,
+        "choices": [
+          "6",
+          "15",
+          "24",
+          "33",
+          "40"
+        ]
+      },
+      {
+        "Index": 101,
+        "Input": "What is the answer to the following math word problem, with the given hint?:given the two equations 3 x + 2 y = 16 and 5 x + 3 y = 26 , by how much does r exceed s ?\nmultiply 2 to 16, divide result by 16,\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+        "correctAnswer": "2",
+        "MbaseAnswer": "2",
+        "MbaseAnswerRaw": "choice:2",
+        "judgement": true,
+        "choices": [
+          "3",
+          "4",
+          "5",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "Index": 102,
+        "Input": "What is the answer to the following math word problem?:a and b together have rs . 1210 . if of a ' s amount is equal to of b ' s amount , how much amount does b have ?\n choice:484\n choice:none of them\n choice:550\n choice:460\n choice:664\nA:",
+        "correctAnswer": "484",
+        "MbaseAnswer": "550",
+        "MbaseAnswerRaw": "550",
+        "judgement": false,
+        "choices": [
+          "484",
+          "460",
+          "550",
+          "664",
+          "none of them"
+        ]
+      },
+      {
+        "Index": 103,
+        "Input": "What is the result of the following arithmetic operations?:multiply 8 to 4, divide result by 100, subtract result from 1. divide 340 by the result.\n choice:278\n choice:821\n choice:289\n choice:228\n choice:500\nA:",
+        "correctAnswer": "500",
+        "MbaseAnswer": "289",
+        "MbaseAnswerRaw": "choice:289",
+        "judgement": false,
+        "choices": [
+          "228",
+          "278",
+          "289",
+          "500",
+          "821"
+        ]
+      },
+      {
+        "Index": 104,
+        "Input": "What is the result of the following arithmetic operations?:multiply 9 to 3, divide 216 by the result.\n choice:5\n choice:8\n choice:2\n choice:6\nA:",
+        "correctAnswer": "8",
+        "MbaseAnswer": "8",
+        "MbaseAnswerRaw": "8",
+        "judgement": true,
+        "choices": [
+          "6",
+          "5",
+          "2",
+          "8"
+        ]
+      },
+      {
+        "Index": 105,
+        "Input": "What is the answer to the following math word problem?:points a , b , c , and d , in that order , lie on a line . if ab = 2 cm , ac = 5 cm , and bd = 6 cm , what is cd , in centimeters ?\n choice:2\n choice:5\n choice:3\n choice:1\n choice:4\nA:",
+        "correctAnswer": "3",
+        "MbaseAnswer": "3",
+        "MbaseAnswerRaw": "3",
+        "judgement": true,
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "Index": 106,
+        "Input": "What is the result of the following arithmetic operations?:divide 16 by 2, multiply result by 3,\n choice:12\n choice:8\n choice:14\n choice:10\n choice:24\nA:",
+        "correctAnswer": "24",
+        "MbaseAnswer": "24",
+        "MbaseAnswerRaw": "choice:24",
+        "judgement": true,
+        "choices": [
+          "8",
+          "10",
+          "12",
+          "14",
+          "24"
+        ]
+      },
+      {
+        "Index": 107,
+        "Input": "What is the answer to the following math word problem?:a student chose a number , multiplied it by 8 , then subtracted 138 from the result and got 102 . what was the number he chose ?\n choice:130\n choice:30\n choice:140\n choice:120\n choice:150\nA:",
+        "correctAnswer": "30",
+        "MbaseAnswer": "30",
+        "MbaseAnswerRaw": "30",
+        "judgement": true,
+        "choices": [
+          "30",
+          "120",
+          "130",
+          "140",
+          "150"
+        ]
+      },
+      {
+        "Index": 108,
+        "Input": "What is the answer to the following math word problem?:how many multiples of 2 are there between 10 and 52 , 10 and 52 inclusive ?\n choice:22\n choice:27\n choice:24\n choice:21\n choice:25\nA:",
+        "correctAnswer": "22",
+        "MbaseAnswer": "22",
+        "MbaseAnswerRaw": "choice:22",
+        "judgement": true,
+        "choices": [
+          "27",
+          "25",
+          "24",
+          "21",
+          "22"
+        ]
+      },
+      {
+        "Index": 109,
+        "Input": "What is the result of the following arithmetic operations?:multiply 4 to 3, divide result by 2,\n choice:7 km\n choice:none of these\n choice:8 km\n choice:6 km\n choice:9 km\nA:",
+        "correctAnswer": "6 km",
+        "MbaseAnswer": "6 km",
+        "MbaseAnswerRaw": "6 km",
+        "judgement": true,
+        "choices": [
+          "6 km",
+          "7 km",
+          "8 km",
+          "9 km",
+          "none of these"
+        ]
+      },
+      {
+        "Index": 110,
+        "Input": "What is the result of the following arithmetic operations?:divide(multiply(3, 6), add(3, 6))\n choice:3\n choice:6\n choice:4\n choice:2\n choice:5\nA:",
+        "correctAnswer": "2",
+        "MbaseAnswer": "2",
+        "MbaseAnswerRaw": "2",
+        "judgement": true,
+        "choices": [
+          "3",
+          "5",
+          "4",
+          "2",
+          "6"
+        ]
+      },
+      {
+        "Index": 111,
+        "Input": "What is the result of the following arithmetic operations?:subtract 260 from 350,  divide result by 3, multiply result by 2, subtract result from 260.\n choice:$ 220\n choice:$ 250\n choice:$ 230\n choice:$ 200\n choice:$ 240\nA:",
+        "correctAnswer": "$ 200",
+        "MbaseAnswer": "$ 220",
+        "MbaseAnswerRaw": "$ 220",
+        "judgement": false,
+        "choices": [
+          "$ 220",
+          "$ 230",
+          "$ 240",
+          "$ 200",
+          "$ 250"
+        ]
+      },
+      {
+        "Index": 112,
+        "Input": "What is the answer to the following math word problem?:a can do a work in 12 days . when he had worked for 3 days , b joinedhim . if they complete the work in 3 more days , in how manydays can balone finish the work ?\n choice:4 days\n choice:9 days\n choice:5 days\n choice:2 days\n choice:6 days\nA:",
+        "correctAnswer": "6 days",
+        "MbaseAnswer": "6 days",
+        "MbaseAnswerRaw": "6 days",
+        "judgement": true,
+        "choices": [
+          "2 days",
+          "4 days",
+          "5 days",
+          "6 days",
+          "9 days"
+        ]
+      },
+      {
+        "Index": 113,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a student completes a 3 part exam as follows . the student completes sections a in 24 minutes and takes an equal time to complete the two remaining sections . what is the ratio of time spent on section c to section a if the total duration is 1 hour ?\ndivide(3, 4)\n choice:4 : 5\n choice:7 : 8\n choice:5 : 6\n choice:3 : 4\n choice:6 : 7\nA:",
+        "correctAnswer": "3 : 4",
+        "MbaseAnswer": "5 : 6",
+        "MbaseAnswerRaw": "5 : 6",
+        "judgement": false,
+        "choices": [
+          "7 : 8",
+          "6 : 7",
+          "5 : 6",
+          "4 : 5",
+          "3 : 4"
+        ]
+      },
+      {
+        "Index": 114,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the average weight of a group of boys is 35 kg . after a boy of weight 40 kg joins the group , the average weight of the group goes up by 1 kg . find the number of boys in the group originally ?\nadd 1 to 35, subtract result from 40. add result to 1,\n choice:5\n choice:8\n choice:6\n choice:4\n choice:7\nA:",
+        "correctAnswer": "5",
+        "MbaseAnswer": "6",
+        "MbaseAnswerRaw": "6",
+        "judgement": false,
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      {
+        "Index": 115,
+        "Input": "What is the answer to the following math word problem, with the given hint?:having scored 98 runs in the 19 th inning , a cricketer increases his average score by 4 . what will be his average score after 19 innings ?\nadd(subtract(98, multiply(19, 4)), 4)\n choice:24\n choice:28\n choice:26\n choice:22\n choice:27\nA:",
+        "correctAnswer": "26",
+        "MbaseAnswer": "26",
+        "MbaseAnswerRaw": "26",
+        "judgement": true,
+        "choices": [
+          "28",
+          "27",
+          "26",
+          "22",
+          "24"
+        ]
+      },
+      {
+        "Index": 116,
+        "Input": "What is the result of the following arithmetic operations?:add 9 to 5, subtract result from 50. add result to 9, divide result by 50,\n choice:1 / 8\n choice:9 / 10\n choice:2 / 4\n choice:1 / 4\n choice:3 / 4\nA:",
+        "correctAnswer": "9 / 10",
+        "MbaseAnswer": "1 / 4",
+        "MbaseAnswerRaw": "1 / 4",
+        "judgement": false,
+        "choices": [
+          "3 / 4",
+          "2 / 4",
+          "1 / 4",
+          "1 / 8",
+          "9 / 10"
+        ]
+      },
+      {
+        "Index": 117,
+        "Input": "What is the answer to the following math word problem?:the banker ' s gain on a sum due 6 years hence at 12 % per annum is rs . 828 . what is the banker ' s discount ?\n choice:1190\n choice:none of these\n choice:1240\n choice:1120\n choice:1978\nA:",
+        "correctAnswer": "1978",
+        "MbaseAnswer": "1120",
+        "MbaseAnswerRaw": "1120",
+        "judgement": false,
+        "choices": [
+          "1240",
+          "1120",
+          "1190",
+          "1978",
+          "none of these"
+        ]
+      },
+      {
+        "Index": 118,
+        "Input": "What is the answer to the following math word problem?:3 pumps , working 8 hours a day , can empty a tank in 2 days . how many hours a day should 4 pumps work in order to empty the tank in 1 day ?\n choice:12\n choice:8\n choice:15\n choice:10\n choice:18\nA:",
+        "correctAnswer": "12",
+        "MbaseAnswer": "15",
+        "MbaseAnswerRaw": "15",
+        "judgement": false,
+        "choices": [
+          "10",
+          "12",
+          "8",
+          "15",
+          "18"
+        ]
+      },
+      {
+        "Index": 119,
+        "Input": "What is the answer to the following math word problem, with the given hint?:walking 7 / 6 of his usual rate , a boy reaches his school 4 min early . find his usual time to reach the school ?\nmultiply 7 to 4,\n choice:15\n choice:28\n choice:16\n choice:11\n choice:19\nA:",
+        "correctAnswer": "28",
+        "MbaseAnswer": "28",
+        "MbaseAnswerRaw": "28",
+        "judgement": true,
+        "choices": [
+          "11",
+          "15",
+          "16",
+          "28",
+          "19"
+        ]
+      }
+    ]
+  }
+}
