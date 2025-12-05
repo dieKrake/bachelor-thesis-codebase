@@ -391,10 +391,10 @@ if __name__ == "__main__":
     dataset_name = "elementary_math_qa"
     #dataset_name_split = dataset_name.split("_")[0]
 
-    #test_numbers = ["5","15","19","23","31","42","48","50","56","62"]
-    test_numbers = ["56"]
-    #dataset_sizes = ["40", "80", "120", "160"]
-    dataset_sizes = ["120","160"]
+    test_numbers = ["5","15","19","23","31","42","48","50","56","62"]
+    #test_numbers = ["56"]
+    dataset_sizes = ["40", "80", "120", "160"]
+    #dataset_sizes = ["120","160"]
 
     # Prompt, Model, etc. bleiben wie bisher
     system_message_task = None

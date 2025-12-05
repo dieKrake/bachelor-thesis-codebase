@@ -70,29 +70,51 @@ def build_overall_summary(all_results: pd.DataFrame):
 
 
 def plot_summary(summary_df: pd.DataFrame):
-    """Erstellt eine Min/Max/Mean Grafik für Accuracy pro N."""
+    """
+    Erstellt ein Balkendiagramm für Accuracy pro N:
+    - Balken = Mittelwert
+    - Fehlerbalken = Abstand zu Min/Max
+    - y-Achse beginnt bei 0
+    """
 
-    plt.figure(figsize=(10, 6))
-
-    Ns = summary_df["N"]
+    Ns = summary_df["N"].astype(int)
     mean = summary_df["mean"]
     minv = summary_df["min"]
     maxv = summary_df["max"]
 
-    # Bereich (min–max)
-    plt.fill_between(Ns, minv, maxv, alpha=0.2, label="Min–Max Range")
+    # Fehlerbalken nach unten/oben relativ zum Mittelwert
+    yerr_lower = mean - minv
+    yerr_upper = maxv - mean
 
-    # Mittelwert
-    plt.plot(Ns, mean, marker="o", linewidth=3, label="Mean Accuracy")
+    x = range(len(Ns))
+
+    plt.figure(figsize=(10, 6))
+
+    # Balken für die Mittelwerte
+    plt.bar(x, mean, tick_label=Ns)
+
+    # Fehlerbalken (Min/Max)
+    plt.errorbar(
+      x,
+      mean,
+      yerr=[yerr_lower, yerr_upper],
+      fmt="none",
+      capsize=5,
+      linewidth=1.5,
+      ecolor="red"           # <- hier Farbe ändern!
+    )
 
     plt.xlabel("Dataset Size (N)")
     plt.ylabel("Accuracy")
-    plt.title("Zero-Shot Accuracy Summary Across All Test Folders")
-    plt.grid(True)
-    plt.legend()
+    plt.title("Zero-Shot Accuracy über 10 zufällig generierte Datensätze aus elementary_math_qa")
+
+    # y-Achse sicher bei 0 starten lassen
+    plt.ylim(bottom=0.0, top=1.0)
+
+    plt.grid(axis="y")
 
     output = BASE_DIR / "overall_plot.png"
-    plt.savefig(output)
+    plt.savefig(output, bbox_inches="tight")
     print(f"→ Grafik gespeichert als {output}")
 
 
