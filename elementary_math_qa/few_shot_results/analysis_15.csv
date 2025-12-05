@@ -1,0 +1,5 @@
+folder,N,accuracy,file
+15,40,0.375,fewshot_eval_split15_train10_test40_20251205T114720713126.json
+15,80,0.3,fewshot_eval_split15_train20_test80_20251205T114819106218.json
+15,120,0.49166666666666664,fewshot_eval_split15_train30_test120_20251205T114927583194.json
+15,160,0.48125,fewshot_eval_split15_train40_test160_20251205T115201939324.json

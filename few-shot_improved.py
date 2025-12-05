@@ -16,11 +16,12 @@ from __future__ import annotations
 import os
 import json
 import random
+import time
+from openai import OpenAI, RateLimitError
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-
 from dotenv import load_dotenv
 from openai import OpenAI
 
@@ -247,6 +248,30 @@ def format_few_shot_block(examples: List[Example]) -> str:
     return "\n\n".join(lines)
 
 
+def chat_with_retry(client: OpenAI, **kwargs):
+    """
+    Wrapper um client.chat.completions.create mit einfachem Retry bei Rate-Limit.
+    Nutzt exponentielles Backoff.
+    """
+    max_retries = 5
+    base_delay = 1.0  # Sekunden
+
+    for attempt in range(max_retries):
+        try:
+            return client.chat.completions.create(**kwargs)
+        except RateLimitError as e:
+            # beim letzten Versuch Fehler weiterwerfen
+            if attempt == max_retries - 1:
+                raise
+
+            wait = base_delay * (2 ** attempt)
+            print(
+                f"⏳ Rate limit erreicht (Versuch {attempt+1}/{max_retries}), "
+                f"warte {wait:.1f}s..."
+            )
+            time.sleep(wait)
+
+
 # =========================================================
 # Few-Shot-Evaluierung (nutzt normalize/align wie Zero-Shot)
 # =========================================================
@@ -304,11 +329,14 @@ def evaluate_few_shot(
             {"role": "user", "content": ex.input},
         ]
 
-        resp = client.chat.completions.create(
+        resp = chat_with_retry(
+            client,
             model=model,
             messages=messages,
             temperature=0.0,
         )
+        # optional: leicht drosseln, um gar nicht erst ans Limit zu kommen
+        time.sleep(0.1)  # 100ms
 
         answer_raw = (resp.choices[0].message.content or "").strip()
         gold_raw = ex.label.strip()
@@ -412,37 +440,27 @@ def save_results_to_json(
 
 
 # =========================================================
-# Nutzung / Main – iteriert über Splits, Train-Sizes & Test-Sizes
+# Nutzung / Main – 20/80-Skalierung von Train- und Test-Size
 # =========================================================
 
 if __name__ == "__main__":
 
-    dataset_name = "elementary_math_qa"
+    dataset_name = "navigate"
 
     # Splits wie beim Zero-Shot
-    test_numbers = ["5", "15", "19", "23", "31", "42", "48", "50", "56", "62"]
-    #test_numbers = ["5"]
+    test_numbers = ["5","15", "19", "23", "31", "42", "48", "50", "56", "62"]
+    #test_numbers = ["5"]  # zum Debuggen
 
-    # Alle Train-Größen, die du verwenden möchtest
-    TRAIN_SIZES = ["10", "20", "30", "40"]
-    #TRAIN_SIZES = ["10"]
+    # Testgrößen (N_test)
+    TEST_SIZES = [40, 80, 120, 160]
+    #TEST_SIZES = [160]
 
-    # Testgrößen
-    TEST_SIZES = ["40", "80", "120", "160"]
-    #TEST_SIZES = ["40"]
+    # gewünschtes Verhältnis: train : test = 20 : 80 = 1 : 4
+    TRAIN_TEST_RATIO = 0.25  # train_size = test_size * 0.25
 
     model_name = "gpt-4o-mini"
 
-
     base_system_prompt_disabled = (
-        'You MUST answer with exactly one string: either "True" or "False". '
-        'Do not output explanations, punctuation, or additional text. '
-        '"True" = you return to the starting point. '
-        '"False" = you do not return to the starting point.\n\n'
-        'Now answer the following question with "True" or "False":'
-    )
-    # Prompt für Multiple-Choice (wie in deinem Zero-Shot-Skript)
-    base_system_prompt = (
         "You are solving multiple-choice math questions.\n"
         "Each question lists several answer options, each prefixed with 'choice:'.\n"
         "Read the question and the choices carefully.\n"
@@ -450,69 +468,78 @@ if __name__ == "__main__":
         "prefix and without any explanation or extra text."
     )
 
+    base_system_prompt = (
+        'You MUST answer with exactly one string: either "True" or "False". '
+        'Do not output explanations, punctuation, or additional text. '
+        '"True" = you return to the starting point. '
+        '"False" = you do not return to the starting point.\n\n'
+    )
+
     for split_id in test_numbers:
-        for train_size in TRAIN_SIZES:
-            for test_size in TEST_SIZES:
+        for test_size in TEST_SIZES:
 
-                print("\n" + "=" * 80)
-                print(
-                    f"  Few-Shot Evaluation – Split {split_id} – "
-                    f"Train {train_size} – Test {test_size}"
-                )
-                print("=" * 80)
+            # train_size entsprechend dem 20/80-Verhältnis
+            train_size = int(test_size * TRAIN_TEST_RATIO)
 
-                # Pfade (Train & Test im gleichen Ordner wie bei Zero-Shot)
-                train_path = (
-                    f"{dataset_name}/dataset_random/{split_id}/"
-                    f"{dataset_name}_{train_size}_train.json"
-                )
-                test_path = (
-                    f"{dataset_name}/dataset_random/{split_id}/"
-                    f"{dataset_name}_{test_size}_test.json"
-                )
+            print("\n" + "=" * 80)
+            print(
+                f"  Few-Shot Evaluation – Split {split_id} – "
+                f"Train {train_size} – Test {test_size}"
+            )
+            print("=" * 80)
 
-                train_file = Path(train_path)
-                test_file = Path(test_path)
+            # Pfade (Train & Test im gleichen Ordner wie bei Zero-Shot)
+            train_path = (
+                f"{dataset_name}/dataset_random/{split_id}/"
+                f"{dataset_name}_{train_size}_train.json"
+            )
+            test_path = (
+                f"{dataset_name}/dataset_random/{split_id}/"
+                f"{dataset_name}_{test_size}_test.json"
+            )
 
-                # Existenz prüfen, sonst überspringen
-                if not train_file.exists():
-                    log_line(f"⚠️ Train-Datei nicht gefunden: {train_file} – skip.")
-                    continue
-                if not test_file.exists():
-                    log_line(f"⚠️ Test-Datei nicht gefunden: {test_file} – skip.")
-                    continue
+            train_file = Path(train_path)
+            test_file = Path(test_path)
 
-                log_header("Loading datasets")
-                train_data = load_dataset(str(train_file))
-                test_data = load_dataset(str(test_file))
-                log_line(f"Train examples: {len(train_data)}")
-                log_line(f"Test  examples: {len(test_data)}")
+            # Existenz prüfen, sonst überspringen
+            if not train_file.exists():
+                log_line(f"⚠️ Train-Datei nicht gefunden: {train_file} – skip.")
+                continue
+            if not test_file.exists():
+                log_line(f"⚠️ Test-Datei nicht gefunden: {test_file} – skip.")
+                continue
 
-                if not train_data or not test_data:
-                    log_line("⚠️ Leerer Train- oder Test-Datensatz – skip.")
-                    continue
+            log_header("Loading datasets")
+            train_data = load_dataset(str(train_file))
+            test_data = load_dataset(str(test_file))
+            log_line(f"Train examples: {len(train_data)}")
+            log_line(f"Test  examples: {len(test_data)}")
 
-                # Few-Shot-Eval
-                result = evaluate_few_shot(
-                    train_dataset=train_data,
-                    test_dataset=test_data,
-                    base_system_prompt=base_system_prompt,
-                    model=model_name,
-                    max_train_examples=int(train_size),
-                )
+            if not train_data or not test_data:
+                log_line("⚠️ Leerer Train- oder Test-Datensatz – skip.")
+                continue
 
-                # Ergebnisse speichern – Struktur analog zu Zero-Shot
-                results_dir = Path(f"{dataset_name}/few_shot_results/{split_id}")
-                save_results_to_json(
-                    result,
-                    dataset_path=str(test_file),
-                    output_dir=results_dir,
-                    train_size=int(train_size),
-                    test_size=int(test_size),
-                    split_id=split_id,
-                )
+            # Few-Shot-Eval
+            result = evaluate_few_shot(
+                train_dataset=train_data,
+                test_dataset=test_data,
+                base_system_prompt=base_system_prompt,
+                model=model_name,
+                max_train_examples=train_size,  # passt zur Train-Filegröße
+            )
 
-                print(
-                    f"✔ Done: split={split_id}, train={train_size}, "
-                    f"test={test_size}, acc={result.accuracy:.4f}"
-                )
+            # Ergebnisse speichern – Struktur analog zu Zero-Shot
+            results_dir = Path(f"{dataset_name}/few_shot_results/{split_id}")
+            save_results_to_json(
+                result,
+                dataset_path=str(test_file),
+                output_dir=results_dir,
+                train_size=train_size,
+                test_size=test_size,
+                split_id=split_id,
+            )
+
+            print(
+                f"✔ Done: split={split_id}, train={train_size}, "
+                f"test={test_size}, acc={result.accuracy:.4f}"
+            )
