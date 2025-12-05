@@ -69,53 +69,55 @@ def build_overall_summary(all_results: pd.DataFrame):
     return summary
 
 
-def plot_summary(summary_df: pd.DataFrame):
+def plot_summary(all_results: pd.DataFrame):
     """
-    Erstellt ein Balkendiagramm für Accuracy pro N:
-    - Balken = Mittelwert
-    - Fehlerbalken = Abstand zu Min/Max
-    - y-Achse beginnt bei 0
+    Erstellt ein Box-and-Whisker-Diagramm für die Accuracy pro N.
+    - Box: 1. und 3. Quartil
+    - Linie in der Box: Median
+    - Whisker: Standard (1.5 * IQR); Ausreißer als einzelne Punkte
+    - y-Achse beginnt bei 0 und geht bis 1 (Accuracy)
     """
 
-    Ns = summary_df["N"].astype(int)
-    mean = summary_df["mean"]
-    minv = summary_df["min"]
-    maxv = summary_df["max"]
+    # N-Werte sortieren
+    Ns_sorted = sorted(all_results["N"].unique())
 
-    # Fehlerbalken nach unten/oben relativ zum Mittelwert
-    yerr_lower = mean - minv
-    yerr_upper = maxv - mean
+    # Für jedes N alle Accuracy-Werte sammeln
+    data_per_N = [
+        all_results.loc[all_results["N"] == n, "accuracy"].values
+        for n in Ns_sorted
+    ]
 
-    x = range(len(Ns))
+    plt.figure(figsize=(8, 6))
 
-    plt.figure(figsize=(10, 6))
-
-    # Balken für die Mittelwerte
-    plt.bar(x, mean, tick_label=Ns)
-
-    # Fehlerbalken (Min/Max)
-    plt.errorbar(
-      x,
-      mean,
-      yerr=[yerr_lower, yerr_upper],
-      fmt="none",
-      capsize=5,
-      linewidth=1.5,
-      ecolor="red"           # <- hier Farbe ändern!
+    # Boxplot erstellen
+    bp = plt.boxplot(
+        data_per_N,
+        positions=range(1, len(Ns_sorted) + 1),
+        widths=0.6,
+        patch_artist=True,   # erlaubt gefüllte Boxen
+        showmeans=False      # Mittelwert wird nicht explizit markiert
     )
 
-    plt.xlabel("Dataset Size (N)")
-    plt.ylabel("Accuracy")
-    plt.title("Zero-Shot Accuracy über 10 zufällig generierte Datensätze aus navigate")
+    # dezentes Grau für die Boxen (wissenschaftlicher Look)
+    for box in bp['boxes']:
+        box.set(facecolor="#d9d9d9", edgecolor="black")
 
-    # y-Achse sicher bei 0 starten lassen
+    # Achsenbeschriftung mit N als Ticks
+    plt.xticks(range(1, len(Ns_sorted) + 1), Ns_sorted)
+    plt.xlabel("Datensatzgröße N")
+    plt.ylabel("Accuracy")
+    plt.title("Zero-Shot-Accuracy über 10 zufällig generierte Datensätze aus navigate")
+
+    # y-Achse bei 0 starten lassen, Accuracy typischerweise bis 1
     plt.ylim(bottom=0.0, top=1.0)
 
-    plt.grid(axis="y")
+    # horizontales Raster für bessere Ablesbarkeit
+    plt.grid(axis="y", linestyle="--", alpha=0.7)
 
-    output = BASE_DIR / "overall_plot.png"
+    output = BASE_DIR / "overall_boxplot.png"
+    plt.tight_layout()
     plt.savefig(output, bbox_inches="tight")
-    print(f"→ Grafik gespeichert als {output}")
+    print(f"→ Boxplot gespeichert als {output}")
 
 
 def main():
@@ -128,15 +130,17 @@ def main():
             df = analyze_folder(folder)
             all_results.append(df)
 
-    # zu einem großen DF zusammenführen
     if not all_results:
         print("❌ Keine Unterordner gefunden.")
         return
 
     all_df = pd.concat(all_results, ignore_index=True)
 
+    # Summary (min/max/mean) weiterhin für die Tabelle erzeugen
     summary = build_overall_summary(all_df)
-    plot_summary(summary)
+
+    # NEU: Box-and-Whisker-Plot auf Basis aller Einzelwerte
+    plot_summary(all_df)
 
     print("\n=== Analyse abgeschlossen ===")
 
