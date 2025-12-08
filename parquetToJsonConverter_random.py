@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 # Pfad zur Parquet-Datei
-DATASET_NAME = "logical_fallacy_detection"
+DATASET_NAME = "date_understanding"
 
 DATASET_PATH = Path(r"C:\Users\kkrazius\Desktop\Bachelor-Arbeit\Datasets\eval")
 INPUT_FILE = DATASET_PATH / f"{DATASET_NAME}.parquet"

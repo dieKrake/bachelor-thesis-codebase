@@ -1,0 +1,55 @@
+You classify arguments as "Valid" or "Invalid". "Valid" = the argument is logically valid. "Invalid" = the conclusion does not necessarily follow from the premises.
+
+Additionally I am giving you the following examples to learn from:
+
+Example 1:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Victoria is more sensible than Rossi. Jim is more sensible than Victoria. Therefore victoria is less sensible than Jim.
+A:
+Answer: Valid
+
+Example 2:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? The last train leaves soon, and you said you didn't want to miss it, so you should head out shortly.
+A:
+Answer: Valid
+
+Example 3:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All flionsoes are shipotoes. Some flionsoes are looncans. Therefore some looncans are shipotoes.
+A:
+Answer: Valid
+
+Example 4:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All dewfays are polinks. All thrastles are dewfays. Therefore all thrastles are polinks.
+A:
+Answer: Valid
+
+Example 5:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some airplanes are not harlequins. All programmers are airplanes. Therefore all programmers are harlequins.
+A:
+Answer: Invalid
+
+Example 6:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some goblins are uncles. All goblins are actors. Therefore some actors are uncles.
+A:
+Answer: Valid
+
+Example 7:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Mexican food is heavy on spice, so if you want something plainer, you might try English cuisine instead.
+A:
+Answer: Valid
+
+Example 8:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reptilians are adults. Some reptilians are places. Therefore some places are adults.
+A:
+Answer: Valid
+
+Example 9:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some brongs are hendassas. Some fluffsters are not brongs. Therefore all fluffsters are hendassas.
+A:
+Answer: Invalid
+
+Example 10:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? You can't prove he's innocent, so he must be guilty.
+A:
+Answer: Invalid
+
+Learn from the given examples and answer the following question.

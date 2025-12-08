@@ -5,7 +5,7 @@ from pathlib import Path
 
 # === PARAMETER ===========================================================
 # Pfad zur Parquet-Datei
-DATASET_NAME = "bigbench_elementary_math_qa"
+DATASET_NAME = "date_understanding_validation"
 
 DATASET_PATH = Path(r"C:\Users\kkrazius\Desktop\Bachelor-Arbeit\Datasets\eval")
 INPUT_FILE = DATASET_PATH / f"{DATASET_NAME}.parquet"
