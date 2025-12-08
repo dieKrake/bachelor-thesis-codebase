@@ -448,12 +448,12 @@ if __name__ == "__main__":
     dataset_name = "navigate"
 
     # Splits wie beim Zero-Shot
-    test_numbers = ["5","15", "19", "23", "31", "42", "48", "50", "56", "62"]
-    #test_numbers = ["5"]  # zum Debuggen
+    #test_numbers = ["5","15", "19", "23", "31", "42", "48", "50", "56", "62"]
+    test_numbers = ["49"]  # zum Debuggen
 
     # Testgrößen (N_test)
-    TEST_SIZES = [40, 80, 120, 160]
-    #TEST_SIZES = [160]
+    #TEST_SIZES = [40, 80, 120, 160]
+    TEST_SIZES = [200]
 
     # gewünschtes Verhältnis: train : test = 20 : 80 = 1 : 4
     TRAIN_TEST_RATIO = 0.25  # train_size = test_size * 0.25

@@ -388,33 +388,43 @@ def save_run_to_json(
 
 if __name__ == "__main__":
 
-    dataset_name = "elementary_math_qa"
+    dataset_name = "logical_fallacy_detection"
     #dataset_name_split = dataset_name.split("_")[0]
 
-    test_numbers = ["5","15","19","23","31","42","48","50","56","62"]
-    #test_numbers = ["56"]
-    dataset_sizes = ["40", "80", "120", "160"]
-    #dataset_sizes = ["120","160"]
+    #test_numbers = ["5","15","19","23","31","42","48","50","56","62"]
+    test_numbers = ["49"]
+    #dataset_sizes = ["40", "80", "120", "160"]
+    dataset_sizes = ["200"]
 
     # Prompt, Model, etc. bleiben wie bisher
     system_message_task = None
     model_name = "gpt-4o-mini"
 
-    zero_shot_prompt_disabled = (
-        'You MUST answer with exactly one string: either "True" or "False". '
-        'Do not output explanations, punctuation, or additional text. '
-        '"True" = you return to the starting point. '
-        '"False" = you do not return to the starting point.\n\n'
-        'Now answer the following question with "True" or "False":'
-    )
+    # True-False_Prompt
+    # zero_shot_prompt = (
+    #     'You MUST answer with exactly one string: either "True" or "False". '
+    #     'Do not output explanations, punctuation, or additional text. '
+    #     '"True" = you return to the starting point. '
+    #     '"False" = you do not return to the starting point.\n\n'
+    #     'Now answer the following question with "True" or "False":'
+    # )
 
     # Multiple-Choice-Prompt
+    # zero_shot_prompt = (
+    #     "You are solving multiple-choice math questions.\n"
+    #     "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    #     "Read the question and the choices carefully.\n"
+    #     "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+    #   )
+
+    # Valid-Invalid-Prompt
     zero_shot_prompt = (
-        "You are solving multiple-choice math questions.\n"
-        "Each question lists several answer options, each prefixed with 'choice:'.\n"
-        "Read the question and the choices carefully.\n"
-        "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
-      )
+      'You MUST answer with exactly one string: either "Valid" or "Invalid". '
+      'Do not output explanations, reasoning steps, punctuation, or additional text. '
+      '"Valid" = the argument is logically valid. '
+      '"Invalid" = the conclusion does not necessarily follow from the premises.\n\n'
+      'Now answer the following question with exactly one word: "Valid" or "Invalid".'
+    )
 
     config = {
         "prompt": zero_shot_prompt,
@@ -434,7 +444,7 @@ if __name__ == "__main__":
             print("="*40)
 
             dataset_path = (
-                f"{dataset_name}/dataset_random/{test_number}/"
+                f"{dataset_name}/new_dataset/{test_number}/"
                 f"{dataset_name}_{dataset_size}_test.json"
             )
 

@@ -1,0 +1,152 @@
+[
+  {
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Amy is faster than Dylan. Charlotte is faster than Amy. Therefore charlotte is slower than Amy.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1
+    ],
+    "idx": 803
+  },
+  {
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Rich people drive fancy cars. So driving a fancy car must make you rich.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1
+    ],
+    "idx": 2087
+  },
+  {
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All refluppers are styphons. Some styphons are not shipotoes. Therefore no shipotoes are refluppers.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1
+    ],
+    "idx": 1006
+  },
+  {
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. The nutritionist was overweight, so his advice can't be trusted.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1
+    ],
+    "idx": 2108
+  },
+  {
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Carol is wittier than Joanna. Bill is wittier than Kevin. Joanna is less witty than Kevin. Therefore joanna is wittier than Bill.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      0,
+      1
+    ],
+    "idx": 1101
+  },
+  {
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore laura is less witty than Kim.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0
+    ],
+    "idx": 344
+  },
+  {
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All U.F.O.s are heroines. No teachers are heroines. Therefore no teachers are U.F.O.s.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0
+    ],
+    "idx": 1450
+  },
+  {
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Mercury is toxic. Children shouldn't play with it.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0
+    ],
+    "idx": 1966
+  },
+  {
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No lions are soldiers. All admirals are lions. Therefore no admirals are soldiers.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0
+    ],
+    "idx": 273
+  },
+  {
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All students are kids. Some auditoriums are not kids. Therefore some auditoriums are not students.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "multiple_choice_scores": [
+      1,
+      0
+    ],
+    "idx": 1899
+  }
+]

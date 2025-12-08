@@ -1,5 +1,5 @@
 folder,N,accuracy,file
-48,40,0.525,zeroshot_eval_40_20251204_145746.json
-48,80,0.575,zeroshot_eval_80_20251204_145827.json
-48,120,0.475,zeroshot_eval_120_20251204_145930.json
-48,160,0.45,zeroshot_eval_160_20251204_150106.json
+48,200,0.475,zeroshot_eval_120_20251204_145930.json
+48,200,0.45,zeroshot_eval_160_20251204_150106.json
+48,200,0.525,zeroshot_eval_40_20251204_145746.json
+48,200,0.575,zeroshot_eval_80_20251204_145827.json

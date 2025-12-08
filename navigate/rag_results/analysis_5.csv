@@ -1,0 +1,5 @@
+folder,N,accuracy,file
+5,40,0.65,rag_eval_split5_train10_test40_20251205T150012203224.json
+5,80,0.65,rag_eval_split5_train20_test80_20251205T150133597866.json
+5,120,0.575,rag_eval_split5_train30_test120_20251205T150338872994.json
+5,160,0.6375,rag_eval_split5_train40_test160_20251205T150626412446.json

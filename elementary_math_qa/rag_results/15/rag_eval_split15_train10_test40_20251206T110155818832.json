@@ -1,0 +1,701 @@
+{
+  "timestamp": "2025-12-06T11:01:55.818832",
+  "dataset": {
+    "path": "elementary_math_qa\\dataset_random\\15\\elementary_math_qa_40_test.json",
+    "num_examples": 40,
+    "train_size": 10,
+    "test_size": 40,
+    "split_id": "15"
+  },
+  "config": {
+    "prompt": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+    "model_name": "gpt-4o-mini",
+    "azure_search_index": "elementary_math_qa_10_train",
+    "system_message_snippet": "",
+    "mode": "rag"
+  },
+  "result": {
+    "prompt": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+    "accuracy": 0.4,
+    "results": [
+      {
+        "Index": 0,
+        "Input": "What is the answer to the following math word problem?:if the remainder is 12 when the integer n is divided by 22 , what is the remainder when 2 n is divided by 11 ?\n choice:2\n choice:7\n choice:3\n choice:0\n choice:6\nA:",
+        "correctAnswer": "2",
+        "MbaseAnswer": "2",
+        "MbaseAnswerRaw": "Answer: 2",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "0",
+          "2",
+          "3",
+          "6",
+          "7"
+        ]
+      },
+      {
+        "Index": 1,
+        "Input": "What is the result of the following arithmetic operations?:multiply(6, 20)\n choice:120 km\n choice:50 km\n choice:150 km\n choice:100 km\n choice:200 km\nA:",
+        "correctAnswer": "120 km",
+        "MbaseAnswer": "Answer: 120 km",
+        "MbaseAnswerRaw": "Answer: 120 km",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "100 km",
+          "150 km",
+          "50 km",
+          "120 km",
+          "200 km"
+        ]
+      },
+      {
+        "Index": 2,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if two projectiles are launched at the same moment from 2520 km apart and travel directly towards each other at 432 km per hour and 576 km per hour respectively , how many minutes will it take for them to meet ?\nadd 576 to 432, divide 2520 by the result. multiply result by 60,\n choice:135\n choice:150\n choice:140\n choice:130\n choice:145\nA:",
+        "correctAnswer": "150",
+        "MbaseAnswer": "135",
+        "MbaseAnswerRaw": "Answer: 135",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "130",
+          "135",
+          "140",
+          "145",
+          "150"
+        ]
+      },
+      {
+        "Index": 3,
+        "Input": "What is the result of the following arithmetic operations?:subtract 10 from 26,  multiply result by 3, divide result by 4,\n choice:15\n choice:23\n choice:20\n choice:12\n choice:22\nA:",
+        "correctAnswer": "12",
+        "MbaseAnswer": "12",
+        "MbaseAnswerRaw": "Answer: 12",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "12",
+          "15",
+          "20",
+          "22",
+          "23"
+        ]
+      },
+      {
+        "Index": 4,
+        "Input": "What is the answer to the following math word problem, with the given hint?:jim â € ™ s taxi service charges an initial fee of $ 2.0 at the beginning of a trip and an additional charge of $ 0.35 for each 2 / 5 of a mile traveled . what is the total charge for a trip of 3.6 miles ?\ndivide 2 by 5, divide 3.6 by the result. multiply result by 0.35, add result to 2.0,\n choice:$ 4.80\n choice:$ 5.40\n choice:$ 5.05\n choice:$ 4.45\n choice:$ 5.15\nA:",
+        "correctAnswer": "$ 5.15",
+        "MbaseAnswer": "Answer: $ 5.40",
+        "MbaseAnswerRaw": "Answer: $ 5.40",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "$ 5.15",
+          "$ 4.45",
+          "$ 4.80",
+          "$ 5.05",
+          "$ 5.40"
+        ]
+      },
+      {
+        "Index": 5,
+        "Input": "What is the result of the following arithmetic operations?:divide 70 by 1000,\n choice:. 07\n choice:none of these\n choice:. 7\n choice:. 05\n choice:0.07\nA:",
+        "correctAnswer": ". 07",
+        "MbaseAnswer": "Answer: 0.07",
+        "MbaseAnswerRaw": "Answer: 0.07",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          ". 7",
+          ". 07",
+          ". 05",
+          "0.07",
+          "none of these"
+        ]
+      },
+      {
+        "Index": 6,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the number 0.8 is how much greater than 1 / 2 ?\ndivide 1 by 2, subtract result from 0.8.\n choice:1 / 500\n choice:½\n choice:2 / 500\n choice:1 / 50\n choice:3 / 10\nA:",
+        "correctAnswer": "3 / 10",
+        "MbaseAnswer": "Answer: 3 / 10",
+        "MbaseAnswerRaw": "Answer: 3 / 10",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "½",
+          "3 / 10",
+          "1 / 50",
+          "1 / 500",
+          "2 / 500"
+        ]
+      },
+      {
+        "Index": 7,
+        "Input": "What is the result of the following arithmetic operations?:subtract 1 from 12,  multiply result by 8, add result to 2,\n choice:44\n choice:96\n choice:45\n choice:38\n choice:90\nA:",
+        "correctAnswer": "90",
+        "MbaseAnswer": "90",
+        "MbaseAnswerRaw": "Answer: 90",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "45",
+          "38",
+          "44",
+          "90",
+          "96"
+        ]
+      },
+      {
+        "Index": 8,
+        "Input": "What is the answer to the following math word problem, with the given hint?:the cross - section of a water channel is a trapezium in shape . if the channel is 14 meters wide at the top and 8 meters wide at the bottom and the area of cross - section is 880 square meters , what is the depth of the channel ( in meters ) ?\ndivide(880, divide(add(14, 8), 2))\n choice:60\n choice:90\n choice:70\n choice:50\n choice:80\nA:",
+        "correctAnswer": "80",
+        "MbaseAnswer": "70",
+        "MbaseAnswerRaw": "Answer: 70",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "50",
+          "60",
+          "70",
+          "80",
+          "90"
+        ]
+      },
+      {
+        "Index": 9,
+        "Input": "What is the answer to the following math word problem, with the given hint?:( 786 × 74 ) ÷ ? = 1938.8\nmultiply 74 to 786, divide result by 1938.8,\n choice:4.8\n choice:68\n choice:30\n choice:48\nA:",
+        "correctAnswer": "30",
+        "MbaseAnswer": "48",
+        "MbaseAnswerRaw": "48",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "4.8",
+          "48",
+          "30",
+          "68"
+        ]
+      },
+      {
+        "Index": 10,
+        "Input": "What is the result of the following arithmetic operations?:multiply 4 to 46, subtract 140 from result, divide result by 2,\n choice:23\n choice:28\n choice:24\n choice:22\n choice:26\nA:",
+        "correctAnswer": "22",
+        "MbaseAnswer": "24",
+        "MbaseAnswerRaw": "Answer: 24",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "22",
+          "23",
+          "24",
+          "26",
+          "28"
+        ]
+      },
+      {
+        "Index": 11,
+        "Input": "What is the answer to the following math word problem, with the given hint?:out of 420 students of a school , 325 play football , 175 play cricket and 50 neither play football nor cricket . how many students play both football and cricket ?\nsubtract(add(175, 325), subtract(420, 50))\n choice:130\n choice:220\n choice:150\n choice:120\n choice:180\nA:",
+        "correctAnswer": "130",
+        "MbaseAnswer": "130",
+        "MbaseAnswerRaw": "Answer: 130",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "120",
+          "150",
+          "130",
+          "180",
+          "220"
+        ]
+      },
+      {
+        "Index": 12,
+        "Input": "What is the result of the following arithmetic operations?:add 1 to 1000, multiply 1 to 1000, and then subtract both.\n choice:3\n choice:9\n choice:5\n choice:1\n choice:7\nA:",
+        "correctAnswer": "1",
+        "MbaseAnswer": "1",
+        "MbaseAnswerRaw": "Answer: 1",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "1",
+          "3",
+          "5",
+          "7",
+          "9"
+        ]
+      },
+      {
+        "Index": 13,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if it takes 70 workers 3 hours to disassemble the exhibition rides at a small amusement park , how many hours would it take 30 workers to do this same job ?\nmultiply 3 to 70, divide result by 30,\n choice:40 / 3\n choice:9 / 7\n choice:7\n choice:11\n choice:7 / 3\nA:",
+        "correctAnswer": "7",
+        "MbaseAnswer": "7",
+        "MbaseAnswerRaw": "Answer: 7 / 3",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "40 / 3",
+          "11",
+          "7",
+          "7 / 3",
+          "9 / 7"
+        ]
+      },
+      {
+        "Index": 14,
+        "Input": "What is the result of the following arithmetic operations?:multiply(3, 6)\n choice:18\n choice:6\n choice:26\n choice:12\n choice:28\nA:",
+        "correctAnswer": "18",
+        "MbaseAnswer": "18",
+        "MbaseAnswerRaw": "Answer: 18",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide(multiply(divide(6, 5), 100), 10)\n choice:3 %\n choice:9 %\n choice:4 %\n choice:12 %\n choice:7 %\nA:\nAnswer: 12 %",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide(multiply(divide(6, 5), 100), 10)\n choice:3 %\n choice:9 %\n choice:4 %\n choice:12 %\n choice:7 %\nA:\nAnswer: 12 %\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "6",
+          "12",
+          "18",
+          "26",
+          "28"
+        ]
+      },
+      {
+        "Index": 15,
+        "Input": "What is the answer to the following math word problem, with the given hint?:caleb spends $ 66.50 on 50 hamburgers for the marching band . if single burgers cost $ 1.00 each and double burgers cost $ 1.50 each , how many double burgers did he buy ?\nsubtract 50 from 66.50,  subtract 1.00 from 1.50,  and then divide both.\n choice:33\n choice:5\n choice:40\n choice:20\n choice:45\nA:",
+        "correctAnswer": "33",
+        "MbaseAnswer": "20",
+        "MbaseAnswerRaw": "20",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "5",
+          "33",
+          "20",
+          "40",
+          "45"
+        ]
+      },
+      {
+        "Index": 16,
+        "Input": "What is the result of the following arithmetic operations?:divide(multiply(subtract(multiply(6, 3), 1), 2), 50)\n choice:17 / 28\n choice:17 / 65\n choice:17 / 25\n choice:17 / 39\nA:",
+        "correctAnswer": "17 / 25",
+        "MbaseAnswer": "Answer: 17 / 25",
+        "MbaseAnswerRaw": "Answer: 17 / 25",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "17 / 65",
+          "17 / 25",
+          "17 / 28",
+          "17 / 39"
+        ]
+      },
+      {
+        "Index": 17,
+        "Input": "What is the result of the following arithmetic operations?:multiply(4, divide(12, 8))\n choice:15\n choice:8\n choice:6\n choice:10\n choice:7\nA:",
+        "correctAnswer": "6",
+        "MbaseAnswer": "6",
+        "MbaseAnswerRaw": "Answer: 6",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide(multiply(divide(6, 5), 100), 10)\n choice:3 %\n choice:9 %\n choice:4 %\n choice:12 %\n choice:7 %\nA:\nAnswer: 12 %\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide(multiply(divide(6, 5), 100), 10)\n choice:3 %\n choice:9 %\n choice:4 %\n choice:12 %\n choice:7 %\nA:\nAnswer: 12 %\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "10",
+          "15",
+          "6",
+          "8",
+          "7"
+        ]
+      },
+      {
+        "Index": 18,
+        "Input": "What is the result of the following arithmetic operations?:subtract(divide(multiply(760, subtract(22, 2)), 16), 760)\n choice:140\n choice:199\n choice:188\n choice:122\n choice:190\nA:",
+        "correctAnswer": "190",
+        "MbaseAnswer": "188",
+        "MbaseAnswerRaw": "Answer: 188",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "122",
+          "140",
+          "199",
+          "188",
+          "190"
+        ]
+      },
+      {
+        "Index": 19,
+        "Input": "What is the result of the following arithmetic operations?:multiply 150 to 120, multiply 40 to 50, and then divide both.\n choice:11\n choice:9\n choice:12\n choice:10\n choice:15\nA:",
+        "correctAnswer": "9",
+        "MbaseAnswer": "10",
+        "MbaseAnswerRaw": "Answer: 10",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "9",
+          "15",
+          "12",
+          "11",
+          "10"
+        ]
+      },
+      {
+        "Index": 20,
+        "Input": "What is the answer to the following math word problem, with the given hint?:one - tenth of the students at a nursery school are 4 years old or older . if 20 students have not yet reached their third birthday , and a total of 25 students are not between 3 years old and 4 years old , how many children are in the nursery school ?\nsubtract 20 from 25,  multiply result by 10,\n choice:40\n choice:55\n choice:50\n choice:20\n choice:51\nA:",
+        "correctAnswer": "50",
+        "MbaseAnswer": "50",
+        "MbaseAnswerRaw": "Answer: 50",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "51",
+          "20",
+          "40",
+          "50",
+          "55"
+        ]
+      },
+      {
+        "Index": 21,
+        "Input": "What is the result of the following arithmetic operations?:multiply(divide(6300, add(add(6300, 4200), 10500)), 12100)\n choice:2667\n choice:3877\n choice:2977\n choice:2378\n choice:3630\nA:",
+        "correctAnswer": "3630",
+        "MbaseAnswer": "2378",
+        "MbaseAnswerRaw": "Answer: 2378",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "3630",
+          "3877",
+          "2667",
+          "2977",
+          "2378"
+        ]
+      },
+      {
+        "Index": 22,
+        "Input": "What is the answer to the following math word problem, with the given hint?:in an election only two candidates contested . a candidate secured 70 % of the valid votes and won by a majority of 184 votes . find the total number of valid votes ?\nsubtract 70 from 100,  subtract result from 70. divide result by 100, divide 184 by the result.\n choice:434\n choice:460\n choice:436\n choice:430\n choice:438\nA:",
+        "correctAnswer": "460",
+        "MbaseAnswer": "460",
+        "MbaseAnswerRaw": "Answer: 460",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "430",
+          "438",
+          "436",
+          "434",
+          "460"
+        ]
+      },
+      {
+        "Index": 23,
+        "Input": "What is the result of the following arithmetic operations?:multiply(divide(58, 2), 5)\n choice:143\n choice:146\n choice:144\n choice:140\n choice:145\nA:",
+        "correctAnswer": "145",
+        "MbaseAnswer": "145",
+        "MbaseAnswerRaw": "Answer: 145",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "140",
+          "143",
+          "144",
+          "145",
+          "146"
+        ]
+      },
+      {
+        "Index": 24,
+        "Input": "What is the answer to the following math word problem?:pipe a can fill a tank in 6 hours . due to a leak at the bottom , it takes 8 hours for the pipe a to fill the tank . in what time can the leak alone empty the full tank ?\n choice:13\n choice:24\n choice:18\n choice:12\n choice:19\nA:",
+        "correctAnswer": "24",
+        "MbaseAnswer": "18",
+        "MbaseAnswerRaw": "18",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "13",
+          "24",
+          "18",
+          "19",
+          "12"
+        ]
+      },
+      {
+        "Index": 25,
+        "Input": "What is the answer to the following math word problem?:the speed of a car is 98 km in the first hour and 70 km in the second hour . what is the average speed of the car ?\n choice:75 kmph\n choice:87 kmph\n choice:76 kmph\n choice:56 kmph\n choice:84 kmph\nA:",
+        "correctAnswer": "84 kmph",
+        "MbaseAnswer": "Answer: 84 kmph",
+        "MbaseAnswerRaw": "Answer: 84 kmph",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "76 kmph",
+          "75 kmph",
+          "87 kmph",
+          "56 kmph",
+          "84 kmph"
+        ]
+      },
+      {
+        "Index": 26,
+        "Input": "What is the answer to the following math word problem?:cricket match is conducted in us . the run rate of a cricket game was only 3.2 in first 10 over . what should be the run rate in the remaining 40 overs to reach the target of 272 runs ?\n choice:6.25\n choice:8\n choice:7.25\n choice:6\n choice:7.5\nA:",
+        "correctAnswer": "6",
+        "MbaseAnswer": "Answer: 7.5",
+        "MbaseAnswerRaw": "Answer: 7.5",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "6",
+          "6.25",
+          "7.25",
+          "7.5",
+          "8"
+        ]
+      },
+      {
+        "Index": 27,
+        "Input": "What is the result of the following arithmetic operations?:multiply 2 to 14,\n choice:21\n choice:9\n choice:28\n choice:14\n choice:42\nA:",
+        "correctAnswer": "28",
+        "MbaseAnswer": "28",
+        "MbaseAnswerRaw": "Answer: 28",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "9",
+          "14",
+          "21",
+          "28",
+          "42"
+        ]
+      },
+      {
+        "Index": 28,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a man swims downstream 28 km and upstream 12 km taking 2 hours each time , what is the speed of the man in still water ?\ndivide(add(divide(12, 2), divide(28, 2)), 2)\n choice:2\n choice:8\n choice:4\n choice:10\n choice:5\nA:",
+        "correctAnswer": "10",
+        "MbaseAnswer": "8",
+        "MbaseAnswerRaw": "Answer: 8",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "10",
+          "8",
+          "5",
+          "2",
+          "4"
+        ]
+      },
+      {
+        "Index": 29,
+        "Input": "What is the result of the following arithmetic operations?:divide(24, 4)\n choice:' 6 tiles'\n choice:[' 4 tiles'\n choice:' 7 tiles'\n choice:' 5 tiles'\n choice:' 8 tiles']\nA:",
+        "correctAnswer": "' 6 tiles'",
+        "MbaseAnswer": "Answer: 6 tiles",
+        "MbaseAnswerRaw": "Answer: 6 tiles",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "[' 4 tiles'",
+          "' 5 tiles'",
+          "' 6 tiles'",
+          "' 7 tiles'",
+          "' 8 tiles']"
+        ]
+      },
+      {
+        "Index": 30,
+        "Input": "What is the answer to the following math word problem, with the given hint?:a factory produces 5500 toys per week . if the workers at this factory work 5 days a week and if these workers make the same number of toys everyday , how many toys are produced each day ?\ndivide(5500, 5)\n choice:1375 toys\n choice:6113 toys\n choice:2354 toys\n choice:1100 toys\n choice:5487 toys\nA:",
+        "correctAnswer": "1100 toys",
+        "MbaseAnswer": "Answer: 1100 toys",
+        "MbaseAnswerRaw": "Answer: 1100 toys",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "1100 toys",
+          "5487 toys",
+          "6113 toys",
+          "2354 toys",
+          "1375 toys"
+        ]
+      },
+      {
+        "Index": 31,
+        "Input": "What is the answer to the following math word problem?:in a 100 m race between rose and diane , rose lost to diane by 0.75 m . if diane was given a 7 m head start , how many meters more will it take before rose overtakes diane ?\n choice:11.91 m\n choice:13.91 m\n choice:12.5 m\n choice:10.91 m\n choice:12.91 m\nA:",
+        "correctAnswer": "11.91 m",
+        "MbaseAnswer": "Answer: 12.91 m",
+        "MbaseAnswerRaw": "Answer: 12.91 m",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "12.91 m",
+          "11.91 m",
+          "12.5 m",
+          "10.91 m",
+          "13.91 m"
+        ]
+      },
+      {
+        "Index": 32,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if the average ( arithmetic mean ) of a and b is 35 and the average of b and c is 80 , what is the value of c − a ?\nmultiply 2 to 80, multiply 2 to 35, and then subtract both.\n choice:25\n choice:it can not be determined from the information given .\n choice:50\n choice:140\n choice:90\nA:",
+        "correctAnswer": "90",
+        "MbaseAnswer": "90",
+        "MbaseAnswerRaw": "Answer: 90",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "25",
+          "50",
+          "90",
+          "140",
+          "it can not be determined from the information given ."
+        ]
+      },
+      {
+        "Index": 33,
+        "Input": "What is the result of the following arithmetic operations?:multiply(add(4, 1), 7)\n choice:25 cm\n choice:45 cm\n choice:35 cm\n choice:15 cm\n choice:42 cm\nA:",
+        "correctAnswer": "35 cm",
+        "MbaseAnswer": "Answer: 35 cm",
+        "MbaseAnswerRaw": "Answer: 35 cm",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 17 to 3, subtract result from 85. add result to 3,\n choice:39\n choice:47\n choice:42\n choice:37\n choice:43\nA:\nAnswer: 37\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "15 cm",
+          "25 cm",
+          "35 cm",
+          "42 cm",
+          "45 cm"
+        ]
+      },
+      {
+        "Index": 34,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if 2994 ã · 14.5 = 173 , then 29.94 ã · 1.45 = ?\ndivide(173, divide(14.5, 1.45))\n choice:17.2\n choice:17.7\n choice:17.3\n choice:17.1\n choice:17.5\nA:",
+        "correctAnswer": "17.3",
+        "MbaseAnswer": "Answer: 17.3",
+        "MbaseAnswerRaw": "Answer: 17.3",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "17.1",
+          "17.3",
+          "17.5",
+          "17.7",
+          "17.2"
+        ]
+      },
+      {
+        "Index": 35,
+        "Input": "What is the answer to the following math word problem?:of the 150 people at a party , 70 were women , and 40 women tried the appetizer . if 50 people did not try the appetizer , what is the total number of men who tried the appetizer ?\n choice:50\n choice:80\n choice:60\n choice:40\n choice:70\nA:",
+        "correctAnswer": "60",
+        "MbaseAnswer": "60",
+        "MbaseAnswerRaw": "Answer: 60",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "40",
+          "50",
+          "60",
+          "70",
+          "80"
+        ]
+      },
+      {
+        "Index": 36,
+        "Input": "What is the result of the following arithmetic operations?:multiply(divide(multiply(50, 0.014), 10), 100)\n choice:0.04 %\n choice:7 %\n choice:0.40 %\n choice:0.004 %\n choice:40 %\nA:",
+        "correctAnswer": "7 %",
+        "MbaseAnswer": "Answer: 0.40 %",
+        "MbaseAnswerRaw": "Answer: 0.40 %",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:divide(multiply(divide(6, 5), 100), 10)\n choice:3 %\n choice:9 %\n choice:4 %\n choice:12 %\n choice:7 %\nA:\nAnswer: 12 %\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide(multiply(divide(6, 5), 100), 10)\n choice:3 %\n choice:9 %\n choice:4 %\n choice:12 %\n choice:7 %\nA:\nAnswer: 12 %\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "0.004 %",
+          "0.04 %",
+          "0.40 %",
+          "7 %",
+          "40 %"
+        ]
+      },
+      {
+        "Index": 37,
+        "Input": "What is the answer to the following math word problem, with the given hint?:if 12 men can reap 120 acres of land in 36 days , how many acres of land can 54 men reap in 54 days ?\nmultiply(120, multiply(divide(54, 12), divide(54, 36)))\n choice:186\n choice:861\n choice:188\n choice:167\n choice:810\nA:",
+        "correctAnswer": "810",
+        "MbaseAnswer": "810",
+        "MbaseAnswerRaw": "Answer: 810",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:if 21 / 22 = 0 . 95.45 , what is the 57 th digit to the right of the decimal point of the fraction ?\nmultiply(2, 2)\n choice:4\n choice:9\n choice:5\n choice:1\n choice:7\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "186",
+          "188",
+          "810",
+          "167",
+          "861"
+        ]
+      },
+      {
+        "Index": 38,
+        "Input": "What is the answer to the following math word problem?:jacob is now 14 years younger than michael . if 9 years from now michael will be twice as old as jacob , how old will jacob be in 4 years ?\n choice:25\n choice:9\n choice:3\n choice:21\n choice:7\nA:",
+        "correctAnswer": "9",
+        "MbaseAnswer": "21",
+        "MbaseAnswerRaw": "Answer: 21",
+        "judgement": false,
+        "context": "Example:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the answer to the following math word problem?:in the biology lab of ` ` jefferson ' ' high school there are 0.036 * 10 ^ 5 germs , equally divided among 36000 * 10 ^ ( - 3 ) petri dishes . how many germs live happily in a single dish ?\n choice:200\n choice:500\n choice:300\n choice:100\n choice:400\nA:\nAnswer: 100\n\nExample:\nQuestion: What is the answer to the following math word problem, with the given hint?:two years ago , john put $ 5000 into a savings account . at the end of the first year , his account had accrued $ 500 in interest bringing his total balance to $ 5500 . the next year , his account balance increased by 10 % . at the end of the two years , by what percent has john ' s account balance increased from his initial deposit of $ 5000 ?\ndivide 5000 by 500, add result to 10, add result to 1,\n choice:20 %\n choice:25 %\n choice:21 %\n choice:19 %\n choice:22 %\nA:\nAnswer: 21 %\n\nExample:\nQuestion: What is the answer to the following math word problem?:given two sets a = { 11 , 44 , 55 } and b = { 01 } , if one number is chosen from each set at random , what is the probability that the sum of both numbers is an even number\n choice:1 / 4\n choice:3\n choice:1 / 7\n choice:1 / 2\n choice:1 / 8\nA:\nAnswer: 1 / 2\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "3",
+          "7",
+          "9",
+          "21",
+          "25"
+        ]
+      },
+      {
+        "Index": 39,
+        "Input": "What is the result of the following arithmetic operations?:subtract 1 from 1,  multiply 1 by the result.\n choice:1\n choice:7\n choice:2\n choice:0\n choice:6\nA:",
+        "correctAnswer": "0",
+        "MbaseAnswer": "0",
+        "MbaseAnswerRaw": "Answer: 0",
+        "judgement": true,
+        "context": "Example:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4",
+        "system_message": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.Additionally I am giving you following examples to learn from:\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:subtract 2 from 10, \n choice:13\n choice:9\n choice:15\n choice:10\n choice:8\nA:\nAnswer: 8\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:divide 600000 by 3,\n choice:000\n choice:1\n choice:228500\n choice:180000\n choice:200300\n choice:200000\n choice:330\nA:\nAnswer: 200000\n\nExample:\nQuestion: What is the result of the following arithmetic operations?:multiply 3 to 64, subtract result from 196.\n choice:2\n choice:8\n choice:24\n choice:12\n choice:4\nA:\nAnswer: 4\n\nLearn from the given examples and answer the following question.",
+        "choices": [
+          "2",
+          "6",
+          "1",
+          "0",
+          "7"
+        ]
+      }
+    ]
+  }
+}

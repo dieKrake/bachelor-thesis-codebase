@@ -3,8 +3,8 @@ from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 
-method_name_dir = "few_shot_results"   # Ordnername
-method_name = "fewshot"                # Präfix der Result-Files
+method_name_dir = "zero_shot_results"   # Ordnername
+method_name = "zeroshot"                # Präfix der Result-Files
 dataset_name = "elementary_math_qa"
 BASE_DIR = Path(f"{dataset_name}/{method_name_dir}")
 
@@ -20,6 +20,7 @@ def load_metrics_from_file(file_path: Path):
     accuracy = data["result"]["accuracy"]
     # test_size aus dem JSON (robuster als aus dem Dateinamen)
     test_size = data["dataset"].get("test_size", None)
+    test_size = 200
     return test_size, accuracy
 
 
