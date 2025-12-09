@@ -1,25 +1,23 @@
 {
-  "timestamp": "2025-12-08T14:29:18.805067",
+  "timestamp": "2025-12-09T14:10:50.934894",
   "dataset": {
     "path": "tasksource/bigbench:logical_fallacy_detection[validation]",
-    "num_examples": 200
+    "num_examples": 200,
+    "few_shot_examples": 100
   },
   "config": {
-    "prompt": "You MUST answer with exactly one string: either \"Valid\" or \"Invalid\". Do not output explanations, reasoning steps, punctuation, or additional text. \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\nNow answer the following question with exactly one word: \"Valid\" or \"Invalid\".",
+    "base_system_prompt": "You MUST answer with exactly one string: either \"Valid\" or \"Invalid\". Do not output explanations, reasoning steps, punctuation, or additional text. \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\nNow answer the following question with exactly one word: \"Valid\" or \"Invalid\".",
     "model_name": "gpt-4o-mini",
-    "system_message_snippet": "",
-    "mode": "zero-shot",
-    "hf_dataset": "tasksource/bigbench",
-    "hf_task_name": "logical_fallacy_detection",
-    "prompt_mode": "valid_invalid",
-    "hf_split": "validation",
-    "requested_examples": 200,
-    "used_examples": 200
+    "mode": "few-shot",
+    "train_split": "train",
+    "test_split": "validation",
+    "used_train_examples": 100,
+    "used_test_examples": 200
   },
   "result": {
-    "mode": "zero-shot",
-    "prompt": "You MUST answer with exactly one string: either \"Valid\" or \"Invalid\". Do not output explanations, reasoning steps, punctuation, or additional text. \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\nNow answer the following question with exactly one word: \"Valid\" or \"Invalid\".",
-    "accuracy": 0.745,
+    "mode": "few-shot",
+    "prompt": "You MUST answer with exactly one string: either \"Valid\" or \"Invalid\". Do not output explanations, reasoning steps, punctuation, or additional text. \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\nNow answer the following question with exactly one word: \"Valid\" or \"Invalid\".\n\nAdditionally I am giving you the following examples to learn from:\n\nExample 1:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Victoria is more sensible than Rossi. Jim is more sensible than Victoria. Therefore victoria is less sensible than Jim.\nA:\nAnswer: Valid\n\nExample 2:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? The last train leaves soon, and you said you didn't want to miss it, so you should head out shortly.\nA:\nAnswer: Valid\n\nExample 3:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All flionsoes are shipotoes. Some flionsoes are looncans. Therefore some looncans are shipotoes.\nA:\nAnswer: Valid\n\nExample 4:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All dewfays are polinks. All thrastles are dewfays. Therefore all thrastles are polinks.\nA:\nAnswer: Valid\n\nExample 5:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some airplanes are not harlequins. All programmers are airplanes. Therefore all programmers are harlequins.\nA:\nAnswer: Invalid\n\nExample 6:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some goblins are uncles. All goblins are actors. Therefore some actors are uncles.\nA:\nAnswer: Valid\n\nExample 7:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Mexican food is heavy on spice, so if you want something plainer, you might try English cuisine instead.\nA:\nAnswer: Valid\n\nExample 8:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reptilians are adults. Some reptilians are places. Therefore some places are adults.\nA:\nAnswer: Valid\n\nExample 9:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some brongs are hendassas. Some fluffsters are not brongs. Therefore all fluffsters are hendassas.\nA:\nAnswer: Invalid\n\nExample 10:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? You can't prove he's innocent, so he must be guilty.\nA:\nAnswer: Invalid\n\nExample 11:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some ocirs are not gerants. All onamas are ocirs. Therefore all onamas are gerants.\nA:\nAnswer: Invalid\n\nExample 12:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Carol is wittier than Joanna. Bill is wittier than Kevin. Joanna is less witty than Kevin. Therefore joanna is wittier than Bill.\nA:\nAnswer: Invalid\n\nExample 13:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No candlestick makers are teachers. Some mushrooms are teachers. Therefore some mushrooms are not candlestick makers.\nA:\nAnswer: Valid\n\nExample 14:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some slozzoms are not exastoes. Some slozzoms are not gryllows. Therefore some gryllows are exastoes.\nA:\nAnswer: Invalid\n\nExample 15:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Laura is less frank than Carol. Laura is less frank than Kim. Mario is less frank than Laura. Anne is less frank than Laura. Therefore carol is more frank than Laura.\nA:\nAnswer: Valid\n\nExample 16:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Chinese culture is very old; that's why it's so sophisticated.\nA:\nAnswer: Invalid\n\nExample 17:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. France has the lowest rate of heart disease in Europe. So being French protects against heart disease.\nA:\nAnswer: Invalid\n\nExample 18:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Candice is less frank than Philipp. Tom is more frank than Philipp. Therefore philipp is more frank than Tom.\nA:\nAnswer: Invalid\n\nExample 19:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some dolphins are not cyborgs. All dolphins are rockets. Therefore some rockets are not cyborgs.\nA:\nAnswer: Valid\n\nExample 20:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All glontoms are refluppers. No refluppers are gaxes. Therefore no gaxes are glontoms.\nA:\nAnswer: Valid\n\nExample 21:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some fruit flies are not actresses. Some fruit flies are not monkeys. Therefore some monkeys are not actresses.\nA:\nAnswer: Invalid\n\nExample 22:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Anne is more frank than Jennifer. Anne is more frank than Jones. Jennifer is more frank than Anna. Therefore anne is more frank than Anna.\nA:\nAnswer: Valid\n\nExample 23:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All vampires are capitols. Some sheep dogs are vampires. Therefore some sheep dogs are capitols.\nA:\nAnswer: Valid\n\nExample 24:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No zestponts are sypholoes. All unfabrans are sypholoes. Therefore no unfabrans are zestponts.\nA:\nAnswer: Valid\n\nExample 25:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. William is less reliable than Laura. Bill is less reliable than Cecilia. Sean is less reliable than Aiden. Aiden is less reliable than Laura. Therefore aiden is more reliable than Laura.\nA:\nAnswer: Invalid\n\nExample 26:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All U.F.O.s are heroines. No teachers are heroines. Therefore no teachers are U.F.O.s.\nA:\nAnswer: Valid\n\nExample 27:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No spewsies are builithes. All winnibler are builithes. Therefore no winnibler are spewsies.\nA:\nAnswer: Valid\n\nExample 28:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some aliens are not capitols. All aliens are lassies. Therefore some lassies are not capitols.\nA:\nAnswer: Valid\n\nExample 29:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All fruit flies are jesters. Some auditoriums are not jesters. Therefore some auditoriums are not fruit flies.\nA:\nAnswer: Valid\n\nExample 30:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All snakes are arachnids. All arachnids are cubs. Therefore some cubs are not snakes.\nA:\nAnswer: Invalid\n\nExample 31:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? The politician won the popular vote, so they must be the best candidate.\nA:\nAnswer: Invalid\n\nExample 32:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Nat is taller than Aiden. Jennifer is taller than Jill. Jill is taller than Nat. Sara is taller than Nat. Therefore jennifer is taller than Aiden.\nA:\nAnswer: Valid\n\nExample 33:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tuna are capitols. Some capitols are toves. Therefore some toves are tuna.\nA:\nAnswer: Invalid\n\nExample 34:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Referees are supposed to be neutral. The referee is from Switzerland, a neutral country, so he must be neutral.\nA:\nAnswer: Invalid\n\nExample 35:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is more reliable than Sarah. Moses is less reliable than David. Tom is more reliable than Sarah. Therefore moses is more reliable than Sarah.\nA:\nAnswer: Valid\n\nExample 36:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is slower than Rossi. Sam is faster than Rossi. John is slower than Dylan. Therefore rossi is faster than John.\nA:\nAnswer: Valid\n\nExample 37:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No shizzoes are zestponts. All benessits are shizzoes. Therefore no benessits are zestponts.\nA:\nAnswer: Valid\n\nExample 38:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? You said human rights are important, so clearly you don't care about animals.\nA:\nAnswer: Invalid\n\nExample 39:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some guys are owls. All owls are lion tamers. Therefore some lion tamers are guys.\nA:\nAnswer: Valid\n\nExample 40:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some pentwests are hildaids. All hildaids are fluffsters. Therefore some fluffsters are pentwests.\nA:\nAnswer: Valid\n\nExample 41:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Modern food is sweeter and saltier than natural food, so it can't be healthy.\nA:\nAnswer: Invalid\n\nExample 42:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No smurtans are novalies. Some bliggingtoms are not novalies. Therefore no bliggingtoms are smurtans.\nA:\nAnswer: Invalid\n\nExample 43:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some relatives are brunettes. Some jokers are not relatives. Therefore all jokers are brunettes.\nA:\nAnswer: Invalid\n\nExample 44:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No clowns are androids. Some clowns are pets. Therefore all pets are androids.\nA:\nAnswer: Invalid\n\nExample 45:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All brewtines are looplats. Some yoffas are not looplats. Therefore some yoffas are not brewtines.\nA:\nAnswer: Valid\n\nExample 46:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Alex is more reliable than Moses. Moses is more reliable than Anne. Therefore alex is less reliable than Moses.\nA:\nAnswer: Invalid\n\nExample 47:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some shraiwels are not rigglays. All shraiwels are goyances. Therefore some goyances are not rigglays.\nA:\nAnswer: Valid\n\nExample 48:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You're telling me not to start smoking, but you smoke yourself, so I shouldn't listen to your advice.\nA:\nAnswer: Invalid\n\nExample 49:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reggabreas are proppors. Some novalies are not proppors. Therefore some novalies are not reggabreas.\nA:\nAnswer: Valid\n\nExample 50:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some primates are not bedrooms. All primates are nephews. Therefore some nephews are bedrooms.\nA:\nAnswer: Invalid\n\nExample 51:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No brewtines are slozzoms. All dorchies are slozzoms. Therefore no dorchies are brewtines.\nA:\nAnswer: Valid\n\nExample 52:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All refluppers are shipotoes. Some sebusses are refluppers. Therefore some sebusses are shipotoes.\nA:\nAnswer: Valid\n\nExample 53:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All gaxes are werradiths. No houtals are werradiths. Therefore no houtals are gaxes.\nA:\nAnswer: Valid\n\nExample 54:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? You should trust this philosophical theory because it's brand new.\nA:\nAnswer: Invalid\n\nExample 55:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Anna is wittier than Jill. Jill is less witty than Dylan. Anna is less witty than Peter. Anna is less witty than Bill. Therefore peter is wittier than Jill.\nA:\nAnswer: Valid\n\nExample 56:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Lara is shorter than Henry. Debbie is shorter than Rossi. Henry is shorter than Carol. Therefore carol is taller than Henry.\nA:\nAnswer: Valid\n\nExample 57:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Border collies require a lot of exercise, so if you're unable to take them for regular walks, you might be better off getting a different sort of pet.\nA:\nAnswer: Valid\n\nExample 58:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some programmers are canines. No programmers are tumtum trees. Therefore some tumtum trees are canines.\nA:\nAnswer: Invalid\n\nExample 59:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Sophia is kinder than Nat. Mary is less kind than Paul. Mary is kinder than Nat. Therefore paul is kinder than Nat.\nA:\nAnswer: Valid\n\nExample 60:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some rodrups are sagirds. All rodrups are tingforms. Therefore some tingforms are sagirds.\nA:\nAnswer: Valid\n\nExample 61:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All heros are musicians. No musicians are aunts. Therefore no aunts are heros.\nA:\nAnswer: Valid\n\nExample 62:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some rigglays are sevvits. All rigglays are spequals. Therefore some spequals are not sevvits.\nA:\nAnswer: Invalid\n\nExample 63:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some bees are not cats. No cats are spoons. Therefore all spoons are bees.\nA:\nAnswer: Invalid\n\nExample 64:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All venusians are knights. No venusians are minors. Therefore some minors are not knights.\nA:\nAnswer: Invalid\n\nExample 65:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Mary is less ambitious than Anna. Mary is more ambitious than Sophia. Therefore mary is less ambitious than Sophia.\nA:\nAnswer: Invalid\n\nExample 66:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some surogous are not mizules. No werradiths are surogous. Therefore all werradiths are mizules.\nA:\nAnswer: Invalid\n\nExample 67:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Mary is kinder than Lara. Rossi is kinder than Charlotte. Lara is kinder than Susan. Therefore susan is kinder than Lara.\nA:\nAnswer: Invalid\n\nExample 68:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No brongs are mincoms. All nalpures are mincoms. Therefore no nalpures are brongs.\nA:\nAnswer: Valid\n\nExample 69:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some nurses are animals. No scouts are animals. Therefore some scouts are nurses.\nA:\nAnswer: Invalid\n\nExample 70:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No caimats are khavvins. Some khavvins are yudalouds. Therefore some yudalouds are not caimats.\nA:\nAnswer: Valid\n\nExample 71:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All bats are ships. Some ships are not fruit flies. Therefore some fruit flies are not bats.\nA:\nAnswer: Invalid\n\nExample 72:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Seasonal depression is worst in November. Next month is December, so it might be a bad month for Seasonal Depression.\nA:\nAnswer: Valid\n\nExample 73:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some farklings are not froilets. No froilets are reggabreas. Therefore some reggabreas are not farklings.\nA:\nAnswer: Invalid\n\nExample 74:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore laura is less witty than Kim.\nA:\nAnswer: Valid\n\nExample 75:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No daisies are kitchens. No kitchens are princes. Therefore no princes are daisies.\nA:\nAnswer: Invalid\n\nExample 76:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore david is less witty than Sara.\nA:\nAnswer: Invalid\n\nExample 77:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No chickens are whales. All nephews are whales. Therefore no nephews are chickens.\nA:\nAnswer: Valid\n\nExample 78:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bisdoes are brongs. Some bisdoes are snabeths. Therefore some snabeths are brongs.\nA:\nAnswer: Valid\n\nExample 79:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Before buying a new house, it's important to check the key aspects of the property like the foundations.\nA:\nAnswer: Valid\n\nExample 80:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? You shouldn't trust Donald's views about politics. He's an alcoholic.\nA:\nAnswer: Invalid\n\nExample 81:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No horses are nieces. All jokers are horses. Therefore no jokers are nieces.\nA:\nAnswer: Valid\n\nExample 82:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tortoises are lads. All clothes are tortoises. Therefore all clothes are lads.\nA:\nAnswer: Valid\n\nExample 83:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All benessits are caimats. Some benessits are lotadils. Therefore some lotadils are caimats.\nA:\nAnswer: Valid\n\nExample 84:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Amy is faster than Dylan. Charlotte is faster than Amy. Therefore charlotte is slower than Amy.\nA:\nAnswer: Invalid\n\nExample 85:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All programmers are rooks. All amphibians are programmers. Therefore all amphibians are rooks.\nA:\nAnswer: Valid\n\nExample 86:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Bella is less witty than Amy. Laura is wittier than Edward. Laura is wittier than Amy. Amy is less witty than Anne. Therefore laura is wittier than Bella.\nA:\nAnswer: Valid\n\nExample 87:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Cecilia is shorter than William. William is shorter than Mario. Therefore mario is shorter than William.\nA:\nAnswer: Invalid\n\nExample 88:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some offices are not capitols. All offices are playwrights. Therefore some playwrights are not capitols.\nA:\nAnswer: Valid\n\nExample 89:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sagirds are nalpures. All nalpures are pardees. Therefore some pardees are sagirds.\nA:\nAnswer: Valid\n\nExample 90:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No bliggingtoms are natances. All bliggingtoms are noelinds. Therefore no noelinds are natances.\nA:\nAnswer: Invalid\n\nExample 91:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Sara is taller than Sean. Edward is taller than Sara. Michael is taller than Jack. Anna is taller than Edward. Therefore edward is taller than Sean.\nA:\nAnswer: Valid\n\nExample 92:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No lions are owls. Some owls are lambs. Therefore some lambs are not lions.\nA:\nAnswer: Valid\n\nExample 93:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some champions are not asteroids. No champions are jovians. Therefore some jovians are asteroids.\nA:\nAnswer: Invalid\n\nExample 94:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are not hobgoblins. Some dandelions are hobgoblins. Therefore no dandelions are cowboys.\nA:\nAnswer: Invalid\n\nExample 95:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No smurtans are shures. Some shipotoes are shures. Therefore some shipotoes are not smurtans.\nA:\nAnswer: Valid\n\nExample 96:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some cats are not calves. Some cats are not extraterrestrials. Therefore some extraterrestrials are not calves.\nA:\nAnswer: Invalid\n\nExample 97:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sebusses are besloors. All bacclas are besloors. Therefore no bacclas are sebusses.\nA:\nAnswer: Valid\n\nExample 98:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All guys are snarks. No guys are skeptics. Therefore all skeptics are snarks.\nA:\nAnswer: Invalid\n\nExample 99:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are not pens. All pens are guys. Therefore all guys are cowboys.\nA:\nAnswer: Invalid\n\nExample 100:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? No dining rooms are vehicles. All nurses are vehicles. Therefore no nurses are dining rooms.\nA:\nAnswer: Valid\n\nLearn from the given examples and answer the question.",
+    "accuracy": 0.795,
     "results": [
       {
         "Index": 0,
@@ -27,11 +25,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 1,
@@ -39,11 +33,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 2,
@@ -51,11 +41,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 3,
@@ -63,11 +49,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 4,
@@ -75,11 +57,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 5,
@@ -87,11 +65,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 6,
@@ -99,23 +73,15 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 7,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Osbert is slower than William. Philipp is slower than Peter. Sarah is slower than Philipp. Bill is slower than Peter. Therefore sarah is slower than Peter.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 8,
@@ -123,11 +89,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 9,
@@ -135,11 +97,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 10,
@@ -147,11 +105,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 11,
@@ -159,11 +113,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 12,
@@ -171,11 +121,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 13,
@@ -183,11 +129,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 14,
@@ -195,23 +137,15 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 15,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Candice is older than Vicky. Kevin is younger than Vicky. Therefore candice is older than Vicky.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Valid",
-        "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Invalid",
+        "MbaseAnswerRaw": "Invalid",
+        "judgement": false
       },
       {
         "Index": 16,
@@ -219,11 +153,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 17,
@@ -231,11 +161,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 18,
@@ -243,11 +169,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 19,
@@ -255,11 +177,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 20,
@@ -267,11 +185,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 21,
@@ -279,11 +193,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 22,
@@ -291,11 +201,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 23,
@@ -303,11 +209,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 24,
@@ -315,11 +217,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 25,
@@ -327,11 +225,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 26,
@@ -339,11 +233,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 27,
@@ -351,23 +241,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 28,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Bella is less sensible than Rossi. Joanna is less sensible than Rossi. Joanna is less sensible than Bella. Therefore bella is more sensible than Joanna.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 29,
@@ -375,11 +257,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 30,
@@ -387,11 +265,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 31,
@@ -399,11 +273,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 32,
@@ -411,11 +281,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 33,
@@ -423,11 +289,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 34,
@@ -435,11 +297,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 35,
@@ -447,11 +305,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 36,
@@ -459,11 +313,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 37,
@@ -471,23 +321,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 38,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All salmon are villages. Some salmon are hamlets. Therefore some hamlets are villages.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 39,
@@ -495,11 +337,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 40,
@@ -507,11 +345,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 41,
@@ -519,11 +353,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 42,
@@ -531,11 +361,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 43,
@@ -543,11 +369,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 44,
@@ -555,11 +377,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 45,
@@ -567,23 +385,15 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 46,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. The cost of that product varies wildly so if you want to save money you should shop around.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 47,
@@ -591,35 +401,23 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 48,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bob is less sensible than Henry. Jill is less sensible than Bob. Edward is less sensible than Jill. Therefore edward is less sensible than Bob.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Valid",
-        "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Invalid",
+        "MbaseAnswerRaw": "Invalid",
+        "judgement": false
       },
       {
         "Index": 49,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No starfish are playwrights. Some starfish are boojums. Therefore some boojums are not playwrights.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 50,
@@ -627,11 +425,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 51,
@@ -639,23 +433,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 52,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All auditoriums are candlestick makers. Some auditoriums are boys. Therefore some boys are candlestick makers.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 53,
@@ -663,11 +449,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 54,
@@ -675,11 +457,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 55,
@@ -687,11 +465,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 56,
@@ -699,35 +473,23 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 57,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sunlight helps Vitamin D production, so if you care about that you should get outside\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 58,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Candice is taller than Moses. Amy is taller than Candice. Therefore candice is shorter than Amy.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Valid",
-        "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Invalid",
+        "MbaseAnswerRaw": "Invalid",
+        "judgement": false
       },
       {
         "Index": 59,
@@ -735,11 +497,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 60,
@@ -747,11 +505,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 61,
@@ -759,11 +513,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 62,
@@ -771,11 +521,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 63,
@@ -783,11 +529,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 64,
@@ -795,11 +537,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 65,
@@ -807,11 +545,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 66,
@@ -819,11 +553,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 67,
@@ -831,11 +561,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 68,
@@ -843,11 +569,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 69,
@@ -855,11 +577,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 70,
@@ -867,23 +585,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 71,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All boojums are witches. All witches are cafes. Therefore some cafes are boojums.\nA:",
         "correctAnswer": "Invalid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": false
       },
       {
         "Index": 72,
@@ -891,23 +601,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 73,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All nimepoes are spoickles. No spoickles are slozzoms. Therefore some slozzoms are not nimepoes.\nA:",
         "correctAnswer": "Invalid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": false
       },
       {
         "Index": 74,
@@ -915,11 +617,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 75,
@@ -927,11 +625,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 76,
@@ -939,11 +633,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 77,
@@ -951,11 +641,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 78,
@@ -963,11 +649,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 79,
@@ -975,11 +657,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 80,
@@ -987,11 +665,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 81,
@@ -999,23 +673,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 82,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No shipotoes are winnibler. All sevvits are winnibler. Therefore some sevvits are not shipotoes.\nA:",
         "correctAnswer": "Invalid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": false
       },
       {
         "Index": 83,
@@ -1023,11 +689,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 84,
@@ -1035,23 +697,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 85,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No offices are lords. Some offices are auditoriums. Therefore some auditoriums are not lords.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Valid",
-        "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Invalid",
+        "MbaseAnswerRaw": "Invalid",
+        "judgement": false
       },
       {
         "Index": 86,
@@ -1059,11 +713,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 87,
@@ -1071,11 +721,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 88,
@@ -1083,11 +729,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 89,
@@ -1095,11 +737,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 90,
@@ -1107,11 +745,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 91,
@@ -1119,23 +753,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 92,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some kitzerains are gryllows. All gryllows are refluppers. Therefore some refluppers are kitzerains.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Valid",
-        "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Invalid",
+        "MbaseAnswerRaw": "Invalid",
+        "judgement": false
       },
       {
         "Index": 93,
@@ -1143,11 +769,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 94,
@@ -1155,23 +777,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 95,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some plutonians are reptiles. All plutonians are towns. Therefore some towns are reptiles.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 96,
@@ -1179,11 +793,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 97,
@@ -1191,11 +801,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 98,
@@ -1203,11 +809,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 99,
@@ -1215,35 +817,23 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 100,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Annie is less ambitious than Cecilia. Marcus is less ambitious than Paul. Paul is more ambitious than Peter. Annie is more ambitious than Peter. Therefore paul is more ambitious than Peter.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Valid",
-        "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Invalid",
+        "MbaseAnswerRaw": "Invalid",
+        "judgement": false
       },
       {
         "Index": 101,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No onamas are glontoms. All weepeggles are glontoms. Therefore no weepeggles are onamas.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 102,
@@ -1251,23 +841,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 103,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some colts are mice. All colts are mushrooms. Therefore some mushrooms are mice.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 104,
@@ -1275,11 +857,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 105,
@@ -1287,11 +865,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 106,
@@ -1299,11 +873,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 107,
@@ -1311,11 +881,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 108,
@@ -1323,11 +889,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 109,
@@ -1335,11 +897,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 110,
@@ -1347,11 +905,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 111,
@@ -1359,11 +913,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 112,
@@ -1371,11 +921,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 113,
@@ -1383,11 +929,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 114,
@@ -1395,11 +937,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 115,
@@ -1407,11 +945,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 116,
@@ -1419,11 +953,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 117,
@@ -1431,35 +961,23 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 118,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No oysters are bees. Some bees are arachnids. Therefore some arachnids are not oysters.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 119,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No dufizzes are werradiths. All taindists are werradiths. Therefore no taindists are dufizzes.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 120,
@@ -1467,11 +985,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 121,
@@ -1479,11 +993,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 122,
@@ -1491,11 +1001,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 123,
@@ -1503,11 +1009,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 124,
@@ -1515,11 +1017,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 125,
@@ -1527,11 +1025,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 126,
@@ -1539,11 +1033,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 127,
@@ -1551,11 +1041,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 128,
@@ -1563,11 +1049,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 129,
@@ -1575,11 +1057,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 130,
@@ -1587,11 +1065,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 131,
@@ -1599,11 +1073,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 132,
@@ -1611,11 +1081,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 133,
@@ -1623,11 +1089,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 134,
@@ -1635,11 +1097,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 135,
@@ -1647,23 +1105,15 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 136,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tupresses are exastoes. No exastoes are hislaffs. Therefore no hislaffs are tupresses.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 137,
@@ -1671,11 +1121,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 138,
@@ -1683,11 +1129,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 139,
@@ -1695,11 +1137,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 140,
@@ -1707,11 +1145,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 141,
@@ -1719,11 +1153,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 142,
@@ -1731,11 +1161,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 143,
@@ -1743,11 +1169,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 144,
@@ -1755,11 +1177,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 145,
@@ -1767,11 +1185,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 146,
@@ -1779,11 +1193,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 147,
@@ -1791,35 +1201,23 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 148,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All androids are pawns. Some swans are androids. Therefore some swans are pawns.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 149,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Kevin is younger than Jenny. Kevin is younger than Jake. Jenny is younger than Tim. Therefore jenny is older than Kevin.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Valid",
-        "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Invalid",
+        "MbaseAnswerRaw": "Invalid",
+        "judgement": false
       },
       {
         "Index": 150,
@@ -1827,11 +1225,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 151,
@@ -1839,23 +1233,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 152,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No bacclas are sypholoes. All hislaffs are bacclas. Therefore no hislaffs are sypholoes.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 153,
@@ -1863,11 +1249,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 154,
@@ -1875,11 +1257,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 155,
@@ -1887,11 +1265,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 156,
@@ -1899,11 +1273,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 157,
@@ -1911,23 +1281,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 158,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No caimats are khavvins. Some khavvins are yudalouds. Therefore some yudalouds are not caimats.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 159,
@@ -1935,11 +1297,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 160,
@@ -1947,11 +1305,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 161,
@@ -1959,11 +1313,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 162,
@@ -1971,11 +1321,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 163,
@@ -1983,11 +1329,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 164,
@@ -1995,11 +1337,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 165,
@@ -2007,11 +1345,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 166,
@@ -2019,11 +1353,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": false
       },
       {
         "Index": 167,
@@ -2031,11 +1361,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 168,
@@ -2043,11 +1369,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 169,
@@ -2055,11 +1377,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 170,
@@ -2067,11 +1385,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 171,
@@ -2079,11 +1393,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 172,
@@ -2091,11 +1401,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 173,
@@ -2103,11 +1409,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 174,
@@ -2115,11 +1417,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 175,
@@ -2127,11 +1425,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 176,
@@ -2139,23 +1433,15 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 177,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some khavvins are bliggingtoms. All khavvins are exastoes. Therefore some exastoes are bliggingtoms.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 178,
@@ -2163,11 +1449,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 179,
@@ -2175,11 +1457,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 180,
@@ -2187,11 +1465,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 181,
@@ -2199,11 +1473,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 182,
@@ -2211,11 +1481,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 183,
@@ -2223,11 +1489,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 184,
@@ -2235,11 +1497,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 185,
@@ -2247,11 +1505,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 186,
@@ -2259,11 +1513,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 187,
@@ -2271,11 +1521,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 188,
@@ -2283,11 +1529,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 189,
@@ -2295,11 +1537,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 190,
@@ -2307,23 +1545,15 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 191,
         "Input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All kings are auditoriums. Some kings are paintings. Therefore some paintings are auditoriums.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 192,
@@ -2331,11 +1561,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 193,
@@ -2343,11 +1569,7 @@
         "correctAnswer": "Valid",
         "MbaseAnswer": "Valid",
         "MbaseAnswerRaw": "Valid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 194,
@@ -2355,11 +1577,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 195,
@@ -2367,35 +1585,23 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 196,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some effachers are proppors. All effachers are thrastles. Therefore some thrastles are proppors.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 197,
         "Input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some shraiwels are not rigglays. All shraiwels are goyances. Therefore some goyances are not rigglays.\nA:",
         "correctAnswer": "Valid",
-        "MbaseAnswer": "Invalid",
-        "MbaseAnswerRaw": "Invalid",
-        "judgement": false,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "MbaseAnswer": "Valid",
+        "MbaseAnswerRaw": "Valid",
+        "judgement": true
       },
       {
         "Index": 198,
@@ -2403,11 +1609,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       },
       {
         "Index": 199,
@@ -2415,11 +1617,7 @@
         "correctAnswer": "Invalid",
         "MbaseAnswer": "Invalid",
         "MbaseAnswerRaw": "Invalid",
-        "judgement": true,
-        "choices": [
-          "Valid",
-          "Invalid"
-        ]
+        "judgement": true
       }
     ]
   }

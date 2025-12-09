@@ -1,0 +1,16 @@
+{
+  "task_name": "logical_fallacy_detection",
+  "mode": "few-shot",
+  "split": "validation",
+  "index": 6,
+  "messages": [
+    {
+      "role": "system",
+      "content": "You classify arguments as \"Valid\" or \"Invalid\". \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\n\n\nAdditionally I am giving you the following examples to learn from:\n\nExample 1:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Victoria is more sensible than Rossi. Jim is more sensible than Victoria. Therefore victoria is less sensible than Jim.\nA:\nAnswer: Valid\n\nExample 2:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? The last train leaves soon, and you said you didn't want to miss it, so you should head out shortly.\nA:\nAnswer: Valid\n\nExample 3:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? All flionsoes are shipotoes. Some flionsoes are looncans. Therefore some looncans are shipotoes.\nA:\nAnswer: Valid\n\nExample 4:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All dewfays are polinks. All thrastles are dewfays. Therefore all thrastles are polinks.\nA:\nAnswer: Valid\n\nExample 5:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some airplanes are not harlequins. All programmers are airplanes. Therefore all programmers are harlequins.\nA:\nAnswer: Invalid\n\nExample 6:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some goblins are uncles. All goblins are actors. Therefore some actors are uncles.\nA:\nAnswer: Valid\n\nExample 7:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? Mexican food is heavy on spice, so if you want something plainer, you might try English cuisine instead.\nA:\nAnswer: Valid\n\nExample 8:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reptilians are adults. Some reptilians are places. Therefore some places are adults.\nA:\nAnswer: Valid\n\nExample 9:\nQuestion: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some brongs are hendassas. Some fluffsters are not brongs. Therefore all fluffsters are hendassas.\nA:\nAnswer: Invalid\n\nExample 10:\nQuestion: Q: Do you think the following argument is 'Valid' or 'Invalid'? You can't prove he's innocent, so he must be guilty.\nA:\nAnswer: Invalid\n\nLearn from the given examples and answer the question."
+    },
+    {
+      "role": "user",
+      "content": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No offices are knaves. Some knaves are extraterrestrials. Therefore some extraterrestrials are not offices.\nA:"
+    }
+  ]
+}

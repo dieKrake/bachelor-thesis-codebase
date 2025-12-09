@@ -24,7 +24,7 @@ load_dotenv()
 # 🔧 KONFIGURATION
 # =========================================================
 
-DEBUG_LOG_PROMPTS = True
+DEBUG_LOG_PROMPTS = False
 DEBUG_PROMPT_DIR = Path("debug_prompts")
 
 EVAL_MODE = "few-shot"  # "zero-shot" oder "few-shot"
@@ -34,31 +34,58 @@ HF_DATASET_NAME = "tasksource/bigbench"
 HF_TASK_NAME = "logical_fallacy_detection"
 
 ZERO_SHOT_EVAL_SPLITS = {
-    "validation": 10,
+    "validation": 200,
 }
 
 FEW_SHOT_TRAIN_SPLIT = "train"
-FEW_SHOT_TRAIN_MAX = 200
-FEW_SHOT_CONTEXT_EXAMPLES = 10
+FEW_SHOT_TRAIN_MAX = 100
+FEW_SHOT_CONTEXT_EXAMPLES = 100
 
 FEW_SHOT_TEST_SPLITS = {
-    "validation": 10,
+    "validation": 200,
 }
 
 MODEL_NAME = "gpt-4o-mini"
 
+# True-False_Prompt
+# zero_shot_prompt = (
+#     'You MUST answer with exactly one string: either "True" or "False". '
+#     'Do not output explanations, punctuation, or additional text. '
+#     '"True" = you return to the starting point. '
+#     '"False" = you do not return to the starting point.\n\n'
+#     'Now answer the following question with "True" or "False":'
+# )
+
+# Multiple-Choice-Prompt
+# zero_shot_prompt = (
+#     "You are solving multiple-choice math questions.\n"
+#     "Each question lists several answer options, each prefixed with 'choice:'.\n"
+#     "Read the question and the choices carefully.\n"
+#     "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+#   )
+
+# Valid-Invalid-Prompt
+# zero_shot_prompt = (
+#   'You MUST answer with exactly one string: either "Valid" or "Invalid". '
+#   'Do not output explanations, reasoning steps, punctuation, or additional text. '
+#   '"Valid" = the argument is logically valid. '
+#   '"Invalid" = the conclusion does not necessarily follow from the premises.\n\n'
+#   'Now answer the following question with exactly one word: "Valid" or "Invalid".'
+# )
+
 ZERO_SHOT_PROMPT = (
-    'You MUST answer with exactly one string: either "Valid" or "Invalid". '
-    'Do not output explanations, reasoning steps, punctuation, or additional text. '
-    '"Valid" = the argument is logically valid. '
-    '"Invalid" = the conclusion does not necessarily follow from the premises.\n\n'
-    'Now answer the following question with exactly one word: "Valid" or "Invalid".'
-)
+    "You are solving multiple-choice math questions.\n"
+    "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    "Read the question and the choices carefully.\n"
+    "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+  )
 
 FEW_SHOT_BASE_SYSTEM_PROMPT = (
-    'You classify arguments as "Valid" or "Invalid". '
-    '"Valid" = the argument is logically valid. '
-    '"Invalid" = the conclusion does not necessarily follow from the premises.\n\n'
+  'You MUST answer with exactly one string: either "Valid" or "Invalid". '
+  'Do not output explanations, reasoning steps, punctuation, or additional text. '
+  '"Valid" = the argument is logically valid. '
+  '"Invalid" = the conclusion does not necessarily follow from the premises.\n\n'
+  'Now answer the following question with exactly one word: "Valid" or "Invalid".'
 )
 
 RESULTS_ROOT = Path("hf_eval_results_new")
@@ -222,6 +249,7 @@ def run_zero_shot_on_dataset(prompt, dataset, split_name, model=MODEL_NAME, syst
     correct = 0
 
     for idx, ex in enumerate(dataset):
+        log_line(f"[ZERO-SHOT][{split_name}] Processing item {idx+1}/{len(dataset)}")
         messages = []
         if system_message:
             messages.append({"role": "system", "content": system_message})
@@ -282,9 +310,14 @@ def chat_with_retry(client, **kwargs):
             time.sleep(1.0 * (2**attempt))
     raise RuntimeError("Rate limits nach 5 Versuchen")
 
-def evaluate_few_shot(train_dataset, test_dataset, base_prompt,
-                      split_name, model=MODEL_NAME,
-                      max_train_examples=FEW_SHOT_CONTEXT_EXAMPLES):
+def evaluate_few_shot(
+    train_dataset,
+    test_dataset,
+    base_system_prompt,
+    split_name,
+    model=MODEL_NAME,
+    max_train_examples=FEW_SHOT_CONTEXT_EXAMPLES,
+):
 
     client = get_client()
 
@@ -292,7 +325,7 @@ def evaluate_few_shot(train_dataset, test_dataset, base_prompt,
     block_text = format_few_shot_block(block)
 
     system_prompt = (
-        base_prompt +
+        base_system_prompt +
         "\n\nAdditionally I am giving you the following examples to learn from:\n\n" +
         block_text +
         "\n\nLearn from the given examples and answer the question."
@@ -306,6 +339,7 @@ def evaluate_few_shot(train_dataset, test_dataset, base_prompt,
     correct = 0
 
     for idx, ex in enumerate(test_dataset):
+        log_line(f"[FEW-SHOT][{split_name}] Processing item {idx+1}/{len(test_dataset)}")
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": ex.input},
@@ -338,7 +372,7 @@ def evaluate_few_shot(train_dataset, test_dataset, base_prompt,
     return EvalRunResult(
         mode="few-shot",
         model=model,
-        base_system_prompt=base_prompt,
+        base_system_prompt=base_system_prompt,
         used_prompt=system_prompt,
         few_shot_examples=block,
         test_results=results,

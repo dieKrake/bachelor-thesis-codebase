@@ -1,0 +1,12 @@
+{
+  "task_name": "logical_fallacy_detection",
+  "mode": "zero-shot",
+  "split": "validation",
+  "index": 3,
+  "messages": [
+    {
+      "role": "user",
+      "content": "You MUST answer with exactly one string: either \"Valid\" or \"Invalid\". Do not output explanations, reasoning steps, punctuation, or additional text. \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\nNow answer the following question with exactly one word: \"Valid\" or \"Invalid\".\n\nQ: Do you think the following argument is 'Valid' or 'Invalid'? The nutritionist was overweight, so his advice can't be trusted.\nA:"
+    }
+  ]
+}
