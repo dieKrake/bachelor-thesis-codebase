@@ -1,0 +1,169 @@
+{
+  "timestamp": "2025-12-10T13:15:08.204096",
+  "dataset": {
+    "hf_dataset": "tasksource/bigbench",
+    "hf_task_name": "elementary_math_qa",
+    "train_split": "train",
+    "dev_split": "validation",
+    "test_split": null,
+    "train_size": 100,
+    "dev_size": 200,
+    "test_size": 0
+  },
+  "config": {
+    "initial_prompt": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+    "meta_prompt_template_snippet": "We are refining a prompt for a classification task.\n\n# Current Prompt\n{prompt}\n\n# Failed Examples\nThe following examples are cases where the model failed (wrong judgement):\n\n{examples}\n\n# Instructions\n1. Analyze why the current prompt might have led to these mistakes.\n2. Propose an improved version of the prompt that:\n  - stays concise,\n  - keeps the same task and output format,\n  - reduces the li",
+    "task_model": "gpt-4o-mini",
+    "proposal_model": "gpt-4o-mini",
+    "iterations": 3,
+    "beam_width": 3,
+    "proposals_per_prompt": 2,
+    "failure_batch_size": 5,
+    "train_max": 100,
+    "dev_max": 200,
+    "test_max": null
+  },
+  "result": {
+    "best_prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+    "best_accuracy": 0.54,
+    "history": [
+      {
+        "iteration": 0,
+        "prompt": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.52
+      },
+      {
+        "iteration": 1,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step and verify your answer before responding. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.495
+      },
+      {
+        "iteration": 1,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.54
+      },
+      {
+        "iteration": 2,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring accuracy at each step. Select the answer that matches your final calculation, and respond with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.5
+      },
+      {
+        "iteration": 2,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring each step is correct before proceeding. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.52
+      },
+      {
+        "iteration": 2,
+        "prompt": "You are solving multiple-choice math questions. Each question provides several answer options, each labeled as 'choice:'. Read the question and the choices carefully. Perform the necessary calculations to determine the correct answer. Respond with the exact text of the correct choice, omitting the 'choice:' label and any additional text.",
+        "dev_accuracy": 0.47
+      },
+      {
+        "iteration": 2,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the necessary calculations step-by-step to determine the correct answer. Respond with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.51
+      },
+      {
+        "iteration": 2,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step, ensuring to follow the order of operations, and verify your final answer before responding. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.485
+      },
+      {
+        "iteration": 2,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Break down the calculations into clear steps, ensuring each step is correct. Verify your final answer against the choices before responding. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.465
+      },
+      {
+        "iteration": 3,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring to verify each step. Provide the final answer by selecting the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.425
+      },
+      {
+        "iteration": 3,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring accuracy at each step. Select the correct answer from the choices provided, and respond with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.515
+      },
+      {
+        "iteration": 3,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step and verify your results before answering. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.49
+      },
+      {
+        "iteration": 3,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Carefully perform the arithmetic operations described in the question step-by-step. Then, select the correct answer from the choices provided, responding with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.515
+      },
+      {
+        "iteration": 3,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step, ensuring to follow the order of operations and verify each step before proceeding to the final answer. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.5
+      },
+      {
+        "iteration": 3,
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring each step is correct before proceeding to the next. After completing all calculations, select the correct answer from the choices provided. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.51
+      }
+    ],
+    "all_candidates": [
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.54
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions.\nEach question lists several answer options, each prefixed with 'choice:'.\nRead the question and the choices carefully.\nAnswer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.52
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring each step is correct before proceeding. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.52
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring accuracy at each step. Select the correct answer from the choices provided, and respond with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.515
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Carefully perform the arithmetic operations described in the question step-by-step. Then, select the correct answer from the choices provided, responding with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.515
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the necessary calculations step-by-step to determine the correct answer. Respond with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.51
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring each step is correct before proceeding to the next. After completing all calculations, select the correct answer from the choices provided. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.51
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring accuracy at each step. Select the answer that matches your final calculation, and respond with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.5
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step, ensuring to follow the order of operations and verify each step before proceeding to the final answer. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.5
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step and verify your answer before responding. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.495
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step and verify your results before answering. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.49
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step, ensuring to follow the order of operations, and verify your final answer before responding. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.485
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question provides several answer options, each labeled as 'choice:'. Read the question and the choices carefully. Perform the necessary calculations to determine the correct answer. Respond with the exact text of the correct choice, omitting the 'choice:' label and any additional text.",
+        "dev_accuracy": 0.47
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Break down the calculations into clear steps, ensuring each step is correct. Verify your final answer against the choices before responding. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.465
+      },
+      {
+        "prompt": "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question, ensuring to verify each step. Provide the final answer by selecting the correct choice, without the 'choice:' prefix and without any explanation or extra text.",
+        "dev_accuracy": 0.425
+      }
+    ]
+  }
+}

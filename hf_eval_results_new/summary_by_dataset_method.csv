@@ -1,0 +1,13 @@
+dataset,method,mean,min,max,count
+boolq,few-shot_new,0.885,0.885,0.885,1
+boolq,rag_new,0.885,0.885,0.885,1
+boolq,zero-shot_new,0.9,0.9,0.9,1
+elementary_math_qa,few-shot_new,0.595,0.595,0.595,1
+elementary_math_qa,rag_new,0.39,0.39,0.39,1
+elementary_math_qa,zero-shot_new,0.52,0.52,0.52,1
+logical_fallacy_detection,few-shot_new,0.795,0.795,0.795,1
+logical_fallacy_detection,rag_new,0.76,0.76,0.76,1
+logical_fallacy_detection,zero-shot_new,0.74,0.74,0.74,1
+navigate,few-shot_new,0.7,0.7,0.7,1
+navigate,rag_new,0.635,0.635,0.635,1
+navigate,zero-shot_new,0.645,0.645,0.645,1

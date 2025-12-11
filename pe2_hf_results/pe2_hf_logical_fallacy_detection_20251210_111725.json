@@ -1,0 +1,160 @@
+{
+  "timestamp": "2025-12-10T11:17:25.022756",
+  "dataset": {
+    "hf_dataset": "tasksource/bigbench",
+    "hf_task_name": "logical_fallacy_detection",
+    "train_split": "train",
+    "dev_split": "validation",
+    "test_split": null,
+    "train_size": 100,
+    "dev_size": 200,
+    "test_size": 0
+  },
+  "config": {
+    "initial_prompt": "You MUST answer with exactly one string: either \"Valid\" or \"Invalid\". Do not output explanations, reasoning steps, punctuation, or additional text. \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\nNow answer the following question with exactly one word: \"Valid\" or \"Invalid\".",
+    "meta_prompt_template_snippet": "We are refining a prompt for a classification task.\n\n# Current Prompt\n{prompt}\n\n# Failed Examples\nThe following examples are cases where the model failed (wrong judgement):\n\n{examples}\n\n# Instructions\n1. Analyze why the current prompt might have led to these mistakes.\n2. Propose an improved version of the prompt that:\n  - stays concise,\n  - keeps the same task and output format,\n  - reduces the li",
+    "task_model": "gpt-4o-mini",
+    "proposal_model": "gpt-4o-mini",
+    "iterations": 3,
+    "beam_width": 3,
+    "proposals_per_prompt": 2,
+    "failure_batch_size": 5,
+    "train_max": 100,
+    "dev_max": 200,
+    "test_max": null
+  },
+  "result": {
+    "best_prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises, regardless of the truth of the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+    "best_accuracy": 0.785,
+    "history": [
+      {
+        "iteration": 0,
+        "prompt": "You MUST answer with exactly one string: either \"Valid\" or \"Invalid\". Do not output explanations, reasoning steps, punctuation, or additional text. \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\nNow answer the following question with exactly one word: \"Valid\" or \"Invalid\".",
+        "dev_accuracy": 0.74
+      },
+      {
+        "iteration": 1,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.755
+      },
+      {
+        "iteration": 1,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises, regardless of the truth of the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.785
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises, while 'Invalid' means it does not, regardless of the premises' truth. Focus solely on the logical connection. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.765
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Consider the logical relationships carefully. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.785
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises based on standard logical principles. 'Invalid' means the conclusion does not logically follow from the premises. Now classify the following argument as 'Valid' or 'Invalid':",
+        "dev_accuracy": 0.75
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Assess the following argument and respond with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.755
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Assess the logical structure of the argument carefully. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.765
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises, while 'Invalid' means it does not. Now, evaluate the following argument and respond with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.74
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises based on the rules of logic. 'Invalid' means the conclusion does not logically follow from the premises, regardless of the truth of the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.77
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises based on standard logical reasoning. 'Invalid' means the conclusion does not logically follow from the premises. Carefully analyze the logical connections between the premises and the conclusion. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.785
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Carefully consider the logical relationships in the following argument. Now answer with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.765
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises based on formal logic, while 'Invalid' means it does not, regardless of the premises' truth. Focus solely on whether the conclusion is logically supported by the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.77
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises based on standard logical reasoning, while 'Invalid' means it does not. Carefully analyze the logical relationships before answering. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.755
+      }
+    ],
+    "all_candidates": [
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises, regardless of the truth of the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.785
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Consider the logical relationships carefully. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.785
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises based on standard logical reasoning. 'Invalid' means the conclusion does not logically follow from the premises. Carefully analyze the logical connections between the premises and the conclusion. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.785
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises based on the rules of logic. 'Invalid' means the conclusion does not logically follow from the premises, regardless of the truth of the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.77
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises based on formal logic, while 'Invalid' means it does not, regardless of the premises' truth. Focus solely on whether the conclusion is logically supported by the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.77
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises, while 'Invalid' means it does not, regardless of the premises' truth. Focus solely on the logical connection. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.765
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Assess the logical structure of the argument carefully. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.765
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Carefully consider the logical relationships in the following argument. Now answer with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.765
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.755
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises. 'Invalid' means the conclusion does not logically follow from the premises. Assess the following argument and respond with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.755
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises based on standard logical reasoning, while 'Invalid' means it does not. Carefully analyze the logical relationships before answering. Now answer the following question with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.755
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. Do not output explanations, reasoning steps, punctuation, or additional text. 'Valid' means the conclusion logically follows from the premises based on standard logical principles. 'Invalid' means the conclusion does not logically follow from the premises. Now classify the following argument as 'Valid' or 'Invalid':",
+        "dev_accuracy": 0.75
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either \"Valid\" or \"Invalid\". Do not output explanations, reasoning steps, punctuation, or additional text. \"Valid\" = the argument is logically valid. \"Invalid\" = the conclusion does not necessarily follow from the premises.\n\nNow answer the following question with exactly one word: \"Valid\" or \"Invalid\".",
+        "dev_accuracy": 0.74
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'Valid' or 'Invalid'. 'Valid' means the conclusion logically follows from the premises, while 'Invalid' means it does not. Now, evaluate the following argument and respond with exactly one word: 'Valid' or 'Invalid'.",
+        "dev_accuracy": 0.74
+      }
+    ]
+  }
+}

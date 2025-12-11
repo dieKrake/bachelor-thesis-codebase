@@ -11,6 +11,32 @@ Zero-Shot Evaluation – angelehnt an den PE2-Algorithmus mit Logging.
 - Speichert Accuracy + Einzelergebnisse als JSON mit Timestamp & Dataset-Info.
 """
 
+# True-False_Prompt
+# zero_shot_prompt = (
+#     'You MUST answer with exactly one string: either "True" or "False". '
+#     'Do not output explanations, punctuation, or additional text. '
+#     '"True" = you return to the starting point. '
+#     '"False" = you do not return to the starting point.\n\n'
+#     'Now answer the following question with "True" or "False":'
+# )
+
+# Multiple-Choice-Prompt
+# zero_shot_prompt = (
+#     "You are solving multiple-choice math questions.\n"
+#     "Each question lists several answer options, each prefixed with 'choice:'.\n"
+#     "Read the question and the choices carefully.\n"
+#     "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+#   )
+
+# Valid-Invalid-Prompt
+# zero_shot_prompt = (
+#   'You MUST answer with exactly one string: either "Valid" or "Invalid". '
+#   'Do not output explanations, reasoning steps, punctuation, or additional text. '
+#   '"Valid" = the argument is logically valid. '
+#   '"Invalid" = the conclusion does not necessarily follow from the premises.\n\n'
+#   'Now answer the following question with exactly one word: "Valid" or "Invalid".'
+# )
+
 from __future__ import annotations
 
 import os
