@@ -54,8 +54,8 @@ HF_TEST_SPLIT: Optional[str] = None   # für BoolQ: validation; sonst z. B. "tes
 #   Dev:   nächste 200 aus train
 #   Test:  erste 200 aus validation
 TRAIN_MAX = 50          # max. Anzahl Beispiele für T_train
-DEV_MAX = 50            # max. Anzahl Beispiele für T_dev
-TEST_MAX: Optional[int] = None  # max. Beispiele aus HF_TEST_SPLIT (für BoolQ: 200)
+DEV_MAX = 50         # max. Anzahl Beispiele für T_dev
+TEST_MAX: Optional[int] = 200  # max. Beispiele aus HF_TEST_SPLIT (für BoolQ: 200)
 
 RANDOM_SEED = 42
 

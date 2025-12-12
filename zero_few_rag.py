@@ -54,8 +54,8 @@ EVAL_MODE = "zero-shot"  # "zero-shot" | "few-shot" | "rag"
 RANDOM_SEED = 42
 
 # HuggingFace Dataset-Konfiguration
-HF_DATASET_NAME = "tasksource/bigbench"
-HF_TASK_NAME = "elementary_math_qa"
+HF_DATASET_NAME = "google/boolq"
+HF_TASK_NAME = None
 
 # ---------------- ZERO-SHOT ----------------
 # Splits & Größen für Zero-Shot: split_name -> max_examples
@@ -129,7 +129,7 @@ MODEL_NAME = "gpt-4o-mini"
 
 # Zero-Shot-Prompt – als User-Prompt vor der Frage
 ZERO_SHOT_PROMPT = (
-   "You are solving multiple-choice math questions. Each question lists several answer options, each prefixed with 'choice:'. Read the question and the choices carefully. Perform the calculations step-by-step as described in the question. Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+   "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, reasoning steps, or additional text.\n\n'True' = The passage provides explicit evidence that directly supports the question.\n'False' = The passage does not provide explicit evidence, implies the opposite, or lacks sufficient information to answer the question.\n\nNow read the following question and its passage, and answer with 'True' or 'False':"
 )
 
 
