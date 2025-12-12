@@ -42,12 +42,12 @@ load_dotenv()
 # Für BIG-Bench / andere:
 # HF_DATASET_NAME = "tasksource/bigbench"
 # HF_TASK_NAME = "navigate"
-HF_DATASET_NAME = "google/boolq"          # z.B. "tasksource/bigbench" oder "google/boolq"
-HF_TASK_NAME: Optional[str] = None      # z.B. "navigate" oder None für BoolQ
+HF_DATASET_NAME = "tasksource/bigbench"          # z.B. "tasksource/bigbench" oder "google/boolq"
+HF_TASK_NAME: Optional[str] = "elementary_math_qa"      # z.B. "navigate" oder None für BoolQ
 
 HF_TRAIN_SPLIT = "train"
-HF_DEV_SPLIT = "validation"
-HF_TEST_SPLIT: Optional[str] = None   # für BoolQ: validation; sonst z. B. "test" oder None
+HF_DEV_SPLIT = "dev"
+HF_TEST_SPLIT: Optional[str] = "validation"   # für BoolQ: validation; sonst z. B. "test" oder None
 
 # Für BoolQ:
 #   Train: erste 100 aus train
@@ -65,13 +65,11 @@ PROPOSAL_MODEL = "gpt-4o-mini"
 
 # Initialer Prompt – z.B. wie Navigate/BoolQ-True/False
 INITIAL_PROMPT = (
-    'You MUST answer with exactly one string: either "True" or "False". '
-    'Do not output explanations, reasoning steps, or additional text.\n\n'
-    '"True" = The passage implies that the answer to the question is YES.\n'
-    '"False" = The passage implies that the answer to the question is NO, '
-    'or the passage does NOT provide enough evidence to answer YES.\n\n'
-    'Now read the following question and its passage, and answer with "True" or "False":'
-)
+    "You are solving multiple-choice math questions.\n"
+    "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    "Read the question and the choices carefully.\n"
+    "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+  )
 
 # Meta-Prompt
 META_PROMPT_TEMPLATE = """
@@ -817,9 +815,9 @@ if __name__ == "__main__":
         test_split_name = "validation[0:200]"
 
     else:
-        # generischer Pfad wie bisher
-        train_set = load_hf_dataset(HF_TRAIN_SPLIT, TRAIN_MAX)
-        dev_set = load_hf_dataset(HF_DEV_SPLIT, DEV_MAX)
+        full_train = load_hf_dataset("train", TRAIN_MAX + DEV_MAX)
+        train_set = full_train[:TRAIN_MAX]
+        dev_set = full_train[TRAIN_MAX:TRAIN_MAX + DEV_MAX]
 
         if HF_TEST_SPLIT is not None and TEST_MAX is not None:
             test_set = load_hf_dataset(HF_TEST_SPLIT, TEST_MAX)
