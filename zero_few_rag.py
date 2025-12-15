@@ -50,12 +50,12 @@ DEBUG_LOG_PROMPTS = False
 DEBUG_PROMPT_DIR = Path("debug_prompts")
 
 # Modus wählen: "zero-shot", "few-shot" oder "rag"
-EVAL_MODE = "zero-shot"  # "zero-shot" | "few-shot" | "rag"
+EVAL_MODE = "rag"  # "zero-shot" | "few-shot" | "rag"
 RANDOM_SEED = 42
 
 # HuggingFace Dataset-Konfiguration
-HF_DATASET_NAME = "google/boolq"
-HF_TASK_NAME = None
+HF_DATASET_NAME = "tasksource/bigbench"
+HF_TASK_NAME = "social_iqa"
 
 # ---------------- ZERO-SHOT ----------------
 # Splits & Größen für Zero-Shot: split_name -> max_examples
@@ -84,7 +84,7 @@ RAG_EVAL_SPLITS: Dict[str, int] = {
 # Azure Search Konfiguration (per .env oder hier direkt)
 AZURE_SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT", "")
 AZURE_SEARCH_API_KEY = os.getenv("AZURE_SEARCH_API_KEY")
-AZURE_SEARCH_INDEX = "boolq_train_100"  # <== HIER deinen Indexnamen eintragen
+AZURE_SEARCH_INDEX = "social_iqa_train_100"  # <== HIER deinen Indexnamen eintragen
 RAG_TOP_K = 3  # wie viele Dokumente aus Azure pro Anfrage holen
 
 # ---------------- MODEL & PROMPTS ---------
@@ -127,20 +127,33 @@ MODEL_NAME = "gpt-4o-mini"
 #     'Now read the following question and its passage, and answer with "True" or "False":'
 # )
 
+# social_iqa
+# zero_shot_prompt = (
+#     "You are solving multiple-choice questions about everyday social situations.\n"
+#     "Each question lists several answer options, each prefixed with 'choice:'.\n"
+#     "Read the scenario and the choices carefully.\n"
+#     "Answer with exactly the text of the correct choice, "
+#     "without the 'choice:' prefix and without any explanation or extra text."
+# )
+
+
 # Zero-Shot-Prompt – als User-Prompt vor der Frage
 ZERO_SHOT_PROMPT = (
-   "You MUST answer with exactly one string: either 'True' or 'False'. Do not output explanations, reasoning steps, or additional text.\n\n'True' = The passage provides explicit evidence that directly supports the question.\n'False' = The passage does not provide explicit evidence, implies the opposite, or lacks sufficient information to answer the question.\n\nNow read the following question and its passage, and answer with 'True' or 'False':"
+    "You are solving multiple-choice questions about everyday social situations.\n"
+    "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    "Read the scenario and the choices carefully.\n"
+    "Answer with exactly the text of the correct choice, "
+    "without the 'choice:' prefix and without any explanation or extra text."
 )
 
 
 # Few-Shot Basis-System-Prompt – in den System-Prompt, Beispiele werden angehängt
 FEW_SHOT_BASE_SYSTEM_PROMPT = (
-    'You MUST answer with exactly one string: either "True" or "False". '
-    'Do not output explanations, reasoning steps, or additional text.\n\n'
-    '"True" = The passage implies that the answer to the question is YES.\n'
-    '"False" = The passage implies that the answer to the question is NO, '
-    'or the passage does NOT provide enough evidence to answer YES.\n\n'
-    'Now read the following question and its passage, and answer with "True" or "False":'
+    "You are solving multiple-choice questions about everyday social situations.\n"
+    "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    "Read the scenario and the choices carefully.\n"
+    "Answer with exactly the text of the correct choice, "
+    "without the 'choice:' prefix and without any explanation or extra text."
 )
 
 # RAG kann denselben Basis-Prompt nutzen (oder einen anderen, falls gewünscht)

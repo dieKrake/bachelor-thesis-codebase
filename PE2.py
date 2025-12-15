@@ -43,7 +43,7 @@ load_dotenv()
 # HF_DATASET_NAME = "tasksource/bigbench"
 # HF_TASK_NAME = "navigate"
 HF_DATASET_NAME = "tasksource/bigbench"          # z.B. "tasksource/bigbench" oder "google/boolq"
-HF_TASK_NAME: Optional[str] = "elementary_math_qa"      # z.B. "navigate" oder None für BoolQ
+HF_TASK_NAME: Optional[str] = "social_iqa"      # z.B. "navigate" oder None für BoolQ
 
 HF_TRAIN_SPLIT = "train"
 HF_DEV_SPLIT = "dev"
@@ -65,10 +65,11 @@ PROPOSAL_MODEL = "gpt-4o-mini"
 
 # Initialer Prompt – z.B. wie Navigate/BoolQ-True/False
 INITIAL_PROMPT = (
-    "You are solving multiple-choice math questions.\n"
+    "You are solving multiple-choice questions about everyday social situations.\n"
     "Each question lists several answer options, each prefixed with 'choice:'.\n"
-    "Read the question and the choices carefully.\n"
-    "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+    "Read the scenario and the choices carefully.\n"
+    "Answer with exactly the text of the correct choice, "
+    "without the 'choice:' prefix and without any explanation or extra text."
   )
 
 # Meta-Prompt

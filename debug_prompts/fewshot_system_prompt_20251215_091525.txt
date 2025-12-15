@@ -1,0 +1,808 @@
+You are solving multiple-choice questions about everyday social situations.
+Each question lists several answer options, each prefixed with 'choice:'.
+Read the scenario and the choices carefully.
+Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.
+
+Additionally I am giving you the following examples to learn from:
+
+Example 1:
+Question: Q: Addison wanted breakfast in the morning so they ate cereal. What does Addison need to do before this? 
+  choice: Pour the cereal in the bowl
+  choice: Think about pouring cereal in the bowl
+  choice: Wanted something quick
+A:
+Answer: Pour the cereal in the bowl
+
+Example 2:
+Question: Q: Jesse paid another bill for the others so they wouldn't get kicked out. What will Others want to do next? 
+  choice: Find out how much the bill was
+  choice: Pay jesse back later
+  choice: Yell at jesse
+A:
+Answer: Pay jesse back later
+
+Example 3:
+Question: Q: Carson knew they were right, and Taylor proved Carson's point. What will happen to Taylor? 
+  choice: Ask Carson how they knew
+  choice: He will rub it in their face
+  choice: Not ask Carson anything
+A:
+Answer: Ask Carson how they knew
+
+Example 4:
+Question: Q: Aubrey never told Riley because Riley would be very upset that Aubrey betrayed them. How would Aubrey feel afterwards? 
+  choice: Guilty
+  choice: Open
+  choice: Someone who lacks loyalty
+A:
+Answer: Guilty
+
+Example 5:
+Question: Q: Skylar joined Sasha's ranks as one of the only employees to never miss a day of work in 5 years. What will Sasha want to do next? 
+  choice: Congratulate Skylar for failing
+  choice: Do themselves proud
+  choice: Try to continue not missing work
+A:
+Answer: Try to continue not missing work
+
+Example 6:
+Question: Q: Cameron knew what he wanted to do this weekend since he loved being outside so much. How would you describe Cameron? 
+  choice: A man who likes to camp
+  choice: A man who likes to nap
+  choice: Happy
+A:
+Answer: A man who likes to camp
+
+Example 7:
+Question: Q: Riley played a role in the revolution because he gaved the army weapons and suppliles. What does Riley need to do before this? 
+  choice: Gather intel on the enemy so that theres accurate info
+  choice: Need to gather weeapons so that the revolution has a chance to survive
+  choice: Proud
+A:
+Answer: Need to gather weeapons so that the revolution has a chance to survive
+
+Example 8:
+Question: Q: Taylor knew he was right and proved Carson's point that day. Why did Taylor do this? 
+  choice: Look dumb in front of friends
+  choice: Make a statement
+  choice: Superior to others
+A:
+Answer: Make a statement
+
+Example 9:
+Question: Q: Robin took into account the mitigating factors when considering the situation. How would you describe Ash? 
+  choice: As someone who puts thought into things
+  choice: Confident in their final decision
+  choice: Pleased to have all the information
+A:
+Answer: As someone who puts thought into things
+
+Example 10:
+Question: Q: Bailey asked Tracy to make it since she couldn't do it herself. How would you describe Bailey? 
+  choice: Confident
+  choice: Incompetent
+  choice: Reliable
+A:
+Answer: Incompetent
+
+Example 11:
+Question: Q: Alex set Riley on fire in the game when Riley had low health left. What will happen to Alex? 
+  choice: Will get sick after the game
+  choice: Will quit playing
+  choice: Win the game
+A:
+Answer: Win the game
+
+Example 12:
+Question: Q: Remy did not have a ride to the fair and called all her friends bugging them to give her a ride. What does Remy need to do before this? 
+  choice: Needed to ask her mom and dad to give her a ride before instead of bumming
+  choice: Needed to borrow her mom and dads car without asking instead of bumming
+  choice: Needed to just walk the 20 miles to the fair quickly instead of bumming
+A:
+Answer: Needed to ask her mom and dad to give her a ride before instead of bumming
+
+Example 13:
+Question: Q: Jan visisted home for Christmas after finding out that their grandfather had died. What does Jan need to do before this? 
+  choice: Needed to book a plane ticket
+  choice: Needed to tell her family she wasn't coming home
+  choice: Remember Jan's grandfather during Christmas
+A:
+Answer: Needed to book a plane ticket
+
+Example 14:
+Question: Q: Taylor filled Kai's mind because of the way he made her laugh and smile. What will Taylor want to do next? 
+  choice: Ask out Kai
+  choice: Find a new love
+  choice: Start dating Taylor
+A:
+Answer: Ask out Kai
+
+Example 15:
+Question: Q: Aubrey met a friend at the park and they decided to go play baseball. What will happen to Others? 
+  choice: Have a lot of fun
+  choice: Will hit the ball
+  choice: Will watch the game
+A:
+Answer: Will watch the game
+
+Example 16:
+Question: Q: Quinn watched videos on friday night to have fun. What will Quinn want to do next? 
+  choice: Get work done
+  choice: Have a snack
+  choice: Talk about videos
+A:
+Answer: Have a snack
+
+Example 17:
+Question: Q: Quinn was sick and called out on Monday, but Quinn went to work the next day. How would you describe Quinn? 
+  choice: Better
+  choice: Healthy
+  choice: Responsible
+A:
+Answer: Responsible
+
+Example 18:
+Question: Q: Remy told Kai that they wanted to go out with them on a serious date. How would you describe Remy? 
+  choice: Awkward
+  choice: In love
+  choice: Negative
+A:
+Answer: In love
+
+Example 19:
+Question: Q: Casey explained to Tracy he was upset because he got grounded. What does Tracy need to do before this? 
+  choice: Ask Casey what was wrong
+  choice: See Casey was happy
+  choice: They wanted to learn what was going on
+A:
+Answer: Ask Casey what was wrong
+
+Example 20:
+Question: Q: Robin pulled Carson over for speeding a hundred over the limit. What will happen to Carson? 
+  choice: Get a huge fine
+  choice: Get off without even a warning
+  choice: Sympathy for Carson and issue them a warning only
+A:
+Answer: Get a huge fine
+
+Example 21:
+Question: Q: Quinn was unhappy in the marriage and promptly filled for a divorce. What will Quinn want to do next? 
+  choice: Get himself a lawyer
+  choice: Separate from his wife
+  choice: Throw a party
+A:
+Answer: Separate from his wife
+
+Example 22:
+Question: Q: Casey told Addison's dad about the car. She felt he needed to know how the fender got damaged. How would you describe Casey? 
+  choice: A snitch
+  choice: Relieved
+  choice: Worried about the consequences to Addison
+A:
+Answer: A snitch
+
+Example 23:
+Question: Q: Skylar loved riding dirt bikes, even though their family thought it was dangerous. When they crashed and broke their arm, they knew they'd have to fight to be allowed to ride again. How would you describe Skylar? 
+  choice: Passionate about their hobbies
+  choice: Playing it safe
+  choice: Scared to ride again
+A:
+Answer: Passionate about their hobbies
+
+Example 24:
+Question: Q: sasha was bored so she gave bob a haircut for free. How would Others feel as a result? 
+  choice: As thankful
+  choice: As unappreciative
+  choice: Fulfilled
+A:
+Answer: As thankful
+
+Example 25:
+Question: Q: Casey called Aubrey's parents to check how are they doing. How would you describe Casey? 
+  choice: Glad to know how they are
+  choice: Someone lovely
+  choice: Someone who love to party
+A:
+Answer: Someone lovely
+
+Example 26:
+Question: Q: Kai grabbed Carson's tools for him when Carson forgot them at work. How would Kai feel afterwards? 
+  choice: Forgetful
+  choice: Relieved that their tools have not been left behind
+  choice: Thoughtful
+A:
+Answer: Thoughtful
+
+Example 27:
+Question: Q: Sydney set the brush and trimmed branches on fire in the fire pit. What does Sydney need to do before this? 
+  choice: Make a neat pile and clear away debris
+  choice: Pour lots of gasoline on it
+  choice: Wait for it to be raining outside
+A:
+Answer: Make a neat pile and clear away debris
+
+Example 28:
+Question: Q: Aubrey never told Riley the answer and Riley was angry. How would you describe Aubrey? 
+  choice: Annoyed at Riley's response
+  choice: Rude
+  choice: Smug at knowing the answer
+A:
+Answer: Rude
+
+Example 29:
+Question: Q: Casey forgot their lunch.  Aubrey dropped it at their school to keep Casey from starving. What will Aubrey want to do next? 
+  choice: Go home
+  choice: Go to the school
+  choice: See if Casey enjoy the lunch
+A:
+Answer: Go home
+
+Example 30:
+Question: Q: Kai was grounded after wrecking his mother's car so he handed back the keys. What will Kai want to do next? 
+  choice: Rent out the car
+  choice: Wanted to stay out of trouble
+  choice: Work hard at home
+A:
+Answer: Wanted to stay out of trouble
+
+Example 31:
+Question: Q: Skylar took a gander at the dogs as he was looking at them in the store. Why did Skylar do this? 
+  choice: Get a cat
+  choice: Get a new dog
+  choice: Take a nap
+A:
+Answer: Get a new dog
+
+Example 32:
+Question: Q: Aubrey was giving a speech and their talking sounded good to others. Why did Aubrey do this? 
+  choice: Get famous
+  choice: Make an impression
+  choice: Sound intelligent
+A:
+Answer: Make an impression
+
+Example 33:
+Question: Q: Taylor made a poisonous bracelet. Taylor put it on Sasha's wrist. What will happen to Taylor? 
+  choice: Be convicted
+  choice: Be poisoned
+  choice: Take the bracelet off
+A:
+Answer: Be convicted
+
+Example 34:
+Question: Q: Kai had a leading flim business, but never embraced digital, 20 years later the company went the way of the dinosaur. How would you describe Kai? 
+  choice: Innovative in business
+  choice: Not a forward thinker
+  choice: Regretful
+A:
+Answer: Not a forward thinker
+
+Example 35:
+Question: Q: Jordan paid his debt to society by completing several hours of community service. What does Jordan need to do before this? 
+  choice: Be a law-abiding citizen all the time
+  choice: Commit a crime against society
+  choice: Volunteer to do community service
+A:
+Answer: Commit a crime against society
+
+Example 36:
+Question: Q: Kai studied all day and finished her homework first. What does Kai need to do before this? 
+  choice: Class to submitted to homework first
+  choice: Sharpen her pencils
+  choice: Take a nap
+A:
+Answer: Sharpen her pencils
+
+Example 37:
+Question: Q: It was a pretty sunny day outside. Quinn walked instead. What does Quinn need to do before this? 
+  choice: Have fun
+  choice: Move their feet
+  choice: Notice the sun
+A:
+Answer: Move their feet
+
+Example 38:
+Question: Q: Carson had a stressful day at work, so Carson went to a friend's house to play video games. How would Carson feel afterwards? 
+  choice: Much more relaxed
+  choice: Overworked
+  choice: Tense
+A:
+Answer: Much more relaxed
+
+Example 39:
+Question: Q: After she graduated, Jordan would teach English in schools. What does Jordan need to do before this? 
+  choice: Forge her college transcripts to get a job interview
+  choice: Get an internship at the school to get more work experience
+  choice: Start teaching sooner
+A:
+Answer: Get an internship at the school to get more work experience
+
+Example 40:
+Question: Q: Kai watched videos on youtube and there was one they really liked. How would you describe Kai? 
+  choice: As someone that asked about videos
+  choice: As someone that enjoyed a video
+  choice: As someone that talks about videos
+A:
+Answer: As someone that enjoyed a video
+
+Example 41:
+Question: Q: Bailey destroyed the enemy's weapons when playing a video game with friends. How would Bailey feel afterwards? 
+  choice: Depressed
+  choice: Interested in video games
+  choice: Playful
+A:
+Answer: Playful
+
+Example 42:
+Question: Q: Kendall took Skylar's schedule into account when planning the trip for their summer vacation. How would you describe Kendall? 
+  choice: Include Skylar
+  choice: Pleased
+  choice: Supported
+A:
+Answer: Supported
+
+Example 43:
+Question: Q: Jan decided on Friday to light a fire under the brush in her pit in the backyard. What will Jan want to do next? 
+  choice: Make sure the fire goes out later
+  choice: Roast hot dogs
+  choice: Throw all of her belongings in with the brush
+A:
+Answer: Make sure the fire goes out later
+
+Example 44:
+Question: Q: Austin got to warm to wear his sweater and decided to take it off. Why did Austin do this? 
+  choice: Forgot to wear pants and used a sweater instead
+  choice: Put the sweater down
+  choice: Wanted to make a style statement
+A:
+Answer: Put the sweater down
+
+Example 45:
+Question: Q: Quinn returned the tools back to the rightful owner. What will Others want to do next? 
+  choice: Borrow the tools Quinn had
+  choice: Go home
+  choice: Make Quinn cry
+A:
+Answer: Go home
+
+Example 46:
+Question: Q: Taylor caught a cold in her throat and it wouldnt go away. How would Taylor feel afterwards? 
+  choice: Happy
+  choice: Ill
+  choice: Run down
+A:
+Answer: Ill
+
+Example 47:
+Question: Q: Alex paid extra money to get more secret details about the game strategy. What will Alex want to do next? 
+  choice: Ignore the advice
+  choice: Play the game more
+  choice: Stop playing the video game
+A:
+Answer: Play the game more
+
+Example 48:
+Question: Q: Taylor had gotten very drunk and pissed on Jesse's bonfire. What will happen to Taylor after the fact? 
+  choice: Beaten up by Jesse's other friends
+  choice: Taken aside so that they can sober up
+  choice: Yell at taylor
+A:
+Answer: Taken aside so that they can sober up
+
+Example 49:
+Question: Q: Cameron had hired Bailey to help with an important job and felt satisfied with Bailey's work. What will Bailey want to do next? 
+  choice: Apply for more jobs
+  choice: Apply for unemployment
+  choice: Walk through and inspect the work
+A:
+Answer: Apply for more jobs
+
+Example 50:
+Question: Q: Kai did not want to tell Kendall what the boys had said to spare her feelings but eventually he fessed up about the lies. How would you describe Kai? 
+  choice: Betrayed
+  choice: Right
+  choice: Trying to be a good neighbor
+A:
+Answer: Trying to be a good neighbor
+
+Example 51:
+Question: Q: Addison was listening to music very loudly. They turned their music down. How would Addison feel afterwards? 
+  choice: A fan of loud music
+  choice: A fan with bad hearing
+  choice: Satisfied
+A:
+Answer: A fan of loud music
+
+Example 52:
+Question: Q: Cameron was camping in the woods with a group of friends one evening. What will Cameron want to do next? 
+  choice: Go home
+  choice: Run away
+  choice: Tell ghost stories
+A:
+Answer: Tell ghost stories
+
+Example 53:
+Question: Q: Taylor invited Sasha to join Riley at the county fair this weekend. How would Sasha feel as a result? 
+  choice: Friendly
+  choice: Thoughtful
+  choice: Wanted
+A:
+Answer: Friendly
+
+Example 54:
+Question: Q: Riley was the best of friends with the boy and the others were relieved they had someone to lean on. What will Others want to do next? 
+  choice: Help the boy
+  choice: Relax about them next
+  choice: Talk with the boy
+A:
+Answer: Talk with the boy
+
+Example 55:
+Question: Q: Quinn had gotten in a fight with their friend and then Quinn rubbed salt in the wound. How would their friend feel as a result? 
+  choice: Grateful
+  choice: Happy
+  choice: Mad
+A:
+Answer: Mad
+
+Example 56:
+Question: Q: Jesse went to far when he yelled at his students and pondered over it all evening after school. How would Jesse feel afterwards? 
+  choice: As a teacher who cares about their students
+  choice: Bad about their reaction
+  choice: Regretful afterwards
+A:
+Answer: Regretful afterwards
+
+Example 57:
+Question: Q: Robin wanted to learn to swim and went to the pool and practiced. What will Robin want to do next? 
+  choice: Fit
+  choice: Lazy
+  choice: Learn to swim better
+A:
+Answer: Learn to swim better
+
+Example 58:
+Question: Q: Alex sets up a fund raiser for under privileged children. Alex earns about $5,000 but only gives $2,500 to charity. How would you describe Alex? 
+  choice: A good person
+  choice: Untrustworthy
+  choice: Very honorable
+A:
+Answer: Untrustworthy
+
+Example 59:
+Question: Q: Bailey was playing a game with their friend and destroyed their enemy's base. How would you describe Bailey? 
+  choice: As someone who talks about friends
+  choice: Having fun
+  choice: Powerful
+A:
+Answer: Having fun
+
+Example 60:
+Question: Q: Tracy was Sydney's mother. Tracy took Sydney to school. What will Tracy want to do next? 
+  choice: Attends school
+  choice: Go to work
+  choice: Was Tracy's child
+A:
+Answer: Go to work
+
+Example 61:
+Question: Q: Robin went to school with Jan and went to her first class with her as well. What will Robin want to do next? 
+  choice: Go home
+  choice: Sleep
+  choice: Work in class
+A:
+Answer: Work in class
+
+Example 62:
+Question: Q: Carson's mother does not allow them to play video games. Carson's mother found out that Carson was at a friend's house playing video games. What will happen to Carson? 
+  choice: Carson's friend will ground them
+  choice: Carson's mother will scold them
+  choice: Others will be punished
+A:
+Answer: Carson's mother will scold them
+
+Example 63:
+Question: Q: Addison kept their kids well behaved and taught them good manors. What will Others want to do next? 
+  choice: Ask their kids to behave
+  choice: Be well manored as well
+  choice: Raise their kids to be good adults
+A:
+Answer: Be well manored as well
+
+Example 64:
+Question: Q: Kai wanted everything on their list for Christmas. What will Kai want to do next? 
+  choice: Go Christmas shopping
+  choice: Joy
+  choice: Tell their list
+A:
+Answer: Tell their list
+
+Example 65:
+Question: Q: Kai and Skylar were good friends. Kai had finally worked up the courage to ask Skylar on a date. They gave Skylar a meaningful gift to test the waters. What will Kai want to do next? 
+  choice: Find out whether Skylar reciprocates the feelings
+  choice: Say thank you for the gift
+  choice: Tell Skylar they'd like to just be friends
+A:
+Answer: Find out whether Skylar reciprocates the feelings
+
+Example 66:
+Question: Q: Sydney asked mom if Ash could have one more piece of pie after they ate all of their dinner. How would Ash feel as a result? 
+  choice: Angry
+  choice: Excited
+  choice: Sad
+A:
+Answer: Excited
+
+Example 67:
+Question: Q: Sasha helped Jordan. What will Sasha want to do next? 
+  choice: Beat others down
+  choice: Friends with Jordan
+  choice: Help herself
+A:
+Answer: Friends with Jordan
+
+Example 68:
+Question: Q: Alex and his cohorts, the former criminal masterminds for the Lupino family, made their escape from jail. What will Others want to do next? 
+  choice: Bribe the guards
+  choice: Contact the FBI
+  choice: Plan the escape
+A:
+Answer: Contact the FBI
+
+Example 69:
+Question: Q: Cameron picked Robin up from the airport, put her luggage in the trunk, and took her home. What does Cameron need to do before this? 
+  choice: Drive to the airport before this
+  choice: Get his pilot license before this
+  choice: Talk with Robin
+A:
+Answer: Drive to the airport before this
+
+Example 70:
+Question: Q: Robin has the power to fire anybody working on their team. How would Others feel as a result? 
+  choice: Exposed
+  choice: In command
+  choice: Powerful
+A:
+Answer: Exposed
+
+Example 71:
+Question: Q: Remy explained to Aubrey again how upset he was that she didn't show up for dinner. What will Aubrey want to do next? 
+  choice: Apologize to Jason
+  choice: Give Remy a hug
+  choice: Wanted to have alone time
+A:
+Answer: Give Remy a hug
+
+Example 72:
+Question: Q: After Bailey went to bed, Carson crept into the kitchen and ate Bailey's candy. Why did Carson do this? 
+  choice: Begin a new weight loss diet
+  choice: Enjoy a late night snack
+  choice: Give Bailey all of the candy
+A:
+Answer: Enjoy a late night snack
+
+Example 73:
+Question: Q: Sydney ate their candy while they were at the movies and then ran out. What will Sydney want to do next? 
+  choice: Be inattentive
+  choice: Get something to drink
+  choice: Leave the movie
+A:
+Answer: Leave the movie
+
+Example 74:
+Question: Q: Alex made Casey escape jail by blowing a hole in the wall so they could go find the buried money. What will happen to Alex? 
+  choice: Be chased by police
+  choice: Become famous
+  choice: Become rich
+A:
+Answer: Be chased by police
+
+Example 75:
+Question: Q: Carson was at a friend's house but suddenly announced they needed to go home. Why did Carson do this? 
+  choice: Called a cab
+  choice: Caught a bus
+  choice: Forgot to feed the dog
+A:
+Answer: Forgot to feed the dog
+
+Example 76:
+Question: Q: Carson was home alone for a while listening to his music, when he saw that his mom had come home from work, and looked to be in a foul mood. Why did Carson do this? 
+  choice: Be considerate towards how his mom was feeling
+  choice: Create an unwelcome atmosphere
+  choice: Look out the window
+A:
+Answer: Be considerate towards how his mom was feeling
+
+Example 77:
+Question: Q: Remy witnessed a horrific crime and agreed to be a witness at the accused trial.  Remy entered Witness Protection and assumed another identity. What does Remy need to do before this? 
+  choice: Get used to having a new boyfriend
+  choice: Get used to having a new hairstyle
+  choice: Get used to living in a new house
+A:
+Answer: Get used to living in a new house
+
+Example 78:
+Question: Q: Sasha got revenge on her sister for stealing her first boyfriend of two years. How would you describe Sasha? 
+  choice: Distraught for it
+  choice: Great for it
+  choice: High confidence
+A:
+Answer: Distraught for it
+
+Example 79:
+Question: Q: Jan saw that the road ended and all that remained was a cliff, she said turn back. What will Jan want to do next? 
+  choice: Let the driver go to the cliff
+  choice: Look for signs with correct directions
+  choice: Stop the car and inspect the cliff
+A:
+Answer: Look for signs with correct directions
+
+Example 80:
+Question: Q: Carson was at a friend's house playing video games to get away from his arguing parents. What does Carson need to do before this? 
+  choice: Run over to his friends house
+  choice: Stretch out the time at their friends
+  choice: Try a different game
+A:
+Answer: Run over to his friends house
+
+Example 81:
+Question: Q: Quinn cried their eyes out because no one loved them at all. How would Quinn feel afterwards? 
+  choice: All alone
+  choice: Depressed
+  choice: Lonley
+A:
+Answer: Depressed
+
+Example 82:
+Question: Q: Riley said it was better to go than to stay at the party. How would you describe Riley? 
+  choice: Guilty about leaving
+  choice: Wanting to go home
+  choice: Wanting to leave
+A:
+Answer: Wanting to leave
+
+Example 83:
+Question: Q: austin just got a new computer so the first thing he did was make an email. How would Others feel as a result? 
+  choice: Content
+  choice: Nervous
+  choice: Uptight
+A:
+Answer: Content
+
+Example 84:
+Question: Q: Carson returned to Robin's house because Carson left his car keys on the table. What will Robin want to do next? 
+  choice: Be invited by Robin to their house
+  choice: Threw the keys out the window in the rain
+  choice: Walked Carson to the door to say goodbye
+A:
+Answer: Walked Carson to the door to say goodbye
+
+Example 85:
+Question: Q: Robin proposed another solution after the first one was not successful. What does Robin need to do before this? 
+  choice: Avoid thinking about the problem
+  choice: Choose a solution that would fail
+  choice: Come up with other solutions
+A:
+Answer: Come up with other solutions
+
+Example 86:
+Question: Q: Alex took care of the children after school so that their parents could continue to work. What will Alex want to do next? 
+  choice: Fight the parents
+  choice: Go home
+  choice: Play games with the kids
+A:
+Answer: Play games with the kids
+
+Example 87:
+Question: Q: Growing up, Sydney had always wanted to be a lawyer. So, when she got to college, she took school very seriously. Because of this, during her senior year she felt like she had a good chance at getting into law school. What will Sydney want to do next? 
+  choice: Participate in a local election
+  choice: Take the LSAT
+  choice: Was a hard worker
+A:
+Answer: Take the LSAT
+
+Example 88:
+Question: Q: Kai swung through the trees while she was outside. How would you describe Kai? 
+  choice: Athletic
+  choice: Kai who has swung the trees
+  choice: Quiet
+A:
+Answer: Athletic
+
+Example 89:
+Question: Q: Jan came out at night to check the very loud noise from the street. How would you describe Jan? 
+  choice: Be scared
+  choice: Had felt passive
+  choice: Had felt scared
+A:
+Answer: Had felt scared
+
+Example 90:
+Question: Q: Robin took their history test seriously by studying hard the night before. How would Robin feel afterwards? 
+  choice: Like taking the test
+  choice: They are smart
+  choice: They are the best
+A:
+Answer: They are smart
+
+Example 91:
+Question: Q: Robin told Carson that she did not want to go out with him. How would you describe Robin? 
+  choice: Caring
+  choice: Loving
+  choice: Uninterested
+A:
+Answer: Uninterested
+
+Example 92:
+Question: Q: jan went to the same school for years so she was best friends with a girl. What will Others want to do next? 
+  choice: Appreciate jan
+  choice: Hate jan
+  choice: Make sure they kept up their relationship
+A:
+Answer: Make sure they kept up their relationship
+
+Example 93:
+Question: Q: Robing was rushing to clean the kitchen and accidentally left food out. What does Robin need to do before this? 
+  choice: Clean the kitchen
+  choice: Make food
+  choice: Put food away
+A:
+Answer: Make food
+
+Example 94:
+Question: Q: Sasha was being picked on by her big brother. Sasha got revenge when she popped his tires. What will Others want to do next? 
+  choice: Hide from her brother
+  choice: Lock her doors
+  choice: Yell
+A:
+Answer: Yell
+
+Example 95:
+Question: Q: Taylor answered the door after he heard the bell ring while he was in the shower. What does Taylor need to do before this? 
+  choice: Ask who it is
+  choice: Get out of the shower
+  choice: Open the door
+A:
+Answer: Get out of the shower
+
+Example 96:
+Question: Q: Riley was coming home from work and suddenly began to hurt all over. How would you describe Riley? 
+  choice: A hard worker
+  choice: Sore
+  choice: Would be tired
+A:
+Answer: Sore
+
+Example 97:
+Question: Q: Riley had a lot of friends. What will happen to Riley? 
+  choice: Interacted outside the home a lot
+  choice: They will like Riley
+  choice: They will play with Riley
+A:
+Answer: They will play with Riley
+
+Example 98:
+Question: Q: Austin took them out for dinner after working hard and got promoted in the new job. What will Others want to do next? 
+  choice: Make reservations at the restaurant
+  choice: Make reservations for a table
+  choice: Say congratulations
+A:
+Answer: Say congratulations
+
+Example 99:
+Question: Q: Carson took pictures of all of the children at the birthday party. How would the parents feel as a result? 
+  choice: Angry about what Carson did
+  choice: Happy to have the souvenir
+  choice: Made about all of the pictures
+A:
+Answer: Happy to have the souvenir
+
+Example 100:
+Question: Q: Sasha's team was playing terrible so took it upon herself to take over. How would Others feel as a result? 
+  choice: Ashamed of their play
+  choice: Happy about it
+  choice: Proud of herself
+A:
+Answer: Ashamed of their play
+
+Learn from the given examples and answer the question.
