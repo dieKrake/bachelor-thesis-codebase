@@ -50,12 +50,12 @@ DEBUG_LOG_PROMPTS = False
 DEBUG_PROMPT_DIR = Path("debug_prompts")
 
 # Modus wählen: "zero-shot", "few-shot" oder "rag"
-EVAL_MODE = "rag"  # "zero-shot" | "few-shot" | "rag"
+EVAL_MODE = "few-shot"  # "zero-shot" | "few-shot" | "rag"
 RANDOM_SEED = 42
 
 # HuggingFace Dataset-Konfiguration
 HF_DATASET_NAME = "tasksource/bigbench"
-HF_TASK_NAME = "fact_checker"
+HF_TASK_NAME = "navigate"
 
 # ---------------- ZERO-SHOT ----------------
 # Splits & Größen für Zero-Shot: split_name -> max_examples
@@ -66,8 +66,8 @@ ZERO_SHOT_EVAL_SPLITS: Dict[str, int] = {
 
 # ---------------- FEW-SHOT -----------------
 FEW_SHOT_TRAIN_SPLIT = "train"        # aus diesem Split kommen die Few-Shot-Beispiele
-FEW_SHOT_TRAIN_MAX = 100              # wie viele Train-Beispiele maximal laden
-FEW_SHOT_CONTEXT_EXAMPLES = 100        # wie viele davon tatsächlich im Prompt landen
+FEW_SHOT_TRAIN_MAX = 200              # wie viele Train-Beispiele maximal laden
+FEW_SHOT_CONTEXT_EXAMPLES = 200        # wie viele davon tatsächlich im Prompt landen
 
 FEW_SHOT_TEST_SPLITS: Dict[str, int] = {
     "validation": 200,
@@ -147,21 +147,20 @@ MODEL_NAME = "gpt-4o-mini"
 
 # Zero-Shot-Prompt – als User-Prompt vor der Frage
 ZERO_SHOT_PROMPT = (
-  'You MUST answer with exactly one string: either "true" or "false". '
-  'Do not output explanations, reasoning steps, punctuation, or additional text. '
-  '"true" = the claimed fact is true. '
-  '"false" = the claimed fact is false.\n\n'
-  'Now answer the following question with exactly one word: "true" or "false".'
-)
+    "You are solving multiple-choice math questions.\n"
+    "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    "Read the question and the choices carefully.\n"
+    "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
+  )
 
 
 # Few-Shot Basis-System-Prompt – in den System-Prompt, Beispiele werden angehängt
 FEW_SHOT_BASE_SYSTEM_PROMPT = (
-  'You MUST answer with exactly one string: either "true" or "false". '
-  'Do not output explanations, reasoning steps, punctuation, or additional text. '
-  '"true" = the claimed fact is true. '
-  '"false" = the claimed fact is false.\n\n'
-  'Now answer the following question with exactly one word: "true" or "false".'
+    'You MUST answer with exactly one string: either "True" or "False". '
+    'Do not output explanations, punctuation, or additional text. '
+    '"True" = you return to the starting point. '
+    '"False" = you do not return to the starting point.\n\n'
+    'Now answer the following question with "True" or "False":'
 )
 
 # RAG kann denselben Basis-Prompt nutzen (oder einen anderen, falls gewünscht)
