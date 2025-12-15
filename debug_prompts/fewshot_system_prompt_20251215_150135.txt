@@ -1,0 +1,1207 @@
+You MUST answer with exactly one string: either "True" or "False". Do not output explanations, punctuation, or additional text. "True" = you return to the starting point. "False" = you do not return to the starting point.
+
+Now answer the following question with "True" or "False":
+
+Additionally I am giving you the following examples to learn from:
+
+Example 1:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step backward. Take 9 steps left. Take 2 steps backward. Take 6 steps forward. Take 4 steps forward. Take 4 steps backward. Take 3 steps right.
+A:
+Answer: False
+
+Example 2:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps left. Take 10 steps forward. Take 7 steps forward. Take 2 steps forward.
+A:
+Answer: False
+
+Example 3:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 1 step. Take 10 steps. Take 4 steps. Take 1 step. Take 10 steps. Turn right. Turn around.
+A:
+Answer: False
+
+Example 4:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step right. Take 3 steps left. Take 2 steps right.
+A:
+Answer: True
+
+Example 5:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps backward. Take 7 steps backward. Take 8 steps right. Take 6 steps right. Take 3 steps left.
+A:
+Answer: False
+
+Example 6:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 8 steps. Turn around. Take 8 steps.
+A:
+Answer: True
+
+Example 7:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps right. Take 1 step forward. Take 10 steps left. Take 8 steps forward. Take 9 steps backward. Take 4 steps right.
+A:
+Answer: True
+
+Example 8:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps forward. Take 7 steps backward. Take 7 steps backward. Take 8 steps forward.
+A:
+Answer: True
+
+Example 9:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 5 steps. Take 4 steps. Take 3 steps.
+A:
+Answer: False
+
+Example 10:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps backward. Take 9 steps forward. Take 4 steps forward. Take 2 steps left. Take 4 steps forward. Take 6 steps forward. Take 10 steps backward. Take 8 steps right. Take 1 step left.
+A:
+Answer: False
+
+Example 11:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 8 steps. Take 5 steps. Take 5 steps. Take 10 steps. Take 5 steps.
+A:
+Answer: False
+
+Example 12:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Take 6 steps. Take 8 steps. Take 5 steps. Take 6 steps. Take 2 steps. Take 1 step. Take 2 steps.
+A:
+Answer: False
+
+Example 13:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Turn around. Take 3 steps. Turn right.
+A:
+Answer: True
+
+Example 14:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps backward. Take 2 steps left. Take 5 steps right. Take 3 steps left. Take 5 steps backward. Take 10 steps forward.
+A:
+Answer: True
+
+Example 15:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 3 steps left. Take 10 steps right. Take 7 steps left.
+A:
+Answer: True
+
+Example 16:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Turn right. Turn around. Turn left. Take 4 steps. Turn left. Turn around. Take 3 steps.
+A:
+Answer: False
+
+Example 17:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps forward. Take 1 step backward. Take 4 steps backward. Take 4 steps backward.
+A:
+Answer: True
+
+Example 18:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Turn around. Take 5 steps. Turn right. Turn right. Take 1 step. Take 1 step.
+A:
+Answer: True
+
+Example 19:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Take 6 steps. Take 9 steps.
+A:
+Answer: False
+
+Example 20:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 8 steps. Turn left. Take 9 steps. Take 7 steps. Turn around.
+A:
+Answer: False
+
+Example 21:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps backward. Take 6 steps forward. Take 6 steps right.
+A:
+Answer: False
+
+Example 22:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 4 steps. Take 2 steps. Turn around. Take 6 steps.
+A:
+Answer: True
+
+Example 23:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step forward. Take 10 steps left. Take 4 steps forward.
+A:
+Answer: False
+
+Example 24:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Turn right. Turn right. Take 6 steps. Turn right.
+A:
+Answer: False
+
+Example 25:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 2 steps backward. Take 8 steps backward.
+A:
+Answer: False
+
+Example 26:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 9 steps. Take 6 steps. Take 9 steps. Take 6 steps. Take 2 steps. Turn left. Take 6 steps. Turn around. Take 8 steps.
+A:
+Answer: False
+
+Example 27:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Turn around. Take 4 steps. Take 6 steps. Turn around.
+A:
+Answer: True
+
+Example 28:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps forward. Take 5 steps backward. Take 5 steps left. Take 5 steps forward.
+A:
+Answer: False
+
+Example 29:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Take 5 steps. Turn around. Turn right.
+A:
+Answer: False
+
+Example 30:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps forward. Take 7 steps backward. Take 10 steps backward.
+A:
+Answer: False
+
+Example 31:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Take 7 steps. Take 10 steps. Take 1 step. Turn left. Take 7 steps.
+A:
+Answer: False
+
+Example 32:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 4 steps forward. Take 5 steps right. Take 7 steps left.
+A:
+Answer: False
+
+Example 33:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Turn left. Turn left. Take 10 steps.
+A:
+Answer: True
+
+Example 34:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Take 5 steps. Take 8 steps. Turn right. Turn right. Take 5 steps. Turn around. Take 2 steps. Take 4 steps.
+A:
+Answer: False
+
+Example 35:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Take 8 steps. Turn right. Turn right. Take 1 step. Take 7 steps. Take 6 steps. Take 1 step.
+A:
+Answer: True
+
+Example 36:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps forward. Take 4 steps backward. Take 4 steps backward. Take 5 steps forward. Take 7 steps forward. Take 10 steps backward. Take 1 step backward.
+A:
+Answer: True
+
+Example 37:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps forward. Take 7 steps left. Take 5 steps backward. Take 4 steps right. Take 3 steps right. Take 4 steps backward.
+A:
+Answer: True
+
+Example 38:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps right. Take 5 steps right. Take 7 steps left. Take 3 steps left. Take 7 steps left. Take 6 steps right.
+A:
+Answer: True
+
+Example 39:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 1 step. Take 5 steps. Turn around. Turn around. Turn around. Take 6 steps.
+A:
+Answer: True
+
+Example 40:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 2 steps forward. Take 2 steps backward.
+A:
+Answer: True
+
+Example 41:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps left. Take 6 steps right. Take 10 steps right. Take 2 steps left. Take 5 steps left. Take 1 step left.
+A:
+Answer: True
+
+Example 42:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Take 10 steps. Take 10 steps. Take 1 step. Take 7 steps. Take 5 steps. Turn around.
+A:
+Answer: False
+
+Example 43:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps left. Take 2 steps backward. Take 7 steps backward. Take 7 steps backward. Take 3 steps forward.
+A:
+Answer: False
+
+Example 44:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Take 8 steps. Take 7 steps. Turn around. Take 6 steps.
+A:
+Answer: False
+
+Example 45:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps forward. Take 7 steps backward. Take 10 steps backward. Take 10 steps forward.
+A:
+Answer: True
+
+Example 46:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn right. Take 9 steps. Turn around. Take 9 steps. Turn right.
+A:
+Answer: True
+
+Example 47:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn right. Take 9 steps. Take 10 steps. Turn left. Take 10 steps. Turn right. Turn around. Take 4 steps.
+A:
+Answer: False
+
+Example 48:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Turn around. Take 1 step. Take 10 steps. Turn around. Take 7 steps. Take 4 steps.
+A:
+Answer: True
+
+Example 49:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 2 steps right. Take 4 steps right. Take 6 steps left.
+A:
+Answer: True
+
+Example 50:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps right. Take 1 step forward. Take 3 steps left. Take 2 steps left.
+A:
+Answer: False
+
+Example 51:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Take 7 steps. Turn around. Take 8 steps. Take 9 steps.
+A:
+Answer: True
+
+Example 52:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 2 steps right. Take 2 steps right. Take 4 steps left.
+A:
+Answer: True
+
+Example 53:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps left. Take 7 steps forward. Take 8 steps left. Take 7 steps left. Take 6 steps forward. Take 1 step forward. Take 4 steps forward.
+A:
+Answer: False
+
+Example 54:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 9 steps. Take 5 steps. Take 2 steps. Take 10 steps. Turn right. Take 10 steps. Take 8 steps.
+A:
+Answer: False
+
+Example 55:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn right. Take 3 steps. Turn around. Take 3 steps. Turn left.
+A:
+Answer: True
+
+Example 56:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps left. Take 4 steps backward.
+A:
+Answer: False
+
+Example 57:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 9 steps. Turn left. Turn left. Take 5 steps. Take 4 steps. Turn left. Turn left.
+A:
+Answer: True
+
+Example 58:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 4 steps. Take 2 steps. Take 7 steps.
+A:
+Answer: False
+
+Example 59:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 8 steps. Take 1 step. Take 8 steps. Turn right.
+A:
+Answer: False
+
+Example 60:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps left. Take 5 steps left. Take 10 steps right.
+A:
+Answer: True
+
+Example 61:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Take 2 steps. Take 6 steps.
+A:
+Answer: False
+
+Example 62:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps forward. Take 10 steps right. Take 10 steps backward. Take 3 steps forward. Take 7 steps forward. Take 9 steps left.
+A:
+Answer: False
+
+Example 63:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps left. Take 8 steps left. Take 1 step left. Take 9 steps left. Take 10 steps forward. Take 5 steps forward.
+A:
+Answer: False
+
+Example 64:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step right. Take 9 steps left. Take 9 steps right. Take 1 step backward. Take 3 steps right. Take 6 steps backward.
+A:
+Answer: False
+
+Example 65:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Take 4 steps. Turn around. Take 4 steps.
+A:
+Answer: True
+
+Example 66:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps forward. Take 3 steps backward. Take 4 steps backward.
+A:
+Answer: True
+
+Example 67:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 5 steps. Turn around. Take 10 steps. Turn right. Take 10 steps.
+A:
+Answer: False
+
+Example 68:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step right. Take 4 steps right. Take 5 steps left.
+A:
+Answer: True
+
+Example 69:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Turn left. Turn left. Turn around. Take 5 steps. Turn around. Take 5 steps.
+A:
+Answer: False
+
+Example 70:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps forward. Take 4 steps backward. Take 6 steps forward.
+A:
+Answer: False
+
+Example 71:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps backward. Take 2 steps backward. Take 10 steps forward.
+A:
+Answer: True
+
+Example 72:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps forward. Take 2 steps backward. Take 4 steps backward.
+A:
+Answer: True
+
+Example 73:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 5 steps. Take 5 steps. Take 2 steps. Turn around. Take 8 steps. Take 4 steps.
+A:
+Answer: True
+
+Example 74:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 4 steps forward. Take 2 steps backward. Take 10 steps backward.
+A:
+Answer: False
+
+Example 75:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps left. Take 7 steps forward. Take 9 steps right. Take 7 steps left. Take 7 steps backward. Take 8 steps right. Take 10 steps left. Take 1 step backward. Take 1 step forward.
+A:
+Answer: False
+
+Example 76:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps backward. Take 2 steps forward. Take 1 step backward. Take 8 steps forward.
+A:
+Answer: True
+
+Example 77:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 1 step. Take 5 steps. Take 1 step. Take 6 steps. Turn left. Take 7 steps. Take 2 steps. Take 4 steps.
+A:
+Answer: False
+
+Example 78:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step backward. Take 5 steps right. Take 3 steps left. Take 1 step backward. Take 5 steps backward. Take 4 steps forward. Take 3 steps forward. Take 2 steps left.
+A:
+Answer: True
+
+Example 79:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps right. Take 8 steps backward. Take 1 step right. Take 7 steps backward.
+A:
+Answer: False
+
+Example 80:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps forward. Take 4 steps forward. Take 7 steps backward. Take 7 steps backward.
+A:
+Answer: True
+
+Example 81:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn around. Turn left. Take 1 step. Take 2 steps. Turn around. Turn around. Turn around. Take 3 steps.
+A:
+Answer: True
+
+Example 82:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps forward. Take 9 steps right. Take 2 steps forward. Take 10 steps backward. Take 9 steps left.
+A:
+Answer: True
+
+Example 83:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 8 steps. Take 1 step. Turn left. Turn left. Take 9 steps.
+A:
+Answer: True
+
+Example 84:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Turn around. Turn right. Turn left. Take 2 steps. Turn around. Turn around.
+A:
+Answer: True
+
+Example 85:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step backward. Take 5 steps forward. Take 10 steps backward. Take 9 steps forward. Take 7 steps right.
+A:
+Answer: False
+
+Example 86:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step forward. Take 10 steps forward. Take 6 steps backward. Take 7 steps backward. Take 1 step left. Take 10 steps right.
+A:
+Answer: False
+
+Example 87:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps left. Take 4 steps forward. Take 1 step left. Take 4 steps backward.
+A:
+Answer: False
+
+Example 88:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 3 steps right. Take 5 steps right. Take 2 steps backward.
+A:
+Answer: False
+
+Example 89:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Turn right. Take 8 steps. Take 4 steps. Turn right. Turn right. Take 10 steps. Take 1 step. Take 1 step.
+A:
+Answer: True
+
+Example 90:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn around. Turn around. Take 7 steps. Take 6 steps. Take 5 steps.
+A:
+Answer: False
+
+Example 91:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps forward. Take 8 steps right. Take 8 steps right. Take 9 steps left. Take 6 steps right. Take 2 steps forward. Take 9 steps backward.
+A:
+Answer: False
+
+Example 92:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Take 9 steps. Take 9 steps.
+A:
+Answer: False
+
+Example 93:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps left. Take 3 steps backward. Take 3 steps left.
+A:
+Answer: False
+
+Example 94:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Turn around. Take 10 steps. Take 2 steps. Turn around. Take 5 steps. Turn left.
+A:
+Answer: True
+
+Example 95:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Turn left. Take 10 steps. Take 6 steps. Turn left. Take 3 steps. Take 3 steps.
+A:
+Answer: False
+
+Example 96:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Take 8 steps. Take 8 steps. Take 6 steps.
+A:
+Answer: False
+
+Example 97:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Turn right. Turn right. Take 7 steps. Turn around. Take 1 step.
+A:
+Answer: True
+
+Example 98:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps right. Take 6 steps right. Take 10 steps backward. Take 9 steps left. Take 4 steps left.
+A:
+Answer: False
+
+Example 99:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Take 6 steps. Take 6 steps. Turn left. Take 8 steps. Take 1 step. Take 3 steps. Take 7 steps. Take 8 steps.
+A:
+Answer: False
+
+Example 100:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps backward. Take 2 steps backward. Take 1 step forward. Take 6 steps forward. Take 3 steps forward.
+A:
+Answer: False
+
+Example 101:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Turn around. Take 7 steps. Turn left. Turn around. Turn around. Turn left.
+A:
+Answer: True
+
+Example 102:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn around. Turn right. Take 7 steps. Turn right.
+A:
+Answer: False
+
+Example 103:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 4 steps right. Take 7 steps right. Take 1 step left. Take 4 steps left. Take 6 steps left.
+A:
+Answer: True
+
+Example 104:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Take 7 steps. Turn left. Turn left. Take 9 steps. Take 2 steps. Turn left. Take 4 steps.
+A:
+Answer: False
+
+Example 105:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Turn left. Take 4 steps. Take 4 steps.
+A:
+Answer: False
+
+Example 106:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Turn left. Take 6 steps. Turn around. Take 2 steps. Take 10 steps.
+A:
+Answer: False
+
+Example 107:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Take 2 steps. Turn around. Take 4 steps. Turn right.
+A:
+Answer: True
+
+Example 108:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps right. Take 7 steps left. Take 8 steps right. Take 6 steps left.
+A:
+Answer: True
+
+Example 109:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 5 steps. Take 8 steps. Take 2 steps. Turn right. Take 8 steps. Turn left. Take 6 steps. Take 6 steps.
+A:
+Answer: False
+
+Example 110:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Take 8 steps. Turn left. Take 3 steps. Take 1 step. Take 6 steps. Take 7 steps.
+A:
+Answer: False
+
+Example 111:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn around. Turn left. Take 6 steps. Take 4 steps.
+A:
+Answer: False
+
+Example 112:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps left. Take 4 steps left. Take 1 step left. Take 2 steps left. Take 2 steps right. Take 3 steps left. Take 5 steps forward. Take 3 steps backward.
+A:
+Answer: False
+
+Example 113:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 8 steps. Take 9 steps. Turn around. Take 5 steps. Turn left.
+A:
+Answer: False
+
+Example 114:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps left. Take 10 steps right. Take 7 steps backward. Take 7 steps forward.
+A:
+Answer: True
+
+Example 115:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps left. Take 7 steps right. Take 4 steps right. Take 1 step left.
+A:
+Answer: True
+
+Example 116:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 8 steps. Take 2 steps. Turn right. Turn right. Take 10 steps.
+A:
+Answer: True
+
+Example 117:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps backward. Take 6 steps forward. Take 6 steps backward. Take 7 steps forward.
+A:
+Answer: True
+
+Example 118:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Turn left. Turn left. Take 1 step. Take 5 steps. Turn around.
+A:
+Answer: True
+
+Example 119:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 4 steps backward. Take 8 steps forward. Take 10 steps backward. Take 2 steps forward. Take 4 steps forward.
+A:
+Answer: True
+
+Example 120:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 3 steps forward. Take 3 steps backward.
+A:
+Answer: True
+
+Example 121:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Take 6 steps. Take 5 steps. Turn around. Take 5 steps. Take 3 steps. Take 4 steps. Take 6 steps.
+A:
+Answer: True
+
+Example 122:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 4 steps right. Take 5 steps right. Take 9 steps left.
+A:
+Answer: True
+
+Example 123:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Turn left. Turn around. Take 1 step. Take 6 steps. Turn left. Turn left. Take 7 steps.
+A:
+Answer: True
+
+Example 124:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Take 5 steps. Take 6 steps.
+A:
+Answer: False
+
+Example 125:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps right. Take 10 steps left. Take 10 steps backward. Take 3 steps backward. Take 5 steps backward. Take 8 steps forward.
+A:
+Answer: False
+
+Example 126:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn right. Take 2 steps. Take 8 steps. Turn around.
+A:
+Answer: False
+
+Example 127:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps backward. Take 8 steps left. Take 3 steps right. Take 7 steps forward. Take 3 steps right. Take 9 steps right. Take 1 step backward. Take 7 steps left.
+A:
+Answer: True
+
+Example 128:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Take 5 steps. Take 9 steps. Take 7 steps. Turn around. Take 1 step. Take 10 steps.
+A:
+Answer: False
+
+Example 129:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps backward. Take 1 step forward. Take 1 step backward. Take 5 steps forward. Take 6 steps backward. Take 8 steps forward.
+A:
+Answer: True
+
+Example 130:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps right. Take 5 steps forward. Take 10 steps forward.
+A:
+Answer: False
+
+Example 131:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Take 2 steps. Take 3 steps. Turn around. Take 4 steps. Turn around. Take 4 steps.
+A:
+Answer: False
+
+Example 132:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step right. Take 2 steps forward. Take 2 steps right. Take 4 steps right.
+A:
+Answer: False
+
+Example 133:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 2 steps forward. Take 2 steps backward. Take 4 steps right. Take 7 steps right.
+A:
+Answer: False
+
+Example 134:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 5 steps. Take 4 steps. Turn around. Take 10 steps. Take 8 steps. Turn around. Take 2 steps. Take 7 steps.
+A:
+Answer: True
+
+Example 135:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps forward. Take 3 steps backward.
+A:
+Answer: False
+
+Example 136:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps left. Take 4 steps forward. Take 2 steps forward.
+A:
+Answer: False
+
+Example 137:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 2 steps left. Take 4 steps backward. Take 10 steps right. Take 2 steps left. Take 3 steps left. Take 7 steps right.
+A:
+Answer: False
+
+Example 138:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Turn right. Take 6 steps. Take 10 steps. Take 7 steps.
+A:
+Answer: False
+
+Example 139:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step right. Take 4 steps forward. Take 8 steps forward. Take 6 steps backward. Take 1 step left. Take 6 steps right.
+A:
+Answer: False
+
+Example 140:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps left. Take 5 steps right. Take 2 steps left. Take 2 steps right. Take 6 steps forward. Take 10 steps backward. Take 1 step forward. Take 6 steps left.
+A:
+Answer: False
+
+Example 141:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps left. Take 8 steps right.
+A:
+Answer: True
+
+Example 142:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 5 steps. Take 10 steps. Turn around.
+A:
+Answer: False
+
+Example 143:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps left. Take 7 steps left. Take 2 steps left.
+A:
+Answer: False
+
+Example 144:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 1 step. Take 5 steps. Take 10 steps. Take 4 steps. Take 4 steps. Take 1 step. Turn right.
+A:
+Answer: False
+
+Example 145:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Turn right. Take 5 steps. Take 4 steps. Turn around. Take 9 steps.
+A:
+Answer: True
+
+Example 146:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn around. Turn around. Turn left. Take 7 steps. Take 8 steps.
+A:
+Answer: False
+
+Example 147:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn right. Turn around. Take 2 steps. Take 6 steps. Take 4 steps.
+A:
+Answer: False
+
+Example 148:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps left. Take 9 steps right. Take 1 step right.
+A:
+Answer: False
+
+Example 149:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 1 step. Take 5 steps. Take 1 step. Turn left. Turn left. Take 9 steps.
+A:
+Answer: False
+
+Example 150:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Turn around. Take 9 steps. Take 7 steps. Take 6 steps. Turn left. Take 2 steps.
+A:
+Answer: False
+
+Example 151:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Take 8 steps. Take 10 steps. Turn around. Turn around. Take 5 steps. Turn around.
+A:
+Answer: False
+
+Example 152:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 9 steps. Turn left. Turn left. Take 9 steps.
+A:
+Answer: True
+
+Example 153:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 3 steps forward. Take 9 steps backward.
+A:
+Answer: False
+
+Example 154:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps forward. Take 7 steps backward. Take 4 steps right. Take 10 steps backward. Take 4 steps backward.
+A:
+Answer: False
+
+Example 155:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps right. Take 3 steps forward. Take 8 steps right. Take 2 steps right.
+A:
+Answer: False
+
+Example 156:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps right. Take 8 steps left.
+A:
+Answer: True
+
+Example 157:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step backward. Take 4 steps left. Take 4 steps left.
+A:
+Answer: False
+
+Example 158:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps forward. Take 8 steps backward. Take 4 steps forward. Take 4 steps right.
+A:
+Answer: False
+
+Example 159:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 5 steps. Turn around. Take 4 steps. Take 1 step. Turn left. Turn around. Turn left.
+A:
+Answer: True
+
+Example 160:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Turn around. Take 1 step. Take 9 steps. Turn around.
+A:
+Answer: True
+
+Example 161:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Turn around. Take 7 steps.
+A:
+Answer: True
+
+Example 162:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 5 steps backward. Take 8 steps forward. Take 7 steps forward. Take 5 steps backward.
+A:
+Answer: False
+
+Example 163:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 1 step forward. Take 4 steps left. Take 6 steps left. Take 10 steps right. Take 7 steps backward. Take 5 steps left.
+A:
+Answer: False
+
+Example 164:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 1 step. Take 7 steps. Take 1 step.
+A:
+Answer: False
+
+Example 165:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Turn left. Take 6 steps. Take 3 steps. Turn around. Take 1 step. Take 3 steps. Take 5 steps.
+A:
+Answer: True
+
+Example 166:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Turn around. Take 10 steps.
+A:
+Answer: True
+
+Example 167:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Take 1 step. Take 8 steps. Take 4 steps. Turn right. Turn right. Take 4 steps. Turn left. Turn around.
+A:
+Answer: False
+
+Example 168:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 4 steps. Take 5 steps. Take 9 steps. Take 3 steps. Turn right.
+A:
+Answer: False
+
+Example 169:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Take 1 step. Take 10 steps.
+A:
+Answer: False
+
+Example 170:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps left. Take 2 steps right. Take 6 steps right.
+A:
+Answer: True
+
+Example 171:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn right. Take 10 steps. Turn around. Take 10 steps.
+A:
+Answer: True
+
+Example 172:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps right. Take 8 steps backward. Take 1 step backward. Take 8 steps backward. Take 8 steps forward.
+A:
+Answer: False
+
+Example 173:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 7 steps backward. Take 4 steps left. Take 7 steps left. Take 7 steps right. Take 8 steps forward.
+A:
+Answer: False
+
+Example 174:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Turn left. Turn around. Take 9 steps. Take 8 steps. Turn right. Turn around. Take 8 steps.
+A:
+Answer: False
+
+Example 175:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 1 step. Take 2 steps. Turn right. Take 6 steps.
+A:
+Answer: False
+
+Example 176:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Take 10 steps. Turn around. Take 6 steps. Turn left. Turn right. Take 6 steps.
+A:
+Answer: True
+
+Example 177:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Take 4 steps. Take 3 steps. Take 10 steps. Turn left. Turn around.
+A:
+Answer: False
+
+Example 178:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps backward. Take 8 steps forward. Take 10 steps forward. Take 8 steps backward. Take 8 steps right. Take 6 steps backward. Take 7 steps forward. Take 8 steps forward.
+A:
+Answer: False
+
+Example 179:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Turn around. Take 4 steps. Take 5 steps. Turn left. Take 3 steps.
+A:
+Answer: False
+
+Example 180:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 6 steps. Take 2 steps. Take 2 steps. Turn left. Take 5 steps. Take 8 steps. Turn around.
+A:
+Answer: False
+
+Example 181:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps left. Take 7 steps right. Take 4 steps backward.
+A:
+Answer: False
+
+Example 182:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 10 steps. Take 4 steps. Take 7 steps. Take 1 step. Take 2 steps. Take 10 steps.
+A:
+Answer: False
+
+Example 183:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 6 steps forward. Take 10 steps right. Take 8 steps right.
+A:
+Answer: False
+
+Example 184:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 7 steps. Turn around. Take 7 steps. Turn left.
+A:
+Answer: True
+
+Example 185:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 4 steps forward. Take 5 steps left. Take 6 steps forward. Take 8 steps backward. Take 5 steps backward. Take 1 step backward. Take 1 step backward.
+A:
+Answer: False
+
+Example 186:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Take 3 steps. Turn around. Take 5 steps.
+A:
+Answer: True
+
+Example 187:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Take 10 steps. Take 8 steps.
+A:
+Answer: False
+
+Example 188:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn left. Take 9 steps. Take 2 steps. Take 5 steps. Turn right. Turn right. Take 5 steps. Take 10 steps. Take 1 step.
+A:
+Answer: True
+
+Example 189:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Turn right. Take 5 steps. Take 6 steps. Take 4 steps. Take 1 step. Turn around. Take 6 steps. Take 10 steps. Turn around.
+A:
+Answer: True
+
+Example 190:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 8 steps left. Take 9 steps left. Take 8 steps right. Take 8 steps left. Take 3 steps right.
+A:
+Answer: False
+
+Example 191:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 9 steps backward. Take 9 steps forward.
+A:
+Answer: True
+
+Example 192:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 2 steps. Take 3 steps. Turn around. Take 4 steps. Take 1 step.
+A:
+Answer: True
+
+Example 193:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps backward. Take 9 steps backward. Take 9 steps backward. Take 9 steps left. Take 10 steps right. Take 3 steps right. Take 3 steps forward. Take 9 steps right.
+A:
+Answer: False
+
+Example 194:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Turn right. Turn left. Take 5 steps. Take 10 steps. Take 7 steps. Turn left.
+A:
+Answer: False
+
+Example 195:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps left. Take 10 steps right.
+A:
+Answer: True
+
+Example 196:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 1 step. Take 8 steps. Turn around. Take 8 steps.
+A:
+Answer: False
+
+Example 197:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 10 steps forward. Take 8 steps left. Take 3 steps backward. Take 7 steps right. Take 2 steps forward. Take 4 steps forward. Take 10 steps forward.
+A:
+Answer: False
+
+Example 198:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 4 steps forward. Take 9 steps right. Take 6 steps right. Take 8 steps right.
+A:
+Answer: False
+
+Example 199:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Take 3 steps. Take 5 steps. Turn around. Take 3 steps. Take 5 steps. Turn right. Turn right.
+A:
+Answer: True
+
+Example 200:
+Question: If you follow these instructions, do you return to the starting point?
+Q: Always face forward. Take 2 steps backward. Take 5 steps backward. Take 5 steps right. Take 9 steps right.
+A:
+Answer: False
+
+Learn from the given examples and answer the question.

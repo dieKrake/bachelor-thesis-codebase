@@ -55,7 +55,7 @@ RANDOM_SEED = 42
 
 # HuggingFace Dataset-Konfiguration
 HF_DATASET_NAME = "tasksource/bigbench"
-HF_TASK_NAME = "navigate"
+HF_TASK_NAME = "fact_checker"
 
 # ---------------- ZERO-SHOT ----------------
 # Splits & Größen für Zero-Shot: split_name -> max_examples
@@ -156,11 +156,11 @@ ZERO_SHOT_PROMPT = (
 
 # Few-Shot Basis-System-Prompt – in den System-Prompt, Beispiele werden angehängt
 FEW_SHOT_BASE_SYSTEM_PROMPT = (
-    'You MUST answer with exactly one string: either "True" or "False". '
-    'Do not output explanations, punctuation, or additional text. '
-    '"True" = you return to the starting point. '
-    '"False" = you do not return to the starting point.\n\n'
-    'Now answer the following question with "True" or "False":'
+  'You MUST answer with exactly one string: either "true" or "false". '
+  'Do not output explanations, reasoning steps, punctuation, or additional text. '
+  '"true" = the claimed fact is true. '
+  '"false" = the claimed fact is false.\n\n'
+  'Now answer the following question with exactly one word: "true" or "false".'
 )
 
 # RAG kann denselben Basis-Prompt nutzen (oder einen anderen, falls gewünscht)
