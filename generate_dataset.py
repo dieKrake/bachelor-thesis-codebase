@@ -41,7 +41,7 @@ from datasets import load_dataset as hf_load_dataset
 # HF_TASK_NAME = None
 
 HF_DATASET_NAME = "tasksource/bigbench"      # oder "google/boolq"
-HF_TASK_NAME = "social_iqa"   # oder None für boolq
+HF_TASK_NAME = "fact_checker"   # oder None für boolq
 
 HF_SPLIT = "train"                           # z.B. "train", "validation", "test"
 NUM_EXAMPLES = 100                           # gewünschte Anzahl Beispiele

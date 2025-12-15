@@ -55,7 +55,7 @@ RANDOM_SEED = 42
 
 # HuggingFace Dataset-Konfiguration
 HF_DATASET_NAME = "tasksource/bigbench"
-HF_TASK_NAME = "social_iqa"
+HF_TASK_NAME = "fact_checker"
 
 # ---------------- ZERO-SHOT ----------------
 # Splits & Größen für Zero-Shot: split_name -> max_examples
@@ -84,7 +84,7 @@ RAG_EVAL_SPLITS: Dict[str, int] = {
 # Azure Search Konfiguration (per .env oder hier direkt)
 AZURE_SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT", "")
 AZURE_SEARCH_API_KEY = os.getenv("AZURE_SEARCH_API_KEY")
-AZURE_SEARCH_INDEX = "social_iqa_train_100"  # <== HIER deinen Indexnamen eintragen
+AZURE_SEARCH_INDEX = "fact_checker_train_100"  # <== HIER deinen Indexnamen eintragen
 RAG_TOP_K = 3  # wie viele Dokumente aus Azure pro Anfrage holen
 
 # ---------------- MODEL & PROMPTS ---------
@@ -136,24 +136,32 @@ MODEL_NAME = "gpt-4o-mini"
 #     "without the 'choice:' prefix and without any explanation or extra text."
 # )
 
+# fact_checker
+# zero_shot_prompt = (
+#   'You MUST answer with exactly one string: either "true" or "false". '
+#   'Do not output explanations, reasoning steps, punctuation, or additional text. '
+#   '"true" = the claimed fact is true. '
+#   '"false" = the claimed fact is false.\n\n'
+#   'Now answer the following question with exactly one word: "true" or "false".'
+# )
 
 # Zero-Shot-Prompt – als User-Prompt vor der Frage
 ZERO_SHOT_PROMPT = (
-    "You are solving multiple-choice questions about everyday social situations.\n"
-    "Each question lists several answer options, each prefixed with 'choice:'.\n"
-    "Read the scenario and the choices carefully.\n"
-    "Answer with exactly the text of the correct choice, "
-    "without the 'choice:' prefix and without any explanation or extra text."
+  'You MUST answer with exactly one string: either "true" or "false". '
+  'Do not output explanations, reasoning steps, punctuation, or additional text. '
+  '"true" = the claimed fact is true. '
+  '"false" = the claimed fact is false.\n\n'
+  'Now answer the following question with exactly one word: "true" or "false".'
 )
 
 
 # Few-Shot Basis-System-Prompt – in den System-Prompt, Beispiele werden angehängt
 FEW_SHOT_BASE_SYSTEM_PROMPT = (
-    "You are solving multiple-choice questions about everyday social situations.\n"
-    "Each question lists several answer options, each prefixed with 'choice:'.\n"
-    "Read the scenario and the choices carefully.\n"
-    "Answer with exactly the text of the correct choice, "
-    "without the 'choice:' prefix and without any explanation or extra text."
+  'You MUST answer with exactly one string: either "true" or "false". '
+  'Do not output explanations, reasoning steps, punctuation, or additional text. '
+  '"true" = the claimed fact is true. '
+  '"false" = the claimed fact is false.\n\n'
+  'Now answer the following question with exactly one word: "true" or "false".'
 )
 
 # RAG kann denselben Basis-Prompt nutzen (oder einen anderen, falls gewünscht)
