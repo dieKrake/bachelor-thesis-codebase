@@ -50,112 +50,75 @@ DEBUG_LOG_PROMPTS = False
 DEBUG_PROMPT_DIR = Path("debug_prompts")
 
 # Modus wählen: "zero-shot", "few-shot" oder "rag"
-EVAL_MODE = "few-shot"  # "zero-shot" | "few-shot" | "rag"
+EVAL_MODE = "rag"  # "zero-shot" | "few-shot" | "rag"
 RANDOM_SEED = 42
+VALIDATION_SIZE = 200
+TRAIN_SIZE = 200
+USING_DATASET_NAME = None # None -> tasksource / "google" -> google/boolq
+USING_TASK_NAME = "fallacy" # "elementary" / "fact" / "fallacy" / "navigate" / "social"
 
-# HuggingFace Dataset-Konfiguration
-HF_DATASET_NAME = "tasksource/bigbench"
-HF_TASK_NAME = "fact_checker"
+# Different Dataset-Names
+boolq_dataset_name = "google/boolq"
+tasksource_dataset_name = "tasksource/bigbench"
 
-# ---------------- ZERO-SHOT ----------------
-# Splits & Größen für Zero-Shot: split_name -> max_examples
-ZERO_SHOT_EVAL_SPLITS: Dict[str, int] = {
-    "validation": 200,
-    # "test": 0,
-}
+# Different Task Names
+boolq_task_name = None
+elementary_math_qa_task_name = "elementary_math_qa"
+fact_checker_task_name = "fact_checker"
+logical_fallacy_detection_task_name = "logical_fallacy_detection"
+navigate_task_name = "navigate"
+social_iqa_task_name = "social_iqa"
 
-# ---------------- FEW-SHOT -----------------
-FEW_SHOT_TRAIN_SPLIT = "train"        # aus diesem Split kommen die Few-Shot-Beispiele
-FEW_SHOT_TRAIN_MAX = 200              # wie viele Train-Beispiele maximal laden
-FEW_SHOT_CONTEXT_EXAMPLES = 200        # wie viele davon tatsächlich im Prompt landen
+# Different Azure Index Names
+boolq_azure_index = "boolq_train_" + str(TRAIN_SIZE)
+elementary_math_qa_azure_index = "elementary_math_qa_train_" + str(TRAIN_SIZE)
+fact_checker_azure_index = "fact_checker_train_" + str(TRAIN_SIZE)
+logical_fallacy_detection_azure_index = "logical_fallacy_detection_train_" + str(TRAIN_SIZE)
+navigate_azure_index = "navigate_train_" + str(TRAIN_SIZE)
+social_iqa_azure_index = "social_iqa_train_" + str(TRAIN_SIZE)
 
-FEW_SHOT_TEST_SPLITS: Dict[str, int] = {
-    "validation": 200,
-    # "test": 0,
-}
+# Different Prompt Variants
+navigate_prompt = (
+    'You MUST answer with exactly one string: either "True" or "False". '
+    'Do not output explanations, punctuation, or additional text. '
+    '"True" = you return to the starting point. '
+    '"False" = you do not return to the starting point.\n\n'
+    'Now answer the following question with "True" or "False":'
+)
 
-# ---------------- RAG ---------------------
-# Splits, die mit RAG evaluiert werden sollen
-RAG_EVAL_SPLITS: Dict[str, int] = {
-    "validation": 200,
-    # "test": 0,
-}
-
-# Azure Search Konfiguration (per .env oder hier direkt)
-AZURE_SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT", "")
-AZURE_SEARCH_API_KEY = os.getenv("AZURE_SEARCH_API_KEY")
-AZURE_SEARCH_INDEX = "fact_checker_train_100"  # <== HIER deinen Indexnamen eintragen
-RAG_TOP_K = 3  # wie viele Dokumente aus Azure pro Anfrage holen
-
-# ---------------- MODEL & PROMPTS ---------
-
-MODEL_NAME = "gpt-4o-mini"
-
-# Navigate
-# zero_shot_prompt = (
-#     'You MUST answer with exactly one string: either "True" or "False". '
-#     'Do not output explanations, punctuation, or additional text. '
-#     '"True" = you return to the starting point. '
-#     '"False" = you do not return to the starting point.\n\n'
-#     'Now answer the following question with "True" or "False":'
-# )
-
-# Elementary
-# zero_shot_prompt = (
-#     "You are solving multiple-choice math questions.\n"
-#     "Each question lists several answer options, each prefixed with 'choice:'.\n"
-#     "Read the question and the choices carefully.\n"
-#     "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
-#   )
-
-# Logical_Fallacy
-# zero_shot_prompt = (
-#   'You MUST answer with exactly one string: either "Valid" or "Invalid". '
-#   'Do not output explanations, reasoning steps, punctuation, or additional text. '
-#   '"Valid" = the argument is logically valid. '
-#   '"Invalid" = the conclusion does not necessarily follow from the premises.\n\n'
-#   'Now answer the following question with exactly one word: "Valid" or "Invalid".'
-# )
-
-# boolq
-# zero_shot_prompt = (
-#     'You MUST answer with exactly one string: either "True" or "False". '
-#     'Do not output explanations, reasoning steps, or additional text.\n\n'
-#     '"True" = The passage implies that the answer to the question is YES.\n'
-#     '"False" = The passage implies that the answer to the question is NO, '
-#     'or the passage does NOT provide enough evidence to answer YES.\n\n'
-#     'Now read the following question and its passage, and answer with "True" or "False":'
-# )
-
-# social_iqa
-# zero_shot_prompt = (
-#     "You are solving multiple-choice questions about everyday social situations.\n"
-#     "Each question lists several answer options, each prefixed with 'choice:'.\n"
-#     "Read the scenario and the choices carefully.\n"
-#     "Answer with exactly the text of the correct choice, "
-#     "without the 'choice:' prefix and without any explanation or extra text."
-# )
-
-# fact_checker
-# zero_shot_prompt = (
-#   'You MUST answer with exactly one string: either "true" or "false". '
-#   'Do not output explanations, reasoning steps, punctuation, or additional text. '
-#   '"true" = the claimed fact is true. '
-#   '"false" = the claimed fact is false.\n\n'
-#   'Now answer the following question with exactly one word: "true" or "false".'
-# )
-
-# Zero-Shot-Prompt – als User-Prompt vor der Frage
-ZERO_SHOT_PROMPT = (
+elementary_math_qa_prompt = (
     "You are solving multiple-choice math questions.\n"
     "Each question lists several answer options, each prefixed with 'choice:'.\n"
     "Read the question and the choices carefully.\n"
     "Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text."
   )
 
+logical_fallacy_detection_prompt = (
+  'You MUST answer with exactly one string: either "Valid" or "Invalid". '
+  'Do not output explanations, reasoning steps, punctuation, or additional text. '
+  '"Valid" = the argument is logically valid. '
+  '"Invalid" = the conclusion does not necessarily follow from the premises.\n\n'
+  'Now answer the following question with exactly one word: "Valid" or "Invalid".'
+)
 
-# Few-Shot Basis-System-Prompt – in den System-Prompt, Beispiele werden angehängt
-FEW_SHOT_BASE_SYSTEM_PROMPT = (
+boolq_prompt = (
+    'You MUST answer with exactly one string: either "True" or "False". '
+    'Do not output explanations, reasoning steps, or additional text.\n\n'
+    '"True" = The passage implies that the answer to the question is YES.\n'
+    '"False" = The passage implies that the answer to the question is NO, '
+    'or the passage does NOT provide enough evidence to answer YES.\n\n'
+    'Now read the following question and its passage, and answer with "True" or "False":'
+)
+
+social_iqa_prompt = (
+    "You are solving multiple-choice questions about everyday social situations.\n"
+    "Each question lists several answer options, each prefixed with 'choice:'.\n"
+    "Read the scenario and the choices carefully.\n"
+    "Answer with exactly the text of the correct choice, "
+    "without the 'choice:' prefix and without any explanation or extra text."
+)
+
+fact_checker_prompt = (
   'You MUST answer with exactly one string: either "true" or "false". '
   'Do not output explanations, reasoning steps, punctuation, or additional text. '
   '"true" = the claimed fact is true. '
@@ -163,7 +126,76 @@ FEW_SHOT_BASE_SYSTEM_PROMPT = (
   'Now answer the following question with exactly one word: "true" or "false".'
 )
 
-# RAG kann denselben Basis-Prompt nutzen (oder einen anderen, falls gewünscht)
+# Dataset-Konfiguration
+if(USING_DATASET_NAME == "google"):
+    HF_DATASET_NAME = boolq_dataset_name
+else:
+    HF_DATASET_NAME = tasksource_dataset_name
+
+
+if(USING_TASK_NAME == "elementary"):
+    HF_TASK_NAME = elementary_math_qa_task_name
+    AZURE_SEARCH_INDEX = elementary_math_qa_azure_index
+    ZERO_SHOT_PROMPT = elementary_math_qa_prompt
+
+elif(USING_TASK_NAME == "fact"):
+    HF_TASK_NAME = fact_checker_task_name
+    AZURE_SEARCH_INDEX = fact_checker_azure_index
+    ZERO_SHOT_PROMPT = fact_checker_prompt
+
+elif(USING_TASK_NAME == "fallacy"):
+    HF_TASK_NAME = logical_fallacy_detection_task_name
+    AZURE_SEARCH_INDEX = logical_fallacy_detection_azure_index
+    ZERO_SHOT_PROMPT = logical_fallacy_detection_prompt
+
+elif(USING_TASK_NAME == "navigate"):
+    HF_TASK_NAME = navigate_task_name
+    AZURE_SEARCH_INDEX = navigate_azure_index
+    ZERO_SHOT_PROMPT = navigate_prompt
+
+elif(USING_TASK_NAME == "social"):
+    HF_TASK_NAME = social_iqa_task_name
+    AZURE_SEARCH_INDEX = social_iqa_azure_index
+    ZERO_SHOT_PROMPT = social_iqa_prompt
+
+else:
+    HF_TASK_NAME = None
+    AZURE_SEARCH_INDEX = boolq_azure_index
+    ZERO_SHOT_PROMPT = boolq_prompt
+
+
+# ---------------- ZERO-SHOT ----------------
+# Splits & Größen für Zero-Shot: split_name -> max_examples
+ZERO_SHOT_EVAL_SPLITS: Dict[str, int] = {
+    "validation": VALIDATION_SIZE,
+    # "test": 0,
+}
+
+# ---------------- FEW-SHOT -----------------
+FEW_SHOT_TRAIN_SPLIT = "train"        # aus diesem Split kommen die Few-Shot-Beispiele
+FEW_SHOT_TRAIN_MAX = TRAIN_SIZE              # wie viele Train-Beispiele maximal laden
+FEW_SHOT_CONTEXT_EXAMPLES = TRAIN_SIZE        # wie viele davon tatsächlich im Prompt landen
+
+FEW_SHOT_TEST_SPLITS: Dict[str, int] = {
+    "validation": VALIDATION_SIZE,
+}
+
+# ---------------- RAG ---------------------
+# Splits, die mit RAG evaluiert werden sollen
+RAG_EVAL_SPLITS: Dict[str, int] = {
+    "validation": VALIDATION_SIZE,
+}
+
+# Azure Search Konfiguration (per .env oder hier direkt)
+AZURE_SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT", "")
+AZURE_SEARCH_API_KEY = os.getenv("AZURE_SEARCH_API_KEY")
+RAG_TOP_K = 3  # wie viele Dokumente aus Azure pro Anfrage holen
+
+# ---------------- MODEL & PROMPTS ---------
+
+MODEL_NAME = "gpt-4o-mini"
+
+FEW_SHOT_BASE_SYSTEM_PROMPT = ZERO_SHOT_PROMPT
 RAG_BASE_SYSTEM_PROMPT = FEW_SHOT_BASE_SYSTEM_PROMPT
 
 # Ergebnis-Ordner (Basis)
