@@ -1,0 +1,3011 @@
+You are solving multiple-choice math questions.
+Each question lists several answer options, each prefixed with 'choice:'.
+Read the question and the choices carefully.
+Answer with exactly the text of the correct choice, without the 'choice:' prefix and without any explanation or extra text.
+
+Additionally I am giving you the following examples to learn from:
+
+Example 1:
+Question: What is the result of the following arithmetic operations?:divide 1 by 3, add 33 to the result. multiply result by 210, divide result by 100,
+ choice:120
+ choice:90
+ choice:130
+ choice:110
+ choice:70
+A:
+Answer: 70
+
+Example 2:
+Question: What is the result of the following arithmetic operations?:multiply 100 to 162, divide result by 360,
+ choice:36
+ choice:none of these
+ choice:45
+ choice:277
+ choice:72
+A:
+Answer: 45
+
+Example 3:
+Question: What is the result of the following arithmetic operations?:subtract 20 from 200,  add 20 to 25, and then divide both. add 8 to the result.
+ choice:11
+ choice:9
+ choice:12
+ choice:10
+ choice:8
+A:
+Answer: 12
+
+Example 4:
+Question: What is the result of the following arithmetic operations?:multiply 96 to 25, divide result by 40,
+ choice:55
+ choice:66
+ choice:60
+ choice:53
+ choice:61
+A:
+Answer: 60
+
+Example 5:
+Question: What is the result of the following arithmetic operations?:add 4 to 14, subtract 57 from 63,  and then divide both.
+ choice:3 hours
+ choice:8 hours
+ choice:3 hours 20 minutes
+ choice:2 hours 45 minutes
+ choice:5 hours
+A:
+Answer: 3 hours
+
+Example 6:
+Question: What is the result of the following arithmetic operations?:add 10 to 50, multiply result by 100, divide result by 50,
+ choice:110
+ choice:210
+ choice:120
+ choice:100
+ choice:200
+A:
+Answer: 120
+
+Example 7:
+Question: What is the result of the following arithmetic operations?:divide 300 by 2, subtract result from 200. divide result by 50, multiply result by 2,
+ choice:2
+ choice:6
+ choice:3
+ choice:12
+ choice:4
+A:
+Answer: 2
+
+Example 8:
+Question: What is the result of the following arithmetic operations?:subtract 750 from 8000, 
+ choice:6000
+ choice:7820
+ choice:7200
+ choice:2799
+ choice:7250
+A:
+Answer: 7250
+
+Example 9:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 2, multiply result by 2, multiply result by 3, multiply result by 5,
+ choice:27
+ choice:81
+ choice:33
+ choice:120
+ choice:54
+A:
+Answer: 120
+
+Example 10:
+Question: What is the result of the following arithmetic operations?:subtract 3 from 7,  divide 1 by the result.
+ choice:1 / 3
+ choice:9 / 16
+ choice:1 / 4
+ choice:1 / 2
+ choice:1 / 6
+A:
+Answer: 1 / 4
+
+Example 11:
+Question: What is the result of the following arithmetic operations?:divide 12 by 4, divide 12 by 4, and then multiply both.
+ choice:15
+ choice:9
+ choice:4
+ choice:12
+ choice:6
+A:
+Answer: 9
+
+Example 12:
+Question: What is the result of the following arithmetic operations?:multiply 6 to 3, subtract result from 72. multiply 2 to 3, and then divide both.
+ choice:14
+ choice:9
+ choice:16
+ choice:10
+ choice:8
+A:
+Answer: 9
+
+Example 13:
+Question: What is the result of the following arithmetic operations?:multiply 3600 to 0.9,
+ choice:3
+ choice:3240
+ choice:672
+ choice:60
+ choice:61.2
+ choice:600
+A:
+Answer: 3240
+
+Example 14:
+Question: What is the result of the following arithmetic operations?:subtract 60 from 100,  subtract result from 60. divide result by 100, divide 1504 by the result.
+ choice:5200
+ choice:7520
+ choice:6000
+ choice:4500
+ choice:6900
+A:
+Answer: 7520
+
+Example 15:
+Question: What is the result of the following arithmetic operations?:divide 4 by 1000, add 2.12 to the result. divide 345 by 1000, and then add both.
+ choice:2.499
+ choice:2.911
+ choice:2.586
+ choice:2.469
+ choice:2.91
+A:
+Answer: 2.469
+
+Example 16:
+Question: What is the result of the following arithmetic operations?:add 9 to 8, subtract 4 from result,
+ choice:13
+ choice:none of these
+ choice:17
+ choice:11
+ choice:23
+A:
+Answer: 13
+
+Example 17:
+Question: What is the result of the following arithmetic operations?:add 25 to 150, divide 35 by 100, and then divide both.
+ choice:500
+ choice:900
+ choice:600
+ choice:300
+ choice:800
+A:
+Answer: 500
+
+Example 18:
+Question: What is the result of the following arithmetic operations?:divide 10 by 2, multiply result by 4,
+ choice:20
+ choice:9
+ choice:30
+ choice:12
+ choice:5
+A:
+Answer: 20
+
+Example 19:
+Question: What is the result of the following arithmetic operations?:divide 6 by 15, divide 2 by 15, and then divide both.
+ choice:2 / 3
+ choice:4 / 7
+ choice:3
+ choice:1 / 2
+ choice:4 / 5
+A:
+Answer: 3
+
+Example 20:
+Question: What is the result of the following arithmetic operations?:divide 40 by 100, divide 1 by 3, and then subtract both. divide 110 by the result.
+ choice:1300
+ choice:2100
+ choice:1400
+ choice:1100
+ choice:1650
+A:
+Answer: 1650
+
+Example 21:
+Question: What is the result of the following arithmetic operations?:multiply 312 to 16, divide result by 24,
+ choice:136
+ choice:266
+ choice:146
+ choice:126
+ choice:208
+A:
+Answer: 208
+
+Example 22:
+Question: What is the result of the following arithmetic operations?:subtract 6 from 10,  divide result by 2,
+ choice:4 kmph
+ choice:98 kmph
+ choice:6 kmph
+ choice:2 kmph
+ choice:7 kmph
+A:
+Answer: 2 kmph
+
+Example 23:
+Question: What is the result of the following arithmetic operations?:divide 15 by 60, multiply 6 by the result. multiply result by 1000,
+ choice:1050 meters
+ choice:none of these
+ choice:1200 meters
+ choice:1000 meters
+ choice:1500 meters
+A:
+Answer: 1500 meters
+
+Example 24:
+Question: What is the result of the following arithmetic operations?:multiply 3 to 8, multiply 2 to 6, and then add both. divide 396 by the result.
+ choice:11
+ choice:9
+ choice:7
+ choice:10
+ choice:8
+A:
+Answer: 11
+
+Example 25:
+Question: What is the result of the following arithmetic operations?:multiply 24 to 100, divide result by 10,
+ choice:235
+ choice:250
+ choice:240
+ choice:230
+ choice:245
+A:
+Answer: 240
+
+Example 26:
+Question: What is the result of the following arithmetic operations?:multiply 3 to 3, add result to 1,
+ choice:11
+ choice:16
+ choice:12
+ choice:10
+ choice:15
+A:
+Answer: 10
+
+Example 27:
+Question: What is the result of the following arithmetic operations?:multiply 70 to 8, multiply 45 to 9, and then add both.
+ choice:1045
+ choice:965
+ choice:1060
+ choice:1040
+ choice:1075
+A:
+Answer: 965
+
+Example 28:
+Question: What is the result of the following arithmetic operations?:add 8.0 to 7.5, add result to 8.8, multiply result by 3.2,
+ choice:73.6
+ choice:77.76
+ choice:75.2
+ choice:68.8
+ choice:76.8
+A:
+Answer: 77.76
+
+Example 29:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 63, divide result by 3, subtract result from 63.
+ choice:15
+ choice:21
+ choice:16
+ choice:14
+ choice:19
+A:
+Answer: 21
+
+Example 30:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 3, divide 3 by the result.
+ choice:2 / 3
+ choice:5 / 6
+ choice:3 / 4
+ choice:1 / 2
+ choice:4 / 5
+A:
+Answer: 1 / 2
+
+Example 31:
+Question: What is the result of the following arithmetic operations?:divide 2 by 1,
+ choice:2
+ choice:5
+ choice:3
+ choice:1
+ choice:4
+A:
+Answer: 2
+
+Example 32:
+Question: What is the result of the following arithmetic operations?:multiply 1000 to 1, divide 100 by 10, and then divide both. subtract 10 from result,
+ choice:290 sec
+ choice:90 sec
+ choice:390 sec
+ choice:190 sec
+ choice:490 sec
+A:
+Answer: 90 sec
+
+Example 33:
+Question: What is the result of the following arithmetic operations?:multiply 10 to 4, add result to 4,
+ choice:36
+ choice:66
+ choice:44
+ choice:33
+ choice:63
+A:
+Answer: 44
+
+Example 34:
+Question: What is the result of the following arithmetic operations?:subtract 00 from 1, 
+ choice:$ 1
+ choice:$ 2
+ choice:500
+ choice:000
+ choice:400
+ choice:200
+A:
+Answer: 200
+
+Example 35:
+Question: What is the result of the following arithmetic operations?:add 2 to 40, subtract 15 from result, divide result by 1.5, add result to 15,
+ choice:36
+ choice:39
+ choice:37
+ choice:33
+ choice:38
+A:
+Answer: 33
+
+Example 36:
+Question: What is the result of the following arithmetic operations?:multiply 6 to 8, subtract 6 from 8,  and then divide both.
+ choice:13
+ choice:24
+ choice:18
+ choice:12
+ choice:19
+A:
+Answer: 24
+
+Example 37:
+Question: What is the result of the following arithmetic operations?:divide 600 by 2, subtract 150 from result,
+ choice:166 m
+ choice:899 m
+ choice:187 m
+ choice:150 m
+ choice:200 m
+A:
+Answer: 150 m
+
+Example 38:
+Question: What is the result of the following arithmetic operations?:divide 800 by 1000, divide 20 by 3600, and then divide both.
+ choice:144 kmph
+ choice:97 kmph
+ choice:72 kmph
+ choice:120 kmph
+ choice:87 kmph
+A:
+Answer: 144 kmph
+
+Example 39:
+Question: What is the result of the following arithmetic operations?:add 2017 to 1,
+ choice:1881
+ choice:270
+ choice:2018
+ choice:1781
+ choice:2088
+A:
+Answer: 2018
+
+Example 40:
+Question: What is the result of the following arithmetic operations?:multiply 9 to 420, multiply 9 to 430, subtract 870 from result, and then subtract both.
+ choice:233
+ choice:780
+ choice:287
+ choice:191
+ choice:600
+A:
+Answer: 780
+
+Example 41:
+Question: What is the result of the following arithmetic operations?:divide 56 by 4,
+ choice:14
+ choice:18
+ choice:16
+ choice:13
+ choice:17
+A:
+Answer: 14
+
+Example 42:
+Question: What is the result of the following arithmetic operations?:divide 32 by 2,
+ choice:14
+ choice:20
+ choice:16
+ choice:12
+ choice:18
+A:
+Answer: 16
+
+Example 43:
+Question: What is the result of the following arithmetic operations?:add 300 to 400, divide result by 1000, divide 45 by 3600, and then divide both.
+ choice:27
+ choice:56
+ choice:29
+ choice:21
+ choice:32
+A:
+Answer: 56
+
+Example 44:
+Question: What is the result of the following arithmetic operations?:subtract 10 from 50,  divide 10 by the result.
+ choice:1 / 2
+ choice:3
+ choice:1 / 3
+ choice:1
+ choice:1 / 4
+A:
+Answer: 1 / 4
+
+Example 45:
+Question: What is the result of the following arithmetic operations?:multiply 1000 to 1.6, multiply 12 by the result. divide result by 48,
+ choice:200 m
+ choice:600 m
+ choice:300 m
+ choice:100 m
+ choice:400 m
+A:
+Answer: 400 m
+
+Example 46:
+Question: What is the result of the following arithmetic operations?:divide 2 by 5, multiply 100 by the result.
+ choice:34
+ choice:40
+ choice:36
+ choice:32
+ choice:38
+A:
+Answer: 40
+
+Example 47:
+Question: What is the result of the following arithmetic operations?:multiply 6 to 42, divide result by 12,
+ choice:24
+ choice:87
+ choice:35
+ choice:21
+ choice:56
+A:
+Answer: 21
+
+Example 48:
+Question: What is the result of the following arithmetic operations?:add 5 to 4, subtract 4 from 5,  and then divide both.
+ choice:- 4 / 5
+ choice:9
+ choice:1
+ choice:- 1
+ choice:5 / 4
+A:
+Answer: 9
+
+Example 49:
+Question: What is the result of the following arithmetic operations?:multiply 1 to 9, multiply 9 to 1, and then add both. subtract result from 100.
+ choice:64 %
+ choice:82 %
+ choice:69 %
+ choice:28 %
+ choice:80 %
+A:
+Answer: 82 %
+
+Example 50:
+Question: What is the result of the following arithmetic operations?:divide 1 by 10, divide 1 by 10, multiply result by 2, and then add both.
+ choice:1 / 6
+ choice:none of these
+ choice:1 / 7
+ choice:1 / 5
+ choice:3 / 10
+A:
+Answer: 3 / 10
+
+Example 51:
+Question: What is the result of the following arithmetic operations?:multiply 60 to 1, add result to 15, divide result by 25, multiply result by 18,
+ choice:52
+ choice:55
+ choice:53
+ choice:50
+ choice:54
+A:
+Answer: 54
+
+Example 52:
+Question: What is the result of the following arithmetic operations?:subtract 2 from 47,  multiply result by 2, add 1 to 4, and then divide both.
+ choice:12 years
+ choice:18 years
+ choice:14 years
+ choice:10 years
+ choice:16 years
+A:
+Answer: 18 years
+
+Example 53:
+Question: What is the result of the following arithmetic operations?:divide 880 by 100, subtract 50 from 100,  and then multiply both.
+ choice:500
+ choice:560
+ choice:520
+ choice:440
+ choice:540
+A:
+Answer: 440
+
+Example 54:
+Question: What is the result of the following arithmetic operations?:divide 125 by 100, add 1 to the result. divide 54 by the result. subtract result from 54.
+ choice:32
+ choice:42
+ choice:39
+ choice:30
+ choice:40
+A:
+Answer: 30
+
+Example 55:
+Question: What is the result of the following arithmetic operations?:subtract 7 from 12,  subtract 3 from 7,  divide 4400 by the result. and then multiply both.
+ choice:2782
+ choice:7282
+ choice:2788
+ choice:2729
+ choice:5500
+A:
+Answer: 5500
+
+Example 56:
+Question: What is the result of the following arithmetic operations?:subtract 4 from 18,  divide result by 2,
+ choice:3 kmph
+ choice:8 kmph
+ choice:5 kmph
+ choice:1 kmph
+ choice:7 kmph
+A:
+Answer: 7 kmph
+
+Example 57:
+Question: What is the result of the following arithmetic operations?:add 1 to 34, multiply 7 by the result. add 117 to the result.
+ choice:124
+ choice:97
+ choice:229
+ choice:117
+ choice:362
+A:
+Answer: 362
+
+Example 58:
+Question: What is the result of the following arithmetic operations?:subtract 32 from 212,  divide result by 100, multiply result by 40, add result to 32,
+ choice:85 ° f
+ choice:99 ° f
+ choice:92 ° f
+ choice:104 ° f
+ choice:96 ° f
+A:
+Answer: 104 ° f
+
+Example 59:
+Question: What is the result of the following arithmetic operations?:multiply 4 to 4,
+ choice:' 6 : 1'
+ choice:[' 4 : 1'
+ choice:' 64 : 1']
+ choice:' 16 : 1'
+ choice:' 8 : 1'
+A:
+Answer: ' 16 : 1'
+
+Example 60:
+Question: What is the result of the following arithmetic operations?:multiply 1.5 to 2, subtract result from 16.5.
+ choice:11
+ choice:13.5
+ choice:11.5
+ choice:10.5
+ choice:12
+A:
+Answer: 13.5
+
+Example 61:
+Question: What is the result of the following arithmetic operations?:subtract 20 from 25, 
+ choice:2
+ choice:5
+ choice:3
+ choice:1
+ choice:4
+A:
+Answer: 5
+
+Example 62:
+Question: What is the result of the following arithmetic operations?:add 2 to 3, divide 3 by the result. multiply result by 100,
+ choice:45 %
+ choice:60 %
+ choice:50 %
+ choice:40 %
+ choice:55 %
+A:
+Answer: 60 %
+
+Example 63:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 10, subtract 18 from result,
+ choice:1
+ choice:4
+ choice:2
+ choice:0
+ choice:3
+A:
+Answer: 2
+
+Example 64:
+Question: What is the result of the following arithmetic operations?:subtract 5.3 from 5.6,  divide 10.5 by the result.
+ choice:35
+ choice:39
+ choice:36
+ choice:32
+ choice:38
+A:
+Answer: 35
+
+Example 65:
+Question: What is the result of the following arithmetic operations?:multiply 70 to 15, multiply 95 to 10, and then add both. divide result by 25,
+ choice:78 %
+ choice:81 %
+ choice:79 %
+ choice:77 %
+ choice:80 %
+A:
+Answer: 80 %
+
+Example 66:
+Question: What is the result of the following arithmetic operations?:add 300 to 1500, divide result by 3,
+ choice:275
+ choice:600
+ choice:325
+ choice:225
+ choice:350
+A:
+Answer: 600
+
+Example 67:
+Question: What is the result of the following arithmetic operations?:multiply 1 to 20,
+ choice:30 %
+ choice:90 %
+ choice:40 %
+ choice:20 %
+ choice:70 %
+A:
+Answer: 20 %
+
+Example 68:
+Question: What is the result of the following arithmetic operations?:multiply 120 to 6,
+ choice:600
+ choice:7500
+ choice:625
+ choice:1250
+ choice:720
+A:
+Answer: 720
+
+Example 69:
+Question: What is the result of the following arithmetic operations?:multiply 1.2 to 3, add result to 1.5, add result to 1.7,
+ choice:$ 4.70
+ choice:$ 8.40
+ choice:$ 6.80
+ choice:$ 3.90
+ choice:$ 7.70
+A:
+Answer: $ 6.80
+
+Example 70:
+Question: What is the result of the following arithmetic operations?:multiply 5 to 20, subtract 15 from 20,  and then divide both.
+ choice:19
+ choice:25
+ choice:20
+ choice:18
+ choice:23
+A:
+Answer: 20
+
+Example 71:
+Question: What is the result of the following arithmetic operations?:multiply 1 to 45,
+ choice:35 %
+ choice:65 %
+ choice:45 %
+ choice:25 %
+ choice:55 %
+A:
+Answer: 45 %
+
+Example 72:
+Question: What is the result of the following arithmetic operations?:add 40 to 50, subtract 17 from result, subtract result from 100. divide result by 100,
+ choice:1 / 2
+ choice:9 / 100
+ choice:27 / 100
+ choice:1 / 10
+ choice:3 / 10
+A:
+Answer: 27 / 100
+
+Example 73:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 2,
+ choice:3 : 1
+ choice:8 : 1
+ choice:4 : 1
+ choice:2 : 1
+ choice:6 : 1
+A:
+Answer: 4 : 1
+
+Example 74:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 2.5, divide 1 by the result. subtract result from 1. divide 1 by the result.
+ choice:1.2 hour
+ choice:6 hours
+ choice:1.25 hours
+ choice:1 hour
+ choice:3 hours
+A:
+Answer: 1.25 hours
+
+Example 75:
+Question: What is the result of the following arithmetic operations?:subtract 1 from 6, 
+ choice:3
+ choice:6
+ choice:4
+ choice:2
+ choice:5
+A:
+Answer: 5
+
+Example 76:
+Question: What is the result of the following arithmetic operations?:add 1 to 19, divide 19 by 2, and then multiply both.
+ choice:120
+ choice:199
+ choice:150
+ choice:110
+ choice:190
+A:
+Answer: 190
+
+Example 77:
+Question: What is the result of the following arithmetic operations?:multiply 3 to 60, divide result by 2, multiply result by 3, add 60 to the result.
+ choice:' 330'
+ choice:[' 160'
+ choice:' 440'
+ choice:' 240'
+ choice:' 560']
+A:
+Answer: ' 330'
+
+Example 78:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 241, subtract 115 from result,
+ choice:367
+ choice:460
+ choice:370
+ choice:365
+ choice:380
+A:
+Answer: 367
+
+Example 79:
+Question: What is the result of the following arithmetic operations?:divide 5 by 3, divide 5 by 3, add result to 1, and then divide both.
+ choice:5 / 4
+ choice:6 / 9
+ choice:5 / 8
+ choice:4 / 9
+ choice:5 / 9
+A:
+Answer: 5 / 8
+
+Example 80:
+Question: What is the result of the following arithmetic operations?:subtract 60 from 64,  subtract 64 from 80,  and then divide both.
+ choice:1 : 4
+ choice:7 : 12
+ choice:3 : 7
+ choice:1 : 2
+ choice:4 : 5
+A:
+Answer: 1 : 4
+
+Example 81:
+Question: What is the result of the following arithmetic operations?:divide 100 by 20,
+ choice:2.0
+ choice:7.0
+ choice:3.0
+ choice:1.0
+ choice:5.0
+A:
+Answer: 5.0
+
+Example 82:
+Question: What is the result of the following arithmetic operations?:divide 160 by 100, add 1 to the result. divide 91 by the result. subtract result from 91.
+ choice:33
+ choice:56
+ choice:39
+ choice:32
+ choice:40
+A:
+Answer: 56
+
+Example 83:
+Question: What is the result of the following arithmetic operations?:multiply 8 to 8, divide result by 8, divide 5 by 5, and then multiply both.
+ choice:12
+ choice:8
+ choice:4
+ choice:10
+ choice:5
+A:
+Answer: 8
+
+Example 84:
+Question: What is the result of the following arithmetic operations?:multiply 17 to 63,
+ choice:1111
+ choice:4323
+ choice:2132
+ choice:1071
+ choice:3421
+A:
+Answer: 1071
+
+Example 85:
+Question: What is the result of the following arithmetic operations?:divide 3600 by 10,
+ choice:$ 280
+ choice:$ 320
+ choice:000
+ choice:$ 360
+ choice:$ 640
+ choice:$ 450
+A:
+Answer: $ 360
+
+Example 86:
+Question: What is the result of the following arithmetic operations?:multiply 75 to 3, add 81 to 74, and then subtract both.
+ choice:67 %
+ choice:70 %
+ choice:68 %
+ choice:66 %
+ choice:69 %
+A:
+Answer: 70 %
+
+Example 87:
+Question: What is the result of the following arithmetic operations?:divide 190 by 40,
+ choice:3.5 gallons
+ choice:7.5 gallons
+ choice:4.75 gallons
+ choice:2.7 gallons
+ choice:5.7 gallons
+A:
+Answer: 4.75 gallons
+
+Example 88:
+Question: What is the result of the following arithmetic operations?:subtract 22 from 26,  multiply result by 3, divide result by 4,
+ choice:3
+ choice:8
+ choice:5
+ choice:10
+ choice:7
+A:
+Answer: 3
+
+Example 89:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 3, multiply result by 1,
+ choice:5
+ choice:9
+ choice:6
+ choice:4
+ choice:8
+A:
+Answer: 6
+
+Example 90:
+Question: What is the result of the following arithmetic operations?:divide 60 by 100, divide 3 by 5, and then multiply both. divide 36 by the result.
+ choice:75
+ choice:none of these
+ choice:80
+ choice:100
+ choice:90
+A:
+Answer: 100
+
+Example 91:
+Question: What is the result of the following arithmetic operations?:multiply 8 to 8, multiply result by 24, multiply 16 to 12, and then divide both.
+ choice:6
+ choice:9
+ choice:7
+ choice:10
+ choice:8
+A:
+Answer: 8
+
+Example 92:
+Question: What is the result of the following arithmetic operations?:add 31 to 25, add 33 to 35, and then add both. divide result by 4,
+ choice:33
+ choice:39
+ choice:35
+ choice:31
+ choice:37
+A:
+Answer: 31
+
+Example 93:
+Question: What is the result of the following arithmetic operations?:subtract 1 from 75,  multiply result by 8, add result to 5,
+ choice:608
+ choice:621
+ choice:613
+ choice:597
+ choice:616
+A:
+Answer: 597
+
+Example 94:
+Question: What is the result of the following arithmetic operations?:add 60 to 10, divide result by 2,
+ choice:23 kmph
+ choice:85 kmph
+ choice:35 kmph
+ choice:14 kmph
+ choice:79 kmph
+A:
+Answer: 35 kmph
+
+Example 95:
+Question: What is the result of the following arithmetic operations?:multiply 5 to 26,
+ choice:120
+ choice:130
+ choice:122
+ choice:110
+ choice:125
+A:
+Answer: 130
+
+Example 96:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 4, add result to 4, multiply 60 by the result. divide result by 40,
+ choice:18
+ choice:30
+ choice:20
+ choice:12
+ choice:24
+A:
+Answer: 18
+
+Example 97:
+Question: What is the result of the following arithmetic operations?:divide 100 by 50, multiply result by 1000, divide 200 by the result.
+ choice:ratio 1 : 10
+ choice:ratio 9 : 13
+ choice:ratio 1 : 5
+ choice:2 : 3
+ choice:ratio 7 : 15
+A:
+Answer: ratio 1 : 10
+
+Example 98:
+Question: What is the result of the following arithmetic operations?:divide 7.5 by 3,
+ choice:2.25
+ choice:4
+ choice:2.5
+ choice:1.5
+ choice:3
+A:
+Answer: 2.5
+
+Example 99:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 4, multiply 4 by the result. multiply 3 to 4, and then multiply both.
+ choice:384
+ choice:none of these
+ choice:54
+ choice:152
+ choice:76
+A:
+Answer: 384
+
+Example 100:
+Question: What is the result of the following arithmetic operations?:add 14 to 84, divide result by 2,
+ choice:31
+ choice:64
+ choice:42
+ choice:20
+ choice:49
+A:
+Answer: 49
+
+Example 101:
+Question: What is the result of the following arithmetic operations?:multiply 5000 to 4,
+ choice:$ 21000
+ choice:$ 24000
+ choice:$ 22000
+ choice:$ 20000
+ choice:$ 23000
+A:
+Answer: $ 20000
+
+Example 102:
+Question: What is the result of the following arithmetic operations?:add 1000 to 1200, divide 1200 by 120, and then divide both.
+ choice:179 sec
+ choice:220 sec
+ choice:190 sec
+ choice:167 sec
+ choice:197 sec
+A:
+Answer: 220 sec
+
+Example 103:
+Question: What is the result of the following arithmetic operations?:divide 40 by 60, multiply result by 120,
+ choice:60 kmph
+ choice:85 kmph
+ choice:70 kmph
+ choice:50 kmph
+ choice:80 kmph
+A:
+Answer: 80 kmph
+
+Example 104:
+Question: What is the result of the following arithmetic operations?:divide 8 by 12, subtract result from 1. divide 8 by 12, and then divide both.
+ choice:2 : 2
+ choice:2 : 9
+ choice:2 : 6
+ choice:1 : 2
+ choice:2 : 7
+A:
+Answer: 1 : 2
+
+Example 105:
+Question: What is the result of the following arithmetic operations?:multiply 1000 to 60, divide result by 3600, multiply result by 36,
+ choice:167 meter
+ choice:719 meter
+ choice:169 meter
+ choice:150 meter
+ choice:600 meter
+A:
+Answer: 600 meter
+
+Example 106:
+Question: What is the result of the following arithmetic operations?:subtract 20 from 25,  divide 25 by the result. multiply 20 by the result.
+ choice:120 km
+ choice:80 km
+ choice:125 km
+ choice:100 km
+ choice:60 km
+A:
+Answer: 100 km
+
+Example 107:
+Question: What is the result of the following arithmetic operations?:multiply 24 to 36,
+ choice:288
+ choice:864
+ choice:760
+ choice:284
+ choice:820
+A:
+Answer: 864
+
+Example 108:
+Question: What is the result of the following arithmetic operations?:multiply 4.0 to 5, multiply result by 10, multiply result by 3,
+ choice:211
+ choice:600
+ choice:218
+ choice:200
+ choice:344
+A:
+Answer: 600
+
+Example 109:
+Question: What is the result of the following arithmetic operations?:multiply 10 to 60, add result to 50, divide result by 10, add 50 to the result.
+ choice:111
+ choice:none
+ choice:115
+ choice:110
+ choice:123
+A:
+Answer: 115
+
+Example 110:
+Question: What is the result of the following arithmetic operations?:add 6 to 6, multiply result by 6,
+ choice:19
+ choice:92
+ choice:26
+ choice:18
+ choice:72
+A:
+Answer: 72
+
+Example 111:
+Question: What is the result of the following arithmetic operations?:add 2 to 3, add 1 to 3.0, and then divide both.
+ choice:3 : 2
+ choice:9 : 2
+ choice:5 : 4
+ choice:1 : 2
+ choice:7 : 8
+A:
+Answer: 5 : 4
+
+Example 112:
+Question: What is the result of the following arithmetic operations?:subtract 1200 from 1272,  multiply result by 100, divide result by 1200,
+ choice:12 %
+ choice:8 %
+ choice:4 %
+ choice:10 %
+ choice:6 %
+A:
+Answer: 6 %
+
+Example 113:
+Question: What is the result of the following arithmetic operations?:multiply 1000 to 126, divide result by 3600, multiply result by 9,
+ choice:186 meter
+ choice:315 meter
+ choice:265 meter
+ choice:150 meter
+ choice:286 meter
+A:
+Answer: 315 meter
+
+Example 114:
+Question: What is the result of the following arithmetic operations?:divide 20 by 25, multiply result by 100,
+ choice:30 %
+ choice:80 %
+ choice:50 %
+ choice:20 %
+ choice:60 %
+A:
+Answer: 80 %
+
+Example 115:
+Question: What is the result of the following arithmetic operations?:subtract 3 from 100,  subtract 6 from result,
+ choice:89
+ choice:92
+ choice:90
+ choice:84
+ choice:91
+A:
+Answer: 91
+
+Example 116:
+Question: What is the result of the following arithmetic operations?:divide 30 by 12, subtract 1 from result, multiply result by 24,
+ choice:27
+ choice:98
+ choice:18
+ choice:36
+A:
+Answer: 36
+
+Example 117:
+Question: What is the result of the following arithmetic operations?:subtract 1 from 26,  divide 800 by the result.
+ choice:14
+ choice:8
+ choice:16
+ choice:10
+ choice:32
+A:
+Answer: 32
+
+Example 118:
+Question: What is the result of the following arithmetic operations?:subtract 6 from 7,  divide result by 100, divide 81 by the result.
+ choice:5000
+ choice:8100
+ choice:6000
+ choice:4000
+ choice:7000
+A:
+Answer: 8100
+
+Example 119:
+Question: What is the result of the following arithmetic operations?:multiply 4 to 19, subtract result from 95. add result to 4,
+ choice:23
+ choice:28
+ choice:24
+ choice:22
+ choice:27
+A:
+Answer: 23
+
+Example 120:
+Question: What is the result of the following arithmetic operations?:divide 240 by 8, divide 240 by 6, and then add both. add 240 to the result.
+ choice:310
+ choice:340
+ choice:320
+ choice:300
+ choice:330
+A:
+Answer: 310
+
+Example 121:
+Question: What is the result of the following arithmetic operations?:subtract 20 from 100,  divide 20 by the result. multiply result by 100,
+ choice:12.5 %
+ choice:30 %
+ choice:15 %
+ choice:10.5 %
+ choice:25 %
+A:
+Answer: 25 %
+
+Example 122:
+Question: What is the result of the following arithmetic operations?:multiply 70 to 10, subtract result from 1500. divide result by 2,
+ choice:410
+ choice:450
+ choice:420
+ choice:400
+ choice:430
+A:
+Answer: 400
+
+Example 123:
+Question: What is the result of the following arithmetic operations?:subtract 10 from 10, 
+ choice:- 3
+ choice:3
+ choice:0
+ choice:- 2
+ choice:2
+A:
+Answer: 0
+
+Example 124:
+Question: What is the result of the following arithmetic operations?:divide 2 by 2, multiply 100 by the result.
+ choice:' 200 %'
+ choice:[' 400 %'
+ choice:' 300 %'
+ choice:' 100 %'
+ choice:' 800 %']
+A:
+Answer: ' 100 %'
+
+Example 125:
+Question: What is the result of the following arithmetic operations?:subtract 340 from 350,  divide 4 by 100, and then divide both.
+ choice:200
+ choice:288
+ choice:231
+ choice:111
+ choice:250
+A:
+Answer: 250
+
+Example 126:
+Question: What is the result of the following arithmetic operations?:divide 270 by 6, multiply result by 4, multiply result by 20,
+ choice:1800
+ choice:648
+ choice:2700
+ choice:10800
+ choice:3600
+A:
+Answer: 3600
+
+Example 127:
+Question: What is the result of the following arithmetic operations?:divide 4 by 10, multiply result by 19000, subtract result from 19000.
+ choice:59875
+ choice:87689
+ choice:79754
+ choice:11400
+ choice:87648
+A:
+Answer: 11400
+
+Example 128:
+Question: What is the result of the following arithmetic operations?:multiply 7 to 3, subtract result from 99. multiply 2 to 3, and then divide both.
+ choice:13
+ choice:8
+ choice:14
+ choice:10
+ choice:16
+A:
+Answer: 13
+
+Example 129:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 3, add 45 to the result. add result to 1,
+ choice:48
+ choice:52
+ choice:49
+ choice:47
+ choice:50
+A:
+Answer: 52
+
+Example 130:
+Question: What is the result of the following arithmetic operations?:add 3 to 8, multiply result by 4,
+ choice:18 km
+ choice:44 km
+ choice:20 km
+ choice:16 km
+ choice:22 km
+A:
+Answer: 44 km
+
+Example 131:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 2, subtract 1 from result, multiply result by 100,
+ choice:300 %
+ choice:600 %
+ choice:400 %
+ choice:200 %
+ choice:500 %
+A:
+Answer: 300 %
+
+Example 132:
+Question: What is the result of the following arithmetic operations?:divide 5 by 3, divide 3 by 2, and then subtract both. divide 10 by the result.
+ choice:$ 120
+ choice:$ 80
+ choice:$ 140
+ choice:$ 100
+ choice:$ 60
+A:
+Answer: $ 60
+
+Example 133:
+Question: What is the result of the following arithmetic operations?:multiply 20 to 3, divide result by 12,
+ choice:6 .
+ choice:z = 5 .
+ choice:8 .
+ choice:2 .
+ choice:z = 4 .
+A:
+Answer: z = 5 .
+
+Example 134:
+Question: What is the result of the following arithmetic operations?:divide 30 by 2, add 30 to the result. divide result by 6, multiply result by 2,
+ choice:14 .
+ choice:5 .
+ choice:15
+ choice:10 .
+ choice:20 .
+A:
+Answer: 15
+
+Example 135:
+Question: What is the result of the following arithmetic operations?:multiply 1 to 50,
+ choice:30 %
+ choice:70 %
+ choice:40 %
+ choice:20 %
+ choice:50 %
+A:
+Answer: 50 %
+
+Example 136:
+Question: What is the result of the following arithmetic operations?:divide 50 by 100, add 1 to the result. divide 42 by the result.
+ choice:$ 24
+ choice:$ 36
+ choice:$ 28
+ choice:$ 22
+ choice:$ 32
+A:
+Answer: $ 28
+
+Example 137:
+Question: What is the result of the following arithmetic operations?:multiply 6 to 20, multiply result by 5, divide result by 100,
+ choice:1.4
+ choice:none
+ choice:6
+ choice:1.2
+ choice:7
+A:
+Answer: 6
+
+Example 138:
+Question: What is the result of the following arithmetic operations?:add 140 to 360, multiply 1000 to 36, divide result by 3600, and then divide both.
+ choice:12 seconds
+ choice:50 seconds
+ choice:29 seconds
+ choice:11 seconds
+ choice:40 seconds
+A:
+Answer: 50 seconds
+
+Example 139:
+Question: What is the result of the following arithmetic operations?:divide 20 by 100, divide 10 by 100, and then divide both. multiply result by 100,
+ choice:2.5 %
+ choice:35 %
+ choice:200 %
+ choice:15 %
+ choice:25 %
+A:
+Answer: 200 %
+
+Example 140:
+Question: What is the result of the following arithmetic operations?:add 1 to 12, multiply 12 by the result. divide result by 2,
+ choice:67
+ choice:78
+ choice:68
+ choice:66
+ choice:76
+A:
+Answer: 78
+
+Example 141:
+Question: What is the result of the following arithmetic operations?:divide 104 by 20.8, subtract result from 550.
+ choice:525
+ choice:625
+ choice:535
+ choice:105
+ choice:545
+A:
+Answer: 545
+
+Example 142:
+Question: What is the result of the following arithmetic operations?:subtract 10 from 154,  add result to 1,
+ choice:190
+ choice:58
+ choice:210
+ choice:145
+ choice:51
+A:
+Answer: 145
+
+Example 143:
+Question: What is the result of the following arithmetic operations?:add 2 to 2, add result to 1, divide 25 by the result.
+ choice:1
+ choice:5
+ choice:2
+ choice:0
+ choice:3
+A:
+Answer: 5
+
+Example 144:
+Question: What is the result of the following arithmetic operations?:add 5 to 15, add result to 1,
+ choice:18
+ choice:6 .
+ choice:21
+ choice:16 .
+ choice:26
+A:
+Answer: 21
+
+Example 145:
+Question: What is the result of the following arithmetic operations?:divide 100 by 1000, add 3.5 to the result. divide result by 72, multiply result by 60,
+ choice:3.4
+ choice:5.7
+ choice:4.2
+ choice:3
+ choice:5.5
+A:
+Answer: 3
+
+Example 146:
+Question: What is the result of the following arithmetic operations?:divide 40 by 4, divide result by 2000, multiply result by 100,
+ choice:0.5 %
+ choice:1.2 %
+ choice:0.7 %
+ choice:0.3 %
+ choice:0.9 %
+A:
+Answer: 0.5 %
+
+Example 147:
+Question: What is the result of the following arithmetic operations?:add 25 to 645, add 1 to 3, add result to 1, and then divide both.
+ choice:134
+ choice:218
+ choice:140
+ choice:120
+ choice:145
+A:
+Answer: 134
+
+Example 148:
+Question: What is the result of the following arithmetic operations?:multiply 4 to 4, subtract 2 from result, multiply result by 2, add result to 2024,
+ choice:2052
+ choice:2778
+ choice:2288
+ choice:1711
+ choice:2719
+A:
+Answer: 2052
+
+Example 149:
+Question: What is the result of the following arithmetic operations?:multiply 3 to 6, divide result by 2, divide 720 by the result.
+ choice:60
+ choice:80
+ choice:65
+ choice:50
+ choice:70
+A:
+Answer: 80
+
+Example 150:
+Question: What is the result of the following arithmetic operations?:multiply 12 to 5, divide 180 by 3, and then divide both. add 61 to the result.
+ choice:22
+ choice:77
+ choice:29
+ choice:21
+ choice:62
+A:
+Answer: 62
+
+Example 151:
+Question: What is the result of the following arithmetic operations?:divide 5 by 100, add 1 to the result. multiply result by 54,
+ choice:$ 56.20
+ choice:$ 57.70
+ choice:$ 56.70
+ choice:$ 55.70
+ choice:$ 57.20
+A:
+Answer: $ 56.70
+
+Example 152:
+Question: What is the result of the following arithmetic operations?:divide 30 by 2, subtract result from 60.
+ choice:40 minutes
+ choice:55 minutes
+ choice:45 minutes
+ choice:35 minutes
+ choice:50 minutes
+A:
+Answer: 45 minutes
+
+Example 153:
+Question: What is the result of the following arithmetic operations?:divide 8 by 12, multiply result by 6,
+ choice:4.5
+ choice:5.8
+ choice:5
+ choice:4
+ choice:5.5
+A:
+Answer: 4
+
+Example 154:
+Question: What is the result of the following arithmetic operations?:add 3 to 7, divide 7 by the result. multiply result by 100,
+ choice:270
+ choice:70
+ choice:40
+ choice:170
+ choice:50
+A:
+Answer: 70
+
+Example 155:
+Question: What is the result of the following arithmetic operations?:divide 100 by 1000, divide 20 by 3600, and then divide both.
+ choice:18 kmph
+ choice:91 kmph
+ choice:19 kmph
+ choice:17 kmph
+ choice:72 kmph
+A:
+Answer: 18 kmph
+
+Example 156:
+Question: What is the result of the following arithmetic operations?:add 9 to 16, divide result by 2,
+ choice:13.5 kmph
+ choice:22.5 kmph
+ choice:15.5 kmph
+ choice:12.5 kmph
+ choice:18 kmph
+A:
+Answer: 12.5 kmph
+
+Example 157:
+Question: What is the result of the following arithmetic operations?:divide 5 by 100, divide 12.50 by the result.
+ choice:250
+ choice:887
+ choice:333
+ choice:132
+ choice:500
+A:
+Answer: 250
+
+Example 158:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 2,
+ choice:2
+ choice:6
+ choice:3
+ choice:1
+ choice:4
+A:
+Answer: 4
+
+Example 159:
+Question: What is the result of the following arithmetic operations?:multiply 1000 to 10, divide result by 60, multiply result by 3,
+ choice:236
+ choice:650
+ choice:250
+ choice:111
+ choice:500
+A:
+Answer: 500
+
+Example 160:
+Question: What is the result of the following arithmetic operations?:add 65 to 25, divide result by 2,
+ choice:38
+ choice:86
+ choice:45
+ choice:30
+ choice:78
+A:
+Answer: 45
+
+Example 161:
+Question: What is the result of the following arithmetic operations?:add 4 to 2,
+ choice:2
+ choice:7
+ choice:4
+ choice:12
+ choice:6
+A:
+Answer: 6
+
+Example 162:
+Question: What is the result of the following arithmetic operations?:divide 2 by 8,
+ choice:1 / 3
+ choice:3 / 4
+ choice:1 / 4
+ choice:1 / 2
+ choice:2 / 3
+A:
+Answer: 1 / 4
+
+Example 163:
+Question: What is the result of the following arithmetic operations?:add 100 to 10, add 100 to 15, and then divide both. multiply result by 92,
+ choice:$ 80.00
+ choice:$ 88.00
+ choice:$ 83.64
+ choice:$ 77.40
+ choice:$ 87.40
+A:
+Answer: $ 88.00
+
+Example 164:
+Question: What is the result of the following arithmetic operations?:subtract 4 from 15,  multiply result by 3,
+ choice:21
+ choice:35
+ choice:28
+ choice:15
+ choice:33
+A:
+Answer: 33
+
+Example 165:
+Question: What is the result of the following arithmetic operations?:multiply 7 to 1,
+ choice:4
+ choice:7
+ choice:5
+ choice:3
+ choice:6
+A:
+Answer: 7
+
+Example 166:
+Question: What is the result of the following arithmetic operations?:multiply 1 to 2,
+ choice:22
+ choice:6278
+ choice:277
+ choice:2
+ choice:281
+A:
+Answer: 2
+
+Example 167:
+Question: What is the result of the following arithmetic operations?:subtract 64 from 100,  divide result by 3, subtract result from 100.
+ choice:60
+ choice:88
+ choice:73
+ choice:55
+ choice:82
+A:
+Answer: 88
+
+Example 168:
+Question: What is the result of the following arithmetic operations?:subtract 45 from 54,  divide result by 54, multiply 60 by the result.
+ choice:22
+ choice:99
+ choice:29
+ choice:10
+ choice:77
+A:
+Answer: 10
+
+Example 169:
+Question: What is the result of the following arithmetic operations?:divide 24 by 100, add 1 to the result. divide 8215 by the result.
+ choice:2981
+ choice:7297
+ choice:6625
+ choice:2871
+ choice:6725
+A:
+Answer: 6625
+
+Example 170:
+Question: What is the result of the following arithmetic operations?:add 16 to 18, divide result by 2, multiply 2 to 1, and then add both.
+ choice:19
+ choice:23
+ choice:2
+ choice:11
+ choice:20
+A:
+Answer: 19
+
+Example 171:
+Question: What is the result of the following arithmetic operations?:add 100 to 25, subtract 20 from 100,  and then multiply both.
+ choice:' 10004'
+ choice:[' 10000'
+ choice:' 10005'
+ choice:' 10001']
+ choice:' 10008'
+A:
+Answer: [' 10000'
+
+Example 172:
+Question: What is the result of the following arithmetic operations?:multiply 100 to 455, subtract 35 from 100,  and then divide both.
+ choice:540
+ choice:840
+ choice:650
+ choice:400
+ choice:700
+A:
+Answer: 700
+
+Example 173:
+Question: What is the result of the following arithmetic operations?:divide 15 by 100, multiply 45 by the result.
+ choice:5.0
+ choice:6.75
+ choice:5.5
+ choice:3.0
+ choice:6.5
+A:
+Answer: 6.75
+
+Example 174:
+Question: What is the result of the following arithmetic operations?:divide 90 by 2,
+ choice:45 °
+ choice:90 °
+ choice:60 °
+ choice:30 °
+ choice:75 °
+A:
+Answer: 45 °
+
+Example 175:
+Question: What is the result of the following arithmetic operations?:multiply 10 to 1, multiply result by 10, multiply result by 3,
+ choice:111
+ choice:304
+ choice:271
+ choice:110
+ choice:300
+A:
+Answer: 300
+
+Example 176:
+Question: What is the result of the following arithmetic operations?:divide 18 by 45, multiply 70 by the result.
+ choice:24
+ choice:36
+ choice:28
+ choice:20
+ choice:32
+A:
+Answer: 28
+
+Example 177:
+Question: What is the result of the following arithmetic operations?:multiply 20 to 15, divide result by 4,
+ choice:' 20']
+ choice:[' 300'
+ choice:' 40'
+ choice:' 150'
+ choice:' 75'
+A:
+Answer: ' 75'
+
+Example 178:
+Question: What is the result of the following arithmetic operations?:multiply 3 to 3, multiply 40 by the result.
+ choice:' 36 cc'
+ choice:[' 360 cc'
+ choice:' 39 cc']
+ choice:' 300 cc'
+ choice:' 60 cc'
+A:
+Answer: [' 360 cc'
+
+Example 179:
+Question: What is the result of the following arithmetic operations?:multiply 1000 to 5.6, divide result by 350, subtract 1 from result,
+ choice:13 th
+ choice:16 th
+ choice:14 th
+ choice:12 th
+ choice:15 th
+A:
+Answer: 15 th
+
+Example 180:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 3, multiply 5 by the result.
+ choice:15
+ choice:30
+ choice:24
+ choice:116
+ choice:25
+A:
+Answer: 30
+
+Example 181:
+Question: What is the result of the following arithmetic operations?:multiply 36 to 18, divide result by 54,
+ choice:24
+ choice:88
+ choice:29
+ choice:12
+ choice:77
+A:
+Answer: 12
+
+Example 182:
+Question: What is the result of the following arithmetic operations?:subtract 4 from 6,  multiply result by 3, subtract 4 from result, divide 4 by the result.
+ choice:2
+ choice:6 / 5
+ choice:2 / 3
+ choice:1 / 2
+ choice:3 / 10
+A:
+Answer: 2
+
+Example 183:
+Question: What is the result of the following arithmetic operations?:divide 8 by 5, multiply result by 175, add result to 175,
+ choice:416
+ choice:562
+ choice:455
+ choice:356
+ choice:512
+A:
+Answer: 455
+
+Example 184:
+Question: What is the result of the following arithmetic operations?:divide 32 by 40, add 65 to 100, add result to 40, and then multiply both.
+ choice:205
+ choice:72
+ choice:262
+ choice:164
+ choice:288
+A:
+Answer: 164
+
+Example 185:
+Question: What is the result of the following arithmetic operations?:divide 29 by 4, multiply result by 16, divide result by 4,
+ choice:25
+ choice:37
+ choice:29
+ choice:21
+ choice:33
+A:
+Answer: 29
+
+Example 186:
+Question: What is the result of the following arithmetic operations?:subtract 2 from 7,  divide 55 by the result. multiply result by 2,
+ choice:21
+ choice:24
+ choice:22
+ choice:20
+ choice:23
+A:
+Answer: 22
+
+Example 187:
+Question: What is the result of the following arithmetic operations?:divide 36 by 54, multiply 60 by the result. subtract result from 60.
+ choice:15
+ choice:20
+ choice:17
+ choice:12
+ choice:18
+A:
+Answer: 20
+
+Example 188:
+Question: What is the result of the following arithmetic operations?:multiply 22 to 0.03, divide result by 12, multiply result by 100,
+ choice:20 %
+ choice:5.5 %
+ choice:5 %
+ choice:0.5 %
+ choice:5.002 %
+A:
+Answer: 5.5 %
+
+Example 189:
+Question: What is the result of the following arithmetic operations?:subtract 8 from 278,  divide result by 3, multiply result by 2, add result to 8,
+ choice:135
+ choice:188
+ choice:139
+ choice:131
+ choice:147
+A:
+Answer: 188
+
+Example 190:
+Question: What is the result of the following arithmetic operations?:add 300 to 100, divide result by 1000, divide 30 by 3600, and then divide both.
+ choice:34 kmph
+ choice:48 kmph
+ choice:40 kmph
+ choice:32 kmph
+ choice:43 kmph
+A:
+Answer: 48 kmph
+
+Example 191:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 10, subtract result from 76. add 1 to 3, and then divide both.
+ choice:14
+ choice:17
+ choice:15
+ choice:13
+ choice:16
+A:
+Answer: 14
+
+Example 192:
+Question: What is the result of the following arithmetic operations?:subtract 20 from 224,  divide result by 3, multiply result by 2, add result to 20,
+ choice:135
+ choice:188
+ choice:156
+ choice:131
+ choice:177
+A:
+Answer: 156
+
+Example 193:
+Question: What is the result of the following arithmetic operations?:multiply 100 to 4016.25, divide result by 9, divide result by 5,
+ choice:8032.5
+ choice:none of these
+ choice:8925
+ choice:4462.5
+ choice:can not be determined
+A:
+Answer: 8925
+
+Example 194:
+Question: What is the result of the following arithmetic operations?:add 3 to 12, divide 150 by the result.
+ choice:14 sec
+ choice:20 sec
+ choice:15 sec
+ choice:10 sec
+ choice:16 sec
+A:
+Answer: 10 sec
+
+Example 195:
+Question: What is the result of the following arithmetic operations?:multiply 6 to 8, subtract 16 from result,
+ choice:' 48'
+ choice:[' 16'
+ choice:' 64'
+ choice:' 32'
+ choice:' 8']
+A:
+Answer: ' 32'
+
+Example 196:
+Question: What is the result of the following arithmetic operations?:add 1 to 15,
+ choice:12
+ choice:20
+ choice:16
+ choice:10
+ choice:18
+A:
+Answer: 16
+
+Example 197:
+Question: What is the result of the following arithmetic operations?:divide 1 by 20, divide 1 by 25, and then subtract both. divide 1 by the result.
+ choice:50 hrs
+ choice:80 hrs
+ choice:60 hrs
+ choice:100 hrs
+ choice:70 hrs
+A:
+Answer: 100 hrs
+
+Example 198:
+Question: What is the result of the following arithmetic operations?:divide 10 by 2, divide 80 by the result. add result to 3,
+ choice:17
+ choice:20
+ choice:18
+ choice:16
+ choice:19
+A:
+Answer: 19
+
+Example 199:
+Question: What is the result of the following arithmetic operations?:multiply 30 to 800, divide result by 100, divide result by 5,
+ choice:47
+ choice:50
+ choice:48
+ choice:46
+ choice:49
+A:
+Answer: 48
+
+Example 200:
+Question: What is the result of the following arithmetic operations?:add 6 to 1, divide result by 2,
+ choice:3.5 mph
+ choice:8 mph
+ choice:4 mph
+ choice:0.5 mph
+ choice:5.25 mph
+A:
+Answer: 3.5 mph
+
+Example 201:
+Question: What is the result of the following arithmetic operations?:divide 12 by 60, add 3 to 15, and then multiply both.
+ choice:2.6 km
+ choice:none
+ choice:3.6 km
+ choice:2 km
+ choice:4 km
+A:
+Answer: 3.6 km
+
+Example 202:
+Question: What is the result of the following arithmetic operations?:add 70 to 90, subtract 20 from result, subtract result from 200.
+ choice:130
+ choice:80
+ choice:150
+ choice:100
+ choice:60
+A:
+Answer: 60
+
+Example 203:
+Question: What is the result of the following arithmetic operations?:add 44 to 34, subtract 22 from result, subtract result from 100.
+ choice:28
+ choice:81
+ choice:37
+ choice:23
+ choice:44
+A:
+Answer: 44
+
+Example 204:
+Question: What is the result of the following arithmetic operations?:divide 200 by 5, multiply result by 6, add 200 to the result.
+ choice:520
+ choice:820
+ choice:620
+ choice:440
+ choice:720
+A:
+Answer: 440
+
+Example 205:
+Question: What is the result of the following arithmetic operations?:subtract 2 from 27,  multiply result by 2, add 1 to 4, and then divide both.
+ choice:15
+ choice:5
+ choice:20
+ choice:10
+ choice:25
+A:
+Answer: 10
+
+Example 206:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 1210, multiply result by 2, divide result by 10,
+ choice:$ 400
+ choice:% 342
+ choice:$ 484
+ choice:$ 365
+ choice:$ 489
+A:
+Answer: $ 484
+
+Example 207:
+Question: What is the result of the following arithmetic operations?:add 60 to 90, add result to 10, add result to 10, subtract result from 210.
+ choice:40
+ choice:75
+ choice:50
+ choice:25
+ choice:60
+A:
+Answer: 40
+
+Example 208:
+Question: What is the result of the following arithmetic operations?:subtract 10 from 62.50,  divide result by 2.5,
+ choice:31
+ choice:45
+ choice:35
+ choice:21
+ choice:40
+A:
+Answer: 21
+
+Example 209:
+Question: What is the result of the following arithmetic operations?:add 5 to 6,
+ choice:11
+ choice:7
+ choice:3
+ choice:- 3
+ choice:5
+A:
+Answer: 11
+
+Example 210:
+Question: What is the result of the following arithmetic operations?:divide 100 by 20, multiply result by 2, multiply result by 8,
+ choice:30
+ choice:90
+ choice:50
+ choice:100
+ choice:80
+A:
+Answer: 80
+
+Example 211:
+Question: What is the result of the following arithmetic operations?:subtract 16 from 34,  subtract 14 from 16,  and then divide both.
+ choice:11
+ choice:9
+ choice:7
+ choice:10
+ choice:8
+A:
+Answer: 9
+
+Example 212:
+Question: What is the result of the following arithmetic operations?:multiply 25 to 6, divide result by 100, multiply result by 2, subtract result from 6.
+ choice:2.4
+ choice:3.3
+ choice:2.7
+ choice:2.1
+ choice:3.0
+A:
+Answer: 3.0
+
+Example 213:
+Question: What is the result of the following arithmetic operations?:multiply 20 to 3,
+ choice:120 km
+ choice:60 km
+ choice:150 km
+ choice:100 km
+ choice:200 km
+A:
+Answer: 60 km
+
+Example 214:
+Question: What is the result of the following arithmetic operations?:divide 21 by 30, multiply 60 by the result. subtract result from 60.
+ choice:15
+ choice:18
+ choice:16
+ choice:12
+ choice:17
+A:
+Answer: 18
+
+Example 215:
+Question: What is the result of the following arithmetic operations?:subtract 16 from 20,  divide result by 20,
+ choice:1 / 17
+ choice:4 / 20
+ choice:3 / 10
+ choice:1 / 10
+ choice:3 / 17
+A:
+Answer: 4 / 20
+
+Example 216:
+Question: What is the result of the following arithmetic operations?:add 3 to 4, add 2 to 3, and then add both. add result to 2,
+ choice:14
+ choice:17
+ choice:15
+ choice:13
+ choice:16
+A:
+Answer: 14
+
+Example 217:
+Question: What is the result of the following arithmetic operations?:divide 1 by 5, divide 1 by 6, and then subtract both. divide 1 by the result.
+ choice:4.5 hrs
+ choice:7.2 hrs
+ choice:5 hrs
+ choice:30 hrs
+ choice:6.5 hrs
+A:
+Answer: 30 hrs
+
+Example 218:
+Question: What is the result of the following arithmetic operations?:subtract 48 from 64,  divide result by 64, multiply result by 100,
+ choice:25 %
+ choice:52 %
+ choice:32 %
+ choice:16 %
+ choice:40 %
+A:
+Answer: 25 %
+
+Example 219:
+Question: What is the result of the following arithmetic operations?:divide 15 by 2, multiply result by 16,
+ choice:105
+ choice:80
+ choice:110
+ choice:100
+ choice:120
+A:
+Answer: 120
+
+Example 220:
+Question: What is the result of the following arithmetic operations?:divide 10 by 100, add 1 to the result. divide 11 by the result.
+ choice:15
+ choice:30
+ choice:20
+ choice:10
+ choice:25
+A:
+Answer: 10
+
+Example 221:
+Question: What is the result of the following arithmetic operations?:divide 450 by 3, divide 300 by 4, and then divide both.
+ choice:5 / 3
+ choice:8 / 5
+ choice:5 / 8
+ choice:2 / 1
+ choice:8 / 3
+A:
+Answer: 2 / 1
+
+Example 222:
+Question: What is the result of the following arithmetic operations?:multiply 18 to 30, divide result by 15,
+ choice:22 days
+ choice:36 days
+ choice:23 days
+ choice:20 days
+ choice:29 days
+A:
+Answer: 36 days
+
+Example 223:
+Question: What is the result of the following arithmetic operations?:subtract 60 from 120,  divide result by 60, multiply result by 100,
+ choice:16 %
+ choice:17.61 %
+ choice:17 %
+ choice:100 %
+ choice:17.56 %
+A:
+Answer: 100 %
+
+Example 224:
+Question: What is the result of the following arithmetic operations?:multiply 40 to 6, subtract 10 from 40,  and then divide both.
+ choice:20
+ choice:8
+ choice:25
+ choice:10
+ choice:60
+A:
+Answer: 8
+
+Example 225:
+Question: What is the result of the following arithmetic operations?:divide 7 by 8, multiply result by 40,
+ choice:35
+ choice:54
+ choice:45
+ choice:25
+ choice:52
+A:
+Answer: 35
+
+Example 226:
+Question: What is the result of the following arithmetic operations?:divide 870 by 10,
+ choice:85
+ choice:88
+ choice:86
+ choice:84
+ choice:87
+A:
+Answer: 87
+
+Example 227:
+Question: What is the result of the following arithmetic operations?:subtract 1 from 10,  divide 18 by the result.
+ choice:2
+ choice:9
+ choice:6
+ choice:1
+ choice:8
+A:
+Answer: 2
+
+Example 228:
+Question: What is the result of the following arithmetic operations?:add 594 to 581, add 20 to 27, and then divide both.
+ choice:21
+ choice:28
+ choice:25
+ choice:18
+ choice:27
+A:
+Answer: 25
+
+Example 229:
+Question: What is the result of the following arithmetic operations?:add 200 to 250, divide result by 2,
+ choice:150
+ choice:50
+ choice:200
+ choice:115
+ choice:225
+A:
+Answer: 225
+
+Example 230:
+Question: What is the result of the following arithmetic operations?:multiply 1000 to 80, divide result by 100, divide result by 100, multiply result by 10,
+ choice:110 %
+ choice:80 %
+ choice:40 %
+ choice:100 %
+ choice:60 %
+A:
+Answer: 80 %
+
+Example 231:
+Question: What is the result of the following arithmetic operations?:add 140 to 360, multiply 1000 to 72, divide result by 3600, and then divide both.
+ choice:26 seconds
+ choice:97 seconds
+ choice:46 seconds
+ choice:25 seconds
+ choice:65 seconds
+A:
+Answer: 25 seconds
+
+Example 232:
+Question: What is the result of the following arithmetic operations?:subtract 50 from 100,  subtract 50 from 55,  and then divide both. subtract 1 from result,
+ choice:6
+ choice:9
+ choice:7
+ choice:10
+ choice:8
+A:
+Answer: 9
+
+Example 233:
+Question: What is the result of the following arithmetic operations?:subtract 55 from 50,  subtract 60 from 50,  and then divide both.
+ choice:1 / 4
+ choice:3 / 4
+ choice:1 / 2
+ choice:2 / 5
+A:
+Answer: 1 / 2
+
+Example 234:
+Question: What is the result of the following arithmetic operations?:multiply 1000 to 45, divide result by 3600, multiply result by 30, subtract 100 from result,
+ choice:245
+ choice:375
+ choice:275
+ choice:225
+ choice:325
+A:
+Answer: 275
+
+Example 235:
+Question: What is the result of the following arithmetic operations?:divide 3 by 4, multiply 4 by the result. divide result by 12,
+ choice:1 / 3
+ choice:1 / 6
+ choice:1 / 4
+ choice:1 / 2
+ choice:1 / 5
+A:
+Answer: 1 / 4
+
+Example 236:
+Question: What is the result of the following arithmetic operations?:subtract 32 from 112,  multiply result by 6, divide result by 32,
+ choice:15
+ choice:28
+ choice:19
+ choice:11
+ choice:27
+A:
+Answer: 15
+
+Example 237:
+Question: What is the result of the following arithmetic operations?:divide 40 by 2, divide result by 11, divide 40 by the result.
+ choice:15
+ choice:33
+ choice:18
+ choice:14
+ choice:22
+A:
+Answer: 22
+
+Example 238:
+Question: What is the result of the following arithmetic operations?:divide 0.25 by 100, divide 0.04 by the result.
+ choice:16
+ choice:20
+ choice:17
+ choice:12
+ choice:18
+A:
+Answer: 16
+
+Example 239:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 4, subtract result from 9.
+ choice:733
+ choice:$ 13
+ choice:416
+ choice:$ 1
+ choice:796
+ choice:$ 20
+ choice:333
+ choice:$ 3
+ choice:466
+A:
+Answer: $ 1
+
+Example 240:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 3, multiply result by 3,
+ choice:12
+ choice:6
+ choice:18
+ choice:10
+ choice:4
+A:
+Answer: 18
+
+Example 241:
+Question: What is the result of the following arithmetic operations?:divide 6 by 100, add 1 to the result. divide 159 by the result.
+ choice:150 cm
+ choice:170 cm
+ choice:140 cm
+ choice:160 cm
+A:
+Answer: 150 cm
+
+Example 242:
+Question: What is the result of the following arithmetic operations?:divide 12 by 2, multiply 360 by the result. multiply 1000 to 1.44, and then subtract both.
+ choice:$ 24 million
+ choice:$ 720 million
+ choice:$ 540 million
+ choice:$ 120 million
+ choice:$ 644 million
+A:
+Answer: $ 720 million
+
+Example 243:
+Question: What is the result of the following arithmetic operations?:subtract 5 from 11,  divide result by 2, add 11 to the result. add result to 4,
+ choice:18
+ choice:30
+ choice:21
+ choice:16
+ choice:26
+A:
+Answer: 18
+
+Example 244:
+Question: What is the result of the following arithmetic operations?:subtract 10 from 1000,  divide result by 100,
+ choice:3.2
+ choice:9.9
+ choice:5.5
+ choice:2
+ choice:6.5
+A:
+Answer: 9.9
+
+Example 245:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 3, divide 1.8 by 100, and then multiply both. multiply result by 1000,
+ choice:12 kg
+ choice:none
+ choice:60 kg
+ choice:108 kg
+ choice:96 kg
+A:
+Answer: 108 kg
+
+Example 246:
+Question: What is the result of the following arithmetic operations?:divide 1 by 5, divide 1 by 25, and then add both. multiply result by 100,
+ choice:37 1 / 2 %
+ choice:75 %
+ choice:6 %
+ choice:24 %
+ choice:60 %
+A:
+Answer: 24 %
+
+Example 247:
+Question: What is the result of the following arithmetic operations?:multiply 20 to 2, subtract result from 90. add result to 2,
+ choice:39
+ choice:52
+ choice:42
+ choice:37
+ choice:43
+A:
+Answer: 52
+
+Example 248:
+Question: What is the result of the following arithmetic operations?:divide 3600 by 10, divide 162 by the result. multiply result by 100,
+ choice:25 %
+ choice:72 %
+ choice:30 %
+ choice:20 %
+ choice:45 %
+A:
+Answer: 45 %
+
+Example 249:
+Question: What is the result of the following arithmetic operations?:divide 64 by 4, divide result by 2,
+ choice:16
+ choice:8
+ choice:24
+ choice:0
+ choice:4
+A:
+Answer: 8
+
+Example 250:
+Question: What is the result of the following arithmetic operations?:subtract 30 from 70,  add 30 to 70, and then divide both. multiply result by 100,
+ choice:2.5 %
+ choice:5 %
+ choice:25 %
+ choice:15 %
+ choice:40 %
+A:
+Answer: 40 %
+
+Example 251:
+Question: What is the result of the following arithmetic operations?:multiply 100 to 0.09, multiply 100 to 0.8, and then divide both.
+ choice:20 : 3
+ choice:none
+ choice:3 : 4
+ choice:2 : 3
+ choice:9 : 80
+A:
+Answer: 9 : 80
+
+Example 252:
+Question: What is the result of the following arithmetic operations?:multiply 1 to 12,
+ choice:$ 16
+ choice:$ 8
+ choice:$ 4
+ choice:$ 12
+ choice:$ 432
+A:
+Answer: $ 12
+
+Example 253:
+Question: What is the result of the following arithmetic operations?:add 1 to 9, add 3 to 2, and then add both.
+ choice:16
+ choice:19
+ choice:17
+ choice:15
+ choice:18
+A:
+Answer: 15
+
+Example 254:
+Question: What is the result of the following arithmetic operations?:multiply 10 to 16, divide result by 40,
+ choice:4
+ choice:7
+ choice:5
+ choice:10
+ choice:6
+A:
+Answer: 4
+
+Example 255:
+Question: What is the result of the following arithmetic operations?:subtract 1 from 26,  divide 600 by the result.
+ choice:12
+ choice:8
+ choice:16
+ choice:10
+ choice:24
+A:
+Answer: 24
+
+Example 256:
+Question: What is the result of the following arithmetic operations?:add 3 to 2, multiply result by 2,
+ choice:' 5'
+ choice:[' 2'
+ choice:' 6'
+ choice:' 10']
+ choice:' 7'
+A:
+Answer: ' 10']
+
+Example 257:
+Question: What is the result of the following arithmetic operations?:divide 10 by 100, add 1 to the result. multiply result by 100, divide 660 by the result.
+ choice:110
+ choice:60
+ choice:6
+ choice:100
+ choice:6.6
+A:
+Answer: 6
+
+Example 258:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 24, divide 24 by 2, and then multiply both.
+ choice:573
+ choice:576
+ choice:574
+ choice:572
+ choice:575
+A:
+Answer: 576
+
+Example 259:
+Question: What is the result of the following arithmetic operations?:divide 72 by 3, multiply result by 100,
+ choice:2100
+ choice:2400
+ choice:2200
+ choice:2000
+ choice:2300
+A:
+Answer: 2400
+
+Example 260:
+Question: What is the result of the following arithmetic operations?:subtract 2 from 3,  divide 21 by the result. subtract 2 from result,
+ choice:16 hrs
+ choice:19 hrs
+ choice:17 hrs
+ choice:15 hrs
+ choice:18 hrs
+A:
+Answer: 19 hrs
+
+Example 261:
+Question: What is the result of the following arithmetic operations?:multiply 4 to 3, divide 180 by the result. multiply result by 3,
+ choice:20
+ choice:none
+ choice:45
+ choice:15
+ choice:60
+A:
+Answer: 45
+
+Example 262:
+Question: What is the result of the following arithmetic operations?:multiply 3 to 48, divide result by 20, multiply result by 30,
+ choice:216
+ choice:72
+ choice:400
+ choice:144
+ choice:63
+A:
+Answer: 216
+
+Example 263:
+Question: What is the result of the following arithmetic operations?:subtract 300 from 420,  divide result by 300, multiply result by 100,
+ choice:20 %
+ choice:60 %
+ choice:40 %
+ choice:10 %
+ choice:50 %
+A:
+Answer: 40 %
+
+Example 264:
+Question: What is the result of the following arithmetic operations?:add 60 to 120, add 1 to 4, and then divide both.
+ choice:36
+ choice:44
+ choice:40
+ choice:35
+ choice:42
+A:
+Answer: 36
+
+Example 265:
+Question: What is the result of the following arithmetic operations?:divide 130 by 10, divide 75 by 15, and then subtract both. divide result by 2,
+ choice:3.5
+ choice:8
+ choice:4
+ choice:3
+ choice:5
+A:
+Answer: 4
+
+Example 266:
+Question: What is the result of the following arithmetic operations?:multiply 5 to 3, divide 210 by the result.
+ choice:2 rs
+ choice:9 rs
+ choice:4 rs
+ choice:14 rs
+ choice:6 rs
+A:
+Answer: 14 rs
+
+Example 267:
+Question: What is the result of the following arithmetic operations?:divide 2 by 5, multiply result by 5, add result to 5,
+ choice:11 days
+ choice:9 days
+ choice:7 days
+ choice:10 days
+ choice:8 days
+A:
+Answer: 7 days
+
+Example 268:
+Question: What is the result of the following arithmetic operations?:subtract 64 from 75,  divide 80 by 100, subtract result from 1. and then divide both.
+ choice:30
+ choice:55
+ choice:35
+ choice:20
+ choice:40
+A:
+Answer: 55
+
+Example 269:
+Question: What is the result of the following arithmetic operations?:subtract 112 from 120,  multiply 2 by the result. divide result by 112, divide 112 by the result.
+ choice:1200
+ choice:784
+ choice:1440
+ choice:1080
+ choice:600
+A:
+Answer: 784
+
+Example 270:
+Question: What is the result of the following arithmetic operations?:multiply 35 to 120,
+ choice:3800
+ choice:5200
+ choice:4200
+ choice:3400
+ choice:4500
+A:
+Answer: 4200
+
+Example 271:
+Question: What is the result of the following arithmetic operations?:divide 127 by 2.54, divide 35 by 3.5, and then multiply both.
+ choice:515
+ choice:535
+ choice:525
+ choice:500
+ choice:530
+A:
+Answer: 500
+
+Example 272:
+Question: What is the result of the following arithmetic operations?:multiply 9999 to 586645,
+ choice:4865863355
+ choice:none of these
+ choice:5665863355
+ choice:4665863355
+ choice:5865863355
+A:
+Answer: 5865863355
+
+Example 273:
+Question: What is the result of the following arithmetic operations?:subtract 2.5 from 21,  subtract 2.5 from result,
+ choice:16
+ choice:40
+ choice:20
+ choice:10
+ choice:30
+A:
+Answer: 16
+
+Example 274:
+Question: What is the result of the following arithmetic operations?:multiply 30 to 20, subtract 20 from 30,  and then divide both.
+ choice:50
+ choice:none of these
+ choice:54
+ choice:40
+ choice:60
+A:
+Answer: 60
+
+Example 275:
+Question: What is the result of the following arithmetic operations?:multiply 4 to 4, subtract 2 from result, multiply result by 2, add result to 2080,
+ choice:1945
+ choice:2108
+ choice:1955
+ choice:1935
+ choice:2105
+A:
+Answer: 2108
+
+Example 276:
+Question: What is the result of the following arithmetic operations?:multiply 49 to 100, subtract 2 from 100,  and then divide both.
+ choice:49 kg
+ choice:none
+ choice:50 kg
+ choice:48 kg
+ choice:51 kg
+A:
+Answer: 50 kg
+
+Example 277:
+Question: What is the result of the following arithmetic operations?:subtract 25 from 100,  divide 30 by the result. subtract result from 1. multiply result by 100,
+ choice:42 %
+ choice:84 %
+ choice:60 %
+ choice:20 %
+ choice:80 %
+A:
+Answer: 60 %
+
+Example 278:
+Question: What is the result of the following arithmetic operations?:multiply 2 to 10, add result to 1,
+ choice:22
+ choice:9
+ choice:8
+ choice:21
+ choice:81
+A:
+Answer: 21
+
+Example 279:
+Question: What is the result of the following arithmetic operations?:subtract 5 from 8,  subtract 8 from 10,  and then divide both.
+ choice:3 : 1
+ choice:5 : 2
+ choice:3 : 2
+ choice:1 : 2
+ choice:4 : 3
+A:
+Answer: 3 : 2
+
+Example 280:
+Question: What is the result of the following arithmetic operations?:multiply 3 to 4, divide result by 5,
+ choice:4 : 3
+ choice:9 : 5
+ choice:9 : 1
+ choice:12 : 5
+ choice:9 : 2
+A:
+Answer: 12 : 5
+
+Example 281:
+Question: What is the result of the following arithmetic operations?:multiply 4 to 10, divide result by 2, add 5 to 10, and then add both.
+ choice:20 %
+ choice:can not be determined
+ choice:21 %
+ choice:18 %
+ choice:35 %
+A:
+Answer: 35 %
+
+Example 282:
+Question: What is the result of the following arithmetic operations?:add 22 to 41, subtract 9 from result, subtract result from 60.
+ choice:24
+ choice:6
+ choice:33
+ choice:15
+ choice:54
+A:
+Answer: 6
+
+Example 283:
+Question: What is the result of the following arithmetic operations?:subtract 5 from 116,  divide result by 3, subtract result from 116.
+ choice:77
+ choice:80
+ choice:78
+ choice:76
+ choice:79
+A:
+Answer: 79
+
+Example 284:
+Question: What is the result of the following arithmetic operations?:divide 390 by 1000, add 2 to 25, and then divide both. multiply 3600 by the result.
+ choice:32 sec
+ choice:52 sec
+ choice:36 sec
+ choice:30 sec
+ choice:38 sec
+A:
+Answer: 52 sec
+
+Example 285:
+Question: What is the result of the following arithmetic operations?:subtract 10 from 25,  subtract 25 from 30,  and then divide both. multiply result by 250,
+ choice:400
+ choice:750
+ choice:480
+ choice:250 / 3
+ choice:600
+A:
+Answer: 750
+
+Example 286:
+Question: What is the result of the following arithmetic operations?:divide 100 by 12, divide 9 by 100, multiply result by 20, and then multiply both.
+ choice:15
+ choice:61
+ choice:17
+ choice:14
+ choice:18
+A:
+Answer: 15
+
+Example 287:
+Question: What is the result of the following arithmetic operations?:divide 224 by 32, multiply result by 28, subtract result from 224.
+ choice:23 metre
+ choice:38 metre
+ choice:15 metre
+ choice:28 metre
+A:
+Answer: 28 metre
+
+Example 288:
+Question: What is the result of the following arithmetic operations?:add 1 to 18,
+ choice:16
+ choice:19
+ choice:17
+ choice:11
+ choice:18
+A:
+Answer: 19
+
+Example 289:
+Question: What is the result of the following arithmetic operations?:add 43 to 55, subtract 61 from result, subtract result from 100.
+ choice:61
+ choice:64
+ choice:62
+ choice:60
+ choice:63
+A:
+Answer: 63
+
+Example 290:
+Question: What is the result of the following arithmetic operations?:multiply 3 to 10, subtract 1 from 3,  and then divide both.
+ choice:13
+ choice:16
+ choice:14
+ choice:12
+ choice:15
+A:
+Answer: 15
+
+Example 291:
+Question: What is the result of the following arithmetic operations?:add 88 to 110, divide result by 2,
+ choice:110 mph
+ choice:99 mph
+ choice:198 mph
+ choice:100 mph
+ choice:88 mph
+A:
+Answer: 99 mph
+
+Example 292:
+Question: What is the result of the following arithmetic operations?:divide 90 by 2, multiply result by 3,
+ choice:120 seconds
+ choice:90 seconds
+ choice:135 seconds
+ choice:100 seconds
+ choice:70 seconds
+A:
+Answer: 135 seconds
+
+Example 293:
+Question: What is the result of the following arithmetic operations?:divide 10000 by 80, subtract 7 from result,
+ choice:22
+ choice:90
+ choice:42
+ choice:118
+ choice:88
+A:
+Answer: 118
+
+Example 294:
+Question: What is the result of the following arithmetic operations?:subtract 3 from 8,  subtract 1 from result,
+ choice:4
+ choice:7
+ choice:5
+ choice:3
+ choice:6
+A:
+Answer: 4
+
+Example 295:
+Question: What is the result of the following arithmetic operations?:divide 1 by 2, multiply 2 by the result.
+ choice:1 / 2
+ choice:5 / 2
+ choice:2
+ choice:1
+ choice:4
+A:
+Answer: 1
+
+Example 296:
+Question: What is the result of the following arithmetic operations?:add 1 to 9,
+ choice:11
+ choice:9
+ choice:12
+ choice:10
+ choice:13
+A:
+Answer: 10
+
+Example 297:
+Question: What is the result of the following arithmetic operations?:divide 8 by 15, multiply result by 15000, subtract result from 15000.
+ choice:7000
+ choice:7003
+ choice:7001
+ choice:6999
+ choice:7002
+A:
+Answer: 7000
+
+Example 298:
+Question: What is the result of the following arithmetic operations?:multiply 5 to 8, add result to 35,
+ choice:110 kg
+ choice:85 kg
+ choice:75 kg
+ choice:100 kg
+ choice:80 kg
+A:
+Answer: 75 kg
+
+Example 299:
+Question: What is the result of the following arithmetic operations?:divide 100 by 2,
+ choice:40
+ choice:none
+ choice:50
+ choice:39
+ choice:54
+A:
+Answer: 50
+
+Example 300:
+Question: What is the result of the following arithmetic operations?:multiply 10 to 2, add 10 to 12, and then add both.
+ choice:37
+ choice:42
+ choice:39
+ choice:35
+ choice:41
+A:
+Answer: 42
+
+Learn from the given examples and answer the question.

@@ -40,11 +40,11 @@ from datasets import load_dataset as hf_load_dataset
 # HF_DATASET_NAME = "google/boolq"
 # HF_TASK_NAME = None
 
-HF_DATASET_NAME = "google/boolq"      # oder "google/boolq"
-HF_TASK_NAME = None   # oder None für boolq
+HF_DATASET_NAME = "tasksource/bigbench"      # oder "google/boolq"
+HF_TASK_NAME = "social_iqa"   # oder None für boolq
 
 HF_SPLIT = "train"                           # z.B. "train", "validation", "test"
-NUM_EXAMPLES = 200                           # gewünschte Anzahl Beispiele
+NUM_EXAMPLES = 300                           # gewünschte Anzahl Beispiele
 
 OUTPUT_DIR = Path("generated_datasets")
 

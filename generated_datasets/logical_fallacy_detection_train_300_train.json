@@ -1,0 +1,5102 @@
+[
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Victoria is more sensible than Rossi. Jim is more sensible than Victoria. Therefore victoria is less sensible than Jim.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Victoria is more sensible than Rossi. Jim is more sensible than Victoria. Therefore victoria is less sensible than Jim.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 0
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The last train leaves soon, and you said you didn't want to miss it, so you should head out shortly.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The last train leaves soon, and you said you didn't want to miss it, so you should head out shortly.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 1
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All flionsoes are shipotoes. Some flionsoes are looncans. Therefore some looncans are shipotoes.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All flionsoes are shipotoes. Some flionsoes are looncans. Therefore some looncans are shipotoes.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 2
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All dewfays are polinks. All thrastles are dewfays. Therefore all thrastles are polinks.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All dewfays are polinks. All thrastles are dewfays. Therefore all thrastles are polinks.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 3
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some airplanes are not harlequins. All programmers are airplanes. Therefore all programmers are harlequins.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some airplanes are not harlequins. All programmers are airplanes. Therefore all programmers are harlequins.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 4
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some goblins are uncles. All goblins are actors. Therefore some actors are uncles.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some goblins are uncles. All goblins are actors. Therefore some actors are uncles.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 5
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Mexican food is heavy on spice, so if you want something plainer, you might try English cuisine instead.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Mexican food is heavy on spice, so if you want something plainer, you might try English cuisine instead.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 6
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reptilians are adults. Some reptilians are places. Therefore some places are adults.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reptilians are adults. Some reptilians are places. Therefore some places are adults.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 7
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some brongs are hendassas. Some fluffsters are not brongs. Therefore all fluffsters are hendassas.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some brongs are hendassas. Some fluffsters are not brongs. Therefore all fluffsters are hendassas.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 8
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You can't prove he's innocent, so he must be guilty.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You can't prove he's innocent, so he must be guilty.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 9
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some ocirs are not gerants. All onamas are ocirs. Therefore all onamas are gerants.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some ocirs are not gerants. All onamas are ocirs. Therefore all onamas are gerants.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 10
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Carol is wittier than Joanna. Bill is wittier than Kevin. Joanna is less witty than Kevin. Therefore joanna is wittier than Bill.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Carol is wittier than Joanna. Bill is wittier than Kevin. Joanna is less witty than Kevin. Therefore joanna is wittier than Bill.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 11
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No candlestick makers are teachers. Some mushrooms are teachers. Therefore some mushrooms are not candlestick makers.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No candlestick makers are teachers. Some mushrooms are teachers. Therefore some mushrooms are not candlestick makers.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 12
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some slozzoms are not exastoes. Some slozzoms are not gryllows. Therefore some gryllows are exastoes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some slozzoms are not exastoes. Some slozzoms are not gryllows. Therefore some gryllows are exastoes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 13
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Laura is less frank than Carol. Laura is less frank than Kim. Mario is less frank than Laura. Anne is less frank than Laura. Therefore carol is more frank than Laura.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Laura is less frank than Carol. Laura is less frank than Kim. Mario is less frank than Laura. Anne is less frank than Laura. Therefore carol is more frank than Laura.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 14
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Chinese culture is very old; that's why it's so sophisticated.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Chinese culture is very old; that's why it's so sophisticated.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 15
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. France has the lowest rate of heart disease in Europe. So being French protects against heart disease.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. France has the lowest rate of heart disease in Europe. So being French protects against heart disease.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 16
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Candice is less frank than Philipp. Tom is more frank than Philipp. Therefore philipp is more frank than Tom.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Candice is less frank than Philipp. Tom is more frank than Philipp. Therefore philipp is more frank than Tom.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 17
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some dolphins are not cyborgs. All dolphins are rockets. Therefore some rockets are not cyborgs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some dolphins are not cyborgs. All dolphins are rockets. Therefore some rockets are not cyborgs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 18
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All glontoms are refluppers. No refluppers are gaxes. Therefore no gaxes are glontoms.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All glontoms are refluppers. No refluppers are gaxes. Therefore no gaxes are glontoms.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 19
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some fruit flies are not actresses. Some fruit flies are not monkeys. Therefore some monkeys are not actresses.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some fruit flies are not actresses. Some fruit flies are not monkeys. Therefore some monkeys are not actresses.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 20
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Anne is more frank than Jennifer. Anne is more frank than Jones. Jennifer is more frank than Anna. Therefore anne is more frank than Anna.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Anne is more frank than Jennifer. Anne is more frank than Jones. Jennifer is more frank than Anna. Therefore anne is more frank than Anna.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 21
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All vampires are capitols. Some sheep dogs are vampires. Therefore some sheep dogs are capitols.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All vampires are capitols. Some sheep dogs are vampires. Therefore some sheep dogs are capitols.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 22
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No zestponts are sypholoes. All unfabrans are sypholoes. Therefore no unfabrans are zestponts.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No zestponts are sypholoes. All unfabrans are sypholoes. Therefore no unfabrans are zestponts.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 23
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. William is less reliable than Laura. Bill is less reliable than Cecilia. Sean is less reliable than Aiden. Aiden is less reliable than Laura. Therefore aiden is more reliable than Laura.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. William is less reliable than Laura. Bill is less reliable than Cecilia. Sean is less reliable than Aiden. Aiden is less reliable than Laura. Therefore aiden is more reliable than Laura.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 24
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All U.F.O.s are heroines. No teachers are heroines. Therefore no teachers are U.F.O.s.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All U.F.O.s are heroines. No teachers are heroines. Therefore no teachers are U.F.O.s.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 25
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No spewsies are builithes. All winnibler are builithes. Therefore no winnibler are spewsies.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No spewsies are builithes. All winnibler are builithes. Therefore no winnibler are spewsies.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 26
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some aliens are not capitols. All aliens are lassies. Therefore some lassies are not capitols.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some aliens are not capitols. All aliens are lassies. Therefore some lassies are not capitols.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 27
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All fruit flies are jesters. Some auditoriums are not jesters. Therefore some auditoriums are not fruit flies.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All fruit flies are jesters. Some auditoriums are not jesters. Therefore some auditoriums are not fruit flies.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 28
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All snakes are arachnids. All arachnids are cubs. Therefore some cubs are not snakes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All snakes are arachnids. All arachnids are cubs. Therefore some cubs are not snakes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 29
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The politician won the popular vote, so they must be the best candidate.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The politician won the popular vote, so they must be the best candidate.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 30
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Nat is taller than Aiden. Jennifer is taller than Jill. Jill is taller than Nat. Sara is taller than Nat. Therefore jennifer is taller than Aiden.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Nat is taller than Aiden. Jennifer is taller than Jill. Jill is taller than Nat. Sara is taller than Nat. Therefore jennifer is taller than Aiden.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 31
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tuna are capitols. Some capitols are toves. Therefore some toves are tuna.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tuna are capitols. Some capitols are toves. Therefore some toves are tuna.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 32
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Referees are supposed to be neutral. The referee is from Switzerland, a neutral country, so he must be neutral.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Referees are supposed to be neutral. The referee is from Switzerland, a neutral country, so he must be neutral.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 33
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is more reliable than Sarah. Moses is less reliable than David. Tom is more reliable than Sarah. Therefore moses is more reliable than Sarah.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is more reliable than Sarah. Moses is less reliable than David. Tom is more reliable than Sarah. Therefore moses is more reliable than Sarah.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 34
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is slower than Rossi. Sam is faster than Rossi. John is slower than Dylan. Therefore rossi is faster than John.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is slower than Rossi. Sam is faster than Rossi. John is slower than Dylan. Therefore rossi is faster than John.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 35
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No shizzoes are zestponts. All benessits are shizzoes. Therefore no benessits are zestponts.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No shizzoes are zestponts. All benessits are shizzoes. Therefore no benessits are zestponts.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 36
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You said human rights are important, so clearly you don't care about animals.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You said human rights are important, so clearly you don't care about animals.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 37
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some guys are owls. All owls are lion tamers. Therefore some lion tamers are guys.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some guys are owls. All owls are lion tamers. Therefore some lion tamers are guys.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 38
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some pentwests are hildaids. All hildaids are fluffsters. Therefore some fluffsters are pentwests.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some pentwests are hildaids. All hildaids are fluffsters. Therefore some fluffsters are pentwests.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 39
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Modern food is sweeter and saltier than natural food, so it can't be healthy.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Modern food is sweeter and saltier than natural food, so it can't be healthy.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 40
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No smurtans are novalies. Some bliggingtoms are not novalies. Therefore no bliggingtoms are smurtans.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No smurtans are novalies. Some bliggingtoms are not novalies. Therefore no bliggingtoms are smurtans.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 41
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some relatives are brunettes. Some jokers are not relatives. Therefore all jokers are brunettes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some relatives are brunettes. Some jokers are not relatives. Therefore all jokers are brunettes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 42
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No clowns are androids. Some clowns are pets. Therefore all pets are androids.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No clowns are androids. Some clowns are pets. Therefore all pets are androids.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 43
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All brewtines are looplats. Some yoffas are not looplats. Therefore some yoffas are not brewtines.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All brewtines are looplats. Some yoffas are not looplats. Therefore some yoffas are not brewtines.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 44
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Alex is more reliable than Moses. Moses is more reliable than Anne. Therefore alex is less reliable than Moses.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Alex is more reliable than Moses. Moses is more reliable than Anne. Therefore alex is less reliable than Moses.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 45
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some shraiwels are not rigglays. All shraiwels are goyances. Therefore some goyances are not rigglays.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some shraiwels are not rigglays. All shraiwels are goyances. Therefore some goyances are not rigglays.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 46
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You're telling me not to start smoking, but you smoke yourself, so I shouldn't listen to your advice.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You're telling me not to start smoking, but you smoke yourself, so I shouldn't listen to your advice.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 47
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reggabreas are proppors. Some novalies are not proppors. Therefore some novalies are not reggabreas.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reggabreas are proppors. Some novalies are not proppors. Therefore some novalies are not reggabreas.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 48
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some primates are not bedrooms. All primates are nephews. Therefore some nephews are bedrooms.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some primates are not bedrooms. All primates are nephews. Therefore some nephews are bedrooms.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 49
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No brewtines are slozzoms. All dorchies are slozzoms. Therefore no dorchies are brewtines.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No brewtines are slozzoms. All dorchies are slozzoms. Therefore no dorchies are brewtines.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 50
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All refluppers are shipotoes. Some sebusses are refluppers. Therefore some sebusses are shipotoes.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All refluppers are shipotoes. Some sebusses are refluppers. Therefore some sebusses are shipotoes.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 51
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All gaxes are werradiths. No houtals are werradiths. Therefore no houtals are gaxes.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All gaxes are werradiths. No houtals are werradiths. Therefore no houtals are gaxes.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 52
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You should trust this philosophical theory because it's brand new.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You should trust this philosophical theory because it's brand new.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 53
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Anna is wittier than Jill. Jill is less witty than Dylan. Anna is less witty than Peter. Anna is less witty than Bill. Therefore peter is wittier than Jill.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Anna is wittier than Jill. Jill is less witty than Dylan. Anna is less witty than Peter. Anna is less witty than Bill. Therefore peter is wittier than Jill.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 54
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Lara is shorter than Henry. Debbie is shorter than Rossi. Henry is shorter than Carol. Therefore carol is taller than Henry.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Lara is shorter than Henry. Debbie is shorter than Rossi. Henry is shorter than Carol. Therefore carol is taller than Henry.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 55
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Border collies require a lot of exercise, so if you're unable to take them for regular walks, you might be better off getting a different sort of pet.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Border collies require a lot of exercise, so if you're unable to take them for regular walks, you might be better off getting a different sort of pet.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 56
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some programmers are canines. No programmers are tumtum trees. Therefore some tumtum trees are canines.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some programmers are canines. No programmers are tumtum trees. Therefore some tumtum trees are canines.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 57
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Sophia is kinder than Nat. Mary is less kind than Paul. Mary is kinder than Nat. Therefore paul is kinder than Nat.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Sophia is kinder than Nat. Mary is less kind than Paul. Mary is kinder than Nat. Therefore paul is kinder than Nat.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 58
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some rodrups are sagirds. All rodrups are tingforms. Therefore some tingforms are sagirds.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some rodrups are sagirds. All rodrups are tingforms. Therefore some tingforms are sagirds.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 59
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All heros are musicians. No musicians are aunts. Therefore no aunts are heros.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All heros are musicians. No musicians are aunts. Therefore no aunts are heros.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 60
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some rigglays are sevvits. All rigglays are spequals. Therefore some spequals are not sevvits.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some rigglays are sevvits. All rigglays are spequals. Therefore some spequals are not sevvits.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 61
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some bees are not cats. No cats are spoons. Therefore all spoons are bees.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some bees are not cats. No cats are spoons. Therefore all spoons are bees.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 62
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All venusians are knights. No venusians are minors. Therefore some minors are not knights.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All venusians are knights. No venusians are minors. Therefore some minors are not knights.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 63
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Mary is less ambitious than Anna. Mary is more ambitious than Sophia. Therefore mary is less ambitious than Sophia.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Mary is less ambitious than Anna. Mary is more ambitious than Sophia. Therefore mary is less ambitious than Sophia.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 64
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some surogous are not mizules. No werradiths are surogous. Therefore all werradiths are mizules.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some surogous are not mizules. No werradiths are surogous. Therefore all werradiths are mizules.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 65
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Mary is kinder than Lara. Rossi is kinder than Charlotte. Lara is kinder than Susan. Therefore susan is kinder than Lara.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Mary is kinder than Lara. Rossi is kinder than Charlotte. Lara is kinder than Susan. Therefore susan is kinder than Lara.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 66
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No brongs are mincoms. All nalpures are mincoms. Therefore no nalpures are brongs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No brongs are mincoms. All nalpures are mincoms. Therefore no nalpures are brongs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 67
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some nurses are animals. No scouts are animals. Therefore some scouts are nurses.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some nurses are animals. No scouts are animals. Therefore some scouts are nurses.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 68
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No caimats are khavvins. Some khavvins are yudalouds. Therefore some yudalouds are not caimats.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No caimats are khavvins. Some khavvins are yudalouds. Therefore some yudalouds are not caimats.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 69
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All bats are ships. Some ships are not fruit flies. Therefore some fruit flies are not bats.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All bats are ships. Some ships are not fruit flies. Therefore some fruit flies are not bats.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 70
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Seasonal depression is worst in November. Next month is December, so it might be a bad month for Seasonal Depression.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Seasonal depression is worst in November. Next month is December, so it might be a bad month for Seasonal Depression.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 71
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some farklings are not froilets. No froilets are reggabreas. Therefore some reggabreas are not farklings.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some farklings are not froilets. No froilets are reggabreas. Therefore some reggabreas are not farklings.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 72
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore laura is less witty than Kim.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore laura is less witty than Kim.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 73
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No daisies are kitchens. No kitchens are princes. Therefore no princes are daisies.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No daisies are kitchens. No kitchens are princes. Therefore no princes are daisies.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 74
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore david is less witty than Sara.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore david is less witty than Sara.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 75
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No chickens are whales. All nephews are whales. Therefore no nephews are chickens.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No chickens are whales. All nephews are whales. Therefore no nephews are chickens.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 76
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bisdoes are brongs. Some bisdoes are snabeths. Therefore some snabeths are brongs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bisdoes are brongs. Some bisdoes are snabeths. Therefore some snabeths are brongs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 77
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Before buying a new house, it's important to check the key aspects of the property like the foundations.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Before buying a new house, it's important to check the key aspects of the property like the foundations.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 78
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You shouldn't trust Donald's views about politics. He's an alcoholic.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You shouldn't trust Donald's views about politics. He's an alcoholic.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 79
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No horses are nieces. All jokers are horses. Therefore no jokers are nieces.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No horses are nieces. All jokers are horses. Therefore no jokers are nieces.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 80
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tortoises are lads. All clothes are tortoises. Therefore all clothes are lads.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tortoises are lads. All clothes are tortoises. Therefore all clothes are lads.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 81
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All benessits are caimats. Some benessits are lotadils. Therefore some lotadils are caimats.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All benessits are caimats. Some benessits are lotadils. Therefore some lotadils are caimats.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 82
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Amy is faster than Dylan. Charlotte is faster than Amy. Therefore charlotte is slower than Amy.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Amy is faster than Dylan. Charlotte is faster than Amy. Therefore charlotte is slower than Amy.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 83
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All programmers are rooks. All amphibians are programmers. Therefore all amphibians are rooks.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All programmers are rooks. All amphibians are programmers. Therefore all amphibians are rooks.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 84
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Bella is less witty than Amy. Laura is wittier than Edward. Laura is wittier than Amy. Amy is less witty than Anne. Therefore laura is wittier than Bella.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Bella is less witty than Amy. Laura is wittier than Edward. Laura is wittier than Amy. Amy is less witty than Anne. Therefore laura is wittier than Bella.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 85
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Cecilia is shorter than William. William is shorter than Mario. Therefore mario is shorter than William.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Cecilia is shorter than William. William is shorter than Mario. Therefore mario is shorter than William.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 86
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some offices are not capitols. All offices are playwrights. Therefore some playwrights are not capitols.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some offices are not capitols. All offices are playwrights. Therefore some playwrights are not capitols.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 87
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sagirds are nalpures. All nalpures are pardees. Therefore some pardees are sagirds.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sagirds are nalpures. All nalpures are pardees. Therefore some pardees are sagirds.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 88
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No bliggingtoms are natances. All bliggingtoms are noelinds. Therefore no noelinds are natances.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No bliggingtoms are natances. All bliggingtoms are noelinds. Therefore no noelinds are natances.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 89
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sara is taller than Sean. Edward is taller than Sara. Michael is taller than Jack. Anna is taller than Edward. Therefore edward is taller than Sean.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sara is taller than Sean. Edward is taller than Sara. Michael is taller than Jack. Anna is taller than Edward. Therefore edward is taller than Sean.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 90
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No lions are owls. Some owls are lambs. Therefore some lambs are not lions.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No lions are owls. Some owls are lambs. Therefore some lambs are not lions.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 91
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some champions are not asteroids. No champions are jovians. Therefore some jovians are asteroids.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some champions are not asteroids. No champions are jovians. Therefore some jovians are asteroids.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 92
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are not hobgoblins. Some dandelions are hobgoblins. Therefore no dandelions are cowboys.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are not hobgoblins. Some dandelions are hobgoblins. Therefore no dandelions are cowboys.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 93
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No smurtans are shures. Some shipotoes are shures. Therefore some shipotoes are not smurtans.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No smurtans are shures. Some shipotoes are shures. Therefore some shipotoes are not smurtans.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 94
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some cats are not calves. Some cats are not extraterrestrials. Therefore some extraterrestrials are not calves.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some cats are not calves. Some cats are not extraterrestrials. Therefore some extraterrestrials are not calves.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 95
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sebusses are besloors. All bacclas are besloors. Therefore no bacclas are sebusses.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sebusses are besloors. All bacclas are besloors. Therefore no bacclas are sebusses.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 96
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All guys are snarks. No guys are skeptics. Therefore all skeptics are snarks.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All guys are snarks. No guys are skeptics. Therefore all skeptics are snarks.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 97
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are not pens. All pens are guys. Therefore all guys are cowboys.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are not pens. All pens are guys. Therefore all guys are cowboys.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 98
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No dining rooms are vehicles. All nurses are vehicles. Therefore no nurses are dining rooms.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No dining rooms are vehicles. All nurses are vehicles. Therefore no nurses are dining rooms.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 99
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Lara is wittier than Alex. Lara is less witty than Osbert. Therefore alex is wittier than Lara.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Lara is wittier than Alex. Lara is less witty than Osbert. Therefore alex is wittier than Lara.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 100
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All auditoriums are actresses. Some writers are not actresses. Therefore some writers are auditoriums.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All auditoriums are actresses. Some writers are not actresses. Therefore some writers are auditoriums.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 101
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some natances are shipotoes. All shipotoes are ocirammas. Therefore some ocirammas are natances.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some natances are shipotoes. All shipotoes are ocirammas. Therefore some ocirammas are natances.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 102
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sparrows are turtles. Some turtles are students. Therefore some students are not sparrows.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sparrows are turtles. Some turtles are students. Therefore some students are not sparrows.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 103
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Henry is shorter than Michael. Bill is shorter than Henry. Carol is shorter than Bill. Bill is taller than Bella. Therefore bill is shorter than Carol.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Henry is shorter than Michael. Bill is shorter than Henry. Carol is shorter than Bill. Bill is taller than Bella. Therefore bill is shorter than Carol.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 104
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less sensible than Carol. Henry is less sensible than Candice. Candice is less sensible than Jill. Therefore henry is more sensible than Carol.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less sensible than Carol. Henry is less sensible than Candice. Candice is less sensible than Jill. Therefore henry is more sensible than Carol.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 105
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some trealops are didizas. Some didizas are reggabreas. Therefore some reggabreas are not trealops.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some trealops are didizas. Some didizas are reggabreas. Therefore some reggabreas are not trealops.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 106
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Rossi is slower than Jack. Candice is slower than Rossi. Therefore rossi is faster than Candice.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Rossi is slower than Jack. Candice is slower than Rossi. Therefore rossi is faster than Candice.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 107
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some dufizzes are not didizas. No hawkloons are didizas. Therefore all hawkloons are dufizzes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some dufizzes are not didizas. No hawkloons are didizas. Therefore all hawkloons are dufizzes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 108
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Excessive tanning is bad for the skin, so you should wear sunscreen to avoid it.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Excessive tanning is bad for the skin, so you should wear sunscreen to avoid it.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 109
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some lawyers are lion tamers. Some cobras are lawyers. Therefore some cobras are not lion tamers.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some lawyers are lion tamers. Some cobras are lawyers. Therefore some cobras are not lion tamers.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 110
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Michael is older than Jones. Anne is older than Michael. Sam is older than Lara. Jennifer is older than Anne. Therefore jennifer is older than Michael.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Michael is older than Jones. Anne is older than Michael. Sam is older than Lara. Jennifer is older than Anne. Therefore jennifer is older than Michael.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 111
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Michael is shorter than Zach. Dylan is taller than William. William is taller than Michael. Therefore dylan is shorter than Michael.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Michael is shorter than Zach. Dylan is taller than William. William is taller than Michael. Therefore dylan is shorter than Michael.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 112
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All exastoes are flionsoes. All aferrarons are flionsoes. Therefore no aferrarons are exastoes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All exastoes are flionsoes. All aferrarons are flionsoes. Therefore no aferrarons are exastoes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 113
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? That's the kind of injury that requires expert medical treatment, so you should go to the hospital.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? That's the kind of injury that requires expert medical treatment, so you should go to the hospital.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 114
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Bob is slower than Robert. Anne is slower than Vicky. Vicky is slower than Bob. Therefore vicky is slower than Robert.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Bob is slower than Robert. Anne is slower than Vicky. Vicky is slower than Bob. Therefore vicky is slower than Robert.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 115
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No treyples are fluffsters. Some essups are fluffsters. Therefore some essups are not treyples.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No treyples are fluffsters. Some essups are fluffsters. Therefore some essups are not treyples.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 116
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? I have the right to drink beer all day, so it's only right that I drink beer all day.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? I have the right to drink beer all day, so it's only right that I drink beer all day.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 117
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tograshs are shraiwels. Some noxuses are not shraiwels. Therefore some noxuses are not tograshs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tograshs are shraiwels. Some noxuses are not shraiwels. Therefore some noxuses are not tograshs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 118
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some pardees are not shraiwels. Some shraiwels are not tupresses. Therefore some tupresses are not pardees.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some pardees are not shraiwels. Some shraiwels are not tupresses. Therefore some tupresses are not pardees.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 119
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some kitchens are not bakers. Some lassies are bakers. Therefore some lassies are kitchens.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some kitchens are not bakers. Some lassies are bakers. Therefore some lassies are kitchens.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 120
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All nightmares are photographs. All crabs are nightmares. Therefore no crabs are photographs.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All nightmares are photographs. All crabs are nightmares. Therefore no crabs are photographs.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 121
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Joanna is kinder than Michael. Joanna is kinder than Rossi. Michael is less kind than Rossi. Therefore joanna is kinder than Rossi.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Joanna is kinder than Michael. Joanna is kinder than Rossi. Michael is less kind than Rossi. Therefore joanna is kinder than Rossi.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 122
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some polinks are not yudalouds. Some hawkloons are yudalouds. Therefore all hawkloons are polinks.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some polinks are not yudalouds. Some hawkloons are yudalouds. Therefore all hawkloons are polinks.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 123
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? People in my neighbourhood help clean up after parties, so I assue most people's neighbourhoods are the same.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? People in my neighbourhood help clean up after parties, so I assue most people's neighbourhoods are the same.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 124
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Aiden is more ambitious than Annie. Susan is more ambitious than Jim. Moses is less ambitious than Susan. Jim is less ambitious than Annie. Therefore aiden is more ambitious than Jim.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Aiden is more ambitious than Annie. Susan is more ambitious than Jim. Moses is less ambitious than Susan. Jim is less ambitious than Annie. Therefore aiden is more ambitious than Jim.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 125
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Nat is wittier than Sophia. Sophia is wittier than Aiden. Therefore aiden is wittier than Sophia.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Nat is wittier than Sophia. Sophia is wittier than Aiden. Therefore aiden is wittier than Sophia.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 126
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All vampires are cowboys. Some butchers are not cowboys. Therefore some butchers are not vampires.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All vampires are cowboys. Some butchers are not cowboys. Therefore some butchers are not vampires.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 127
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some rocks are fruit flies. All rocks are nuns. Therefore some nuns are fruit flies.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some rocks are fruit flies. All rocks are nuns. Therefore some nuns are fruit flies.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 128
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All rabbits are aphids. No aphids are lords. Therefore no lords are rabbits.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All rabbits are aphids. No aphids are lords. Therefore no lords are rabbits.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 129
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some weepeggles are besloors. Some shipotoes are not besloors. Therefore some shipotoes are weepeggles.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some weepeggles are besloors. Some shipotoes are not besloors. Therefore some shipotoes are weepeggles.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 130
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some flionsoes are not houtals. All houtals are mincoms. Therefore some mincoms are flionsoes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some flionsoes are not houtals. All houtals are mincoms. Therefore some mincoms are flionsoes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 131
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is less frank than Alex. Alex is less frank than Jones. Therefore alex is more frank than John.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is less frank than Alex. Alex is less frank than Jones. Therefore alex is more frank than John.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 132
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is more sensible than Kevin. Cecilia is more sensible than Bella. Joanna is more sensible than Cecilia. Candice is more sensible than Moses. Therefore kevin is more sensible than Bella.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is more sensible than Kevin. Cecilia is more sensible than Bella. Joanna is more sensible than Cecilia. Candice is more sensible than Moses. Therefore kevin is more sensible than Bella.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 133
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jake is less sensible than Charlotte. Bob is less sensible than Charlotte. Laura is less sensible than Bob. Paul is less sensible than Bob. Therefore paul is less sensible than Charlotte.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jake is less sensible than Charlotte. Bob is less sensible than Charlotte. Laura is less sensible than Bob. Paul is less sensible than Bob. Therefore paul is less sensible than Charlotte.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 134
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some clothes are goblins. All firemen are clothes. Therefore some firemen are not goblins.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some clothes are goblins. All firemen are clothes. Therefore some firemen are not goblins.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 135
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Mario is less witty than Osbert. Jim is less witty than Kim. Osbert is less witty than Kim. Therefore mario is wittier than Kim.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Mario is less witty than Osbert. Jim is less witty than Kim. Osbert is less witty than Kim. Therefore mario is wittier than Kim.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 136
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No slozzoms are sinpuds. Some sinpuds are gryllows. Therefore some gryllows are not slozzoms.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No slozzoms are sinpuds. Some sinpuds are gryllows. Therefore some gryllows are not slozzoms.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 137
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Charlotte is less sensible than Joanna. Joanna is less sensible than Tim. Therefore tim is less sensible than Joanna.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Charlotte is less sensible than Joanna. Joanna is less sensible than Tim. Therefore tim is less sensible than Joanna.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 138
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All cows are bakers. Some cobras are not cows. Therefore some cobras are bakers.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All cows are bakers. Some cobras are not cows. Therefore some cobras are bakers.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 139
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No shipotoes are winnibler. All sevvits are winnibler. Therefore some sevvits are not shipotoes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No shipotoes are winnibler. All sevvits are winnibler. Therefore some sevvits are not shipotoes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 140
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some sparrows are wizards. All sparrows are dishes. Therefore some dishes are wizards.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some sparrows are wizards. All sparrows are dishes. Therefore some dishes are wizards.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 141
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Edward is less ambitious than Annie. Annie is less ambitious than Sean. Moses is more ambitious than Sean. Jones is more ambitious than Moses. Therefore jones is more ambitious than Annie.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Edward is less ambitious than Annie. Annie is less ambitious than Sean. Moses is more ambitious than Sean. Jones is more ambitious than Moses. Therefore jones is more ambitious than Annie.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 142
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some knaves are not nurses. No knaves are pets. Therefore no pets are nurses.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some knaves are not nurses. No knaves are pets. Therefore no pets are nurses.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 143
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Osbert is less reliable than Robert. Anne is less reliable than Osbert. Anne is more reliable than Jennifer. Therefore robert is more reliable than Anne.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Osbert is less reliable than Robert. Anne is less reliable than Osbert. Anne is more reliable than Jennifer. Therefore robert is more reliable than Anne.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 144
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No didizas are ocirammas. Some ocirammas are benessits. Therefore some benessits are not didizas.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No didizas are ocirammas. Some ocirammas are benessits. Therefore some benessits are not didizas.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 145
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some capitols are priests. Some aphids are not priests. Therefore some aphids are not capitols.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some capitols are priests. Some aphids are not priests. Therefore some aphids are not capitols.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 146
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Annie is taller than Dylan. Cecilia is shorter than Anna. Dylan is taller than Vicky. Vicky is shorter than Jake. Therefore vicky is taller than Annie.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Annie is taller than Dylan. Cecilia is shorter than Anna. Dylan is taller than Vicky. Vicky is shorter than Jake. Therefore vicky is taller than Annie.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 147
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No bisdoes are hawkloons. Some tingforms are bisdoes. Therefore all tingforms are hawkloons.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No bisdoes are hawkloons. Some tingforms are bisdoes. Therefore all tingforms are hawkloons.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 148
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Dylan is younger than Mario. Mario is younger than Nat. Jake is younger than Bob. Therefore dylan is younger than Nat.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Dylan is younger than Mario. Mario is younger than Nat. Jake is younger than Bob. Therefore dylan is younger than Nat.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 149
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All offices are dishes. Some dishes are not minors. Therefore no minors are offices.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All offices are dishes. Some dishes are not minors. Therefore no minors are offices.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 150
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All prottows are brongs. All spoickles are prottows. Therefore all spoickles are brongs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All prottows are brongs. All spoickles are prottows. Therefore all spoickles are brongs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 151
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Moses is older than Carol. Amy is older than Carol. Mario is older than Moses. Therefore carol is younger than Amy.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Moses is older than Carol. Amy is older than Carol. Mario is older than Moses. Therefore carol is younger than Amy.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 152
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some horses are aunts. Some birds are not aunts. Therefore all birds are horses.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some horses are aunts. Some birds are not aunts. Therefore all birds are horses.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 153
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Alex is wittier than Cecilia. Alex is wittier than Sophia. Cecilia is wittier than Sophia. Therefore sophia is wittier than Alex.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Alex is wittier than Cecilia. Alex is wittier than Sophia. Cecilia is wittier than Sophia. Therefore sophia is wittier than Alex.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 154
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some musicians are shows. All kittens are musicians. Therefore some kittens are not shows.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some musicians are shows. All kittens are musicians. Therefore some kittens are not shows.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 155
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? If we buy a new sofa, we'll have to buy a new chair.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? If we buy a new sofa, we'll have to buy a new chair.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 156
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. The politician won the popular vote, so they must be the best candidate.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. The politician won the popular vote, so they must be the best candidate.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 157
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some elves are not colts. Some cowgirls are elves. Therefore some cowgirls are not colts.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some elves are not colts. Some cowgirls are elves. Therefore some cowgirls are not colts.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 158
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sarah is slower than Dylan. Ernest is slower than Dylan. Sarah is slower than Ernest. Therefore ernest is slower than Sarah.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sarah is slower than Dylan. Ernest is slower than Dylan. Sarah is slower than Ernest. Therefore ernest is slower than Sarah.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 159
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All compleys are natances. Some compleys are aferrarons. Therefore some aferrarons are natances.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All compleys are natances. Some compleys are aferrarons. Therefore some aferrarons are natances.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 160
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some kitchens are not bakers. Some lassies are bakers. Therefore some lassies are kitchens.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some kitchens are not bakers. Some lassies are bakers. Therefore some lassies are kitchens.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 161
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No winoozes are gaxes. Some spoickles are winoozes. Therefore some spoickles are not gaxes.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No winoozes are gaxes. Some spoickles are winoozes. Therefore some spoickles are not gaxes.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 162
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. My brother was robbed yesterday, so the crime rate must be increasing.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. My brother was robbed yesterday, so the crime rate must be increasing.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 163
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? If we cut taxes by 1%, we'll have to cut them more and more until we abolish them entirely.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? If we cut taxes by 1%, we'll have to cut them more and more until we abolish them entirely.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 164
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No weepeggles are fluffsters. Some weepeggles are trands. Therefore some trands are not fluffsters.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No weepeggles are fluffsters. Some weepeggles are trands. Therefore some trands are not fluffsters.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 165
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some cubs are not bats. All sisters are bats. Therefore some sisters are not cubs.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some cubs are not bats. All sisters are bats. Therefore some sisters are not cubs.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 166
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You shouldn't trust Donald's views about politics. He's an alcoholic.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You shouldn't trust Donald's views about politics. He's an alcoholic.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 167
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. We shouldn't change our country's flag, because it's been like that for hundreds of years.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. We shouldn't change our country's flag, because it's been like that for hundreds of years.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 168
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some broomillas are spoickles. All broomillas are unfabrans. Therefore some unfabrans are spoickles.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some broomillas are spoickles. All broomillas are unfabrans. Therefore some unfabrans are spoickles.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 169
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No captains are cyborgs. Some captains are flowers. Therefore some flowers are not cyborgs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No captains are cyborgs. Some captains are flowers. Therefore some flowers are not cyborgs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 170
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Osbert is more ambitious than Amy. Amy is more ambitious than Peter. Therefore amy is more ambitious than Osbert.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Osbert is more ambitious than Amy. Amy is more ambitious than Peter. Therefore amy is more ambitious than Osbert.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 171
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Charlotte is less kind than Kevin. Charlotte is less kind than Aiden. Aiden is less kind than Bob. Therefore aiden is kinder than Bob.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Charlotte is less kind than Kevin. Charlotte is less kind than Aiden. Aiden is less kind than Bob. Therefore aiden is kinder than Bob.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 172
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some smations are noelinds. Some sevvits are smations. Therefore no sevvits are noelinds.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some smations are noelinds. Some sevvits are smations. Therefore no sevvits are noelinds.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 173
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. It's difficult to ski off-piste, so if you want an easy time, stick to the designated routes.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. It's difficult to ski off-piste, so if you want an easy time, stick to the designated routes.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 174
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. If we cut salaries this year, we'll never get a pay rise again.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. If we cut salaries this year, we'll never get a pay rise again.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 175
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No stadiums are ministers. Some ministers are goats. Therefore some goats are not stadiums.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No stadiums are ministers. Some ministers are goats. Therefore some goats are not stadiums.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 176
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Cecilia is more reliable than Susan. Bill is more reliable than Cecilia. Tom is more reliable than Susan. Therefore susan is more reliable than Cecilia.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Cecilia is more reliable than Susan. Bill is more reliable than Cecilia. Tom is more reliable than Susan. Therefore susan is more reliable than Cecilia.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 177
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Michael is older than Jones. Anne is older than Michael. Sam is older than Lara. Jennifer is older than Anne. Therefore jennifer is older than Michael.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Michael is older than Jones. Anne is older than Michael. Sam is older than Lara. Jennifer is older than Anne. Therefore jennifer is older than Michael.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 178
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No prottows are yudalouds. Some yudalouds are treyples. Therefore some treyples are prottows.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No prottows are yudalouds. Some yudalouds are treyples. Therefore some treyples are prottows.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 179
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bowls are chimpanzees. No chimpanzees are astronauts. Therefore all astronauts are bowls.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bowls are chimpanzees. No chimpanzees are astronauts. Therefore all astronauts are bowls.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 180
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Aeroplanes can't be healthy; humans were never meant to fly.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Aeroplanes can't be healthy; humans were never meant to fly.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 181
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All fluffsters are sevvits. No treyples are sevvits. Therefore all treyples are fluffsters.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All fluffsters are sevvits. No treyples are sevvits. Therefore all treyples are fluffsters.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 182
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? If we legalise marijuana, we'll inevitably legalise heroin.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? If we legalise marijuana, we'll inevitably legalise heroin.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 183
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Amy is older than Sarah. Rossi is older than Amy. Therefore amy is younger than Sarah.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Amy is older than Sarah. Rossi is older than Amy. Therefore amy is younger than Sarah.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 184
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All humans are pens. Some bicycles are not pens. Therefore some bicycles are not humans.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All humans are pens. Some bicycles are not pens. Therefore some bicycles are not humans.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 185
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All nuns are villages. Some nuns are not robots. Therefore all robots are villages.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All nuns are villages. Some nuns are not robots. Therefore all robots are villages.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 186
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All oaks are dwarves. Some dwarves are not sons. Therefore all sons are oaks.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All oaks are dwarves. Some dwarves are not sons. Therefore all sons are oaks.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 187
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. A lot of people look up flu symptoms around the same time as flu spikes. So looking up flu must cause people to get it.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. A lot of people look up flu symptoms around the same time as flu spikes. So looking up flu must cause people to get it.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 188
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. David is less sensible than Edward. Edward is less sensible than Charlotte. Therefore edward is less sensible than David.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. David is less sensible than Edward. Edward is less sensible than Charlotte. Therefore edward is less sensible than David.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 189
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No zestponts are styphons. Some zestponts are effachers. Therefore some effachers are not styphons.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No zestponts are styphons. Some zestponts are effachers. Therefore some effachers are not styphons.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 190
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No hamlets are monkeys. All females are monkeys. Therefore no females are hamlets.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No hamlets are monkeys. All females are monkeys. Therefore no females are hamlets.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 191
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some guys are not dining rooms. Some dining rooms are not creatures. Therefore no creatures are guys.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some guys are not dining rooms. Some dining rooms are not creatures. Therefore no creatures are guys.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 192
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bliggingtoms are thrastles. Some thrastles are not tolities. Therefore no tolities are bliggingtoms.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bliggingtoms are thrastles. Some thrastles are not tolities. Therefore no tolities are bliggingtoms.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 193
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less sensible than Carol. Henry is less sensible than Candice. Candice is less sensible than Jill. Therefore carol is more sensible than Henry.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less sensible than Carol. Henry is less sensible than Candice. Candice is less sensible than Jill. Therefore carol is more sensible than Henry.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 194
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some nuns are mustangs. All nuns are harlequins. Therefore some harlequins are mustangs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some nuns are mustangs. All nuns are harlequins. Therefore some harlequins are mustangs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 195
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some khavvins are compleys. No ocirammas are compleys. Therefore some ocirammas are khavvins.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some khavvins are compleys. No ocirammas are compleys. Therefore some ocirammas are khavvins.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 196
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? John is a famous war hero. So we should trust what John says about politics.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? John is a famous war hero. So we should trust what John says about politics.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 197
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some dukes are sheep. All sheep are bowls. Therefore some bowls are dukes.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some dukes are sheep. All sheep are bowls. Therefore some bowls are dukes.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 198
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jill is younger than Peter. Jennifer is older than Peter. Sophia is older than Jill. Sophia is younger than Jones. Therefore peter is older than Jennifer.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jill is younger than Peter. Jennifer is older than Peter. Sophia is older than Jill. Sophia is younger than Jones. Therefore peter is older than Jennifer.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 199
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some ammigles are zestponts. Some spoickles are ammigles. Therefore some spoickles are not zestponts.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some ammigles are zestponts. Some spoickles are ammigles. Therefore some spoickles are not zestponts.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 200
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is shorter than Osbert. Carol is shorter than Sam. Kim is shorter than Sam. Carol is shorter than John. Therefore sam is shorter than Kim.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is shorter than Osbert. Carol is shorter than Sam. Kim is shorter than Sam. Carol is shorter than John. Therefore sam is shorter than Kim.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 201
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Anne is more reliable than Moses. Jake is more reliable than Anne. Carol is more reliable than Jake. Carol is more reliable than John. Therefore carol is more reliable than Moses.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Anne is more reliable than Moses. Jake is more reliable than Anne. Carol is more reliable than Jake. Carol is more reliable than John. Therefore carol is more reliable than Moses.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 202
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No cyborgs are pants. All programs are pants. Therefore no programs are cyborgs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No cyborgs are pants. All programs are pants. Therefore no programs are cyborgs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 203
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All venusians are knights. No venusians are minors. Therefore some minors are not knights.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All venusians are knights. No venusians are minors. Therefore some minors are not knights.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 204
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All refluppers are fluffsters. Some sagirds are not fluffsters. Therefore no sagirds are refluppers.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All refluppers are fluffsters. Some sagirds are not fluffsters. Therefore no sagirds are refluppers.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 205
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Anne is more reliable than Moses. Jake is more reliable than Anne. Carol is more reliable than Jake. Carol is more reliable than John. Therefore jake is more reliable than Carol.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Anne is more reliable than Moses. Jake is more reliable than Anne. Carol is more reliable than Jake. Carol is more reliable than John. Therefore jake is more reliable than Carol.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 206
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some living rooms are sidewinders. All mammals are living rooms. Therefore no mammals are sidewinders.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some living rooms are sidewinders. All mammals are living rooms. Therefore no mammals are sidewinders.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 207
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All bulls are crabs. Some places are not bulls. Therefore no places are crabs.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All bulls are crabs. Some places are not bulls. Therefore no places are crabs.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 208
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jill is more frank than Aiden. John is more frank than Aiden. John is more frank than Jill. Therefore aiden is more frank than Jill.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jill is more frank than Aiden. John is more frank than Aiden. John is more frank than Jill. Therefore aiden is more frank than Jill.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 209
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some hares are lions. No lions are queens. Therefore some queens are hares.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some hares are lions. No lions are queens. Therefore some queens are hares.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 210
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All pricenanos are slozzoms. All sevvits are pricenanos. Therefore all sevvits are slozzoms.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All pricenanos are slozzoms. All sevvits are pricenanos. Therefore all sevvits are slozzoms.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 211
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is older than Carol. Amy is older than Carol. Mario is older than Moses. Therefore mario is younger than Moses.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is older than Carol. Amy is older than Carol. Mario is older than Moses. Therefore mario is younger than Moses.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 212
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is less sensible than Rossi. Joanna is less sensible than Rossi. Joanna is less sensible than Bella. Therefore bella is more sensible than Joanna.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is less sensible than Rossi. Joanna is less sensible than Rossi. Joanna is less sensible than Bella. Therefore bella is more sensible than Joanna.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 213
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some kirarics are unfabrans. All unfabrans are shipotoes. Therefore no shipotoes are kirarics.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some kirarics are unfabrans. All unfabrans are shipotoes. Therefore no shipotoes are kirarics.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 214
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No taindists are brongs. Some polinks are taindists. Therefore some polinks are not brongs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No taindists are brongs. Some polinks are taindists. Therefore some polinks are not brongs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 215
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All gaxes are hawkloons. All gaxes are sevvits. Therefore some sevvits are not hawkloons.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All gaxes are hawkloons. All gaxes are sevvits. Therefore some sevvits are not hawkloons.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 216
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some animals are vehicles. Some animals are not mothers. Therefore some mothers are not vehicles.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some animals are vehicles. Some animals are not mothers. Therefore some mothers are not vehicles.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 217
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? William is less reliable than Sam. Candice is more reliable than Sam. Candice is less reliable than Bella. Vicky is more reliable than William. Therefore william is more reliable than Candice.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? William is less reliable than Sam. Candice is more reliable than Sam. Candice is less reliable than Bella. Vicky is more reliable than William. Therefore william is more reliable than Candice.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 218
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The average wage in this country is less than yours, so you're richer than average.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The average wage in this country is less than yours, so you're richer than average.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 219
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Sara is faster than Caroline. Sara is slower than Sarah. Marcus is slower than Anna. Therefore sarah is faster than Caroline.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Sara is faster than Caroline. Sara is slower than Sarah. Marcus is slower than Anna. Therefore sarah is faster than Caroline.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 220
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jim is more ambitious than Debbie. Bill is more ambitious than Debbie. Paul is less ambitious than Bob. Paul is more ambitious than Annie. Therefore bob is less ambitious than Paul.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jim is more ambitious than Debbie. Bill is more ambitious than Debbie. Paul is less ambitious than Bob. Paul is more ambitious than Annie. Therefore bob is less ambitious than Paul.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 221
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jennifer is kinder than William. Nat is kinder than William. Sophia is kinder than Nat. Therefore william is less kind than Nat.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jennifer is kinder than William. Nat is kinder than William. Sophia is kinder than Nat. Therefore william is less kind than Nat.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 222
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All dewfays are dufizzes. No kirarics are dufizzes. Therefore no kirarics are dewfays.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All dewfays are dufizzes. No kirarics are dufizzes. Therefore no kirarics are dewfays.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 223
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jake is less sensible than William. Sara is less sensible than William. William is less sensible than Edward. Edward is less sensible than Ernest. Therefore ernest is less sensible than Sara.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jake is less sensible than William. Sara is less sensible than William. William is less sensible than Edward. Edward is less sensible than Ernest. Therefore ernest is less sensible than Sara.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 224
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No cosmonauts are flowers. Some cosmonauts are dukes. Therefore some dukes are not flowers.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No cosmonauts are flowers. Some cosmonauts are dukes. Therefore some dukes are not flowers.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 225
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No noelinds are compleys. Some noelinds are not effachers. Therefore no effachers are compleys.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No noelinds are compleys. Some noelinds are not effachers. Therefore no effachers are compleys.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 226
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? There are six slices of pizza left and three of us, so two each would be a fair distribution.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? There are six slices of pizza left and three of us, so two each would be a fair distribution.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 227
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? William is less reliable than Sam. Candice is more reliable than Sam. Candice is less reliable than Bella. Vicky is more reliable than William. Therefore bella is more reliable than William.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? William is less reliable than Sam. Candice is more reliable than Sam. Candice is less reliable than Bella. Vicky is more reliable than William. Therefore bella is more reliable than William.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 228
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Djokovic has lost the second set too. Winning the match now looks difficult.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Djokovic has lost the second set too. Winning the match now looks difficult.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 229
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No tupresses are treyples. Some hendassas are treyples. Therefore some hendassas are not tupresses.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No tupresses are treyples. Some hendassas are treyples. Therefore some hendassas are not tupresses.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 230
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is kinder than Zach. Zach is kinder than Susan. Zach is kinder than Laura. Therefore moses is kinder than Laura.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is kinder than Zach. Zach is kinder than Susan. Zach is kinder than Laura. Therefore moses is kinder than Laura.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 231
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No ranotots are tupresses. All ocirammas are ranotots. Therefore no ocirammas are tupresses.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No ranotots are tupresses. All ocirammas are ranotots. Therefore no ocirammas are tupresses.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 232
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some sebusses are spequals. Some builithes are sebusses. Therefore no builithes are spequals.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some sebusses are spequals. Some builithes are sebusses. Therefore no builithes are spequals.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 233
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. The newer a transport system is the more efficiently it must run.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. The newer a transport system is the more efficiently it must run.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 234
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are spacemen. Some spacemen are snarks. Therefore all snarks are cowboys.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are spacemen. Some spacemen are snarks. Therefore all snarks are cowboys.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 235
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Zach is more ambitious than Rossi. Charlotte is more ambitious than Caroline. Aiden is more ambitious than Zach. Therefore caroline is more ambitious than Charlotte.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Zach is more ambitious than Rossi. Charlotte is more ambitious than Caroline. Aiden is more ambitious than Zach. Therefore caroline is more ambitious than Charlotte.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 236
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jones is less ambitious than Michael. Jones is less ambitious than Nat. Nat is less ambitious than Michael. Peter is less ambitious than Nat. Therefore nat is more ambitious than Peter.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jones is less ambitious than Michael. Jones is less ambitious than Nat. Nat is less ambitious than Michael. Peter is less ambitious than Nat. Therefore nat is more ambitious than Peter.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 237
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No hendassas are pentwests. Some prottows are hendassas. Therefore some prottows are not pentwests.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No hendassas are pentwests. Some prottows are hendassas. Therefore some prottows are not pentwests.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 238
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some confras are not pricenanos. All pentwests are confras. Therefore some pentwests are not pricenanos.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some confras are not pricenanos. All pentwests are confras. Therefore some pentwests are not pricenanos.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 239
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sara is faster than Caroline. Sara is slower than Sarah. Marcus is slower than Anna. Therefore caroline is faster than Sara.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sara is faster than Caroline. Sara is slower than Sarah. Marcus is slower than Anna. Therefore caroline is faster than Sara.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 240
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Humans evolved in savannah environments, so those are clearly the best place for us.,\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Humans evolved in savannah environments, so those are clearly the best place for us.,\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 241
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some harlequins are heroines. No swans are harlequins. Therefore some swans are not heroines.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some harlequins are heroines. No swans are harlequins. Therefore some swans are not heroines.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 242
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All planets are bishops. No bishops are dogs. Therefore no dogs are planets.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All planets are bishops. No bishops are dogs. Therefore no dogs are planets.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 243
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sevvits are not proppors. All sevvits are gaxes. Therefore no gaxes are proppors.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sevvits are not proppors. All sevvits are gaxes. Therefore no gaxes are proppors.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 244
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No children are canines. Some boys are canines. Therefore some boys are not children.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No children are canines. Some boys are canines. Therefore some boys are not children.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 245
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sinpuds are chevesics. All sinpuds are onamas. Therefore some onamas are chevesics.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sinpuds are chevesics. All sinpuds are onamas. Therefore some onamas are chevesics.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 246
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some felines are cowboys. Some cities are not felines. Therefore no cities are cowboys.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some felines are cowboys. Some cities are not felines. Therefore no cities are cowboys.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 247
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No rodrups are prottows. Some rodrups are slozzoms. Therefore some slozzoms are not prottows.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No rodrups are prottows. Some rodrups are slozzoms. Therefore some slozzoms are not prottows.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 248
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jill is more ambitious than Jake. Jake is less ambitious than Cecilia. Jill is more ambitious than Cecilia. Therefore jill is less ambitious than Jake.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jill is more ambitious than Jake. Jake is less ambitious than Cecilia. Jill is more ambitious than Cecilia. Therefore jill is less ambitious than Jake.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 249
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Referees are supposed to be neutral. The referee is from Switzerland, a neutral country, so he must be neutral.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Referees are supposed to be neutral. The referee is from Switzerland, a neutral country, so he must be neutral.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 250
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some weepeggles are smurtans. No weepeggles are prottows. Therefore all prottows are smurtans.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some weepeggles are smurtans. No weepeggles are prottows. Therefore all prottows are smurtans.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 251
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sparrows are duchesses. All duchesses are chimpanzees. Therefore some chimpanzees are sparrows.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sparrows are duchesses. All duchesses are chimpanzees. Therefore some chimpanzees are sparrows.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 252
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No winnibler are bistups. All brewtines are bistups. Therefore all brewtines are winnibler.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No winnibler are bistups. All brewtines are bistups. Therefore all brewtines are winnibler.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 253
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Mormonism is less trustworthy than other forms of Christianity because it's not as old.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Mormonism is less trustworthy than other forms of Christianity because it's not as old.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 254
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is less frank than Alex. Alex is less frank than Jones. Therefore jones is less frank than Alex.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is less frank than Alex. Alex is less frank than Jones. Therefore jones is less frank than Alex.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 255
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No artrames are gryllows. Some bliggingtoms are gryllows. Therefore some bliggingtoms are not artrames.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No artrames are gryllows. Some bliggingtoms are gryllows. Therefore some bliggingtoms are not artrames.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 256
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All bisdoes are brongs. Some bisdoes are snabeths. Therefore some snabeths are brongs.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All bisdoes are brongs. Some bisdoes are snabeths. Therefore some snabeths are brongs.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 257
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is taller than Peter. Peter is taller than Tom. Therefore bella is shorter than Peter.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is taller than Peter. Peter is taller than Tom. Therefore bella is shorter than Peter.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 258
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You should trust our President's views about healthcare; he was a famous moviestar.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? You should trust our President's views about healthcare; he was a famous moviestar.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 259
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All programmers are rooks. All amphibians are programmers. Therefore all amphibians are rooks.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All programmers are rooks. All amphibians are programmers. Therefore all amphibians are rooks.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 260
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jones is wittier than Anne. Anne is wittier than Moses. Therefore anne is wittier than Jones.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jones is wittier than Anne. Anne is wittier than Moses. Therefore anne is wittier than Jones.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 261
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All fapsters are trealops. No prottows are trealops. Therefore no prottows are fapsters.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All fapsters are trealops. No prottows are trealops. Therefore no prottows are fapsters.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 262
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No skizzles are novalies. No skizzles are smurtans. Therefore some smurtans are not novalies.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No skizzles are novalies. No skizzles are smurtans. Therefore some smurtans are not novalies.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 263
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Nat is less reliable than Kevin. Debbie is less reliable than Kevin. Bill is less reliable than Nat. Anna is less reliable than Amy. Therefore kevin is less reliable than Bill.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Nat is less reliable than Kevin. Debbie is less reliable than Kevin. Bill is less reliable than Nat. Anna is less reliable than Amy. Therefore kevin is less reliable than Bill.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 264
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No astronauts are knights. Some tigers are knights. Therefore some tigers are astronauts.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No astronauts are knights. Some tigers are knights. Therefore some tigers are astronauts.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 265
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? John wants to cut off your arms, and you don't want him to cut off your arms. So the solution is for him to cut off one of your arms.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? John wants to cut off your arms, and you don't want him to cut off your arms. So the solution is for him to cut off one of your arms.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 266
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Lara is more sensible than Sara. Joanna is more sensible than Sara. Candice is more sensible than Joanna. Candice is more sensible than Peter. Therefore sara is more sensible than Joanna.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Lara is more sensible than Sara. Joanna is more sensible than Sara. Candice is more sensible than Joanna. Candice is more sensible than Peter. Therefore sara is more sensible than Joanna.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 267
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. If you don't like using or interacting with computers, then you probably won't like video games.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. If you don't like using or interacting with computers, then you probably won't like video games.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 268
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Vicky is faster than Edward. Edward is faster than Sean. Therefore edward is slower than Vicky.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Vicky is faster than Edward. Edward is faster than Sean. Therefore edward is slower than Vicky.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 269
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Electricity was invented by Edison, and he was a bad guy. So electricity is bad.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Electricity was invented by Edison, and he was a bad guy. So electricity is bad.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 270
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All oaks are dwarves. Some dwarves are not sons. Therefore all sons are oaks.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All oaks are dwarves. Some dwarves are not sons. Therefore all sons are oaks.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 271
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Peter is less kind than Annie. Annie is less kind than Lara. Bill is less kind than Carol. Lara is less kind than Carol. Therefore peter is less kind than Lara.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Peter is less kind than Annie. Annie is less kind than Lara. Bill is less kind than Carol. Lara is less kind than Carol. Therefore peter is less kind than Lara.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 272
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No lions are soldiers. All admirals are lions. Therefore no admirals are soldiers.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No lions are soldiers. All admirals are lions. Therefore no admirals are soldiers.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 273
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All tupresses are sagirds. All tupresses are styphons. Therefore some styphons are not sagirds.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All tupresses are sagirds. All tupresses are styphons. Therefore some styphons are not sagirds.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 274
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sophia is kinder than Amy. Sophia is less kind than Caroline. Caroline is kinder than Jim. Therefore jim is kinder than Caroline.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Sophia is kinder than Amy. Sophia is less kind than Caroline. Caroline is kinder than Jim. Therefore jim is kinder than Caroline.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 275
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All clothes are crabs. No crabs are men. Therefore some men are not clothes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All clothes are crabs. No crabs are men. Therefore some men are not clothes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 276
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Philipp is more reliable than Tom. Sara is more reliable than Philipp. Therefore philipp is less reliable than Sara.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Philipp is more reliable than Tom. Sara is more reliable than Philipp. Therefore philipp is less reliable than Sara.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 277
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sebusses are spequals. Some builithes are sebusses. Therefore no builithes are spequals.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sebusses are spequals. Some builithes are sebusses. Therefore no builithes are spequals.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 278
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Marcus is older than Jennifer. Joanna is older than Marcus. Lara is older than Jenny. Susan is older than Jenny. Therefore jenny is younger than Susan.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Marcus is older than Jennifer. Joanna is older than Marcus. Lara is older than Jenny. Susan is older than Jenny. Therefore jenny is younger than Susan.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 279
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All vicars are lords. No plays are lords. Therefore no plays are vicars.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All vicars are lords. No plays are lords. Therefore no plays are vicars.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 280
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less kind than Sophia. Sophia is less kind than Anne. Anne is less kind than Susan. Therefore sophia is less kind than Henry.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less kind than Sophia. Sophia is less kind than Anne. Anne is less kind than Susan. Therefore sophia is less kind than Henry.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 281
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All females are explorers. Some reptilians are not females. Therefore all reptilians are explorers.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All females are explorers. Some reptilians are not females. Therefore all reptilians are explorers.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 282
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Dylan is wittier than Sam. Jenny is wittier than Dylan. Jake is wittier than Dylan. Therefore jenny is less witty than Dylan.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Dylan is wittier than Sam. Jenny is wittier than Dylan. Jake is wittier than Dylan. Therefore jenny is less witty than Dylan.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 283
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The 2020 version of the product must be better than the 2018 because it's newer.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The 2020 version of the product must be better than the 2018 because it's newer.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 284
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some skeptics are not cowboys. Some skeptics are sheep dogs. Therefore some sheep dogs are not cowboys.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some skeptics are not cowboys. Some skeptics are sheep dogs. Therefore some sheep dogs are not cowboys.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 285
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some kirarics are unfabrans. All unfabrans are shipotoes. Therefore no shipotoes are kirarics.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some kirarics are unfabrans. All unfabrans are shipotoes. Therefore no shipotoes are kirarics.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 286
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You should trust my views about American politics because I have a PhD in material science.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You should trust my views about American politics because I have a PhD in material science.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 287
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jim is more sensible than Peter. Jill is more sensible than Peter. Aiden is more sensible than Anne. Peter is more sensible than Anne. Therefore jim is less sensible than Peter.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Jim is more sensible than Peter. Jill is more sensible than Peter. Aiden is more sensible than Anne. Peter is more sensible than Anne. Therefore jim is less sensible than Peter.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 288
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some chimpanzees are lads. All rocks are lads. Therefore some rocks are not chimpanzees.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some chimpanzees are lads. All rocks are lads. Therefore some rocks are not chimpanzees.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 289
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All reggabreas are khavvins. No strizzings are khavvins. Therefore some strizzings are not reggabreas.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? All reggabreas are khavvins. No strizzings are khavvins. Therefore some strizzings are not reggabreas.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 290
+  },
+  {
+    "input": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. William is taller than Tim. Tim is taller than Annie. Therefore william is shorter than Tim.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. William is taller than Tim. Tim is taller than Annie. Therefore william is shorter than Tim.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 291
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Water boils at 100 degrees, and this is 90 degrees, so you'll need to raise the temperature a bit to get it to boil.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Water boils at 100 degrees, and this is 90 degrees, so you'll need to raise the temperature a bit to get it to boil.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 292
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No nightmares are restaurants. Some shirts are nightmares. Therefore some shirts are not restaurants.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No nightmares are restaurants. Some shirts are nightmares. Therefore some shirts are not restaurants.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 293
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No flionsoes are dufizzes. Some artrames are not dufizzes. Therefore all artrames are flionsoes.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No flionsoes are dufizzes. Some artrames are not dufizzes. Therefore all artrames are flionsoes.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 294
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No benessits are swinducts. Some benessits are lotadils. Therefore some lotadils are not swinducts.\nA:",
+    "label": "Valid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No benessits are swinducts. Some benessits are lotadils. Therefore some lotadils are not swinducts.\nA:",
+    "targets": [
+      "Valid"
+    ],
+    "idx": 295
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No rigglays are khavvins. Some spewsies are not rigglays. Therefore some spewsies are khavvins.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? No rigglays are khavvins. Some spewsies are not rigglays. Therefore some spewsies are khavvins.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 296
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some werradiths are shorates. Some werradiths are shraiwels. Therefore some shraiwels are not shorates.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some werradiths are shorates. Some werradiths are shraiwels. Therefore some shraiwels are not shorates.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 297
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cheiliths are rigglays. Some cheiliths are not trealops. Therefore all trealops are rigglays.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cheiliths are rigglays. Some cheiliths are not trealops. Therefore all trealops are rigglays.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 298
+  },
+  {
+    "input": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The novel was written by a top scientist so it must be entertaining.\nA:",
+    "label": "Invalid",
+    "multiple_choice_targets": [
+      "Valid",
+      "Invalid"
+    ],
+    "choices": [
+      "Valid",
+      "Invalid"
+    ],
+    "inputs": "Q: Do you think the following argument is 'Valid' or 'Invalid'? The novel was written by a top scientist so it must be entertaining.\nA:",
+    "targets": [
+      "Invalid"
+    ],
+    "idx": 299
+  }
+]

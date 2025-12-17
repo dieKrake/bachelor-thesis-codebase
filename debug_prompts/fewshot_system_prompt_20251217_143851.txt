@@ -1,0 +1,1807 @@
+You MUST answer with exactly one string: either "true" or "false". Do not output explanations, reasoning steps, punctuation, or additional text. "true" = the claimed fact is true. "false" = the claimed fact is false.
+
+Now answer the following question with exactly one word: "true" or "false".
+
+Additionally I am giving you the following examples to learn from:
+
+Example 1:
+Question: On July 8 2020, the following claim was made: Most people recover from the COVID-19 without needing hospital treatment.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 2:
+Question: On July 8 2020, the following claim was made: Everyone is at risk of getting COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 3:
+Question: On July 8 2020, the following claim was made: COVID-19 is the deadliest virus known to humans.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 4:
+Question: On July 8 2020, the following claim was made: The source of SARS-CoV-2, the coronavirus (CoV) causing COVID-19 is unknown
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 5:
+Question: On July 8 2020, the following claim was made: Scientists are shocked to discover that weed kills COVID-19 virus
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 6:
+Question: On July 8 2020, the following claim was made: COVID-19 can survive temperatures higher than 25 celsius.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 7:
+Question: On July 8 2020, the following claim was made: Parcels from China can spread COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 8:
+Question: On July 8 2020, the following claim was made: Taking ibuprofen worsens symptoms of COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 9:
+Question: On July 8 2020, the following claim was made: Chinese officials are seeking approval to start the mass killing of 20000 people in order to stop the spread of COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 10:
+Question: On July 8 2020, the following claim was made: COVID-19 can be prevented by drinking Miracle Mineral Solution which is essentially bleach.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 11:
+Question: On July 8 2020, the following claim was made: Acacia seeds protect you from COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 12:
+Question: On July 8 2020, the following claim was made: Drinking black tea first thing in the morning is effective against the COVID-19 disease.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 13:
+Question: On July 8 2020, the following claim was made: The COVID-19 can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 14:
+Question: On July 8 2020, the following claim was made: Donald Trump is responsible for the COVID-19 epidemic.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 15:
+Question: On July 8 2020, the following claim was made: Ultraviolet disinfection lamp kill the new coronavirus on your hands.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 16:
+Question: On July 8 2020, the following claim was made: The most common symptoms of COVID-19 are fever, tiredness, and dry cough.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 17:
+Question: On July 8 2020, the following claim was made: The most common symptoms of COVID-19 are fever, tiredness, and dry cough.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 18:
+Question: On July 8 2020, the following claim was made: There is a possibility for some animals to become infected COVID-19 through close contact with infected humans.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 19:
+Question: On July 8 2020, the following claim was made: COVID-19 was unknown before the outbreak began in Wuhan China in December 2019.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 20:
+Question: On July 8 2020, the following claim was made: Hair weave and lace fronts manufactured in China may contain the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 21:
+Question: On July 8 2020, the following claim was made: Having had malaria makes one immune to COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 22:
+Question: On July 8 2020, the following claim was made: CDC recommends that people wear a cloth face covering to cover their nose and mouth in the community setting to protect from COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 23:
+Question: On July 8 2020, the following claim was made: COVID-19 is different to SARS.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 24:
+Question: On July 8 2020, the following claim was made: Pepper soup with lime or lemon flushes out the COVID-19 virus.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 25:
+Question: On July 8 2020, the following claim was made: Drinking a bleach solution will prevent you from getting the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 26:
+Question: On July 8 2020, the following claim was made: Kids can't get the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 27:
+Question: On July 8 2020, the following claim was made: Vaccines against pneumonia will protect people against the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 28:
+Question: On July 8 2020, the following claim was made: Eating garlic helps prevent infection with the COVID-19
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 29:
+Question: On July 8 2020, the following claim was made: The COVID-19 affects only Asians and could be some kind of ethnic bioweapon.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 30:
+Question: On July 8 2020, the following claim was made: If the COVID-19 gets in your mouth, drinking water or other liquids will WASH them down through your esophagus and into the stomach. Once there in tummy, your stomach acid will kill all the COVID-19 virus.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 31:
+Question: On July 8 2020, the following claim was made: Steam your face with and inhale neem can prevent COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 32:
+Question: On July 8 2020, the following claim was made: China stole COVID-19 from Canada and weaponized it into a Bioweapon.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 33:
+Question: On July 8 2020, the following claim was made: The COVID-19 is originated in a laboratory in China.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 34:
+Question: On July 8 2020, the following claim was made: Hand dryers can kill the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 35:
+Question: On July 8 2020, the following claim was made: COVID-19 has a natural animal origin and is not a constructed virus
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 36:
+Question: On July 8 2020, the following claim was made: You can cure COVID-19 by drinking a mixture of vinegar water and the Chinese medicine Banlangen.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 37:
+Question: On July 8 2020, the following claim was made: Consuming or vaping products containing cannabidiol (CBD) will boost your immune system and help prevent COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 38:
+Question: On July 8 2020, the following claim was made: Regularly rinsing the nose with saline has protected people from infection with the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 39:
+Question: On July 8 2020, the following claim was made: COVID-19 doesn't affect Muslims
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 40:
+Question: On July 8 2020, the following claim was made: COVID-19 spreads from person to person.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 41:
+Question: On July 8 2020, the following claim was made: Skin irritation is one of the symptoms of COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 42:
+Question: On July 8 2020, the following claim was made: Anyone can get COVID-19, regardless of race or skin colour.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 43:
+Question: On July 8 2020, the following claim was made: Antibiotics does not work to kill COVID-19 virus.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 44:
+Question: On July 8 2020, the following claim was made: The CDC recommends men shave their beards to protect against COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 45:
+Question: On July 8 2020, the following claim was made: You can prevent COVID-19 by covering your body in sesame oil.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 46:
+Question: On July 8 2020, the following claim was made: WuXi PHARMA LAB located in Wuhan China developed COVID-19 virus
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 47:
+Question: On July 8 2020, the following claim was made: The main way the COVID-19 spreads is through respiratory droplets.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 48:
+Question: On July 8 2020, the following claim was made: Being exposed to the sun for two hours kills the 2019 COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 49:
+Question: On July 8 2020, the following claim was made: The incubation period for COVID-19 range from 1 to 14 days.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 50:
+Question: On July 8 2020, the following claim was made: Sunlight actually can kill the novel COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 51:
+Question: On July 8 2020, the following claim was made: Bill Gates caused the infection of COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 52:
+Question: On July 8 2020, the following claim was made: People with other health conditions, such as asthma, heart diseases and diabetes, are at higher risk of getting seriously ill from COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 53:
+Question: On July 8 2020, the following claim was made: COVID-19 is man-made terrorism to kill people.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 54:
+Question: On July 8 2020, the following claim was made: Currently, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-19
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 55:
+Question: On July 8 2020, the following claim was made: Pregnant women at higher risk from COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 56:
+Question: On July 8 2020, the following claim was made: Cocaine kills COVID-19 virus, scientists is shocked to discover that this drug can fight the virus.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 57:
+Question: On July 8 2020, the following claim was made: The COVID-19 can be transmitted through mail.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 58:
+Question: On July 8 2020, the following claim was made: Thermal scanners can diagnose COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 59:
+Question: On July 8 2020, the following claim was made: The outbreak of the COVID-19 was caused by an accidental leak from Wuhan Virus Research Institute.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 60:
+Question: On July 8 2020, the following claim was made: Cats and dogs do not get COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 61:
+Question: On July 8 2020, the following claim was made: Ordering or buying products shipped from overseas will make a person get COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 62:
+Question: On July 8 2020, the following claim was made: 5G helps COVID-19 spread.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 63:
+Question: On July 8 2020, the following claim was made: COVID-19 most probably has its ecological reservoir in bats
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 64:
+Question: On July 8 2020, the following claim was made: Exposing yourself to the sun or to temperatures higher than 25C degrees prevent the COVID-19 disease.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 65:
+Question: On July 8 2020, the following claim was made: COVID-19 source is from animal eating.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 66:
+Question: On July 8 2020, the following claim was made: Antibiotics are effective in preventing and treating the COVID-19
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 67:
+Question: On July 8 2020, the following claim was made: Drinking a lot of water and gargling with warm salt water eliminates the COVID-19 virus.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 68:
+Question: On July 8 2020, the following claim was made: 20% of the COVID-19 cases may develop serious illness with breathing difficulty.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 69:
+Question: On July 8 2020, the following claim was made: Slices of lemon in a cup of hot water can save your life. The hot lemon can kill the proliferation of the novel COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 70:
+Question: On July 8 2020, the following claim was made: All modern methods of contraception are safe to use, including during the COVID-19 pandemic.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 71:
+Question: On July 8 2020, the following claim was made: US government had created and patented a vaccine for COVID-19 years ago. 
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 72:
+Question: On July 8 2020, the following claim was made: The clinical recovery for mild COVID-19 cases is approximately 2 weeks and is 3-6 weeks for patients with severe or critical disease.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 73:
+Question: On July 8 2020, the following claim was made: The COVID-19 virus may also be spread when an infected person sneezes, coughs or exhales, and people around them breathe in these micro-droplets.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 74:
+Question: On July 8 2020, the following claim was made: For COVID-19, other flu-like symptoms such as aches and pains, nasal congestion, runny nose, sore throat or diarrhoea are also common.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 75:
+Question: On July 8 2020, the following claim was made: The period of quarantine for COVID-19 is 14 days from the last date of exposure.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 76:
+Question: On July 8 2020, the following claim was made: COVID-19 is just a mutated form of the common cold.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 77:
+Question: On July 8 2020, the following claim was made: Drinking alcohol reduces the risk of infection of COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 78:
+Question: On July 8 2020, the following claim was made: The COVID-19 outbreak began because people ate bat soup.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 79:
+Question: On July 8 2020, the following claim was made: Spraying alcohol or chlorine all over human body kill the COVID-19
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 80:
+Question: On July 8 2020, the following claim was made: Smokers are likely to be more vulnerable to COVID-19 as the act of smoking means that fingers are in contact with lips which increases the possibility of transmission of virus from hand to mouth.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 81:
+Question: On July 8 2020, the following claim was made: COVID-19 only infects individuals living with chronic conditions such as asthma and diabetes.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 82:
+Question: On July 8 2020, the following claim was made: Being able to hold your breath for 10 seconds or more without coughing or feeling discomfort means you are free from the COVID-19 or any other lung disease.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 83:
+Question: On July 8 2020, the following claim was made: SARS was more deadly but much less infectious than COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 84:
+Question: On July 8 2020, the following claim was made: Fish tank additive may treat COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 85:
+Question: On July 8 2020, the following claim was made: You have to be with someone for 10 minutes to catch COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 86:
+Question: On July 8 2020, the following claim was made: You can protect yourself from COVID-19 by gargling bleach.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 87:
+Question: On July 8 2020, the following claim was made: A COVID-19 patent expired just as there is a sudden outbreak and, despite media fear-mongering, there is already a vaccine available.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 88:
+Question: On July 8 2020, the following claim was made: One should stay at home on particular days when helicopters spray disinfectant over homes for killing off COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 89:
+Question: On July 8 2020, the following claim was made: covid-19 is a common flu.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 90:
+Question: On July 8 2020, the following claim was made: mosquitoes or ticks spread the virus that causes COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 91:
+Question: On July 8 2020, the following claim was made: Heat can kill the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 92:
+Question: On July 8 2020, the following claim was made: COVID-19 is mainly transmitted through contact with respiratory droplets.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 93:
+Question: On July 8 2020, the following claim was made: the COVID-19 was engineered by scientists in a lab.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 94:
+Question: On July 8 2020, the following claim was made: There is already a vaccine to treat COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 95:
+Question: On July 8 2020, the following claim was made: Young people will not get COVID-19
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 96:
+Question: On July 8 2020, the following claim was made: People with HIV are more prone to get COVID-19
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 97:
+Question: On July 8 2020, the following claim was made: There is no COVID-19 virus.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 98:
+Question: On July 8 2020, the following claim was made: COVID-19 is just the damn flu.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 99:
+Question: On July 8 2020, the following claim was made: drinking bleach can help to cure covid-19 virus.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 100:
+Question: On July 8 2020, the following claim was made: Huge! Results From Breaking Chloroquine Study Show 100% Cure Rate For Patients Infected With The COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 101:
+Question: On July 8 2020, the following claim was made: sunlight can kill covid-19 virus.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 102:
+Question: On July 8 2020, the following claim was made: Home remedies can cure or prevent the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 103:
+Question: On July 8 2020, the following claim was made: Wearing a medical mask can limit the spread of certain respiratory viral diseases including COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 104:
+Question: On July 8 2020, the following claim was made: Handling food packaging is an unlikely cause of COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 105:
+Question: On July 8 2020, the following claim was made: Cold weather and snow can kill the COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 106:
+Question: On July 8 2020, the following claim was made: People who get the COVID-19 will die.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 107:
+Question: On July 8 2020, the following claim was made: Taking extra amounts of Vitamin C can prevent COVID-19.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 108:
+Question: On July 8 2020, the following claim was made: President Donald Trump spawned the Wuhan super COVID-19 virus outbreak under code name zyphr.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 109:
+Question: On July 8 2020, the following claim was made: People Of Color May Be Immune To The COVID-19 Because Of Melanin.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 110:
+Question: On July 8 2020, the following claim was made: The COVID-19 outbreak was planned by vaccine companies hoping to make a profit.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 111:
+Question: On July 8 2020, the following claim was made: 5G mobile networks spread COVID-19
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 112:
+Question: On July 8 2020, the following claim was made: The COVID-19 can be transmitted through the eyes.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 113:
+Question: On July 8 2020, the following claim was made: COVID-19 is abbreviation of coronavirus disease 2019.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 114:
+Question: On July 8 2020, the following claim was made: The COVID-19 can spread from person to person.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 115:
+Question: On June 2017, the following claim was made: Ed Gein had exhumed corpses from local parks.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 116:
+Question: On June 2017, the following claim was made: The Hit was released on DVD in 2009.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 117:
+Question: On June 2017, the following claim was made: Konidela Production Company is a film production company.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 118:
+Question: On June 2017, the following claim was made: Salman Rushdie won a literary prize.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 119:
+Question: On June 2017, the following claim was made: Samsung never entered the construction industry.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 120:
+Question: On June 2017, the following claim was made: Kyle Maclachlan has been nominated for an Emmy award because of a television series called Twin Peaks.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 121:
+Question: On June 2017, the following claim was made: The Chaperone (film) is a comedy television show only.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 122:
+Question: On June 2017, the following claim was made: Catherine Keener appeared in a movie.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 123:
+Question: On June 2017, the following claim was made: The great white shark does not prefer to prey on humans because it's a herbivore.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 124:
+Question: On June 2017, the following claim was made: Two and a Half Men season is incapable of being aired.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 125:
+Question: On June 2017, the following claim was made: George Harrison was married to Pattie Boyd.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 126:
+Question: On June 2017, the following claim was made: Unison (Celine Dion album) was originally released by a Russian record label.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 127:
+Question: On June 2017, the following claim was made: Annie Lennox was named one of "The 100 Greatest Singers of All Time."
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 128:
+Question: On June 2017, the following claim was made: Jiang Wen is exclusively American.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 129:
+Question: On June 2017, the following claim was made: Times when movies are playing can be returned by Google Search.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 130:
+Question: On June 2017, the following claim was made: Chris Benoit has only ever existed in Norway.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 131:
+Question: On June 2017, the following claim was made: Antigua and Barbuda was discovered in 1493.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 132:
+Question: On June 2017, the following claim was made: John Goodman has had roles.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 133:
+Question: On June 2017, the following claim was made: Victor Frankenstein is only a romance film.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 134:
+Question: On June 2017, the following claim was made: Netscape Navigator was used for web browsing.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 135:
+Question: On June 2017, the following claim was made: Phoenix, Arizona is not the capital of Arizona.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 136:
+Question: On June 2017, the following claim was made: Anxiety has been linked with physical symptoms.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 137:
+Question: On June 2017, the following claim was made: The Raven (2012 film) was released in Ireland in 2014.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 138:
+Question: On June 2017, the following claim was made: The Nobel Prize in Chemistry was awarded to a person from everywhere except from Holland.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 139:
+Question: On June 2017, the following claim was made: Anthony Scaramucci was not born on January 6, 1964.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 140:
+Question: On June 2017, the following claim was made: GLOW is an Amazon TV series.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 141:
+Question: On June 2017, the following claim was made: France is the owner of Corsica.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 142:
+Question: On June 2017, the following claim was made: Bonaire is excluded from the three BES islands in the Caribbean.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 143:
+Question: On June 2017, the following claim was made: Heath Ledger did not direct music videos.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 144:
+Question: On June 2017, the following claim was made: Key & Peele has only won one Primetime Emmy Award.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 145:
+Question: On June 2017, the following claim was made: The Vandals established kingdoms only in Portugal and Britain.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 146:
+Question: On June 2017, the following claim was made: The Challenge XXX: Dirty 30 is a season of an MTV show.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 147:
+Question: On June 2017, the following claim was made: Carey Hayes was born in 1897.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 148:
+Question: On June 2017, the following claim was made: The ROC controls more of China than the PRC.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 149:
+Question: On June 2017, the following claim was made: The Woman in Black was produced by Hammer Film Productions in 2012.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 150:
+Question: On June 2017, the following claim was made: One Flew Over the Cuckoo's Nest came out in 1930.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 151:
+Question: On June 2017, the following claim was made: Sean Gunn was in Guardians of the Galaxy in 2015.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 152:
+Question: On June 2017, the following claim was made: In 2004, Spider-Man 2 was released.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 153:
+Question: On June 2017, the following claim was made: Daredevil was produced by Ryan Gosling.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 154:
+Question: On June 2017, the following claim was made: Commodore is ranked above a navy captain and a rear admiral.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 155:
+Question: On June 2017, the following claim was made: GLOW is a Netflix TV series.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 156:
+Question: On June 2017, the following claim was made: The Gettysburg Address was exclusively a movie.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 157:
+Question: On June 2017, the following claim was made: Laura Robson is a volleyball player.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 158:
+Question: On June 2017, the following claim was made: Pocahontas was not the daughter of Powhatan.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 159:
+Question: On June 2017, the following claim was made: Ann Biderman is an American.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 160:
+Question: On June 2017, the following claim was made: The Silver Surfer is a real person.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 161:
+Question: On June 2017, the following claim was made: Japan is in North America.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 162:
+Question: On June 2017, the following claim was made: Julie Bowen's marriage anniversary is March 3.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 163:
+Question: On June 2017, the following claim was made: Java is outside Indonesia.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 164:
+Question: On June 2017, the following claim was made: Pakistan's semi-industrialized economy is the 25th largest in the world in purchasing power parity in 2017.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 165:
+Question: On June 2017, the following claim was made: Mandy Moore (singer) did not have a career in music.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 166:
+Question: On June 2017, the following claim was made: University of Chicago Law School is ranked fourth by Brain Leiter on the "Top 15 Schools From Which the Most `Prestigious' Law Firms Hire New Lawyers."
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 167:
+Question: On June 2017, the following claim was made: Chile is a member of the Group of 15.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 168:
+Question: On June 2017, the following claim was made: Around the world, medical school vary in the nature of medical programs.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 169:
+Question: On June 2017, the following claim was made: Japan national football team is incapable of being one of the most successful teams in Asia.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 170:
+Question: On June 2017, the following claim was made: No Strings Attached came out in the 21st century.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 171:
+Question: On June 2017, the following claim was made: Jiang Wen is a Chinese cuisine.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 172:
+Question: On June 2017, the following claim was made: Scandal, a rock band, is not a businesswoman.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 173:
+Question: On June 2017, the following claim was made: Wolfgang Amadeus Mozart never married.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 174:
+Question: On June 2017, the following claim was made: The Giver was nominated for a People's Choice Award.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 175:
+Question: On June 2017, the following claim was made: Ding Yanyuhang is male.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 176:
+Question: On June 2017, the following claim was made: David Lloyd George served as a prime minister.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 177:
+Question: On June 2017, the following claim was made: The Cyclades are in a Sea.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 178:
+Question: On June 2017, the following claim was made: Mike Friedrich is only German.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 179:
+Question: On June 2017, the following claim was made: Islamabad is a squid.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 180:
+Question: On June 2017, the following claim was made: Shannon Lee (actress) was not born in 1969.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 181:
+Question: On June 2017, the following claim was made: Ghost has Patrick Swayze and Demi Moore in very minimal roles.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 182:
+Question: On June 2017, the following claim was made: The American actor that plays Chumlee was born on December.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 183:
+Question: On June 2017, the following claim was made: Chris Paul is a two-time Olympic silver winner.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 184:
+Question: On June 2017, the following claim was made: Pakistan is officially known as the Islamic Republic of Pakistan.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 185:
+Question: On June 2017, the following claim was made: Robert Zemechkis has failed to make movies across a wide variety of genres.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 186:
+Question: On June 2017, the following claim was made: Bonobos live south of the Ganges River.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 187:
+Question: On June 2017, the following claim was made: Simon Pegg was born on February 14th, 1860.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 188:
+Question: On June 2017, the following claim was made: Tangled was released in 2010.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 189:
+Question: On June 2017, the following claim was made: Menace II Society is a TV show.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 190:
+Question: On June 2017, the following claim was made: Kojol received the fourth highest civilian honour.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 191:
+Question: On June 2017, the following claim was made: Anthony Scaramucci is a political leader.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 192:
+Question: On June 2017, the following claim was made: Mercedes-Benz is a division of a German company.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 193:
+Question: On June 2017, the following claim was made: Hezbollah received a type of support from Syria.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 194:
+Question: On June 2017, the following claim was made: Anne Boleyn is an influential person that was mentioned in many artistic and cultural work.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 195:
+Question: On June 2017, the following claim was made: Richard Fortus refuses to be a member of Guns N' Roses.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 196:
+Question: On June 2017, the following claim was made: Shomu Mukherjee died on April 10, 2008.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 197:
+Question: On June 2017, the following claim was made: Sands Hotel and Casino was originally a casino with 200 rooms.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 198:
+Question: On June 2017, the following claim was made: Zoe Saldana died in 1958.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 199:
+Question: On June 2017, the following claim was made: Touch My Body is a law.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 200:
+Question: On June 2017, the following claim was made: Kung Fu Panda grossed $10,000,000 on its opening day.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 201:
+Question: On June 2017, the following claim was made: Charles de Gaulle was a choir leader.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 202:
+Question: On June 2017, the following claim was made: The Challenge XXX: Dirty 30 is not a season of an American TV show.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 203:
+Question: On June 2017, the following claim was made: Matt Bomer was only born on May 11, 1977.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 204:
+Question: On June 2017, the following claim was made: Japan national football team had second round advancements in 2010.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 205:
+Question: On June 2017, the following claim was made: Musala is the highest peak in the Arabic Peninsula.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 206:
+Question: On June 2017, the following claim was made: Chris Mullin played with a team.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 207:
+Question: On June 2017, the following claim was made: Baloch people speak a branch of Northwestern Iranian languages.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 208:
+Question: On June 2017, the following claim was made: Two parties claim to be the official government of China.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 209:
+Question: On June 2017, the following claim was made: One of the most notable features of Zoroastrianism is the belief and doctrine that is focused on the arrival of the messiah.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 210:
+Question: On June 2017, the following claim was made: Kojol received the third highest civilian honour of the country.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 211:
+Question: On June 2017, the following claim was made: Vampire Academy was a critical failure.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 212:
+Question: On June 2017, the following claim was made: Brie Larson was denied any role in the movie Short Term 12.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 213:
+Question: On June 2017, the following claim was made: Barcelona has a population of less than one million.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 214:
+Question: On June 2017, the following claim was made: Super Bowl XLV was the second time the Super Bowl was played in the Dallas-Fort Worth area.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 215:
+Question: On June 2017, the following claim was made: The Brat Pack only frequently appeared together in films in the 1960s.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 216:
+Question: On June 2017, the following claim was made: Maria Theresa ruled for 40 years.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 217:
+Question: On June 2017, the following claim was made: Birmingham is in Suffolk County.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 218:
+Question: On June 2017, the following claim was made: 2 Hearts is a musical composition by Minogue.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 219:
+Question: On June 2017, the following claim was made: Dawood Ibrahim was born in Mumbai in 1923.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 220:
+Question: On June 2017, the following claim was made: American Library Association has members.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 221:
+Question: On June 2017, the following claim was made: Ekta Kapoor worked on an Indian soap opera that premiered in 2000.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 222:
+Question: On June 2017, the following claim was made: Henry III was the son of King Robert.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 223:
+Question: On June 2017, the following claim was made: Georges Gilles de la Tourette described things.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 224:
+Question: On June 2017, the following claim was made: Research is incapable of testing the validity of instruments.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 225:
+Question: On June 2017, the following claim was made: Anxiety has been linked to other ailments.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 226:
+Question: On June 2017, the following claim was made: Manchester United is not based in Old Trafford, Greater Manchester, England.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 227:
+Question: On June 2017, the following claim was made: The Chaperone (film) is a creative work.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 228:
+Question: On June 2017, the following claim was made: The University of Leicester discovered and identified the remains of a king in 1955.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 229:
+Question: On June 2017, the following claim was made: Dawood Ibrahim was born in 1988.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 230:
+Question: On June 2017, the following claim was made: Ted Cruz is an American.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 231:
+Question: On June 2017, the following claim was made: UNESCO's City of Literature class is part of its Creative Cities Network.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 232:
+Question: On June 2017, the following claim was made: Aphrodite plays tennis with Hephaestus.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 233:
+Question: On June 2017, the following claim was made: Benjamin Franklin was born in 1790.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 234:
+Question: On June 2017, the following claim was made: Floyd Mayweather Jr. is a professional beat boxer.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 235:
+Question: On June 2017, the following claim was made: Coins of the Swiss franc are used only outside of Switzerland.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 236:
+Question: On June 2017, the following claim was made: The American Civil War took place in the 20th century.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 237:
+Question: On June 2017, the following claim was made: San Francisco Bay Area contains many airports.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 238:
+Question: On June 2017, the following claim was made: Yugoslavia is also inscribed Jugoslavija.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 239:
+Question: On June 2017, the following claim was made: Battle of the Bastards aired in the United States.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 240:
+Question: On June 2017, the following claim was made: Liberal Socialists were the only people to form The Blue Dog Coalition.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 241:
+Question: On June 2017, the following claim was made: One drama film is An Education.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 242:
+Question: On June 2017, the following claim was made: The Logie Awards took place at a casino for its latest ceremony.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 243:
+Question: On June 2017, the following claim was made: George Harrison got divorced from Pattie Boyd in 1979.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 244:
+Question: On June 2017, the following claim was made: The New England Patriots owns the record for most Super Bowls lost.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 245:
+Question: On June 2017, the following claim was made: Estelle Getty was an American.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 246:
+Question: On June 2017, the following claim was made: The Indiana Pacers were never allowed to join a basketball league.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 247:
+Question: On June 2017, the following claim was made: The Colbert Report was taped Monday through Friday.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 248:
+Question: On June 2017, the following claim was made: Camp Flog Gnaw is hosted by a dog.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 249:
+Question: On June 2017, the following claim was made: Resident Evil is a film.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 250:
+Question: On June 2017, the following claim was made: Kyra Sedgwick had a role in a film.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 251:
+Question: On June 2017, the following claim was made: The Little Prince (2015 film) is directed by an American director Mark Osborne.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 252:
+Question: On June 2017, the following claim was made: Sky UK is a company which serves only eastern Europe.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 253:
+Question: On June 2017, the following claim was made: Chris Mullin only played with the Indiana Pacers from 1991 until 1992.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 254:
+Question: On June 2017, the following claim was made: Kevin Costner has been a television actor.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 255:
+Question: On June 2017, the following claim was made: Aestheticism favors aesthetics over socio-political themes.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 256:
+Question: On June 2017, the following claim was made: Chadwick Boseman was in the movie 42.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 257:
+Question: On June 2017, the following claim was made: Raven-Symoné performs in Empire.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 258:
+Question: On June 2017, the following claim was made: According to some, Zoroastrianism's major features have been influential.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 259:
+Question: On June 2017, the following claim was made: Gory Guerrero was incapable of wrestling since birth.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 260:
+Question: On June 2017, the following claim was made: Battle of the Bastards had a viewership of 10 million in its initial broadcast.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 261:
+Question: On June 2017, the following claim was made: Alex Jones was born in the nineties.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 262:
+Question: On June 2017, the following claim was made: General Motors sells assembled vehicles.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 263:
+Question: On June 2017, the following claim was made: Currently Nawaz Sharif serves as a prime minister.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 264:
+Question: On June 2017, the following claim was made: Josh Hutcherson wasn't in two different films within two years.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 265:
+Question: On June 2017, the following claim was made: SummerSlam had no show.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 266:
+Question: On June 2017, the following claim was made: The Love Club EP is the debut extended play of singer Ella Marija Lani Yelich-O'Connor.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 267:
+Question: On June 2017, the following claim was made: Gaius Julius Caesar participated in a senate.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 268:
+Question: On June 2017, the following claim was made: Little Dorrit was originally published in serial form.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 269:
+Question: On June 2017, the following claim was made: Robert Zemeckis has rarely made movies for adults.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 270:
+Question: On June 2017, the following claim was made: The Nottingham Forest F.C. is barred from being a football club.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 271:
+Question: On June 2017, the following claim was made: Azithromycin is available as a generic medication for infections.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 272:
+Question: On June 2017, the following claim was made: The Times, a UK daily newspaper, is a punk band.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 273:
+Question: On June 2017, the following claim was made: A polynomial consists of only coefficients.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 274:
+Question: On June 2017, the following claim was made: Rick Ross founded the Maybach Music Group in 2009.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 275:
+Question: On June 2017, the following claim was made: The Hunger Games are a film trilogy.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 276:
+Question: On June 2017, the following claim was made: Guns N' Roses is an American hard rock band.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 277:
+Question: On June 2017, the following claim was made: Chris Benoit died in June 2001.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 278:
+Question: On June 2017, the following claim was made: Heaven Can Wait was filmed after Here Comes Mr. Jordan.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 279:
+Question: On June 2017, the following claim was made: The second most populous municipality of Spain is Barcelona.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 280:
+Question: On June 2017, the following claim was made: Touch My Body is a song by Mariah Carey.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 281:
+Question: On June 2017, the following claim was made: The Catcher in the Rye is a movie script.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 282:
+Question: On June 2017, the following claim was made: Sonny & Cher began their career with record producer Phil Spector.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 283:
+Question: On June 2017, the following claim was made: Kate Walsh was on a tour of duty in 1947.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 284:
+Question: On June 2017, the following claim was made: The Alfred P. Murrah Federal Building was located in a city.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 285:
+Question: On June 2017, the following claim was made: Hannah and Her Sisters' ending is unrelated to Thanksgiving.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 286:
+Question: On June 2017, the following claim was made: No Strings Attached was released on January 11.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 287:
+Question: On June 2017, the following claim was made: Raja Hindustani's director was Dharmesh Darshan.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 288:
+Question: On June 2017, the following claim was made: Yves Saint Laurent is a fashion brand.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 289:
+Question: On June 2017, the following claim was made: Internet access enables information gathering on the web.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 290:
+Question: On June 2017, the following claim was made: Half Girlfriend's principal photography began in June of 2016.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 291:
+Question: On June 2017, the following claim was made: Amy Winehouse died.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 292:
+Question: On June 2017, the following claim was made: The Catcher in the Rye does not deal with the issue of identity.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 293:
+Question: On June 2017, the following claim was made: William Howard Taft only accepted offers of appointment to a United States court.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 294:
+Question: On June 2017, the following claim was made: George III was succeeded by his son, George IV.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 295:
+Question: On June 2017, the following claim was made: Tangled is a 2D film.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 296:
+Question: On June 2017, the following claim was made: Maggie Q has yet to appear in a sequel.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 297:
+Question: On June 2017, the following claim was made: The Maltese language emerged before Semitic languages.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Example 298:
+Question: On June 2017, the following claim was made: The Raven (2012 film) was released in a sovereign country in western Europe in March of 2012.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 299:
+Question: On June 2017, the following claim was made: San Francisco Bay Area contains many national parks.
+Q: Was this claim true or false?
+A:
+Answer: true
+
+Example 300:
+Question: On June 2017, the following claim was made: Species distribution can be understood through only through speciation.
+Q: Was this claim true or false?
+A:
+Answer: false
+
+Learn from the given examples and answer the question.

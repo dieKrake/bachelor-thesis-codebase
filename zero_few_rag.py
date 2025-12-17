@@ -53,7 +53,7 @@ DEBUG_PROMPT_DIR = Path("debug_prompts")
 EVAL_MODE = "rag"  # "zero-shot" | "few-shot" | "rag"
 RANDOM_SEED = 42
 VALIDATION_SIZE = 200
-TRAIN_SIZE = 200
+TRAIN_SIZE = 300
 USING_DATASET_NAME = None # None -> tasksource / "google" -> google/boolq
 USING_TASK_NAME = "fallacy" # "elementary" / "fact" / "fallacy" / "navigate" / "social"
 
@@ -159,7 +159,7 @@ elif(USING_TASK_NAME == "social"):
     ZERO_SHOT_PROMPT = social_iqa_prompt
 
 else:
-    HF_TASK_NAME = None
+    HF_TASK_NAME = boolq_task_name
     AZURE_SEARCH_INDEX = boolq_azure_index
     ZERO_SHOT_PROMPT = boolq_prompt
 

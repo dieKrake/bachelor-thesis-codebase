@@ -1,0 +1,1507 @@
+You MUST answer with exactly one string: either "Valid" or "Invalid". Do not output explanations, reasoning steps, punctuation, or additional text. "Valid" = the argument is logically valid. "Invalid" = the conclusion does not necessarily follow from the premises.
+
+Now answer the following question with exactly one word: "Valid" or "Invalid".
+
+Additionally I am giving you the following examples to learn from:
+
+Example 1:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Victoria is more sensible than Rossi. Jim is more sensible than Victoria. Therefore victoria is less sensible than Jim.
+A:
+Answer: Valid
+
+Example 2:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? The last train leaves soon, and you said you didn't want to miss it, so you should head out shortly.
+A:
+Answer: Valid
+
+Example 3:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All flionsoes are shipotoes. Some flionsoes are looncans. Therefore some looncans are shipotoes.
+A:
+Answer: Valid
+
+Example 4:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All dewfays are polinks. All thrastles are dewfays. Therefore all thrastles are polinks.
+A:
+Answer: Valid
+
+Example 5:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some airplanes are not harlequins. All programmers are airplanes. Therefore all programmers are harlequins.
+A:
+Answer: Invalid
+
+Example 6:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some goblins are uncles. All goblins are actors. Therefore some actors are uncles.
+A:
+Answer: Valid
+
+Example 7:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Mexican food is heavy on spice, so if you want something plainer, you might try English cuisine instead.
+A:
+Answer: Valid
+
+Example 8:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reptilians are adults. Some reptilians are places. Therefore some places are adults.
+A:
+Answer: Valid
+
+Example 9:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some brongs are hendassas. Some fluffsters are not brongs. Therefore all fluffsters are hendassas.
+A:
+Answer: Invalid
+
+Example 10:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? You can't prove he's innocent, so he must be guilty.
+A:
+Answer: Invalid
+
+Example 11:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some ocirs are not gerants. All onamas are ocirs. Therefore all onamas are gerants.
+A:
+Answer: Invalid
+
+Example 12:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Carol is wittier than Joanna. Bill is wittier than Kevin. Joanna is less witty than Kevin. Therefore joanna is wittier than Bill.
+A:
+Answer: Invalid
+
+Example 13:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No candlestick makers are teachers. Some mushrooms are teachers. Therefore some mushrooms are not candlestick makers.
+A:
+Answer: Valid
+
+Example 14:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some slozzoms are not exastoes. Some slozzoms are not gryllows. Therefore some gryllows are exastoes.
+A:
+Answer: Invalid
+
+Example 15:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Laura is less frank than Carol. Laura is less frank than Kim. Mario is less frank than Laura. Anne is less frank than Laura. Therefore carol is more frank than Laura.
+A:
+Answer: Valid
+
+Example 16:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Chinese culture is very old; that's why it's so sophisticated.
+A:
+Answer: Invalid
+
+Example 17:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. France has the lowest rate of heart disease in Europe. So being French protects against heart disease.
+A:
+Answer: Invalid
+
+Example 18:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Candice is less frank than Philipp. Tom is more frank than Philipp. Therefore philipp is more frank than Tom.
+A:
+Answer: Invalid
+
+Example 19:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some dolphins are not cyborgs. All dolphins are rockets. Therefore some rockets are not cyborgs.
+A:
+Answer: Valid
+
+Example 20:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All glontoms are refluppers. No refluppers are gaxes. Therefore no gaxes are glontoms.
+A:
+Answer: Valid
+
+Example 21:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some fruit flies are not actresses. Some fruit flies are not monkeys. Therefore some monkeys are not actresses.
+A:
+Answer: Invalid
+
+Example 22:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Anne is more frank than Jennifer. Anne is more frank than Jones. Jennifer is more frank than Anna. Therefore anne is more frank than Anna.
+A:
+Answer: Valid
+
+Example 23:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All vampires are capitols. Some sheep dogs are vampires. Therefore some sheep dogs are capitols.
+A:
+Answer: Valid
+
+Example 24:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No zestponts are sypholoes. All unfabrans are sypholoes. Therefore no unfabrans are zestponts.
+A:
+Answer: Valid
+
+Example 25:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. William is less reliable than Laura. Bill is less reliable than Cecilia. Sean is less reliable than Aiden. Aiden is less reliable than Laura. Therefore aiden is more reliable than Laura.
+A:
+Answer: Invalid
+
+Example 26:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All U.F.O.s are heroines. No teachers are heroines. Therefore no teachers are U.F.O.s.
+A:
+Answer: Valid
+
+Example 27:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No spewsies are builithes. All winnibler are builithes. Therefore no winnibler are spewsies.
+A:
+Answer: Valid
+
+Example 28:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some aliens are not capitols. All aliens are lassies. Therefore some lassies are not capitols.
+A:
+Answer: Valid
+
+Example 29:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All fruit flies are jesters. Some auditoriums are not jesters. Therefore some auditoriums are not fruit flies.
+A:
+Answer: Valid
+
+Example 30:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All snakes are arachnids. All arachnids are cubs. Therefore some cubs are not snakes.
+A:
+Answer: Invalid
+
+Example 31:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? The politician won the popular vote, so they must be the best candidate.
+A:
+Answer: Invalid
+
+Example 32:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Nat is taller than Aiden. Jennifer is taller than Jill. Jill is taller than Nat. Sara is taller than Nat. Therefore jennifer is taller than Aiden.
+A:
+Answer: Valid
+
+Example 33:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tuna are capitols. Some capitols are toves. Therefore some toves are tuna.
+A:
+Answer: Invalid
+
+Example 34:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Referees are supposed to be neutral. The referee is from Switzerland, a neutral country, so he must be neutral.
+A:
+Answer: Invalid
+
+Example 35:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is more reliable than Sarah. Moses is less reliable than David. Tom is more reliable than Sarah. Therefore moses is more reliable than Sarah.
+A:
+Answer: Valid
+
+Example 36:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is slower than Rossi. Sam is faster than Rossi. John is slower than Dylan. Therefore rossi is faster than John.
+A:
+Answer: Valid
+
+Example 37:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No shizzoes are zestponts. All benessits are shizzoes. Therefore no benessits are zestponts.
+A:
+Answer: Valid
+
+Example 38:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? You said human rights are important, so clearly you don't care about animals.
+A:
+Answer: Invalid
+
+Example 39:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some guys are owls. All owls are lion tamers. Therefore some lion tamers are guys.
+A:
+Answer: Valid
+
+Example 40:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some pentwests are hildaids. All hildaids are fluffsters. Therefore some fluffsters are pentwests.
+A:
+Answer: Valid
+
+Example 41:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Modern food is sweeter and saltier than natural food, so it can't be healthy.
+A:
+Answer: Invalid
+
+Example 42:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No smurtans are novalies. Some bliggingtoms are not novalies. Therefore no bliggingtoms are smurtans.
+A:
+Answer: Invalid
+
+Example 43:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some relatives are brunettes. Some jokers are not relatives. Therefore all jokers are brunettes.
+A:
+Answer: Invalid
+
+Example 44:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No clowns are androids. Some clowns are pets. Therefore all pets are androids.
+A:
+Answer: Invalid
+
+Example 45:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All brewtines are looplats. Some yoffas are not looplats. Therefore some yoffas are not brewtines.
+A:
+Answer: Valid
+
+Example 46:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Alex is more reliable than Moses. Moses is more reliable than Anne. Therefore alex is less reliable than Moses.
+A:
+Answer: Invalid
+
+Example 47:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some shraiwels are not rigglays. All shraiwels are goyances. Therefore some goyances are not rigglays.
+A:
+Answer: Valid
+
+Example 48:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You're telling me not to start smoking, but you smoke yourself, so I shouldn't listen to your advice.
+A:
+Answer: Invalid
+
+Example 49:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All reggabreas are proppors. Some novalies are not proppors. Therefore some novalies are not reggabreas.
+A:
+Answer: Valid
+
+Example 50:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some primates are not bedrooms. All primates are nephews. Therefore some nephews are bedrooms.
+A:
+Answer: Invalid
+
+Example 51:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No brewtines are slozzoms. All dorchies are slozzoms. Therefore no dorchies are brewtines.
+A:
+Answer: Valid
+
+Example 52:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All refluppers are shipotoes. Some sebusses are refluppers. Therefore some sebusses are shipotoes.
+A:
+Answer: Valid
+
+Example 53:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All gaxes are werradiths. No houtals are werradiths. Therefore no houtals are gaxes.
+A:
+Answer: Valid
+
+Example 54:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? You should trust this philosophical theory because it's brand new.
+A:
+Answer: Invalid
+
+Example 55:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Anna is wittier than Jill. Jill is less witty than Dylan. Anna is less witty than Peter. Anna is less witty than Bill. Therefore peter is wittier than Jill.
+A:
+Answer: Valid
+
+Example 56:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Lara is shorter than Henry. Debbie is shorter than Rossi. Henry is shorter than Carol. Therefore carol is taller than Henry.
+A:
+Answer: Valid
+
+Example 57:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Border collies require a lot of exercise, so if you're unable to take them for regular walks, you might be better off getting a different sort of pet.
+A:
+Answer: Valid
+
+Example 58:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some programmers are canines. No programmers are tumtum trees. Therefore some tumtum trees are canines.
+A:
+Answer: Invalid
+
+Example 59:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Sophia is kinder than Nat. Mary is less kind than Paul. Mary is kinder than Nat. Therefore paul is kinder than Nat.
+A:
+Answer: Valid
+
+Example 60:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some rodrups are sagirds. All rodrups are tingforms. Therefore some tingforms are sagirds.
+A:
+Answer: Valid
+
+Example 61:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All heros are musicians. No musicians are aunts. Therefore no aunts are heros.
+A:
+Answer: Valid
+
+Example 62:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some rigglays are sevvits. All rigglays are spequals. Therefore some spequals are not sevvits.
+A:
+Answer: Invalid
+
+Example 63:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some bees are not cats. No cats are spoons. Therefore all spoons are bees.
+A:
+Answer: Invalid
+
+Example 64:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All venusians are knights. No venusians are minors. Therefore some minors are not knights.
+A:
+Answer: Invalid
+
+Example 65:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Mary is less ambitious than Anna. Mary is more ambitious than Sophia. Therefore mary is less ambitious than Sophia.
+A:
+Answer: Invalid
+
+Example 66:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some surogous are not mizules. No werradiths are surogous. Therefore all werradiths are mizules.
+A:
+Answer: Invalid
+
+Example 67:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Mary is kinder than Lara. Rossi is kinder than Charlotte. Lara is kinder than Susan. Therefore susan is kinder than Lara.
+A:
+Answer: Invalid
+
+Example 68:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No brongs are mincoms. All nalpures are mincoms. Therefore no nalpures are brongs.
+A:
+Answer: Valid
+
+Example 69:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some nurses are animals. No scouts are animals. Therefore some scouts are nurses.
+A:
+Answer: Invalid
+
+Example 70:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No caimats are khavvins. Some khavvins are yudalouds. Therefore some yudalouds are not caimats.
+A:
+Answer: Valid
+
+Example 71:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All bats are ships. Some ships are not fruit flies. Therefore some fruit flies are not bats.
+A:
+Answer: Invalid
+
+Example 72:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Seasonal depression is worst in November. Next month is December, so it might be a bad month for Seasonal Depression.
+A:
+Answer: Valid
+
+Example 73:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some farklings are not froilets. No froilets are reggabreas. Therefore some reggabreas are not farklings.
+A:
+Answer: Invalid
+
+Example 74:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore laura is less witty than Kim.
+A:
+Answer: Valid
+
+Example 75:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No daisies are kitchens. No kitchens are princes. Therefore no princes are daisies.
+A:
+Answer: Invalid
+
+Example 76:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Laura is less witty than Sara. Sara is less witty than Kim. Sara is less witty than David. Therefore david is less witty than Sara.
+A:
+Answer: Invalid
+
+Example 77:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No chickens are whales. All nephews are whales. Therefore no nephews are chickens.
+A:
+Answer: Valid
+
+Example 78:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bisdoes are brongs. Some bisdoes are snabeths. Therefore some snabeths are brongs.
+A:
+Answer: Valid
+
+Example 79:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Before buying a new house, it's important to check the key aspects of the property like the foundations.
+A:
+Answer: Valid
+
+Example 80:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? You shouldn't trust Donald's views about politics. He's an alcoholic.
+A:
+Answer: Invalid
+
+Example 81:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No horses are nieces. All jokers are horses. Therefore no jokers are nieces.
+A:
+Answer: Valid
+
+Example 82:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tortoises are lads. All clothes are tortoises. Therefore all clothes are lads.
+A:
+Answer: Valid
+
+Example 83:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All benessits are caimats. Some benessits are lotadils. Therefore some lotadils are caimats.
+A:
+Answer: Valid
+
+Example 84:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Amy is faster than Dylan. Charlotte is faster than Amy. Therefore charlotte is slower than Amy.
+A:
+Answer: Invalid
+
+Example 85:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All programmers are rooks. All amphibians are programmers. Therefore all amphibians are rooks.
+A:
+Answer: Valid
+
+Example 86:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Bella is less witty than Amy. Laura is wittier than Edward. Laura is wittier than Amy. Amy is less witty than Anne. Therefore laura is wittier than Bella.
+A:
+Answer: Valid
+
+Example 87:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Cecilia is shorter than William. William is shorter than Mario. Therefore mario is shorter than William.
+A:
+Answer: Invalid
+
+Example 88:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some offices are not capitols. All offices are playwrights. Therefore some playwrights are not capitols.
+A:
+Answer: Valid
+
+Example 89:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sagirds are nalpures. All nalpures are pardees. Therefore some pardees are sagirds.
+A:
+Answer: Valid
+
+Example 90:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No bliggingtoms are natances. All bliggingtoms are noelinds. Therefore no noelinds are natances.
+A:
+Answer: Invalid
+
+Example 91:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Sara is taller than Sean. Edward is taller than Sara. Michael is taller than Jack. Anna is taller than Edward. Therefore edward is taller than Sean.
+A:
+Answer: Valid
+
+Example 92:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No lions are owls. Some owls are lambs. Therefore some lambs are not lions.
+A:
+Answer: Valid
+
+Example 93:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some champions are not asteroids. No champions are jovians. Therefore some jovians are asteroids.
+A:
+Answer: Invalid
+
+Example 94:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are not hobgoblins. Some dandelions are hobgoblins. Therefore no dandelions are cowboys.
+A:
+Answer: Invalid
+
+Example 95:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No smurtans are shures. Some shipotoes are shures. Therefore some shipotoes are not smurtans.
+A:
+Answer: Valid
+
+Example 96:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some cats are not calves. Some cats are not extraterrestrials. Therefore some extraterrestrials are not calves.
+A:
+Answer: Invalid
+
+Example 97:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sebusses are besloors. All bacclas are besloors. Therefore no bacclas are sebusses.
+A:
+Answer: Valid
+
+Example 98:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All guys are snarks. No guys are skeptics. Therefore all skeptics are snarks.
+A:
+Answer: Invalid
+
+Example 99:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are not pens. All pens are guys. Therefore all guys are cowboys.
+A:
+Answer: Invalid
+
+Example 100:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No dining rooms are vehicles. All nurses are vehicles. Therefore no nurses are dining rooms.
+A:
+Answer: Valid
+
+Example 101:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Lara is wittier than Alex. Lara is less witty than Osbert. Therefore alex is wittier than Lara.
+A:
+Answer: Invalid
+
+Example 102:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All auditoriums are actresses. Some writers are not actresses. Therefore some writers are auditoriums.
+A:
+Answer: Invalid
+
+Example 103:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some natances are shipotoes. All shipotoes are ocirammas. Therefore some ocirammas are natances.
+A:
+Answer: Valid
+
+Example 104:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sparrows are turtles. Some turtles are students. Therefore some students are not sparrows.
+A:
+Answer: Valid
+
+Example 105:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Henry is shorter than Michael. Bill is shorter than Henry. Carol is shorter than Bill. Bill is taller than Bella. Therefore bill is shorter than Carol.
+A:
+Answer: Invalid
+
+Example 106:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less sensible than Carol. Henry is less sensible than Candice. Candice is less sensible than Jill. Therefore henry is more sensible than Carol.
+A:
+Answer: Invalid
+
+Example 107:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some trealops are didizas. Some didizas are reggabreas. Therefore some reggabreas are not trealops.
+A:
+Answer: Invalid
+
+Example 108:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Rossi is slower than Jack. Candice is slower than Rossi. Therefore rossi is faster than Candice.
+A:
+Answer: Valid
+
+Example 109:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some dufizzes are not didizas. No hawkloons are didizas. Therefore all hawkloons are dufizzes.
+A:
+Answer: Invalid
+
+Example 110:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Excessive tanning is bad for the skin, so you should wear sunscreen to avoid it.
+A:
+Answer: Valid
+
+Example 111:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some lawyers are lion tamers. Some cobras are lawyers. Therefore some cobras are not lion tamers.
+A:
+Answer: Invalid
+
+Example 112:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Michael is older than Jones. Anne is older than Michael. Sam is older than Lara. Jennifer is older than Anne. Therefore jennifer is older than Michael.
+A:
+Answer: Valid
+
+Example 113:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Michael is shorter than Zach. Dylan is taller than William. William is taller than Michael. Therefore dylan is shorter than Michael.
+A:
+Answer: Invalid
+
+Example 114:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All exastoes are flionsoes. All aferrarons are flionsoes. Therefore no aferrarons are exastoes.
+A:
+Answer: Invalid
+
+Example 115:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? That's the kind of injury that requires expert medical treatment, so you should go to the hospital.
+A:
+Answer: Valid
+
+Example 116:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Bob is slower than Robert. Anne is slower than Vicky. Vicky is slower than Bob. Therefore vicky is slower than Robert.
+A:
+Answer: Valid
+
+Example 117:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No treyples are fluffsters. Some essups are fluffsters. Therefore some essups are not treyples.
+A:
+Answer: Valid
+
+Example 118:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? I have the right to drink beer all day, so it's only right that I drink beer all day.
+A:
+Answer: Invalid
+
+Example 119:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All tograshs are shraiwels. Some noxuses are not shraiwels. Therefore some noxuses are not tograshs.
+A:
+Answer: Valid
+
+Example 120:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some pardees are not shraiwels. Some shraiwels are not tupresses. Therefore some tupresses are not pardees.
+A:
+Answer: Invalid
+
+Example 121:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some kitchens are not bakers. Some lassies are bakers. Therefore some lassies are kitchens.
+A:
+Answer: Invalid
+
+Example 122:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All nightmares are photographs. All crabs are nightmares. Therefore no crabs are photographs.
+A:
+Answer: Invalid
+
+Example 123:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Joanna is kinder than Michael. Joanna is kinder than Rossi. Michael is less kind than Rossi. Therefore joanna is kinder than Rossi.
+A:
+Answer: Valid
+
+Example 124:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some polinks are not yudalouds. Some hawkloons are yudalouds. Therefore all hawkloons are polinks.
+A:
+Answer: Invalid
+
+Example 125:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? People in my neighbourhood help clean up after parties, so I assue most people's neighbourhoods are the same.
+A:
+Answer: Invalid
+
+Example 126:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Aiden is more ambitious than Annie. Susan is more ambitious than Jim. Moses is less ambitious than Susan. Jim is less ambitious than Annie. Therefore aiden is more ambitious than Jim.
+A:
+Answer: Valid
+
+Example 127:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Nat is wittier than Sophia. Sophia is wittier than Aiden. Therefore aiden is wittier than Sophia.
+A:
+Answer: Invalid
+
+Example 128:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All vampires are cowboys. Some butchers are not cowboys. Therefore some butchers are not vampires.
+A:
+Answer: Valid
+
+Example 129:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some rocks are fruit flies. All rocks are nuns. Therefore some nuns are fruit flies.
+A:
+Answer: Valid
+
+Example 130:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All rabbits are aphids. No aphids are lords. Therefore no lords are rabbits.
+A:
+Answer: Valid
+
+Example 131:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some weepeggles are besloors. Some shipotoes are not besloors. Therefore some shipotoes are weepeggles.
+A:
+Answer: Invalid
+
+Example 132:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some flionsoes are not houtals. All houtals are mincoms. Therefore some mincoms are flionsoes.
+A:
+Answer: Invalid
+
+Example 133:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is less frank than Alex. Alex is less frank than Jones. Therefore alex is more frank than John.
+A:
+Answer: Valid
+
+Example 134:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is more sensible than Kevin. Cecilia is more sensible than Bella. Joanna is more sensible than Cecilia. Candice is more sensible than Moses. Therefore kevin is more sensible than Bella.
+A:
+Answer: Invalid
+
+Example 135:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jake is less sensible than Charlotte. Bob is less sensible than Charlotte. Laura is less sensible than Bob. Paul is less sensible than Bob. Therefore paul is less sensible than Charlotte.
+A:
+Answer: Valid
+
+Example 136:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some clothes are goblins. All firemen are clothes. Therefore some firemen are not goblins.
+A:
+Answer: Invalid
+
+Example 137:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Mario is less witty than Osbert. Jim is less witty than Kim. Osbert is less witty than Kim. Therefore mario is wittier than Kim.
+A:
+Answer: Invalid
+
+Example 138:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No slozzoms are sinpuds. Some sinpuds are gryllows. Therefore some gryllows are not slozzoms.
+A:
+Answer: Valid
+
+Example 139:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Charlotte is less sensible than Joanna. Joanna is less sensible than Tim. Therefore tim is less sensible than Joanna.
+A:
+Answer: Invalid
+
+Example 140:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All cows are bakers. Some cobras are not cows. Therefore some cobras are bakers.
+A:
+Answer: Invalid
+
+Example 141:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No shipotoes are winnibler. All sevvits are winnibler. Therefore some sevvits are not shipotoes.
+A:
+Answer: Invalid
+
+Example 142:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some sparrows are wizards. All sparrows are dishes. Therefore some dishes are wizards.
+A:
+Answer: Valid
+
+Example 143:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Edward is less ambitious than Annie. Annie is less ambitious than Sean. Moses is more ambitious than Sean. Jones is more ambitious than Moses. Therefore jones is more ambitious than Annie.
+A:
+Answer: Valid
+
+Example 144:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some knaves are not nurses. No knaves are pets. Therefore no pets are nurses.
+A:
+Answer: Invalid
+
+Example 145:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Osbert is less reliable than Robert. Anne is less reliable than Osbert. Anne is more reliable than Jennifer. Therefore robert is more reliable than Anne.
+A:
+Answer: Valid
+
+Example 146:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No didizas are ocirammas. Some ocirammas are benessits. Therefore some benessits are not didizas.
+A:
+Answer: Valid
+
+Example 147:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some capitols are priests. Some aphids are not priests. Therefore some aphids are not capitols.
+A:
+Answer: Invalid
+
+Example 148:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Annie is taller than Dylan. Cecilia is shorter than Anna. Dylan is taller than Vicky. Vicky is shorter than Jake. Therefore vicky is taller than Annie.
+A:
+Answer: Invalid
+
+Example 149:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No bisdoes are hawkloons. Some tingforms are bisdoes. Therefore all tingforms are hawkloons.
+A:
+Answer: Invalid
+
+Example 150:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Dylan is younger than Mario. Mario is younger than Nat. Jake is younger than Bob. Therefore dylan is younger than Nat.
+A:
+Answer: Valid
+
+Example 151:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All offices are dishes. Some dishes are not minors. Therefore no minors are offices.
+A:
+Answer: Invalid
+
+Example 152:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All prottows are brongs. All spoickles are prottows. Therefore all spoickles are brongs.
+A:
+Answer: Valid
+
+Example 153:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Moses is older than Carol. Amy is older than Carol. Mario is older than Moses. Therefore carol is younger than Amy.
+A:
+Answer: Valid
+
+Example 154:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some horses are aunts. Some birds are not aunts. Therefore all birds are horses.
+A:
+Answer: Invalid
+
+Example 155:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Alex is wittier than Cecilia. Alex is wittier than Sophia. Cecilia is wittier than Sophia. Therefore sophia is wittier than Alex.
+A:
+Answer: Invalid
+
+Example 156:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some musicians are shows. All kittens are musicians. Therefore some kittens are not shows.
+A:
+Answer: Invalid
+
+Example 157:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? If we buy a new sofa, we'll have to buy a new chair.
+A:
+Answer: Invalid
+
+Example 158:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. The politician won the popular vote, so they must be the best candidate.
+A:
+Answer: Invalid
+
+Example 159:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some elves are not colts. Some cowgirls are elves. Therefore some cowgirls are not colts.
+A:
+Answer: Invalid
+
+Example 160:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Sarah is slower than Dylan. Ernest is slower than Dylan. Sarah is slower than Ernest. Therefore ernest is slower than Sarah.
+A:
+Answer: Invalid
+
+Example 161:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All compleys are natances. Some compleys are aferrarons. Therefore some aferrarons are natances.
+A:
+Answer: Valid
+
+Example 162:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some kitchens are not bakers. Some lassies are bakers. Therefore some lassies are kitchens.
+A:
+Answer: Invalid
+
+Example 163:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No winoozes are gaxes. Some spoickles are winoozes. Therefore some spoickles are not gaxes.
+A:
+Answer: Valid
+
+Example 164:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. My brother was robbed yesterday, so the crime rate must be increasing.
+A:
+Answer: Invalid
+
+Example 165:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? If we cut taxes by 1%, we'll have to cut them more and more until we abolish them entirely.
+A:
+Answer: Invalid
+
+Example 166:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No weepeggles are fluffsters. Some weepeggles are trands. Therefore some trands are not fluffsters.
+A:
+Answer: Valid
+
+Example 167:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some cubs are not bats. All sisters are bats. Therefore some sisters are not cubs.
+A:
+Answer: Invalid
+
+Example 168:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You shouldn't trust Donald's views about politics. He's an alcoholic.
+A:
+Answer: Invalid
+
+Example 169:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. We shouldn't change our country's flag, because it's been like that for hundreds of years.
+A:
+Answer: Invalid
+
+Example 170:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some broomillas are spoickles. All broomillas are unfabrans. Therefore some unfabrans are spoickles.
+A:
+Answer: Valid
+
+Example 171:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No captains are cyborgs. Some captains are flowers. Therefore some flowers are not cyborgs.
+A:
+Answer: Valid
+
+Example 172:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Osbert is more ambitious than Amy. Amy is more ambitious than Peter. Therefore amy is more ambitious than Osbert.
+A:
+Answer: Invalid
+
+Example 173:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Charlotte is less kind than Kevin. Charlotte is less kind than Aiden. Aiden is less kind than Bob. Therefore aiden is kinder than Bob.
+A:
+Answer: Invalid
+
+Example 174:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some smations are noelinds. Some sevvits are smations. Therefore no sevvits are noelinds.
+A:
+Answer: Invalid
+
+Example 175:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. It's difficult to ski off-piste, so if you want an easy time, stick to the designated routes.
+A:
+Answer: Valid
+
+Example 176:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. If we cut salaries this year, we'll never get a pay rise again.
+A:
+Answer: Invalid
+
+Example 177:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No stadiums are ministers. Some ministers are goats. Therefore some goats are not stadiums.
+A:
+Answer: Valid
+
+Example 178:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Cecilia is more reliable than Susan. Bill is more reliable than Cecilia. Tom is more reliable than Susan. Therefore susan is more reliable than Cecilia.
+A:
+Answer: Invalid
+
+Example 179:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Michael is older than Jones. Anne is older than Michael. Sam is older than Lara. Jennifer is older than Anne. Therefore jennifer is older than Michael.
+A:
+Answer: Valid
+
+Example 180:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No prottows are yudalouds. Some yudalouds are treyples. Therefore some treyples are prottows.
+A:
+Answer: Invalid
+
+Example 181:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bowls are chimpanzees. No chimpanzees are astronauts. Therefore all astronauts are bowls.
+A:
+Answer: Invalid
+
+Example 182:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Aeroplanes can't be healthy; humans were never meant to fly.
+A:
+Answer: Invalid
+
+Example 183:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All fluffsters are sevvits. No treyples are sevvits. Therefore all treyples are fluffsters.
+A:
+Answer: Invalid
+
+Example 184:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? If we legalise marijuana, we'll inevitably legalise heroin.
+A:
+Answer: Invalid
+
+Example 185:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Amy is older than Sarah. Rossi is older than Amy. Therefore amy is younger than Sarah.
+A:
+Answer: Invalid
+
+Example 186:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All humans are pens. Some bicycles are not pens. Therefore some bicycles are not humans.
+A:
+Answer: Valid
+
+Example 187:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All nuns are villages. Some nuns are not robots. Therefore all robots are villages.
+A:
+Answer: Invalid
+
+Example 188:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All oaks are dwarves. Some dwarves are not sons. Therefore all sons are oaks.
+A:
+Answer: Invalid
+
+Example 189:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. A lot of people look up flu symptoms around the same time as flu spikes. So looking up flu must cause people to get it.
+A:
+Answer: Invalid
+
+Example 190:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. David is less sensible than Edward. Edward is less sensible than Charlotte. Therefore edward is less sensible than David.
+A:
+Answer: Invalid
+
+Example 191:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No zestponts are styphons. Some zestponts are effachers. Therefore some effachers are not styphons.
+A:
+Answer: Valid
+
+Example 192:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No hamlets are monkeys. All females are monkeys. Therefore no females are hamlets.
+A:
+Answer: Valid
+
+Example 193:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some guys are not dining rooms. Some dining rooms are not creatures. Therefore no creatures are guys.
+A:
+Answer: Invalid
+
+Example 194:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All bliggingtoms are thrastles. Some thrastles are not tolities. Therefore no tolities are bliggingtoms.
+A:
+Answer: Invalid
+
+Example 195:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less sensible than Carol. Henry is less sensible than Candice. Candice is less sensible than Jill. Therefore carol is more sensible than Henry.
+A:
+Answer: Valid
+
+Example 196:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some nuns are mustangs. All nuns are harlequins. Therefore some harlequins are mustangs.
+A:
+Answer: Valid
+
+Example 197:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some khavvins are compleys. No ocirammas are compleys. Therefore some ocirammas are khavvins.
+A:
+Answer: Invalid
+
+Example 198:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? John is a famous war hero. So we should trust what John says about politics.
+A:
+Answer: Invalid
+
+Example 199:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some dukes are sheep. All sheep are bowls. Therefore some bowls are dukes.
+A:
+Answer: Valid
+
+Example 200:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jill is younger than Peter. Jennifer is older than Peter. Sophia is older than Jill. Sophia is younger than Jones. Therefore peter is older than Jennifer.
+A:
+Answer: Invalid
+
+Example 201:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some ammigles are zestponts. Some spoickles are ammigles. Therefore some spoickles are not zestponts.
+A:
+Answer: Invalid
+
+Example 202:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is shorter than Osbert. Carol is shorter than Sam. Kim is shorter than Sam. Carol is shorter than John. Therefore sam is shorter than Kim.
+A:
+Answer: Invalid
+
+Example 203:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Anne is more reliable than Moses. Jake is more reliable than Anne. Carol is more reliable than Jake. Carol is more reliable than John. Therefore carol is more reliable than Moses.
+A:
+Answer: Valid
+
+Example 204:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No cyborgs are pants. All programs are pants. Therefore no programs are cyborgs.
+A:
+Answer: Valid
+
+Example 205:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All venusians are knights. No venusians are minors. Therefore some minors are not knights.
+A:
+Answer: Invalid
+
+Example 206:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All refluppers are fluffsters. Some sagirds are not fluffsters. Therefore no sagirds are refluppers.
+A:
+Answer: Invalid
+
+Example 207:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Anne is more reliable than Moses. Jake is more reliable than Anne. Carol is more reliable than Jake. Carol is more reliable than John. Therefore jake is more reliable than Carol.
+A:
+Answer: Invalid
+
+Example 208:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some living rooms are sidewinders. All mammals are living rooms. Therefore no mammals are sidewinders.
+A:
+Answer: Invalid
+
+Example 209:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All bulls are crabs. Some places are not bulls. Therefore no places are crabs.
+A:
+Answer: Invalid
+
+Example 210:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Jill is more frank than Aiden. John is more frank than Aiden. John is more frank than Jill. Therefore aiden is more frank than Jill.
+A:
+Answer: Invalid
+
+Example 211:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some hares are lions. No lions are queens. Therefore some queens are hares.
+A:
+Answer: Invalid
+
+Example 212:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All pricenanos are slozzoms. All sevvits are pricenanos. Therefore all sevvits are slozzoms.
+A:
+Answer: Valid
+
+Example 213:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is older than Carol. Amy is older than Carol. Mario is older than Moses. Therefore mario is younger than Moses.
+A:
+Answer: Invalid
+
+Example 214:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is less sensible than Rossi. Joanna is less sensible than Rossi. Joanna is less sensible than Bella. Therefore bella is more sensible than Joanna.
+A:
+Answer: Valid
+
+Example 215:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some kirarics are unfabrans. All unfabrans are shipotoes. Therefore no shipotoes are kirarics.
+A:
+Answer: Invalid
+
+Example 216:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No taindists are brongs. Some polinks are taindists. Therefore some polinks are not brongs.
+A:
+Answer: Valid
+
+Example 217:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All gaxes are hawkloons. All gaxes are sevvits. Therefore some sevvits are not hawkloons.
+A:
+Answer: Invalid
+
+Example 218:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some animals are vehicles. Some animals are not mothers. Therefore some mothers are not vehicles.
+A:
+Answer: Invalid
+
+Example 219:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? William is less reliable than Sam. Candice is more reliable than Sam. Candice is less reliable than Bella. Vicky is more reliable than William. Therefore william is more reliable than Candice.
+A:
+Answer: Invalid
+
+Example 220:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? The average wage in this country is less than yours, so you're richer than average.
+A:
+Answer: Valid
+
+Example 221:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Sara is faster than Caroline. Sara is slower than Sarah. Marcus is slower than Anna. Therefore sarah is faster than Caroline.
+A:
+Answer: Valid
+
+Example 222:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Jim is more ambitious than Debbie. Bill is more ambitious than Debbie. Paul is less ambitious than Bob. Paul is more ambitious than Annie. Therefore bob is less ambitious than Paul.
+A:
+Answer: Invalid
+
+Example 223:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Jennifer is kinder than William. Nat is kinder than William. Sophia is kinder than Nat. Therefore william is less kind than Nat.
+A:
+Answer: Valid
+
+Example 224:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All dewfays are dufizzes. No kirarics are dufizzes. Therefore no kirarics are dewfays.
+A:
+Answer: Valid
+
+Example 225:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Jake is less sensible than William. Sara is less sensible than William. William is less sensible than Edward. Edward is less sensible than Ernest. Therefore ernest is less sensible than Sara.
+A:
+Answer: Invalid
+
+Example 226:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No cosmonauts are flowers. Some cosmonauts are dukes. Therefore some dukes are not flowers.
+A:
+Answer: Valid
+
+Example 227:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No noelinds are compleys. Some noelinds are not effachers. Therefore no effachers are compleys.
+A:
+Answer: Invalid
+
+Example 228:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? There are six slices of pizza left and three of us, so two each would be a fair distribution.
+A:
+Answer: Valid
+
+Example 229:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? William is less reliable than Sam. Candice is more reliable than Sam. Candice is less reliable than Bella. Vicky is more reliable than William. Therefore bella is more reliable than William.
+A:
+Answer: Valid
+
+Example 230:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Djokovic has lost the second set too. Winning the match now looks difficult.
+A:
+Answer: Valid
+
+Example 231:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No tupresses are treyples. Some hendassas are treyples. Therefore some hendassas are not tupresses.
+A:
+Answer: Valid
+
+Example 232:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Moses is kinder than Zach. Zach is kinder than Susan. Zach is kinder than Laura. Therefore moses is kinder than Laura.
+A:
+Answer: Valid
+
+Example 233:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No ranotots are tupresses. All ocirammas are ranotots. Therefore no ocirammas are tupresses.
+A:
+Answer: Valid
+
+Example 234:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some sebusses are spequals. Some builithes are sebusses. Therefore no builithes are spequals.
+A:
+Answer: Invalid
+
+Example 235:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. The newer a transport system is the more efficiently it must run.
+A:
+Answer: Invalid
+
+Example 236:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cowboys are spacemen. Some spacemen are snarks. Therefore all snarks are cowboys.
+A:
+Answer: Invalid
+
+Example 237:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Zach is more ambitious than Rossi. Charlotte is more ambitious than Caroline. Aiden is more ambitious than Zach. Therefore caroline is more ambitious than Charlotte.
+A:
+Answer: Invalid
+
+Example 238:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jones is less ambitious than Michael. Jones is less ambitious than Nat. Nat is less ambitious than Michael. Peter is less ambitious than Nat. Therefore nat is more ambitious than Peter.
+A:
+Answer: Valid
+
+Example 239:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No hendassas are pentwests. Some prottows are hendassas. Therefore some prottows are not pentwests.
+A:
+Answer: Valid
+
+Example 240:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some confras are not pricenanos. All pentwests are confras. Therefore some pentwests are not pricenanos.
+A:
+Answer: Invalid
+
+Example 241:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Sara is faster than Caroline. Sara is slower than Sarah. Marcus is slower than Anna. Therefore caroline is faster than Sara.
+A:
+Answer: Invalid
+
+Example 242:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Humans evolved in savannah environments, so those are clearly the best place for us.,
+A:
+Answer: Invalid
+
+Example 243:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some harlequins are heroines. No swans are harlequins. Therefore some swans are not heroines.
+A:
+Answer: Invalid
+
+Example 244:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All planets are bishops. No bishops are dogs. Therefore no dogs are planets.
+A:
+Answer: Valid
+
+Example 245:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sevvits are not proppors. All sevvits are gaxes. Therefore no gaxes are proppors.
+A:
+Answer: Invalid
+
+Example 246:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No children are canines. Some boys are canines. Therefore some boys are not children.
+A:
+Answer: Valid
+
+Example 247:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sinpuds are chevesics. All sinpuds are onamas. Therefore some onamas are chevesics.
+A:
+Answer: Valid
+
+Example 248:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some felines are cowboys. Some cities are not felines. Therefore no cities are cowboys.
+A:
+Answer: Invalid
+
+Example 249:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No rodrups are prottows. Some rodrups are slozzoms. Therefore some slozzoms are not prottows.
+A:
+Answer: Valid
+
+Example 250:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Jill is more ambitious than Jake. Jake is less ambitious than Cecilia. Jill is more ambitious than Cecilia. Therefore jill is less ambitious than Jake.
+A:
+Answer: Invalid
+
+Example 251:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Referees are supposed to be neutral. The referee is from Switzerland, a neutral country, so he must be neutral.
+A:
+Answer: Invalid
+
+Example 252:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some weepeggles are smurtans. No weepeggles are prottows. Therefore all prottows are smurtans.
+A:
+Answer: Invalid
+
+Example 253:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No sparrows are duchesses. All duchesses are chimpanzees. Therefore some chimpanzees are sparrows.
+A:
+Answer: Invalid
+
+Example 254:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No winnibler are bistups. All brewtines are bistups. Therefore all brewtines are winnibler.
+A:
+Answer: Invalid
+
+Example 255:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Mormonism is less trustworthy than other forms of Christianity because it's not as old.
+A:
+Answer: Invalid
+
+Example 256:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. John is less frank than Alex. Alex is less frank than Jones. Therefore jones is less frank than Alex.
+A:
+Answer: Invalid
+
+Example 257:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No artrames are gryllows. Some bliggingtoms are gryllows. Therefore some bliggingtoms are not artrames.
+A:
+Answer: Valid
+
+Example 258:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All bisdoes are brongs. Some bisdoes are snabeths. Therefore some snabeths are brongs.
+A:
+Answer: Valid
+
+Example 259:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Bella is taller than Peter. Peter is taller than Tom. Therefore bella is shorter than Peter.
+A:
+Answer: Invalid
+
+Example 260:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? You should trust our President's views about healthcare; he was a famous moviestar.
+A:
+Answer: Invalid
+
+Example 261:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All programmers are rooks. All amphibians are programmers. Therefore all amphibians are rooks.
+A:
+Answer: Valid
+
+Example 262:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Jones is wittier than Anne. Anne is wittier than Moses. Therefore anne is wittier than Jones.
+A:
+Answer: Invalid
+
+Example 263:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All fapsters are trealops. No prottows are trealops. Therefore no prottows are fapsters.
+A:
+Answer: Valid
+
+Example 264:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No skizzles are novalies. No skizzles are smurtans. Therefore some smurtans are not novalies.
+A:
+Answer: Invalid
+
+Example 265:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Nat is less reliable than Kevin. Debbie is less reliable than Kevin. Bill is less reliable than Nat. Anna is less reliable than Amy. Therefore kevin is less reliable than Bill.
+A:
+Answer: Invalid
+
+Example 266:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No astronauts are knights. Some tigers are knights. Therefore some tigers are astronauts.
+A:
+Answer: Invalid
+
+Example 267:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? John wants to cut off your arms, and you don't want him to cut off your arms. So the solution is for him to cut off one of your arms.
+A:
+Answer: Invalid
+
+Example 268:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Lara is more sensible than Sara. Joanna is more sensible than Sara. Candice is more sensible than Joanna. Candice is more sensible than Peter. Therefore sara is more sensible than Joanna.
+A:
+Answer: Invalid
+
+Example 269:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. If you don't like using or interacting with computers, then you probably won't like video games.
+A:
+Answer: Valid
+
+Example 270:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Vicky is faster than Edward. Edward is faster than Sean. Therefore edward is slower than Vicky.
+A:
+Answer: Valid
+
+Example 271:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Electricity was invented by Edison, and he was a bad guy. So electricity is bad.
+A:
+Answer: Invalid
+
+Example 272:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All oaks are dwarves. Some dwarves are not sons. Therefore all sons are oaks.
+A:
+Answer: Invalid
+
+Example 273:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Peter is less kind than Annie. Annie is less kind than Lara. Bill is less kind than Carol. Lara is less kind than Carol. Therefore peter is less kind than Lara.
+A:
+Answer: Valid
+
+Example 274:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. No lions are soldiers. All admirals are lions. Therefore no admirals are soldiers.
+A:
+Answer: Valid
+
+Example 275:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All tupresses are sagirds. All tupresses are styphons. Therefore some styphons are not sagirds.
+A:
+Answer: Invalid
+
+Example 276:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Sophia is kinder than Amy. Sophia is less kind than Caroline. Caroline is kinder than Jim. Therefore jim is kinder than Caroline.
+A:
+Answer: Invalid
+
+Example 277:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All clothes are crabs. No crabs are men. Therefore some men are not clothes.
+A:
+Answer: Invalid
+
+Example 278:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Philipp is more reliable than Tom. Sara is more reliable than Philipp. Therefore philipp is less reliable than Sara.
+A:
+Answer: Valid
+
+Example 279:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some sebusses are spequals. Some builithes are sebusses. Therefore no builithes are spequals.
+A:
+Answer: Invalid
+
+Example 280:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Marcus is older than Jennifer. Joanna is older than Marcus. Lara is older than Jenny. Susan is older than Jenny. Therefore jenny is younger than Susan.
+A:
+Answer: Valid
+
+Example 281:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All vicars are lords. No plays are lords. Therefore no plays are vicars.
+A:
+Answer: Valid
+
+Example 282:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Henry is less kind than Sophia. Sophia is less kind than Anne. Anne is less kind than Susan. Therefore sophia is less kind than Henry.
+A:
+Answer: Invalid
+
+Example 283:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. All females are explorers. Some reptilians are not females. Therefore all reptilians are explorers.
+A:
+Answer: Invalid
+
+Example 284:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Dylan is wittier than Sam. Jenny is wittier than Dylan. Jake is wittier than Dylan. Therefore jenny is less witty than Dylan.
+A:
+Answer: Invalid
+
+Example 285:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? The 2020 version of the product must be better than the 2018 because it's newer.
+A:
+Answer: Invalid
+
+Example 286:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some skeptics are not cowboys. Some skeptics are sheep dogs. Therefore some sheep dogs are not cowboys.
+A:
+Answer: Invalid
+
+Example 287:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some kirarics are unfabrans. All unfabrans are shipotoes. Therefore no shipotoes are kirarics.
+A:
+Answer: Invalid
+
+Example 288:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. You should trust my views about American politics because I have a PhD in material science.
+A:
+Answer: Invalid
+
+Example 289:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Jim is more sensible than Peter. Jill is more sensible than Peter. Aiden is more sensible than Anne. Peter is more sensible than Anne. Therefore jim is less sensible than Peter.
+A:
+Answer: Invalid
+
+Example 290:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. Some chimpanzees are lads. All rocks are lads. Therefore some rocks are not chimpanzees.
+A:
+Answer: Invalid
+
+Example 291:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? All reggabreas are khavvins. No strizzings are khavvins. Therefore some strizzings are not reggabreas.
+A:
+Answer: Invalid
+
+Example 292:
+Question: Q: This AI is identifying whether statements contain fallacies. The AI responds with 'Valid' or 'Invalid' as appropriate. William is taller than Tim. Tim is taller than Annie. Therefore william is shorter than Tim.
+A:
+Answer: Invalid
+
+Example 293:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Water boils at 100 degrees, and this is 90 degrees, so you'll need to raise the temperature a bit to get it to boil.
+A:
+Answer: Valid
+
+Example 294:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No nightmares are restaurants. Some shirts are nightmares. Therefore some shirts are not restaurants.
+A:
+Answer: Valid
+
+Example 295:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No flionsoes are dufizzes. Some artrames are not dufizzes. Therefore all artrames are flionsoes.
+A:
+Answer: Invalid
+
+Example 296:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No benessits are swinducts. Some benessits are lotadils. Therefore some lotadils are not swinducts.
+A:
+Answer: Valid
+
+Example 297:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? No rigglays are khavvins. Some spewsies are not rigglays. Therefore some spewsies are khavvins.
+A:
+Answer: Invalid
+
+Example 298:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some werradiths are shorates. Some werradiths are shraiwels. Therefore some shraiwels are not shorates.
+A:
+Answer: Invalid
+
+Example 299:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? Some cheiliths are rigglays. Some cheiliths are not trealops. Therefore all trealops are rigglays.
+A:
+Answer: Invalid
+
+Example 300:
+Question: Q: Do you think the following argument is 'Valid' or 'Invalid'? The novel was written by a top scientist so it must be entertaining.
+A:
+Answer: Invalid
+
+Learn from the given examples and answer the question.
