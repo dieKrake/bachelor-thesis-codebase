@@ -53,9 +53,9 @@ DEBUG_PROMPT_DIR = Path("debug_prompts")
 EVAL_MODE = "rag"  # "zero-shot" | "few-shot" | "rag"
 RANDOM_SEED = 42
 VALIDATION_SIZE = 200
-TRAIN_SIZE = 300
+TRAIN_SIZE = 100
 USING_DATASET_NAME = None # None -> tasksource / "google" -> google/boolq
-USING_TASK_NAME = "fallacy" # "elementary" / "fact" / "fallacy" / "navigate" / "social"
+USING_TASK_NAME = "social" # "elementary" / "fact" / "fallacy" / "navigate" / "social"
 
 # Different Dataset-Names
 boolq_dataset_name = "google/boolq"
@@ -189,7 +189,7 @@ RAG_EVAL_SPLITS: Dict[str, int] = {
 # Azure Search Konfiguration (per .env oder hier direkt)
 AZURE_SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT", "")
 AZURE_SEARCH_API_KEY = os.getenv("AZURE_SEARCH_API_KEY")
-RAG_TOP_K = 3  # wie viele Dokumente aus Azure pro Anfrage holen
+RAG_TOP_K = 5  # wie viele Dokumente aus Azure pro Anfrage holen
 
 # ---------------- MODEL & PROMPTS ---------
 
