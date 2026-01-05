@@ -43,7 +43,7 @@ load_dotenv()
 # HF_DATASET_NAME = "tasksource/bigbench"
 # HF_TASK_NAME = "navigate"
 HF_DATASET_NAME = "tasksource/bigbench"          # z.B. "tasksource/bigbench" oder "google/boolq"
-HF_TASK_NAME: Optional[str] = "social_iqa"      # z.B. "navigate" oder None für BoolQ
+HF_TASK_NAME: Optional[str] = "elementary_math_qa"      # z.B. "navigate" oder None für BoolQ
 
 HF_TRAIN_SPLIT = "train"
 HF_DEV_SPLIT = "dev"
@@ -53,8 +53,8 @@ HF_TEST_SPLIT: Optional[str] = "validation"   # für BoolQ: validation; sonst z.
 #   Train: erste 100 aus train
 #   Dev:   nächste 200 aus train
 #   Test:  erste 200 aus validation
-TRAIN_MAX = 100          # max. Anzahl Beispiele für T_train
-DEV_MAX = 100         # max. Anzahl Beispiele für T_dev
+TRAIN_MAX = 150          # max. Anzahl Beispiele für T_train
+DEV_MAX = 150         # max. Anzahl Beispiele für T_dev
 TEST_MAX: Optional[int] = 300  # max. Beispiele aus HF_TEST_SPLIT (für BoolQ: 200)
 
 RANDOM_SEED = 42
@@ -65,11 +65,12 @@ PROPOSAL_MODEL = "gpt-4o-mini"
 
 # Initialer Prompt – z.B. wie Navigate/BoolQ-True/False
 INITIAL_PROMPT = (
-    "You are solving multiple-choice questions about everyday social situations.\n"
-    "Each question lists several answer options, each prefixed with 'choice:'.\n"
-    "Read the scenario and the choices carefully.\n"
-    "Answer with exactly the text of the correct choice, "
-    "without the 'choice:' prefix and without any explanation or extra text."
+    'You MUST answer with exactly one string: either "True" or "False". '
+    'Do not output explanations, reasoning steps, or additional text.\n\n'
+    '"True" = The passage implies that the answer to the question is YES.\n'
+    '"False" = The passage implies that the answer to the question is NO, '
+    'or the passage does NOT provide enough evidence to answer YES.\n\n'
+    'Now read the following question and its passage, and answer with "True" or "False":'
 )
 
 # Meta-Prompt
