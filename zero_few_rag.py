@@ -50,12 +50,12 @@ DEBUG_LOG_PROMPTS = False
 DEBUG_PROMPT_DIR = Path("debug_prompts")
 
 # Modus wählen: "zero-shot", "few-shot" oder "rag"
-EVAL_MODE = "rag"  # "zero-shot" | "few-shot" | "rag"
+EVAL_MODE = "few-shot"  # "zero-shot" | "few-shot" | "rag"
 RANDOM_SEED = 42
 VALIDATION_SIZE = 200
 TRAIN_SIZE = 100
 USING_DATASET_NAME = None # None -> tasksource / "google" -> google/boolq
-USING_TASK_NAME = "social" # "elementary" / "fact" / "fallacy" / "navigate" / "social"
+USING_TASK_NAME = "fallacy" # "elementary" / "fact" / "fallacy" / "navigate" / "social"
 
 # Different Dataset-Names
 boolq_dataset_name = "google/boolq"
