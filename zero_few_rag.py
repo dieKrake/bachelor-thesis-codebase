@@ -55,7 +55,7 @@ RANDOM_SEED = 42
 VALIDATION_SIZE = 200
 TRAIN_SIZE = 100
 USING_DATASET_NAME = None # None -> tasksource / "google" -> google/boolq
-USING_TASK_NAME = "fallacy" # "elementary" / "fact" / "fallacy" / "navigate" / "social"
+USING_TASK_NAME = "navigate" # "elementary" / "fact" / "fallacy" / "navigate" / "social"
 
 # Different Dataset-Names
 boolq_dataset_name = "google/boolq"
