@@ -305,7 +305,7 @@
         "correctAnswer": "' 9801'",
         "MtaskAnswer": "9801",
         "MtaskAnswerRaw": "9801",
-        "judgement": false
+        "judgement": true
       },
       {
         "Index": 22,
@@ -985,7 +985,7 @@
         "correctAnswer": "[' 3 : 4'",
         "MtaskAnswer": "3 : 4",
         "MtaskAnswerRaw": "3 : 4",
-        "judgement": false
+        "judgement": true
       },
       {
         "Index": 107,
@@ -1369,7 +1369,7 @@
         "correctAnswer": "' 8']",
         "MtaskAnswer": "8",
         "MtaskAnswerRaw": "8",
-        "judgement": false
+        "judgement": true
       },
       {
         "Index": 155,
