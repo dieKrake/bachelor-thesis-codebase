@@ -2,8 +2,8 @@ import json
 import re
 from copy import deepcopy
 
-INPUT_FILE = r"C:\Users\Kevin\Desktop\Bachelor Thesis\bachelor-thesis-codebase\pe2_hf_results\pe2_hf_elementary_math_qa_20251215_073403.json"
-OUTPUT_FILE = r"C:\Users\Kevin\Desktop\Bachelor Thesis\bachelor-thesis-codebase\pe2_hf_results\pe2_hf_elementary_math_qa_20251215_073403_fixed.json"
+INPUT_FILE = r"C:\Users\Kevin\Desktop\Bachelor Thesis\bachelor-thesis-codebase\hf_eval_results_new\tasksource\bigbench_social_iqa_few-shot_new\validation\fewshot_social_iqa_validation_20251215_092116.json"
+OUTPUT_FILE = r"C:\Users\Kevin\Desktop\Bachelor Thesis\bachelor-thesis-codebase\hf_eval_results_new\tasksource\bigbench_social_iqa_few-shot_new\validation\fewshot_social_iqa_validation_20251215_092116_fixed.json"
 
 
 def normalize_answer(text: str) -> str:
