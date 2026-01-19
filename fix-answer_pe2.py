@@ -1,8 +1,8 @@
 import json
 import re
 
-INPUT_FILE = r"C:\Users\Kevin\Desktop\Bachelor Thesis\bachelor-thesis-codebase\pe2_hf_results\pe2_hf_elementary_math_qa_20251215_073403.json"
-OUTPUT_FILE = r"C:\Users\Kevin\Desktop\Bachelor Thesis\bachelor-thesis-codebase\pe2_hf_results\pe2_hf_elementary_math_qa_20251215_073403_fixed.json"
+INPUT_FILE = r"C:\Users\Kevin\Desktop\Bachelor Thesis\bachelor-thesis-codebase\pe2_hf_results\pe2_hf_elementary_math_qa_20260107_161118.json"
+OUTPUT_FILE = r"C:\Users\Kevin\Desktop\Bachelor Thesis\bachelor-thesis-codebase\pe2_hf_results\pe2_hf_elementary_math_qa_20260107_161118_fixed.json"
 
 
 def normalize_answer(text: str) -> str:

@@ -129,7 +129,7 @@
         "dev_accuracy": 0.42
       }
     ],
-    "test_accuracy": 0.5,
+    "test_accuracy": 0.515,
     "test_results": [
       {
         "Index": 0,
