@@ -47,14 +47,14 @@ HF_TASK_NAME: Optional[str] = "fact_checker"      # z.B. "navigate" oder None f�
 
 HF_TRAIN_SPLIT = "train"
 HF_DEV_SPLIT = "dev"
-HF_TEST_SPLIT: Optional[str] = "validation"   # f체r BoolQ: validation; sonst z. B. "test" oder None
+HF_TEST_SPLIT: Optional[str] = None   # f체r BoolQ: validation; sonst z. B. "test" oder None
 
 # F체r BoolQ:
 #   Train: erste 100 aus train
 #   Dev:   n채chste 200 aus train
 #   Test:  erste 200 aus validation
-TRAIN_MAX = 150          # max. Anzahl Beispiele f체r T_train
-DEV_MAX = 150         # max. Anzahl Beispiele f체r T_dev
+TRAIN_MAX = 50          # max. Anzahl Beispiele f체r T_train
+DEV_MAX = 50         # max. Anzahl Beispiele f체r T_dev
 TEST_MAX: Optional[int] = 300  # max. Beispiele aus HF_TEST_SPLIT (f체r BoolQ: 200)
 
 RANDOM_SEED = 42

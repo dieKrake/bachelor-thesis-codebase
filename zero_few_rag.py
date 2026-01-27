@@ -442,6 +442,25 @@ def run_zero_shot_on_dataset(
     results: List[Dict[str, Any]] = []
     correct = 0
 
+    # Index based on Train-Split (..._train_100 / ..._train_200 / ..._train_300)
+    context = retrieve_azure_context(
+        azure_search_index=AZURE_SEARCH_INDEX,
+        question=ex.input,
+        top_k=5
+    )
+
+    system_message = (
+        base_prompt.rstrip()
+        + "\n\nAdditionally I am giving you following examples to learn from:\n\n"
+        + context
+        + "\n\nLearn from the given examples and answer the following question."
+    )
+
+    messages = [
+        {"role": "system", "content": system_message},
+        {"role": "user", "content": ex.input},
+    ]
+
     for idx, ex in enumerate(dataset):
         log_line(f"[ZERO-SHOT][{split_name}] Processing item {idx+1}/{len(dataset)}")
 

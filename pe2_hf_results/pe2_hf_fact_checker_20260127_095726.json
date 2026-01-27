@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-01-27T09:57:26.098734",
+  "dataset": {
+    "hf_dataset": "tasksource/bigbench",
+    "hf_task_name": "fact_checker",
+    "train_split": "train",
+    "dev_split": "dev",
+    "test_split": null,
+    "train_size": 50,
+    "dev_size": 50,
+    "test_size": 0
+  },
+  "config": {
+    "initial_prompt": "You MUST answer with exactly one string: either \"true\" or \"false\". Do not output explanations, reasoning steps, punctuation, or additional text. \"true\" = the claimed fact is true. \"false\" = the claimed fact is false.\n\nNow answer the following question with exactly one word: \"true\" or \"false\".",
+    "meta_prompt_template_snippet": "We are refining a prompt for a classification task.\n\n# Current Prompt\n{prompt}\n\n# Failed Examples\nThe following examples are cases where the model failed (wrong judgement):\n\n{examples}\n\n# Instructions\n1. Analyze why the current prompt might have led to these mistakes.\n2. Propose an improved version of the prompt that:\n  - stays concise,\n  - keeps the same task and output format,\n  - reduces the li",
+    "task_model": "gpt-4o-mini",
+    "proposal_model": "gpt-4o-mini",
+    "iterations": 3,
+    "beam_width": 2,
+    "proposals_per_prompt": 2,
+    "failure_batch_size": 5,
+    "train_max": 50,
+    "dev_max": 50,
+    "test_max": 300
+  },
+  "result": {
+    "best_prompt": "You MUST answer with exactly one string: either \"true\" or \"false\". Do not output explanations, reasoning steps, punctuation, or additional text. \"true\" = the claimed fact is true. \"false\" = the claimed fact is false.\n\nNow answer the following question with exactly one word: \"true\" or \"false\".",
+    "best_accuracy": 0.96,
+    "history": [
+      {
+        "iteration": 0,
+        "prompt": "You MUST answer with exactly one string: either \"true\" or \"false\". Do not output explanations, reasoning steps, punctuation, or additional text. \"true\" = the claimed fact is true. \"false\" = the claimed fact is false.\n\nNow answer the following question with exactly one word: \"true\" or \"false\".",
+        "dev_accuracy": 0.96
+      },
+      {
+        "iteration": 1,
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Do not output explanations, reasoning steps, punctuation, or additional text. 'true' means the claim made is factually correct; 'false' means it is incorrect. Carefully evaluate the claim before responding. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.94
+      },
+      {
+        "iteration": 1,
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Do not output explanations, reasoning steps, punctuation, or additional text. 'true' = the claimed fact is true as of the date mentioned; 'false' = the claimed fact is false as of the date mentioned. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.96
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Assess the truth of the following claim as of the date mentioned. 'true' = the claim is true as of the date; 'false' = the claim is false as of the date. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.94
+      },
+      {
+        "iteration": 2,
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Consider the claim in relation to the date provided. 'true' = the claimed fact is true as of the date mentioned; 'false' = the claimed fact is false as of the date mentioned. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.96
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either \"true\" or \"false\". Do not output explanations, reasoning steps, punctuation, or additional text. \"true\" means the claim is accurate based on the information available as of July 8, 2020. \"false\" means the claim is inaccurate. Now answer the following question with exactly one word: \"true\" or \"false\".",
+        "dev_accuracy": 0.94
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Do not output explanations, reasoning steps, punctuation, or additional text. 'true' means the claim is factually correct; 'false' means it is not. Carefully evaluate the claim before responding. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.94
+      },
+      {
+        "iteration": 3,
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Do not output explanations, reasoning steps, punctuation, or additional text. Consider the factual accuracy of the claim as of the date mentioned. 'true' = the claimed fact is true as of the date mentioned; 'false' = the claimed fact is false as of the date mentioned. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.94
+      },
+      {
+        "iteration": 3,
+        "prompt": "Answer with exactly one word: 'true' or 'false'. Determine if the following claim was true or false as of the date mentioned. Claim: [insert claim here].",
+        "dev_accuracy": 0.96
+      }
+    ],
+    "all_candidates": [
+      {
+        "prompt": "You MUST answer with exactly one string: either \"true\" or \"false\". Do not output explanations, reasoning steps, punctuation, or additional text. \"true\" = the claimed fact is true. \"false\" = the claimed fact is false.\n\nNow answer the following question with exactly one word: \"true\" or \"false\".",
+        "dev_accuracy": 0.96
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Do not output explanations, reasoning steps, punctuation, or additional text. 'true' = the claimed fact is true as of the date mentioned; 'false' = the claimed fact is false as of the date mentioned. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.96
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Consider the claim in relation to the date provided. 'true' = the claimed fact is true as of the date mentioned; 'false' = the claimed fact is false as of the date mentioned. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.96
+      },
+      {
+        "prompt": "Answer with exactly one word: 'true' or 'false'. Determine if the following claim was true or false as of the date mentioned. Claim: [insert claim here].",
+        "dev_accuracy": 0.96
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Do not output explanations, reasoning steps, punctuation, or additional text. 'true' means the claim made is factually correct; 'false' means it is incorrect. Carefully evaluate the claim before responding. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.94
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Assess the truth of the following claim as of the date mentioned. 'true' = the claim is true as of the date; 'false' = the claim is false as of the date. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.94
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either \"true\" or \"false\". Do not output explanations, reasoning steps, punctuation, or additional text. \"true\" means the claim is accurate based on the information available as of July 8, 2020. \"false\" means the claim is inaccurate. Now answer the following question with exactly one word: \"true\" or \"false\".",
+        "dev_accuracy": 0.94
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Do not output explanations, reasoning steps, punctuation, or additional text. 'true' means the claim is factually correct; 'false' means it is not. Carefully evaluate the claim before responding. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.94
+      },
+      {
+        "prompt": "You MUST answer with exactly one string: either 'true' or 'false'. Do not output explanations, reasoning steps, punctuation, or additional text. Consider the factual accuracy of the claim as of the date mentioned. 'true' = the claimed fact is true as of the date mentioned; 'false' = the claimed fact is false as of the date mentioned. Now answer the following question with exactly one word: 'true' or 'false'.",
+        "dev_accuracy": 0.94
+      }
+    ]
+  }
+}
